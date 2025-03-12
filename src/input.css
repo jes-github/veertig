@@ -1,0 +1,105 @@
+@import "tailwindcss";
+@import url("https://fonts.googleapis.com/css2?family=Rethink+Sans:wght@400;500;700;800&display=swap");
+
+@theme {
+  --color-gray: #707070;
+  --color-white: #fffafa;
+  --color-black: #0c0c0c;
+  --color-light-gray: #fff4f6;
+  --color-rose: #fcd3db;
+  --color-pink: #f692a4;
+  --color-red: #ee274a;
+
+  /* Font/text values */
+  --font-family-rethink-sans: "Rethink Sans", sans-serif;
+  --font-style-normal: normal;
+  --font-weight-light: 400;
+  --font-weight-medium: 500;
+  --font-weight-semi-bold: 600;
+  --font-weight-bold: 700;
+  --font-weight-extrabold: 800;
+  --font-size-small: 16px;
+  --font-size-base: 21px;
+  --font-size-large: 27px;
+  --font-size-xlarge: 40px;
+  --font-size-huge: 90px;
+  --character-spacing-0: 0px;
+  --line-spacing-small: 21px;
+  --line-spacing-base: 28px;
+  --line-spacing-large: 34px;
+  --line-spacing-xlarge: 52px;
+  --line-spacing-huge: 105px;
+  --decoration-underline: underline;
+}
+
+/* Character Styles */
+.quote {
+  font-family: var(--font-family-rethink-sans);
+  font-style: var(--font-style-normal);
+  font-weight: var(--font-weight-bold);
+  font-size: var(--font-size-xlarge);
+  line-height: var(--line-spacing-xlarge);
+  letter-spacing: var(--character-spacing-0);
+  color: var(--color-black);
+}
+
+.link {
+  font-family: var(--font-family-rethink-sans);
+  font-style: var(--font-style-normal);
+  font-weight: var(--font-weight-semi-bold);
+  font-size: var(--font-size-small);
+  line-height: var(--line-spacing-small);
+  letter-spacing: var(--character-spacing-0);
+  color: var(--color-black);
+  text-decoration: var(--decoration-underline);
+}
+
+.button {
+  font-family: var(--font-family-rethink-sans);
+  font-style: var(--font-style-normal);
+  font-weight: var(--font-weight-bold);
+  font-size: var(--font-size-base);
+  line-height: var(--line-spacing-base);
+  letter-spacing: var(--character-spacing-0);
+  color: var(--color-black);
+}
+
+.body {
+  font-family: var(--font-family-rethink-sans);
+  font-style: var(--font-style-normal);
+  font-weight: var(--font-weight-light);
+  font-size: var(--font-size-small);
+  line-height: var(--line-spacing-small);
+  letter-spacing: var(--character-spacing-0);
+  color: var(--color-black);
+}
+
+.lead {
+  font-family: var(--font-family-rethink-sans);
+  font-style: var(--font-style-normal);
+  font-weight: var(--font-weight-medium);
+  font-size: var(--font-size-base);
+  line-height: var(--line-spacing-base);
+  letter-spacing: var(--character-spacing-0);
+  color: var(--color-black);
+}
+
+.label {
+  font-family: var(--font-family-rethink-sans);
+  font-style: var(--font-style-normal);
+  font-weight: var(--font-weight-semi-bold);
+  font-size: var(--font-size-large);
+  line-height: var(--line-spacing-large);
+  letter-spacing: var(--character-spacing-0);
+  color: var(--color-black);
+}
+
+.title {
+  font-family: var(--font-family-rethink-sans);
+  font-style: var(--font-style-normal);
+  font-weight: var(--font-weight-extrabold);
+  font-size: var(--font-size-huge);
+  line-height: var(--line-spacing-huge);
+  letter-spacing: var(--character-spacing-0);
+  color: var(--color-black);
+}
