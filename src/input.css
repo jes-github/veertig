@@ -10,6 +10,11 @@
   --color-pink: #f692a4;
   --color-red: #ee274a;
 
+  /* Extend Tailwind's theme with custom colors */
+  --tw-extend-colors: {
+    'red-600':var(--color-red) ; /* Map Tailwind's red-600 to your custom color */
+  }
+
   /* Font/text values */
   --font-family-rethink-sans: "Rethink Sans", sans-serif;
   --font-style-normal: normal;

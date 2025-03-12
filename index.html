@@ -15,7 +15,7 @@
     />
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   </head>
-  <body class="bg-white pt-24">
+  <body class="pt-24">
     <!-- Zorgt ervoor dat content niet onder navbar verdwijnt -->
 
     <!-- Navigation Bar -->
@@ -29,7 +29,7 @@
         /></a>
         <div class="hidden md:flex space-x-12">
           <a href="#hoopkracht" class="hover:line-through"> Hoopkracht </a>
-          <a href="#" class="hover:line-through">Nieuws</a>
+          <a href="#nieuws" class="hover:line-through">Nieuws</a>
 
           <!-- Verhalen Dropdown -->
           <div class="relative" id="verhalen-dropdown">
@@ -43,31 +43,45 @@
               id="dropdown-menu"
               class="absolute left-0 mt-2 w-64 bg-white shadow-lg rounded-md hidden"
             >
-              <a href="#" class="block px-4 py-2 hover:line-through"
+              <a
+                href="#verhaal-welzijn-door-speelterrein"
+                class="block px-4 py-2 hover:line-through"
                 >Welzijn door speelterrein</a
               >
-              <a href="#" class="block px-4 py-2 hover:line-through"
+              <a
+                href="#verhaal-ontharden-door-ontmoeten"
+                class="block px-4 py-2 hover:line-through"
                 >Ontharden door ontmoeten</a
               >
-              <a href="#" class="block px-4 py-2 hover:line-through"
+              <a
+                href="#verhaal-groei-door-latent-talent"
+                class="block px-4 py-2 hover:line-through"
                 >Groei door latent talent</a
               >
-              <a href="#" class="block px-4 py-2 hover:line-through"
+              <a
+                href="#verhaal-ruimte-voor-ruimte"
+                class="block px-4 py-2 hover:line-through"
                 >Ruimte voor ruimte</a
               >
-              <a href="#" class="block px-4 py-2 hover:line-through"
+              <a
+                href="#verhaal-leerkans-door-nieuwe-kans"
+                class="block px-4 py-2 hover:line-through"
                 >Leerkans door nieuwe kans</a
               >
-              <a href="#" class="block px-4 py-2 hover:line-through"
+              <a
+                href="#verhaal-stem-geven-zonder-stempel"
+                class="block px-4 py-2 hover:line-through"
                 >Stem geven zonder stempel</a
               >
-              <a href="#" class="block px-4 py-2 hover:line-through"
+              <a
+                href="#verhaal-werkzaamheidsgraag"
+                class="block px-4 py-2 hover:line-through"
                 >Werkzaamheidsgraag</a
               >
             </div>
           </div>
 
-          <a href="#" class="hover:line-through">Event</a>
+          <a href="#event" class="hover:line-through">Event</a>
         </div>
       </div>
 
@@ -77,8 +91,8 @@
           🔍
           <!-- Zoekicoon -->
         </button>
-        <a href="#" class="hover:line-through">Over JES vzw</a>
-        <a href="#" class="hover:line-through">Contact</a>
+        <a href="#over" class="hover:line-through">Over JES vzw</a>
+        <a href="#contact" class="hover:line-through">Contact</a>
       </div>
 
       <!-- Hamburger Menu (Mobiel & Tablet) -->
@@ -117,31 +131,49 @@
 
       <!-- Menu items - Vertically stacked -->
       <div class="w-full space-y-4">
-        <a href="#" class="hover:line-through block text-center">Hoopkracht</a>
-        <a href="#" class="hover:line-through block text-center">Nieuws</a>
+        <a href="#hoopkracht" class="hover:line-through block text-center"
+          >Hoopkracht</a
+        >
+        <a href="#nieuws" class="hover:line-through block text-center"
+          >Nieuws</a
+        >
 
         <!-- Verhalen dropdown -->
         <div class="space-y-2">
           <p class="font-bold text-center text-gray-700">Verhalen</p>
-          <a href="#" class="block hover:line-through text-center"
+          <a
+            href="#verhaal-welzijn-door-speelterrein"
+            class="block hover:line-through text-center"
             >Welzijn door speelterrein</a
           >
-          <a href="#" class="block hover:line-through text-center"
+          <a
+            href="#verhaal-ontharden-door-ontmoeten"
+            class="block hover:line-through text-center"
             >Ontharden door ontmoeten</a
           >
-          <a href="#" class="block hover:line-through text-center"
+          <a
+            href="#verhaal-groei-door-latent-talent"
+            class="block hover:line-through text-center"
             >Groei door latent talent</a
           >
-          <a href="#" class="block hover:line-through text-center"
+          <a
+            href="#verhaal-ruimte-voor-ruimte"
+            class="block hover:line-through text-center"
             >Ruimte voor ruimte</a
           >
-          <a href="#" class="block hover:line-through text-center"
+          <a
+            href="#verhaal-leerkans-door-nieuwe-kans"
+            class="block hover:line-through text-center"
             >Leerkans door nieuwe kans</a
           >
-          <a href="#" class="block hover:line-through text-center"
+          <a
+            href="#verhaal-stem-geven-zonder-stempel"
+            class="block hover:line-through text-center"
             >Stem geven zonder stempel</a
           >
-          <a href="#" class="block hover:line-through text-center"
+          <a
+            href="#verhaal-werkzaamheidsgraag"
+            class="block hover:line-through text-center"
             >Werkzaamheidsgraag</a
           >
         </div>
@@ -275,8 +307,11 @@
       </div>
     </section>
 
-    <!-- Verhalen Section -->
-    <section class="container mx-auto px-4 py-12">
+    <!-- Verhalen: Welzijn door speelterrein Section -->
+    <section
+      class="container mx-auto px-4 py-12"
+      id="verhaal-welzijn-door-speelterrein"
+    >
       <div class="swiper">
         <div class="swiper-wrapper">
           <!-- Card 1 -->
@@ -285,7 +320,7 @@
               <img
                 src="https://unsplash.it/640/425"
                 alt="Card Image"
-                class="w-full h-48 object-cover"
+                class="w-full h-48 object-cover rounded"
               />
               <div class="p-4">
                 <h2 class="text-lg font-bold mb-2">Story Title 1</h2>
@@ -358,6 +393,451 @@
         <!-- Navigation buttons -->
         <div class="swiper-button-prev mt-4"></div>
         <div class="swiper-button-next mt-4"></div>
+      </div>
+    </section>
+
+    <!-- Blijf op de hoogte Section -->
+    <section class="bg-gray-100 py-12">
+      <div class="container mx-auto px-4">
+        <div class="flex flex-col md:flex-row">
+          <!-- Left half (signup form) -->
+          <div class="w-full md:w-1/2 mb-8 md:mb-0 md:pr-8">
+            <h2 class="text-3xl font-bold mb-4">Sign up for our newsletter</h2>
+            <p class="text-xl mb-6">
+              Stay updated with our latest news and offers
+            </p>
+            <form
+              action="https://formsubmit.co/pieter.vandereyken@gmail.com"
+              method="POST"
+            >
+              <div class="mb-4">
+                <input
+                  type="email"
+                  placeholder="Enter your email"
+                  class="w-full p-2 border rounded"
+                  required
+                />
+              </div>
+              <div class="flex items-center mb-4">
+                <input type="checkbox" id="privacy" class="mr-2" required />
+                <label for="privacy" class="text-sm">
+                  I agree to the
+                  <a href="#" class="text-blue-600 hover:underline"
+                    >privacy policy</a
+                  >
+                </label>
+              </div>
+              <!-- <button
+                type="submit"
+                class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700"
+              >
+                <img
+                  src="assets/images/Arrow - right.svg"
+                  alt="Schrijf je in op onze nieuwsbrief"
+                />
+              </button> -->
+              <button type="submit" class="btn btn-lg btn-dark btn-block">
+                Submit Form
+              </button>
+            </form>
+          </div>
+
+          <!-- Right half (text content) -->
+          <div class="w-full md:w-1/2">
+            <h3 class="text-2xl font-semibold mb-4">Why subscribe?</h3>
+            <p class="mb-4">
+              Our newsletter brings you the latest updates, exclusive offers,
+              and insightful content directly to your inbox. Don't miss out on
+              important announcements and special promotions.
+            </p>
+            <p class="text-lg font-medium">
+              Join our community of informed readers today!
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Verhalen: Ruimte voor ruimte en Werkzaamheidsgraag Section -->
+    <!-- Parent container for the two verhalen sections -->
+    <section class="container mx-auto px-4 py-12">
+      <!-- Parent container for the two verhalen sections -->
+      <div class="flex flex-col md:flex-row md:space-x-8">
+        <!-- Verhalen: Ruimte voor ruimte -->
+        <div class="w-full md:w-1/2">
+          <div id="verhaal-ruimte-voor-ruimte">
+            <h2 class="text-2xl font-bold mb-4">Ruimte voor Ruimte</h2>
+            <p class="text-gray-600 mb-6">
+              Subtext for the first story section. Brief description goes here.
+            </p>
+            <div class="swiper">
+              <div class="swiper-wrapper">
+                <!-- Card 1 -->
+                <div class="swiper-slide">
+                  <div class="card bg-white rounded-lg shadow-md">
+                    <img
+                      src="https://unsplash.it/640/425"
+                      alt="Card Image"
+                      class="w-full h-48 object-cover rounded"
+                    />
+                    <div class="p-4">
+                      <h2 class="text-lg font-bold mb-2">Story Title 1</h2>
+                      <p class="text-gray-600 mb-4">
+                        Subtext for the first story.
+                      </p>
+                      <a href="#" class="text-blue-600 hover:text-blue-800"
+                        >Lees Meer</a
+                      >
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="swiper-slide">
+                  <div class="card bg-white rounded-lg shadow-md">
+                    <img
+                      src="https://unsplash.it/640/425?random=1"
+                      alt="Card Image"
+                      class="w-full h-48 object-cover rounded"
+                    />
+                    <div class="p-4">
+                      <h2 class="text-lg font-bold mb-2">Story Title 2</h2>
+                      <p class="text-gray-600 mb-4">
+                        Subtext for the second story.
+                      </p>
+                      <a href="#" class="text-blue-600 hover:text-blue-800"
+                        >Lees Meer</a
+                      >
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Additional cards... -->
+              </div>
+
+              <!-- Pagination -->
+              <div class="swiper-pagination mt-4"></div>
+
+              <!-- Navigation buttons -->
+              <div class="swiper-button-prev mt-4"></div>
+              <div class="swiper-button-next mt-4"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Verhalen: Werkzaamheidsgraag -->
+        <div class="w-full md:w-1/2">
+          <div id="verhaal-werkzaamheidsgraag">
+            <h2 class="text-2xl font-bold mb-4">Werkzaamheidsgraad</h2>
+            <p class="text-gray-600 mb-6">
+              Subtext for the second story section. Brief description goes here.
+            </p>
+            <div class="swiper">
+              <div class="swiper-wrapper">
+                <!-- Card 1 -->
+                <div class="swiper-slide">
+                  <div class="card bg-white rounded-lg shadow-md">
+                    <img
+                      src="https://unsplash.it/640/425"
+                      alt="Card Image"
+                      class="w-full h-48 object-cover rounded"
+                    />
+                    <div class="p-4">
+                      <h2 class="text-lg font-bold mb-2">Story Title 1</h2>
+                      <p class="text-gray-600 mb-4">
+                        Subtext for the first story.
+                      </p>
+                      <a href="#" class="text-blue-600 hover:text-blue-800"
+                        >Lees Meer</a
+                      >
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="swiper-slide">
+                  <div class="card bg-white rounded-lg shadow-md">
+                    <img
+                      src="https://unsplash.it/640/425?random=1"
+                      alt="Card Image"
+                      class="w-full h-48 object-cover rounded"
+                    />
+                    <div class="p-4">
+                      <h2 class="text-lg font-bold mb-2">Story Title 2</h2>
+                      <p class="text-gray-600 mb-4">
+                        Subtext for the second story.
+                      </p>
+                      <a href="#" class="text-blue-600 hover:text-blue-800"
+                        >Lees Meer</a
+                      >
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Additional cards... -->
+              </div>
+
+              <!-- Pagination -->
+              <div class="swiper-pagination mt-4"></div>
+
+              <!-- Navigation buttons -->
+              <div class="swiper-button-prev mt-4"></div>
+              <div class="swiper-button-next mt-4"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Quote sectie -->
+    <section class="container mx-auto px-4 py-12">
+      <div class="text-center">
+        <blockquote class="text-2xl font-bold mb-4">
+          "The greatest glory in living lies not in never falling, but in rising
+          every time we fall."
+        </blockquote>
+        <hr class="w-1/2 mx-auto mb-4 border-gray-600" />
+        <p class="text-lg mb-6">— Nelson Mandela</p>
+        <a href="https://jes.be" target="_blank">
+          <button
+            class="bg-black text-white py-2 px-4 rounded hover:bg-gray-900"
+          >
+            Visit jes.be
+          </button>
+        </a>
+      </div>
+    </section>
+
+    <!-- Verhalen: Groei door latent talent -->
+    <section
+      class="container mx-auto px-4 py-12"
+      id="verhaal-groei-door-latent-talent"
+    >
+      <div class="swiper">
+        <div class="swiper-wrapper">
+          <!-- Card 1 -->
+          <div class="swiper-slide">
+            <div class="card bg-white rounded-lg shadow-md">
+              <img
+                src="https://unsplash.it/640/425"
+                alt="Card Image"
+                class="w-full h-48 object-cover rounded"
+              />
+              <div class="p-4">
+                <h2 class="text-lg font-bold mb-2">Story Title 1</h2>
+                <p class="text-gray-600 mb-4">Subtext for the first story.</p>
+                <a href="#" class="text-blue-600 hover:text-blue-800"
+                  >Lees Meer</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="swiper-slide">
+            <div class="card bg-white rounded-lg shadow-md">
+              <img
+                src="https://unsplash.it/640/425?random=1"
+                alt="Card Image"
+                class="w-full h-48 object-cover"
+              />
+              <div class="p-4">
+                <h2 class="text-lg font-bold mb-2">Story Title 2</h2>
+                <p class="text-gray-600 mb-4">Subtext for the second story.</p>
+                <a href="#" class="text-blue-600 hover:text-blue-800"
+                  >Lees Meer</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="swiper-slide">
+            <div class="card bg-white rounded-lg shadow-md">
+              <img
+                src="https://unsplash.it/640/425?random=2"
+                alt="Card Image"
+                class="w-full h-48 object-cover"
+              />
+              <div class="p-4">
+                <h2 class="text-lg font-bold mb-2">Story Title 3</h2>
+                <p class="text-gray-600 mb-4">Subtext for the third story.</p>
+                <a href="#" class="text-blue-600 hover:text-blue-800"
+                  >Lees Meer</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 4 -->
+          <div class="swiper-slide">
+            <div class="card bg-white rounded-lg shadow-md">
+              <img
+                src="https://unsplash.it/640/425?random=3"
+                alt="Card Image"
+                class="w-full h-48 object-cover"
+              />
+              <div class="p-4">
+                <h2 class="text-lg font-bold mb-2">Story Title 4</h2>
+                <p class="text-gray-600 mb-4">Subtext for the fourth story.</p>
+                <a href="#" class="text-blue-600 hover:text-blue-800"
+                  >Lees Meer</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Pagination -->
+        <div class="swiper-pagination mt-4"></div>
+
+        <!-- Navigation buttons -->
+        <div class="swiper-button-prev mt-4"></div>
+        <div class="swiper-button-next mt-4"></div>
+      </div>
+    </section>
+
+    <!-- Verhalen: Leerkans door nieuwe kansen en stem geven zonder stempel Section -->
+    <!-- Parent container for the two verhalen sections -->
+    <section class="container mx-auto px-4 py-12">
+      <div class="flex flex-col md:flex-row md:space-x-8">
+        <!-- Verhalen: leerkans door nieuwe kansen -->
+        <div class="w-full md:w-1/2">
+          <div id="verhaal-leerkans-door-nieuwe-kansen">
+            <h2 class="text-2xl font-bold mb-4">Ruimte voor Ruimte</h2>
+            <p class="text-gray-600 mb-6">
+              Subtext for the first story section. Brief description goes here.
+            </p>
+            <div class="swiper">
+              <div class="swiper-wrapper">
+                <!-- Card 1 -->
+                <div class="swiper-slide">
+                  <div class="card bg-white rounded-lg shadow-md">
+                    <img
+                      src="https://unsplash.it/640/425"
+                      alt="Card Image"
+                      class="w-full h-48 object-cover rounded"
+                    />
+                    <div class="p-4">
+                      <h2 class="text-lg font-bold mb-2">Story Title 1</h2>
+                      <p class="text-gray-600 mb-4">
+                        Subtext for the first story.
+                      </p>
+                      <a href="#" class="text-blue-600 hover:text-blue-800"
+                        >Lees Meer</a
+                      >
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="swiper-slide">
+                  <div class="card bg-white rounded-lg shadow-md">
+                    <img
+                      src="https://unsplash.it/640/425?random=1"
+                      alt="Card Image"
+                      class="w-full h-48 object-cover rounded"
+                    />
+                    <div class="p-4">
+                      <h2 class="text-lg font-bold mb-2">Story Title 2</h2>
+                      <p class="text-gray-600 mb-4">
+                        Subtext for the second story.
+                      </p>
+                      <a href="#" class="text-blue-600 hover:text-blue-800"
+                        >Lees Meer</a
+                      >
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Additional cards... -->
+              </div>
+
+              <!-- Pagination -->
+              <div class="swiper-pagination mt-4"></div>
+
+              <!-- Navigation buttons -->
+              <div class="swiper-button-prev mt-4"></div>
+              <div class="swiper-button-next mt-4"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Verhalen: Stem geven zonder stempel -->
+        <div class="w-full md:w-1/2">
+          <div id="verhaal-stem-geven-zonder-stempel">
+            <h2 class="text-2xl font-bold mb-4">Werkzaamheidsgraag</h2>
+            <p class="text-gray-600 mb-6">
+              Subtext for the second story section. Brief description goes here.
+            </p>
+            <div class="swiper">
+              <div class="swiper-wrapper">
+                <!-- Card 1 -->
+                <div class="swiper-slide">
+                  <div class="card bg-white rounded-lg shadow-md">
+                    <img
+                      src="https://unsplash.it/640/425"
+                      alt="Card Image"
+                      class="w-full h-48 object-cover rounded"
+                    />
+                    <div class="p-4">
+                      <h2 class="text-lg font-bold mb-2">Story Title 1</h2>
+                      <p class="text-gray-600 mb-4">
+                        Subtext for the first story.
+                      </p>
+                      <a href="#" class="text-blue-600 hover:text-blue-800"
+                        >Lees Meer</a
+                      >
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="swiper-slide">
+                  <div class="card bg-white rounded-lg shadow-md">
+                    <img
+                      src="https://unsplash.it/640/425?random=1"
+                      alt="Card Image"
+                      class="w-full h-48 object-cover rounded"
+                    />
+                    <div class="p-4">
+                      <h2 class="text-lg font-bold mb-2">Story Title 2</h2>
+                      <p class="text-gray-600 mb-4">
+                        Subtext for the second story.
+                      </p>
+                      <a href="#" class="text-blue-600 hover:text-blue-800"
+                        >Lees Meer</a
+                      >
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Additional cards... -->
+              </div>
+
+              <!-- Pagination -->
+              <div class="swiper-pagination mt-4"></div>
+
+              <!-- Navigation buttons -->
+              <div class="swiper-button-prev mt-4"></div>
+              <div class="swiper-button-next mt-4"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Ontdek alle verhalen section -->
+
+    <section class="w-full bg-red py-12">
+      <div class="text-center text-white">
+        <h2
+          class="text-3xl md:text-4xl font-bold flex items-center justify-center"
+        >
+          Ontdek alle verhalen op het slotfeest
+          <span class="ml-2">&rarr;</span>
+        </h2>
+        <p class="text-sm mt-4">20.10.2025, Brussel</p>
       </div>
     </section>
 
