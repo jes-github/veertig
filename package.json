@@ -3,14 +3,17 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "concurrently \"npx @tailwindcss/cli -i ./src/input.css -o ./src/output.css --watch\" \"lite-server\""
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "description": "",
   "devDependencies": {
-    "tailwindcss": "^4.0.12"
+    "tailwindcss": "^4.0.14",
+    "concurrently": "^9.1.2",
+    "lite-server": "^2.6.1"
   },
   "dependencies": {
     "@tailwindcss/cli": "^4.0.12"

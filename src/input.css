@@ -1,110 +1,81 @@
 @import "tailwindcss";
-@import url("https://fonts.googleapis.com/css2?family=Rethink+Sans:wght@400;500;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rethink+Sans:wght@400;500;600;700;800&display=swap");
 
 @theme {
+  /* Colors */
   --color-gray: #707070;
-  --color-white: #fffafa;
-  --color-black: #0c0c0c;
-  --color-light-gray: #fff4f6;
-  --color-rose: #fcd3db;
+  --color-snow: #fffafa;
+  --color-dark: #0c0c0c;
+  --color-light-pink: #fff4f6;
+  --color-soft-pink: #fcd3db;
   --color-pink: #f692a4;
-  --color-red: #ee274a;
+  --color-light-red: #ee274a;
+  --color-black: #000000;
 
-  /* Extend Tailwind's theme with custom colors */
-  --tw-extend-colors: {
-    'red-600':var(--color-red) ; /* Map Tailwind's red-600 to your custom color */
-  }
+  /* Fonts */
+  --font-rethink-sans: "Rethink Sans", sans-serif;
 
-  /* Font/text values */
-  --font-family-rethink-sans: "Rethink Sans", sans-serif;
-  --font-style-normal: normal;
-  --font-weight-light: 400;
+  /* Font Sizes */
+  --text-sm: 16px;
+  --text-base: 21px;
+  --text-lg: 27px;
+  --text-xl: 40px;
+  --text-4xl: 90px;
+
+  /* Font Weights */
+  --font-weight-normal: 400;
   --font-weight-medium: 500;
-  --font-weight-semi-bold: 600;
+  --font-weight-semibold: 600;
   --font-weight-bold: 700;
   --font-weight-extrabold: 800;
-  --font-size-small: 16px;
-  --font-size-base: 21px;
-  --font-size-large: 27px;
-  --font-size-xlarge: 40px;
-  --font-size-huge: 90px;
-  --character-spacing-0: 0px;
-  --line-spacing-small: 21px;
-  --line-spacing-base: 28px;
-  --line-spacing-large: 34px;
-  --line-spacing-xlarge: 52px;
-  --line-spacing-huge: 105px;
-  --decoration-underline: underline;
+
+  /* Line Heights */
+  --leading-tight: 21px;
+  --leading-normal: 28px;
+  --leading-relaxed: 34px;
+  --leading-loose: 52px;
+  --leading-4xl: 105px;
 }
 
-/* Character Styles */
-.quote {
-  font-family: var(--font-family-rethink-sans);
-  font-style: var(--font-style-normal);
-  font-weight: var(--font-weight-bold);
-  font-size: var(--font-size-xlarge);
-  line-height: var(--line-spacing-xlarge);
-  letter-spacing: var(--character-spacing-0);
-  color: var(--color-black);
-}
+@layer base {
+  html {
+    font-family: var(--font-rethink-sans);
+  }
 
-.link {
-  font-family: var(--font-family-rethink-sans);
-  font-style: var(--font-style-normal);
-  font-weight: var(--font-weight-semi-bold);
-  font-size: var(--font-size-small);
-  line-height: var(--line-spacing-small);
-  letter-spacing: var(--character-spacing-0);
-  color: var(--color-black);
-  text-decoration: var(--decoration-underline);
-}
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply font-rethink-sans font-extrabold leading-loose text-4xl text-black;
+  }
 
-.button {
-  font-family: var(--font-family-rethink-sans);
-  font-style: var(--font-style-normal);
-  font-weight: var(--font-weight-bold);
-  font-size: var(--font-size-base);
-  line-height: var(--line-spacing-base);
-  letter-spacing: var(--character-spacing-0);
-  color: var(--color-black);
-}
+  .quote {
+    @apply font-rethink-sans font-bold text-4xl leading-[52px] text-black;
+  }
 
-.body {
-  font-family: var(--font-family-rethink-sans);
-  font-style: var(--font-style-normal);
-  font-weight: var(--font-weight-light);
-  font-size: var(--font-size-small);
-  line-height: var(--line-spacing-small);
-  letter-spacing: var(--character-spacing-0);
-  color: var(--color-black);
-}
+  .link {
+    @apply font-rethink-sans font-semibold text-base leading-[21px] text-black underline;
+  }
 
-.lead {
-  font-family: var(--font-family-rethink-sans);
-  font-style: var(--font-style-normal);
-  font-weight: var(--font-weight-medium);
-  font-size: var(--font-size-base);
-  line-height: var(--line-spacing-base);
-  letter-spacing: var(--character-spacing-0);
-  color: var(--color-black);
-}
+  .button {
+    @apply font-rethink-sans font-bold text-lg leading-[28px] text-black;
+  }
 
-.label {
-  font-family: var(--font-family-rethink-sans);
-  font-style: var(--font-style-normal);
-  font-weight: var(--font-weight-semi-bold);
-  font-size: var(--font-size-large);
-  line-height: var(--line-spacing-large);
-  letter-spacing: var(--character-spacing-0);
-  color: var(--color-black);
-}
+  .body {
+    @apply font-rethink-sans font-normal text-base leading-[21px] text-black;
+  }
 
-.title {
-  font-family: var(--font-family-rethink-sans);
-  font-style: var(--font-style-normal);
-  font-weight: var(--font-weight-extrabold);
-  font-size: var(--font-size-huge);
-  line-height: var(--line-spacing-huge);
-  letter-spacing: var(--character-spacing-0);
-  color: var(--color-black);
+  .lead {
+    @apply font-rethink-sans font-medium text-lg leading-[28px] text-black;
+  }
+
+  .label {
+    @apply font-rethink-sans font-semibold text-2xl leading-[34px] text-black;
+  }
+
+  .h1 {
+    @apply font-rethink-sans font-extrabold text-[90px] leading-[105px] text-black;
+  }
 }

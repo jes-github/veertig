@@ -1,465 +1,367 @@
 <!DOCTYPE html>
 <html lang="nl">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Veertig Jaar Jes</title>
-    <link
-      href="https://fonts.googleapis.com/css2?family=Rethink+Sans:wght@400;600;800&display=swap"
-      rel="stylesheet"
-    />
-    <link href="src/output.css" rel="stylesheet" />
-    <link
-      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
-      rel="stylesheet"
-    />
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-  </head>
-  <body class="pt-24">
-    <!-- Zorgt ervoor dat content niet onder navbar verdwijnt -->
 
-    <!-- Navigation Bar -->
-    <nav
-      class="w-full fixed top-0 left-0 bg-white px-20 py-8 border-b-2 border-black flex justify-between items-center z-50"
-    >
-      <!-- Logo en menu (links) -->
-      <div class="flex items-center space-x-16">
-        <a href="#"
-          ><img src="assets/images/JES_logo_zonderbaseline_rood.svg" alt="JES"
-        /></a>
-        <div class="hidden md:flex space-x-12">
-          <a href="#hoopkracht" class="hover:line-through"> Hoopkracht </a>
-          <a href="#nieuws" class="hover:line-through">Nieuws</a>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Veertig Jaar Jes</title>
+  <link href="https://fonts.googleapis.com/css2?family=Rethink+Sans:wght@400;600;800&display=swap" rel="stylesheet" />
+  <link href="src/output.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" rel="stylesheet" />
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+</head>
 
-          <!-- Verhalen Dropdown -->
-          <div class="relative" id="verhalen-dropdown">
-            <button
-              class="hover:line-through focus:outline-none"
-              onmouseenter="openDropdown()"
-            >
-              Verhalen
-            </button>
-            <div
-              id="dropdown-menu"
-              class="absolute left-0 mt-2 w-64 bg-white shadow-lg rounded-md hidden"
-            >
-              <a
-                href="#verhaal-welzijn-door-speelterrein"
-                class="block px-4 py-2 hover:line-through"
-                >Welzijn door speelterrein</a
-              >
-              <a
-                href="#verhaal-ontharden-door-ontmoeten"
-                class="block px-4 py-2 hover:line-through"
-                >Ontharden door ontmoeten</a
-              >
-              <a
-                href="#verhaal-groei-door-latent-talent"
-                class="block px-4 py-2 hover:line-through"
-                >Groei door latent talent</a
-              >
-              <a
-                href="#verhaal-ruimte-voor-ruimte"
-                class="block px-4 py-2 hover:line-through"
-                >Ruimte voor ruimte</a
-              >
-              <a
-                href="#verhaal-leerkans-door-nieuwe-kans"
-                class="block px-4 py-2 hover:line-through"
-                >Leerkans door nieuwe kans</a
-              >
-              <a
-                href="#verhaal-stem-geven-zonder-stempel"
-                class="block px-4 py-2 hover:line-through"
-                >Stem geven zonder stempel</a
-              >
-              <a
-                href="#verhaal-werkzaamheidsgraag"
-                class="block px-4 py-2 hover:line-through"
-                >Werkzaamheidsgraag</a
-              >
-            </div>
+<body class="mt-16">
+  <!-- Zorgt ervoor dat content niet onder navbar verdwijnt -->
+
+  <!-- Navigation Bar -->
+  <nav
+    class="w-full fixed top-0 left-0 px-36 py-8 border-b-3 border-black flex justify-between items-center z-50 font-semibold bg-snow">
+    <!-- Logo en menu (links) -->
+    <div class="flex items-center space-x-24">
+      <a href="#"><img src="assets/images/JES_logo_zonderbaseline_rood.svg" alt="JES" /></a>
+      <div class="hidden md:flex space-x-12">
+        <a href="#hoopkracht" class="hover:line-through"> Hoopkracht </a>
+        <a href="#nieuws" class="hover:line-through">Nieuws</a>
+
+        <!-- Verhalen Dropdown -->
+        <div class="relative" id="verhalen-dropdown">
+          <button class="hover:line-through focus:outline-none" onmouseenter="openDropdown()">
+            Verhalen
+          </button>
+          <div id="dropdown-menu" class="absolute left-0 mt-2 w-64 bg-light-red text-white shadow-lg hidden p-2">
+            <a href="#verhaal-welzijn-door-speelterrein" class="block px-4 py-2 hover:line-through">Welzijn door
+              speelterrein</a>
+            <a href="#verhaal-ontharden-door-ontmoeten" class="block px-4 py-2 hover:line-through">Ontharden door
+              ontmoeten</a>
+            <a href="#verhaal-groei-door-latent-talent" class="block px-4 py-2 hover:line-through">Groei door latent
+              talent</a>
+            <a href="#verhaal-ruimte-voor-ruimte" class="block px-4 py-2 hover:line-through">Ruimte voor ruimte</a>
+            <a href="#verhaal-leerkans-door-nieuwe-kans" class="block px-4 py-2 hover:line-through">Leerkans door nieuwe
+              kans</a>
+            <a href="#verhaal-stem-geven-zonder-stempel" class="block px-4 py-2 hover:line-through">Stem geven zonder
+              stempel</a>
+            <a href="#verhaal-werkzaamheidsgraag" class="block px-4 py-2 hover:line-through">Werkzaamheidsgraag</a>
           </div>
-
-          <a href="#event" class="hover:line-through">Event</a>
-        </div>
-      </div>
-
-      <!-- Rechts: Zoekicoon + Extra links -->
-      <div class="hidden md:flex space-x-12 items-center">
-        <button class="text-gray-600 hover:line-through">
-          🔍
-          <!-- Zoekicoon -->
-        </button>
-        <a href="#over" class="hover:line-through">Over JES vzw</a>
-        <a href="#contact" class="hover:line-through">Contact</a>
-      </div>
-
-      <!-- Hamburger Menu (Mobiel & Tablet) -->
-      <button
-        id="menu-toggle"
-        class="md:hidden text-gray-600 hover:line-through"
-      >
-        <img src="assets/images/hamburger - icoon.svg" alt="hamburger menu" />
-        <!-- Hamburger Icon -->
-      </button>
-    </nav>
-    <!-- Mobile & Tablet Menu -->
-    <div
-      id="mobile-menu"
-      class="fixed inset-0 bg-white hidden flex flex-col z-50 p-6"
-    >
-      <!-- Top bar with Logo and Close button -->
-      <div class="w-full flex items-center justify-between mb-6">
-        <!-- Logo -->
-        <div class="text-xl font-bold">JES</div>
-        <!-- Close button -->
-        <button id="menu-close" class="text-gray-600 text-2xl">✕</button>
-      </div>
-
-      <!-- Search bar (just below the top bar) -->
-      <div
-        class="w-full flex items-center border-b-2 border-gray-300 pb-2 mb-6"
-      >
-        <input
-          type="text"
-          placeholder="Zoeken..."
-          class="flex-grow outline-none p-2"
-        />
-        <button class="ml-2 text-gray-600">🔍</button>
-      </div>
-
-      <!-- Menu items - Vertically stacked -->
-      <div class="w-full space-y-4">
-        <a href="#hoopkracht" class="hover:line-through block text-center"
-          >Hoopkracht</a
-        >
-        <a href="#nieuws" class="hover:line-through block text-center"
-          >Nieuws</a
-        >
-
-        <!-- Verhalen dropdown -->
-        <div class="space-y-2">
-          <p class="font-bold text-center text-gray-700">Verhalen</p>
-          <a
-            href="#verhaal-welzijn-door-speelterrein"
-            class="block hover:line-through text-center"
-            >Welzijn door speelterrein</a
-          >
-          <a
-            href="#verhaal-ontharden-door-ontmoeten"
-            class="block hover:line-through text-center"
-            >Ontharden door ontmoeten</a
-          >
-          <a
-            href="#verhaal-groei-door-latent-talent"
-            class="block hover:line-through text-center"
-            >Groei door latent talent</a
-          >
-          <a
-            href="#verhaal-ruimte-voor-ruimte"
-            class="block hover:line-through text-center"
-            >Ruimte voor ruimte</a
-          >
-          <a
-            href="#verhaal-leerkans-door-nieuwe-kans"
-            class="block hover:line-through text-center"
-            >Leerkans door nieuwe kans</a
-          >
-          <a
-            href="#verhaal-stem-geven-zonder-stempel"
-            class="block hover:line-through text-center"
-            >Stem geven zonder stempel</a
-          >
-          <a
-            href="#verhaal-werkzaamheidsgraag"
-            class="block hover:line-through text-center"
-            >Werkzaamheidsgraag</a
-          >
         </div>
 
-        <a href="#" class="hover:line-through block text-center">Event</a>
-        <a href="#" class="hover:line-through block text-center"
-          >Over JES vzw</a
-        >
-        <a href="#" class="hover:line-through block text-center">Contact</a>
+        <a href="#event" class="hover:line-through">Event</a>
       </div>
     </div>
 
-    <!-- Header Section -->
-    <section
-      class="w-full flex flex-col md:flex-row items-center justify-between bg-white border-b-2 border-black p-6 md:p-12"
-    >
-      <!-- Left side: Logo, Subtitle, Button -->
-      <div class="w-full md:w-1/3 flex flex-col items-start gap-6">
-        <!-- Logo -->
-        <img
-          src="assets/images/hoopkracht.svg"
-          alt="Hoopkracht"
-          class="w-full max-w-xs md:max-w-full"
-        />
-        <!-- Subtitle -->
-        <p class="text-xl text-black">
-          Lorem Ipsum is simply dummy text of the printing and typesetting
-          industry. Lorem Ipsum has been the industry's standard dummy text ever
-          since the 1500s, when an unknown printer took a galley of type and
-          scrambled it to make a type specimen book.
-        </p>
+    <!-- Rechts: Zoekicoon + Extra links -->
+    <div class="hidden md:flex space-x-12 items-center">
+      <button class="text-gray-600 hover:line-through">
+        🔍
+        <!-- Zoekicoon -->
+      </button>
+      <a href="#over" class="hover:line-through">Over JES vzw</a>
+      <a href="#contact" class="hover:line-through">Contact</a>
+    </div>
+
+    <!-- Hamburger Menu (Mobiel & Tablet) -->
+    <button id="menu-toggle" class="md:hidden text-gray-600 hover:line-through">
+      <img src="assets/images/hamburger - icoon.svg" alt="hamburger menu" />
+      <!-- Hamburger Icon -->
+    </button>
+  </nav>
+  <!-- Mobile & Tablet Menu -->
+  <div id="mobile-menu" class="fixed inset-0 bg-white hidden flex flex-col z-50 p-6">
+    <!-- Top bar with Logo and Close button -->
+    <div class="w-full flex items-center justify-between mb-6">
+      <!-- Logo -->
+      <div class="text-xl font-bold">JES</div>
+      <!-- Close button -->
+      <button id="menu-close" class="text-gray-600 text-2xl">✕</button>
+    </div>
+
+    <!-- Search bar (just below the top bar) -->
+    <div class="w-full flex items-center border-b-2 border-gray-300 pb-2 mb-6">
+      <input type="text" placeholder="Zoeken..." class="flex-grow outline-none p-2" />
+      <button class="ml-2 text-gray-600">🔍</button>
+    </div>
+
+    <!-- Menu items - Vertically stacked -->
+    <div class="w-full space-y-4">
+      <a href="#hoopkracht" class="hover:line-through block text-center">Hoopkracht</a>
+      <a href="#nieuws" class="hover:line-through block text-center">Nieuws</a>
+
+      <!-- Verhalen dropdown -->
+      <div class="space-y-2">
+        <p class="font-bold text-center text-gray-700">Verhalen</p>
+        <a href="#verhaal-welzijn-door-speelterrein" class="block hover:line-through text-center">Welzijn door
+          speelterrein</a>
+        <a href="#verhaal-ontharden-door-ontmoeten" class="block hover:line-through text-center">Ontharden door
+          ontmoeten</a>
+        <a href="#verhaal-groei-door-latent-talent" class="block hover:line-through text-center">Groei door latent
+          talent</a>
+        <a href="#verhaal-ruimte-voor-ruimte" class="block hover:line-through text-center">Ruimte voor ruimte</a>
+        <a href="#verhaal-leerkans-door-nieuwe-kans" class="block hover:line-through text-center">Leerkans door nieuwe
+          kans</a>
+        <a href="#verhaal-stem-geven-zonder-stempel" class="block hover:line-through text-center">Stem geven zonder
+          stempel</a>
+        <a href="#verhaal-werkzaamheidsgraag" class="block hover:line-through text-center">Werkzaamheidsgraag</a>
+      </div>
+
+      <a href="#" class="hover:line-through block text-center">Event</a>
+      <a href="#" class="hover:line-through block text-center">Over JES vzw</a>
+      <a href="#" class="hover:line-through block text-center">Contact</a>
+    </div>
+  </div>
+
+  <!-- Header Section -->
+  <section
+    class="w-screen flex flex-col md:flex-row items-center justify-between border-b-3 border-black pl-36 bg-snow">
+    <!-- Left side: Logo, Subtitle, Button -->
+    <div class="w-full md:w-1/3 flex flex-col items-start gap-6">
+      <!-- Logo -->
+      <img src="assets/images/hoopkracht.svg" alt="Hoopkracht" class="w-[110%] max-w-none z-10" />
+      <!-- Subtitle -->
+      <p class="text-base font-semibold text-black pr-32">
+        Lorem Ipsum is simply dummy text of the printing and typesetting
+        industry. Lorem Ipsum has been the industry's standard dummy text ever
+        since the 1500s, when an unknown printer took a galley of type and
+        scrambled it to make a type specimen book.
+      </p>
+      <!-- Button -->
+      <a href="https://www.jes.be" target="_blank"
+        class="px-3 py-0.5 border-3 border-light-red bg-white text-light-red hover:bg-light-red hover:text-white transition duration-200 font-semibold">
+        Ik schrijf me in
+      </a>
+    </div>
+
+    <!-- Video -->
+    <div class="w-full md:w-2/3 h-auto">
+      <video class="w-full h-full object-cover mt-88" autoplay muted loop>
+        <source src="https://docs.material-tailwind.com/demo.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+    </div>
+  </section>
+
+  <!-- Hoopkracht en Event Section -->
+  <div
+    class="w-full flex flex-col md:flex-row items-stretch justify-between border-b-3 border-black pl-36 bg-soft-pink">
+    <!-- Hoopkracht Section -->
+    <section id="hoopkracht" class="w-full bg-soft-pink py-12 ">
+      <!-- Title -->
+      <h2 class="text-4xl font-extrabold text-black mb-12">
+        Waarom hoopkracht?
+      </h2>
+
+      <!-- Three-column Layout -->
+      <div class="grid grid-cols-[auto_1fr_auto] items-start">
+        <div class="flex justify-center md:justify-start mt-3">
+          <img src="assets/images/swoosh.svg" alt="Swoosh">
+        </div>
+        <div>
+          <p class="text-base pr-8 pl-4">
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
+          </p>
+          <p class="mt-4">
+            <a href="jes.be" class="font-semibold flex items-center underline pl-4">
+              Lees meer &#8594;
+            </a>
+          </p>
+        </div>
+        <div
+          class="flex justify-center border-t-3  border-t-black border-b-3  border-b-black border-l-3  border-l-black bg-light-pink px-12 py-4 z-10 ">
+          <img src="assets/images/label.svg" alt="Icon" class="w-30 h-30" />
+        </div>
+      </div>
+    </section>
+
+    <!-- Event Section -->
+    <section id="event" class="w-full md:w-1/2 p-6 md:p-12 bg-light-pink">
+      <h2 class="text-4xl mb-8">Event</h2>
+      <h3 class="text-lg">JES feest</h3>
+      <p class="text-sm mb-4">Locatie Brussel, 26 Nov 2025</p>
+      <p class="text-base mb-12">
+        Lorem Ipsum is simply dummy text of the printing and typesetting
+        industry. Lorem Ipsum has been the industry's standard dummy text ever
+        since the 1500s, when an unknown printer took a galley of type and
+        scrambled it to make a type specimen book.
+      </p>
+      <p>
         <!-- Button -->
-        <a
-          href="https://www.jes.be"
-          target="_blank"
-          class="px-6 py-3 border-2 border-red-600 bg-white text-red-600 hover:bg-red-600 hover:text-white transition duration-200"
-        >
+        <a href="https://www.jes.be" target="_blank"
+          class="px-6 py-3 border-2 border-red-600 bg-white text-light-red-600 hover:bg-light-red hover:text-white transition duration-200">
           Ik schrijf me in
         </a>
-      </div>
-
-      <!-- Video -->
-      <div class="w-full md:w-2/3 h-auto md:h-full mt-6 md:mt-0">
-        <video class="w-full h-full object-cover" autoplay muted loop>
-          <source
-            src="https://docs.material-tailwind.com/demo.mp4"
-            type="video/mp4"
-          />
-          Your browser does not support the video tag.
-        </video>
-      </div>
+      </p>
     </section>
+  </div>
 
-    <div
-      class="w-full flex flex-col md:flex-row items-center justify-between bg-white border-b-2 border-black p-6 md:p-12"
-    >
-      <!-- Hoopkracht Section -->
-      <section
-        id="hoopkracht"
-        class="w-full md:w-1/2 p-6 md:p-12 bg-misty-rose"
-      >
-        <h1>Waarom hoopkracht</h1>
-        <p>
-          Lorem Ipsum is simply dummy text of the printing and typesetting
-          industry. Lorem Ipsum has been the industry's standard dummy text ever
-          since the 1500s, when an unknown printer took a galley of type and
-          scrambled it to make a type specimen book.
-        </p>
-        <p>
-          <a href="jes.be"
-            >Lees meer <img src="assets/images/" alt="pijltje"
-          /></a>
-        </p>
-      </section>
-
-      <!-- Event Section -->
-      <section id="event" class="w-full md:w-1/2 p-6 md:p-12">
-        <h2>Event</h2>
-        <h3>JES feest</h3>
-        <p>Locatie Brussel, 26 Nov 2025</p>
-        <p>
-          Lorem Ipsum is simply dummy text of the printing and typesetting
-          industry. Lorem Ipsum has been the industry's standard dummy text ever
-          since the 1500s, when an unknown printer took a galley of type and
-          scrambled it to make a type specimen book.
-        </p>
-        <p>
-          <!-- Button -->
-          <a
-            href="https://www.jes.be"
-            target="_blank"
-            class="px-6 py-3 border-2 border-red-600 bg-white text-red-600 hover:bg-red-600 hover:text-white transition duration-200"
-          >
-            Ik schrijf me in
-          </a>
-        </p>
-      </section>
+  <!-- Nieuws Section -->
+  <section class="relative">
+    <div class="flex flex-col md:flex-row">
+      <!-- Left Image -->
+      <div class="w-full md:w-5/12 h-[650px]">
+        <img src="https://unsplash.it/640/425" alt="Left news image" class="w-full h-full object-cover" />
+      </div>
+      <!-- Right Image -->
+      <div class="w-full md:w-7/12 h-[650px]">
+        <img src="https://unsplash.it/640/425?random" alt="Right news image" class="w-full h-full object-cover" />
+      </div>
     </div>
 
-    <!-- Nieuws Section -->
-    <section class="container mx-auto px-4 py-12 relative">
+    <!-- Centered news square -->
+    <div class="absolute inset-0 flex items-center justify-center">
+      <!-- Square Box with Aspect Ratio -->
+      <div class="bg-light-red border-4 border-white p-6 w-100 h-100 aspect-square flex flex-col justify-center">
+        <h2 class="text-white text-xl font-bold mb-2">Nieuws</h2>
+        <p class="text-white mb-4 text-base">Subtext goes here</p>
+        <p class="text-white text-base">Subtext lorem lazarus lapin lizardos salome balak alaf met</p>
+        <p class="text-white mb-4 text-sm">Datum en thema</p>
+        <p class="text-white mb-4 text-base">subtext</p>
+        <a href="jes.be" class="font-semibold flex items-center underline text-white pb-8">
+          Lees meer &#8594;
+        </a>
+        <button
+          class="px-3 py-0.5 border-3 border-white bg-light-red text-white hover:bg-red-600 hover:text-white transition duration-200 font-semibold">
+          Meer verhalen over dit thema
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Verhalen: Welzijn door speelterrein Section -->
+  <div class="bg-light-pink border-b-3 border-black">
+    <section class="container w-full px-4 py-12 bg-light-pink" id="verhaal-welzijn-door-speelterrein">
+
+      <!-- Grid Container -->
+      <div class="grid grid-cols-12 gap-8 items-center">
+
+        <!-- Left Column (5/12) -->
+        <div class="col-span-12 md:col-span-5">
+          <h2 class="text-4xl font-bold mb-4">Welzijn door speelterrein</h2>
+          <div class="flex items-start">
+            <!-- Swoosh Sign -->
+            <img src="assets/images/swoosh.svg" alt="Swoosh" class="w-16 h-auto mr-4" />
+            <!-- Placeholder Text -->
+            <p class="text-gray-700 text-lg">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque nec eros ut magna.
+            </p>
+          </div>
+        </div>
+
+        <!-- Right Column (7/12) -->
+        <div class="col-span-12 md:col-span-7">
+          <div class="swiper">
+            <div class="swiper-wrapper">
+              <!-- Card 1 -->
+              <div class="swiper-slide">
+                <div class="card bg-white rounded-lg shadow-md">
+                  <img src="https://unsplash.it/640/425" alt="Card Image" class="w-full h-48 object-cover rounded" />
+                  <div class="p-4">
+                    <h2 class="text-lg font-bold mb-2">Story Title 1</h2>
+                    <p class="text-gray-600 mb-4">Subtext for the first story.</p>
+                    <a href="#" class="text-blue-600 hover:text-blue-800">Lees Meer</a>
+                  </div>
+                </div>
+              </div>
+              <!-- Card 2 -->
+              <div class="swiper-slide">
+                <div class="card bg-white rounded-lg shadow-md">
+                  <img src="https://unsplash.it/640/425?random=1" alt="Card Image" class="w-full h-48 object-cover" />
+                  <div class="p-4">
+                    <h2 class="text-lg font-bold mb-2">Story Title 2</h2>
+                    <p class="text-gray-600 mb-4">Subtext for the second story.</p>
+                    <a href="#" class="text-blue-600 hover:text-blue-800">Lees Meer</a>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Card 3 -->
+              <div class="swiper-slide">
+                <div class="card bg-white rounded-lg shadow-md">
+                  <img src="https://unsplash.it/640/425?random=2" alt="Card Image" class="w-full h-48 object-cover" />
+                  <div class="p-4">
+                    <h2 class="text-lg font-bold mb-2">Story Title 3</h2>
+                    <p class="text-gray-600 mb-4">Subtext for the third story.</p>
+                    <a href="#" class="text-blue-600 hover:text-blue-800">Lees Meer</a>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Card 4 -->
+              <div class="swiper-slide">
+                <div class="card bg-white rounded-lg shadow-md">
+                  <img src="https://unsplash.it/640/425?random=3" alt="Card Image" class="w-full h-48 object-cover" />
+                  <div class="p-4">
+                    <h2 class="text-lg font-bold mb-2">Story Title 4</h2>
+                    <p class="text-gray-600 mb-4">Subtext for the fourth story.</p>
+                    <a href="#" class="text-blue-600 hover:text-blue-800">Lees Meer</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Pagination -->
+            <div class="swiper-pagination mt-4"></div>
+
+            <!-- Navigation buttons -->
+            <div class="swiper-button-prev mt-4"></div>
+            <div class="swiper-button-next mt-4"></div>
+          </div>
+        </div>
+
+      </div> <!-- End Grid Container -->
+
+    </section>
+  </div>
+
+
+  <!-- Blijf op de hoogte Section -->
+  <section class="py-16 border-b-3 border-black">
+    <div class="container mx-auto px-4">
       <div class="flex flex-col md:flex-row">
-        <!-- Left image (1/2 width on medium+ screens) -->
-        <div class="w-full md:w-1/2 h-64 md:h-96">
-          <img
-            src="https://unsplash.it/640/425"
-            alt="Left news image"
-            class="w-full h-full object-cover"
-          />
-        </div>
-
-        <!-- Right image (1/2 width on medium+ screens) -->
-        <div class="w-full md:w-1/2 h-64 md:h-96">
-          <img
-            src="https://unsplash.it/640/425?random"
-            alt="Right news image"
-            class="w-full h-full object-cover"
-          />
-        </div>
-      </div>
-
-      <!-- Centered news square -->
-      <div class="absolute inset-0 flex items-center justify-center">
-        <div class="bg-red-600 border-4 border-white p-4 text-center">
-          <h2 class="text-white text-2xl font-bold mb-2">Nieuws</h2>
-          <p class="text-white mb-4">Subtext goes here</p>
-          <button class="bg-white text-red-600 px-4 py-2 font-semibold">
-            Read More
-          </button>
-        </div>
-      </div>
-    </section>
-
-    <!-- Verhalen: Welzijn door speelterrein Section -->
-    <section
-      class="container mx-auto px-4 py-12"
-      id="verhaal-welzijn-door-speelterrein"
-    >
-      <div class="swiper">
-        <div class="swiper-wrapper">
-          <!-- Card 1 -->
-          <div class="swiper-slide">
-            <div class="card bg-white rounded-lg shadow-md">
-              <img
-                src="https://unsplash.it/640/425"
-                alt="Card Image"
-                class="w-full h-48 object-cover rounded"
-              />
-              <div class="p-4">
-                <h2 class="text-lg font-bold mb-2">Story Title 1</h2>
-                <p class="text-gray-600 mb-4">Subtext for the first story.</p>
-                <a href="#" class="text-blue-600 hover:text-blue-800"
-                  >Lees Meer</a
-                >
-              </div>
-            </div>
-          </div>
-
-          <!-- Card 2 -->
-          <div class="swiper-slide">
-            <div class="card bg-white rounded-lg shadow-md">
-              <img
-                src="https://unsplash.it/640/425?random=1"
-                alt="Card Image"
-                class="w-full h-48 object-cover"
-              />
-              <div class="p-4">
-                <h2 class="text-lg font-bold mb-2">Story Title 2</h2>
-                <p class="text-gray-600 mb-4">Subtext for the second story.</p>
-                <a href="#" class="text-blue-600 hover:text-blue-800"
-                  >Lees Meer</a
-                >
-              </div>
-            </div>
-          </div>
-
-          <!-- Card 3 -->
-          <div class="swiper-slide">
-            <div class="card bg-white rounded-lg shadow-md">
-              <img
-                src="https://unsplash.it/640/425?random=2"
-                alt="Card Image"
-                class="w-full h-48 object-cover"
-              />
-              <div class="p-4">
-                <h2 class="text-lg font-bold mb-2">Story Title 3</h2>
-                <p class="text-gray-600 mb-4">Subtext for the third story.</p>
-                <a href="#" class="text-blue-600 hover:text-blue-800"
-                  >Lees Meer</a
-                >
-              </div>
-            </div>
-          </div>
-
-          <!-- Card 4 -->
-          <div class="swiper-slide">
-            <div class="card bg-white rounded-lg shadow-md">
-              <img
-                src="https://unsplash.it/640/425?random=3"
-                alt="Card Image"
-                class="w-full h-48 object-cover"
-              />
-              <div class="p-4">
-                <h2 class="text-lg font-bold mb-2">Story Title 4</h2>
-                <p class="text-gray-600 mb-4">Subtext for the fourth story.</p>
-                <a href="#" class="text-blue-600 hover:text-blue-800"
-                  >Lees Meer</a
-                >
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Pagination -->
-        <div class="swiper-pagination mt-4"></div>
-
-        <!-- Navigation buttons -->
-        <div class="swiper-button-prev mt-4"></div>
-        <div class="swiper-button-next mt-4"></div>
-      </div>
-    </section>
-
-    <!-- Blijf op de hoogte Section -->
-    <section class="bg-gray-100 py-12">
-      <div class="container mx-auto px-4">
-        <div class="flex flex-col md:flex-row">
-          <!-- Left half (signup form) -->
-          <div class="w-full md:w-1/2 mb-8 md:mb-0 md:pr-8">
-            <h2 class="text-3xl font-bold mb-4">Sign up for our newsletter</h2>
-            <p class="text-xl mb-6">
-              Stay updated with our latest news and offers
-            </p>
-            <form
-              action="https://formsubmit.co/pieter.vandereyken@gmail.com"
-              method="POST"
-            >
-              <div class="mb-4">
-                <input
-                  type="email"
-                  placeholder="Enter your email"
-                  class="w-full p-2 border rounded"
-                  required
-                />
-              </div>
-              <div class="flex items-center mb-4">
-                <input type="checkbox" id="privacy" class="mr-2" required />
-                <label for="privacy" class="text-sm">
-                  I agree to the
-                  <a href="#" class="text-blue-600 hover:underline"
-                    >privacy policy</a
-                  >
-                </label>
-              </div>
-              <!-- <button
-                type="submit"
-                class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700"
-              >
-                <img
-                  src="assets/images/Arrow - right.svg"
-                  alt="Schrijf je in op onze nieuwsbrief"
-                />
-              </button> -->
-              <button type="submit" class="btn btn-lg btn-dark btn-block">
-                Submit Form
+        <!-- Left half (signup form) -->
+        <div class="w-full md:w-1/2 mb-8 md:mb-0 md:pr-8">
+          <h2 class="text-4xl font-bold mb-8">Blijf op de hoogte</h2>
+          <p class="text-lg font-semibold mb-6">
+            Meer van dat. Schrijf me in op de nieuwsbrief.
+          </p>
+          <form action="https://formsubmit.co/pieter.vandereyken@gmail.com" method="POST">
+            <div class="mb-4 flex items-center">
+              <!-- Adjust the width of the input field here -->
+              <input type="email" placeholder="E-mail" class="w-1/4 p-2 border-2 border-black font-bold text-black mr-2"
+                required />
+              <!-- The button is now next to the input field -->
+              <button type="submit" class=" text-white px-4 py-2 rounded">
+                <img src="assets/images/Arrow - right.svg" alt="Schrijf je in op onze nieuwsbrief" />
               </button>
-            </form>
-          </div>
+            </div>
+            <div class="flex items-center mb-4">
+              <input type="checkbox" id="privacy" class="mr-2" required />
+              <label for="privacy" class="text-sm">
+                Ik ga akkoord met het
+                <a href="#" class="underline">privacybeleid</a>
+              </label>
+            </div>
+          </form>
+        </div>
 
-          <!-- Right half (text content) -->
-          <div class="w-full md:w-1/2">
-            <h3 class="text-2xl font-semibold mb-4">Why subscribe?</h3>
-            <p class="mb-4">
-              Our newsletter brings you the latest updates, exclusive offers,
-              and insightful content directly to your inbox. Don't miss out on
-              important announcements and special promotions.
-            </p>
-            <p class="text-lg font-medium">
-              Join our community of informed readers today!
-            </p>
-          </div>
+        <!-- Right half (text content) -->
+        <div class="w-full md:w-1/2">
+          <p class="mb-4 text-lg">
+            Quote - newsletter brings you the latest updates, exclusive offers,
+            and insightful content directly to your inbox. Don't miss out on
+            important announcements and special promotions.
+          </p>
+          <img src="assets/images/swoosh.svg" alt="Swoosh">
+          <p class="text-lg font-medium">
+            Naam jongere
+          </p>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <!-- Verhalen: Ruimte voor ruimte en Werkzaamheidsgraag Section -->
-    <!-- Parent container for the two verhalen sections -->
+  <!-- Verhalen: Ruimte voor ruimte en Werkzaamheidsgraag Section -->
+  <!-- Parent container for the two verhalen sections -->
+  <div class="wrapper bg-snow border-b-3 border-black">
     <section class="container mx-auto px-4 py-12">
       <!-- Parent container for the two verhalen sections -->
       <div class="flex flex-col md:flex-row md:space-x-8">
@@ -475,19 +377,13 @@
                 <!-- Card 1 -->
                 <div class="swiper-slide">
                   <div class="card bg-white rounded-lg shadow-md">
-                    <img
-                      src="https://unsplash.it/640/425"
-                      alt="Card Image"
-                      class="w-full h-48 object-cover rounded"
-                    />
+                    <img src="https://unsplash.it/640/425" alt="Card Image" class="w-full h-48 object-cover rounded" />
                     <div class="p-4">
                       <h2 class="text-lg font-bold mb-2">Story Title 1</h2>
                       <p class="text-gray-600 mb-4">
                         Subtext for the first story.
                       </p>
-                      <a href="#" class="text-blue-600 hover:text-blue-800"
-                        >Lees Meer</a
-                      >
+                      <a href="#" class="text-blue-600 hover:text-blue-800">Lees Meer</a>
                     </div>
                   </div>
                 </div>
@@ -495,19 +391,14 @@
                 <!-- Card 2 -->
                 <div class="swiper-slide">
                   <div class="card bg-white rounded-lg shadow-md">
-                    <img
-                      src="https://unsplash.it/640/425?random=1"
-                      alt="Card Image"
-                      class="w-full h-48 object-cover rounded"
-                    />
+                    <img src="https://unsplash.it/640/425?random=1" alt="Card Image"
+                      class="w-full h-48 object-cover rounded" />
                     <div class="p-4">
                       <h2 class="text-lg font-bold mb-2">Story Title 2</h2>
                       <p class="text-gray-600 mb-4">
                         Subtext for the second story.
                       </p>
-                      <a href="#" class="text-blue-600 hover:text-blue-800"
-                        >Lees Meer</a
-                      >
+                      <a href="#" class="text-blue-600 hover:text-blue-800">Lees Meer</a>
                     </div>
                   </div>
                 </div>
@@ -537,19 +428,13 @@
                 <!-- Card 1 -->
                 <div class="swiper-slide">
                   <div class="card bg-white rounded-lg shadow-md">
-                    <img
-                      src="https://unsplash.it/640/425"
-                      alt="Card Image"
-                      class="w-full h-48 object-cover rounded"
-                    />
+                    <img src="https://unsplash.it/640/425" alt="Card Image" class="w-full h-48 object-cover rounded" />
                     <div class="p-4">
                       <h2 class="text-lg font-bold mb-2">Story Title 1</h2>
                       <p class="text-gray-600 mb-4">
                         Subtext for the first story.
                       </p>
-                      <a href="#" class="text-blue-600 hover:text-blue-800"
-                        >Lees Meer</a
-                      >
+                      <a href="#" class="text-blue-600 hover:text-blue-800">Lees Meer</a>
                     </div>
                   </div>
                 </div>
@@ -557,19 +442,14 @@
                 <!-- Card 2 -->
                 <div class="swiper-slide">
                   <div class="card bg-white rounded-lg shadow-md">
-                    <img
-                      src="https://unsplash.it/640/425?random=1"
-                      alt="Card Image"
-                      class="w-full h-48 object-cover rounded"
-                    />
+                    <img src="https://unsplash.it/640/425?random=1" alt="Card Image"
+                      class="w-full h-48 object-cover rounded" />
                     <div class="p-4">
                       <h2 class="text-lg font-bold mb-2">Story Title 2</h2>
                       <p class="text-gray-600 mb-4">
                         Subtext for the second story.
                       </p>
-                      <a href="#" class="text-blue-600 hover:text-blue-800"
-                        >Lees Meer</a
-                      >
+                      <a href="#" class="text-blue-600 hover:text-blue-800">Lees Meer</a>
                     </div>
                   </div>
                 </div>
@@ -588,333 +468,346 @@
         </div>
       </div>
     </section>
+  </div>
 
-    <!-- Quote sectie -->
-    <section class="container mx-auto px-4 py-12">
-      <div class="text-center">
-        <blockquote class="text-2xl font-bold mb-4">
-          "The greatest glory in living lies not in never falling, but in rising
-          every time we fall."
-        </blockquote>
-        <hr class="w-1/2 mx-auto mb-4 border-gray-600" />
-        <p class="text-lg mb-6">— Nelson Mandela</p>
-        <a href="https://jes.be" target="_blank">
-          <button
-            class="bg-black text-white py-2 px-4 rounded hover:bg-gray-900"
-          >
-            Visit jes.be
-          </button>
+
+  <!-- Quote sectie -->
+  <section class="mx-auto px-4 py-16 bg-snow border-b-3 border-black">
+    <div class="mx-30">
+      <p class="text-4xl font-bold mb-4 text-light-red">
+        "Stedelijke leiders zetten anderen snel in beweging.
+      </p>
+      <p>-------------</p>
+      <p class="text-lg mb-6 font-semibold">
+        Hafza Mazgout<br>
+        Pleinpatrona
+      </p>
+      <a href="https://jes.be" target="_blank">
+        <button class="bg-black text-white py-2 px-4">
+          Meer over Pleinpatrons
+        </button>
+      </a>
+    </div>
+  </section>
+
+  <!-- Verhalen: Groei door latent talent -->
+  <section class="container mx-auto px-4 py-12" id="verhaal-groei-door-latent-talent">
+    <div class="swiper">
+      <div class="swiper-wrapper">
+        <!-- Card 1 -->
+        <div class="swiper-slide">
+          <div class="card bg-white rounded-lg shadow-md">
+            <img src="https://unsplash.it/640/425" alt="Card Image" class="w-full h-48 object-cover rounded" />
+            <div class="p-4">
+              <h2 class="text-lg font-bold mb-2">Story Title 1</h2>
+              <p class="text-gray-600 mb-4">Subtext for the first story.</p>
+              <a href="#" class="text-blue-600 hover:text-blue-800">Lees Meer</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="swiper-slide">
+          <div class="card bg-white rounded-lg shadow-md">
+            <img src="https://unsplash.it/640/425?random=1" alt="Card Image" class="w-full h-48 object-cover" />
+            <div class="p-4">
+              <h2 class="text-lg font-bold mb-2">Story Title 2</h2>
+              <p class="text-gray-600 mb-4">Subtext for the second story.</p>
+              <a href="#" class="text-blue-600 hover:text-blue-800">Lees Meer</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="swiper-slide">
+          <div class="card bg-white rounded-lg shadow-md">
+            <img src="https://unsplash.it/640/425?random=2" alt="Card Image" class="w-full h-48 object-cover" />
+            <div class="p-4">
+              <h2 class="text-lg font-bold mb-2">Story Title 3</h2>
+              <p class="text-gray-600 mb-4">Subtext for the third story.</p>
+              <a href="#" class="text-blue-600 hover:text-blue-800">Lees Meer</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="swiper-slide">
+          <div class="card bg-white rounded-lg shadow-md">
+            <img src="https://unsplash.it/640/425?random=3" alt="Card Image" class="w-full h-48 object-cover" />
+            <div class="p-4">
+              <h2 class="text-lg font-bold mb-2">Story Title 4</h2>
+              <p class="text-gray-600 mb-4">Subtext for the fourth story.</p>
+              <a href="#" class="text-blue-600 hover:text-blue-800">Lees Meer</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Pagination -->
+      <div class="swiper-pagination mt-4"></div>
+
+      <!-- Navigation buttons -->
+      <div class="swiper-button-prev mt-4"></div>
+      <div class="swiper-button-next mt-4"></div>
+    </div>
+  </section>
+
+  <!-- Verhalen: Leerkans door nieuwe kansen en stem geven zonder stempel Section -->
+  <!-- Parent container for the two verhalen sections -->
+  <section class="container mx-auto px-4 py-12">
+    <div class="flex flex-col md:flex-row md:space-x-8">
+      <!-- Verhalen: leerkans door nieuwe kansen -->
+      <div class="w-full md:w-1/2">
+        <div id="verhaal-leerkans-door-nieuwe-kansen">
+          <h2 class="text-2xl font-bold mb-4">Ruimte voor Ruimte</h2>
+          <p class="text-gray-600 mb-6">
+            Subtext for the first story section. Brief description goes here.
+          </p>
+          <div class="swiper">
+            <div class="swiper-wrapper">
+              <!-- Card 1 -->
+              <div class="swiper-slide">
+                <div class="card bg-white rounded-lg shadow-md">
+                  <img src="https://unsplash.it/640/425" alt="Card Image" class="w-full h-48 object-cover rounded" />
+                  <div class="p-4">
+                    <h2 class="text-lg font-bold mb-2">Story Title 1</h2>
+                    <p class="text-gray-600 mb-4">
+                      Subtext for the first story.
+                    </p>
+                    <a href="#" class="text-blue-600 hover:text-blue-800">Lees Meer</a>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Card 2 -->
+              <div class="swiper-slide">
+                <div class="card bg-white rounded-lg shadow-md">
+                  <img src="https://unsplash.it/640/425?random=1" alt="Card Image"
+                    class="w-full h-48 object-cover rounded" />
+                  <div class="p-4">
+                    <h2 class="text-lg font-bold mb-2">Story Title 2</h2>
+                    <p class="text-gray-600 mb-4">
+                      Subtext for the second story.
+                    </p>
+                    <a href="#" class="text-blue-600 hover:text-blue-800">Lees Meer</a>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Additional cards... -->
+            </div>
+
+            <!-- Pagination -->
+            <div class="swiper-pagination mt-4"></div>
+
+            <!-- Navigation buttons -->
+            <div class="swiper-button-prev mt-4"></div>
+            <div class="swiper-button-next mt-4"></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Verhalen: Stem geven zonder stempel -->
+      <div class="w-full md:w-1/2">
+        <div id="verhaal-stem-geven-zonder-stempel">
+          <h2 class="text-2xl font-bold mb-4">Werkzaamheidsgraag</h2>
+          <p class="text-gray-600 mb-6">
+            Subtext for the second story section. Brief description goes here.
+          </p>
+          <div class="swiper">
+            <div class="swiper-wrapper">
+              <!-- Card 1 -->
+              <div class="swiper-slide">
+                <div class="card bg-white rounded-lg shadow-md">
+                  <img src="https://unsplash.it/640/425" alt="Card Image" class="w-full h-48 object-cover rounded" />
+                  <div class="p-4">
+                    <h2 class="text-lg font-bold mb-2">Story Title 1</h2>
+                    <p class="text-gray-600 mb-4">
+                      Subtext for the first story.
+                    </p>
+                    <a href="#" class="text-blue-600 hover:text-blue-800">Lees Meer</a>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Card 2 -->
+              <div class="swiper-slide">
+                <div class="card bg-white rounded-lg shadow-md">
+                  <img src="https://unsplash.it/640/425?random=1" alt="Card Image"
+                    class="w-full h-48 object-cover rounded" />
+                  <div class="p-4">
+                    <h2 class="text-lg font-bold mb-2">Story Title 2</h2>
+                    <p class="text-gray-600 mb-4">
+                      Subtext for the second story.
+                    </p>
+                    <a href="#" class="text-blue-600 hover:text-blue-800">Lees Meer</a>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Additional cards... -->
+            </div>
+
+            <!-- Pagination -->
+            <div class="swiper-pagination mt-4"></div>
+
+            <!-- Navigation buttons -->
+            <div class="swiper-button-prev mt-4"></div>
+            <div class="swiper-button-next mt-4"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Ontdek alle verhalen section -->
+  <section class="w-full bg-light-red py-12">
+    <div class="text-center text-white">
+      <h2 class="text-3xl md:text-4xl font-bold flex items-center justify-center text-white ml-4 my-16">
+        Ontdek alle verhalen op het slotfeest
+        <span class="ml-2">&rarr;</span>
+      </h2>
+      <p class="text-sm my-8 font-semibold">26.10.2025, Brussel</p>
+    </div>
+  </section>
+
+  <!-- Footer section -->
+  <footer class="py-12 bg-snow">
+    <div class="hidden md:grid md:grid-cols-3 md:gap-8">
+      <!-- Column 1: Links -->
+      <div class="ml-48">
+        <ul class="space-y-2 uppercase text-sm font-semibold mt-18">
+          <li>
+            <a href="#hoopkracht" class="hover:underline">Hoopkracht</a>
+          </li>
+          <li><a href="#nieuws" class="hover:underline">Nieuws</a></li>
+          <li><a href="#verhalen" class="hover:underline">Verhalen</a></li>
+          <li>
+            <a href="#slotevent" class="hover:underline">Slotevent</a>
+          </li>
+          <li><a href="#jes-vzw" class="hover:underline">JES VZW</a></li>
+          <li><a href="#contact" class="hover:underline">Contact</a></li>
+        </ul>
+      </div>
+
+      <!-- Column 2: Title & Subtext -->
+      <div>
+        <h3 class="text-lg font-bold mb-4">
+          40 jaar JES. 40 jaar hoopkracht.
+        </h3>
+        <p class="text-sm mb-4">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        </p>
+        <p class="text-sm mb-8">
+          Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+          nisi ut aliquip ex ea commodo consequat.
+        </p>
+        <p class="text-sm mb-4">
+          © 2025 <a href="#" class="underline ml-8">Privacy</a>
+          <a href="#" class="underline ml-8">Cookie</a>
+        </p>
+      </div>
+
+      <!-- Column 3: Meer JES-nieuws -->
+      <div class="mr-32">
+        <h3 class="text-lg font-bold mb-4">Meer JES-nieuws</h3>
+        <a href="#verhalen" class="inline-block py-1 px-3 mb-4 bg-light-red text-white">
+          Volg alle verhalen op de voet
         </a>
+        <p class="text-sm mb-8">
+          Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+          nisi ut aliquip ex ea commodo consequat.
+        </p>
+        <p class="text-sm mb-2">
+          Werkhuizenstraat 3<br />
+          1080 Sint-Jans-Molenbeek
+        </p>
+        <p class="text-sm">Tel. 02/411 68 83</p>
       </div>
-    </section>
+    </div>
+    <div>
+      <img class="ml-auto mr-24 mt-8" src="assets/images/JES_logo_zonderbaseline_rood.svg" alt="JES">
+    </div>
+  </footer>
 
-    <!-- Verhalen: Groei door latent talent -->
-    <section
-      class="container mx-auto px-4 py-12"
-      id="verhaal-groei-door-latent-talent"
-    >
-      <div class="swiper">
-        <div class="swiper-wrapper">
-          <!-- Card 1 -->
-          <div class="swiper-slide">
-            <div class="card bg-white rounded-lg shadow-md">
-              <img
-                src="https://unsplash.it/640/425"
-                alt="Card Image"
-                class="w-full h-48 object-cover rounded"
-              />
-              <div class="p-4">
-                <h2 class="text-lg font-bold mb-2">Story Title 1</h2>
-                <p class="text-gray-600 mb-4">Subtext for the first story.</p>
-                <a href="#" class="text-blue-600 hover:text-blue-800"
-                  >Lees Meer</a
-                >
-              </div>
-            </div>
-          </div>
+  <!-- JavaScript for menu -->
+  <script>
+    const menuToggle = document.getElementById("menu-toggle");
+    const mobileMenu = document.getElementById("mobile-menu");
+    const menuClose = document.getElementById("menu-close");
 
-          <!-- Card 2 -->
-          <div class="swiper-slide">
-            <div class="card bg-white rounded-lg shadow-md">
-              <img
-                src="https://unsplash.it/640/425?random=1"
-                alt="Card Image"
-                class="w-full h-48 object-cover"
-              />
-              <div class="p-4">
-                <h2 class="text-lg font-bold mb-2">Story Title 2</h2>
-                <p class="text-gray-600 mb-4">Subtext for the second story.</p>
-                <a href="#" class="text-blue-600 hover:text-blue-800"
-                  >Lees Meer</a
-                >
-              </div>
-            </div>
-          </div>
+    // Open the menu
+    menuToggle.addEventListener("click", function () {
+      mobileMenu.classList.remove("hidden");
+    });
 
-          <!-- Card 3 -->
-          <div class="swiper-slide">
-            <div class="card bg-white rounded-lg shadow-md">
-              <img
-                src="https://unsplash.it/640/425?random=2"
-                alt="Card Image"
-                class="w-full h-48 object-cover"
-              />
-              <div class="p-4">
-                <h2 class="text-lg font-bold mb-2">Story Title 3</h2>
-                <p class="text-gray-600 mb-4">Subtext for the third story.</p>
-                <a href="#" class="text-blue-600 hover:text-blue-800"
-                  >Lees Meer</a
-                >
-              </div>
-            </div>
-          </div>
+    // Close the menu
+    menuClose.addEventListener("click", function () {
+      mobileMenu.classList.add("hidden");
+    });
+  </script>
 
-          <!-- Card 4 -->
-          <div class="swiper-slide">
-            <div class="card bg-white rounded-lg shadow-md">
-              <img
-                src="https://unsplash.it/640/425?random=3"
-                alt="Card Image"
-                class="w-full h-48 object-cover"
-              />
-              <div class="p-4">
-                <h2 class="text-lg font-bold mb-2">Story Title 4</h2>
-                <p class="text-gray-600 mb-4">Subtext for the fourth story.</p>
-                <a href="#" class="text-blue-600 hover:text-blue-800"
-                  >Lees Meer</a
-                >
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Pagination -->
-        <div class="swiper-pagination mt-4"></div>
-
-        <!-- Navigation buttons -->
-        <div class="swiper-button-prev mt-4"></div>
-        <div class="swiper-button-next mt-4"></div>
-      </div>
-    </section>
-
-    <!-- Verhalen: Leerkans door nieuwe kansen en stem geven zonder stempel Section -->
-    <!-- Parent container for the two verhalen sections -->
-    <section class="container mx-auto px-4 py-12">
-      <div class="flex flex-col md:flex-row md:space-x-8">
-        <!-- Verhalen: leerkans door nieuwe kansen -->
-        <div class="w-full md:w-1/2">
-          <div id="verhaal-leerkans-door-nieuwe-kansen">
-            <h2 class="text-2xl font-bold mb-4">Ruimte voor Ruimte</h2>
-            <p class="text-gray-600 mb-6">
-              Subtext for the first story section. Brief description goes here.
-            </p>
-            <div class="swiper">
-              <div class="swiper-wrapper">
-                <!-- Card 1 -->
-                <div class="swiper-slide">
-                  <div class="card bg-white rounded-lg shadow-md">
-                    <img
-                      src="https://unsplash.it/640/425"
-                      alt="Card Image"
-                      class="w-full h-48 object-cover rounded"
-                    />
-                    <div class="p-4">
-                      <h2 class="text-lg font-bold mb-2">Story Title 1</h2>
-                      <p class="text-gray-600 mb-4">
-                        Subtext for the first story.
-                      </p>
-                      <a href="#" class="text-blue-600 hover:text-blue-800"
-                        >Lees Meer</a
-                      >
-                    </div>
-                  </div>
-                </div>
-
-                <!-- Card 2 -->
-                <div class="swiper-slide">
-                  <div class="card bg-white rounded-lg shadow-md">
-                    <img
-                      src="https://unsplash.it/640/425?random=1"
-                      alt="Card Image"
-                      class="w-full h-48 object-cover rounded"
-                    />
-                    <div class="p-4">
-                      <h2 class="text-lg font-bold mb-2">Story Title 2</h2>
-                      <p class="text-gray-600 mb-4">
-                        Subtext for the second story.
-                      </p>
-                      <a href="#" class="text-blue-600 hover:text-blue-800"
-                        >Lees Meer</a
-                      >
-                    </div>
-                  </div>
-                </div>
-
-                <!-- Additional cards... -->
-              </div>
-
-              <!-- Pagination -->
-              <div class="swiper-pagination mt-4"></div>
-
-              <!-- Navigation buttons -->
-              <div class="swiper-button-prev mt-4"></div>
-              <div class="swiper-button-next mt-4"></div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Verhalen: Stem geven zonder stempel -->
-        <div class="w-full md:w-1/2">
-          <div id="verhaal-stem-geven-zonder-stempel">
-            <h2 class="text-2xl font-bold mb-4">Werkzaamheidsgraag</h2>
-            <p class="text-gray-600 mb-6">
-              Subtext for the second story section. Brief description goes here.
-            </p>
-            <div class="swiper">
-              <div class="swiper-wrapper">
-                <!-- Card 1 -->
-                <div class="swiper-slide">
-                  <div class="card bg-white rounded-lg shadow-md">
-                    <img
-                      src="https://unsplash.it/640/425"
-                      alt="Card Image"
-                      class="w-full h-48 object-cover rounded"
-                    />
-                    <div class="p-4">
-                      <h2 class="text-lg font-bold mb-2">Story Title 1</h2>
-                      <p class="text-gray-600 mb-4">
-                        Subtext for the first story.
-                      </p>
-                      <a href="#" class="text-blue-600 hover:text-blue-800"
-                        >Lees Meer</a
-                      >
-                    </div>
-                  </div>
-                </div>
-
-                <!-- Card 2 -->
-                <div class="swiper-slide">
-                  <div class="card bg-white rounded-lg shadow-md">
-                    <img
-                      src="https://unsplash.it/640/425?random=1"
-                      alt="Card Image"
-                      class="w-full h-48 object-cover rounded"
-                    />
-                    <div class="p-4">
-                      <h2 class="text-lg font-bold mb-2">Story Title 2</h2>
-                      <p class="text-gray-600 mb-4">
-                        Subtext for the second story.
-                      </p>
-                      <a href="#" class="text-blue-600 hover:text-blue-800"
-                        >Lees Meer</a
-                      >
-                    </div>
-                  </div>
-                </div>
-
-                <!-- Additional cards... -->
-              </div>
-
-              <!-- Pagination -->
-              <div class="swiper-pagination mt-4"></div>
-
-              <!-- Navigation buttons -->
-              <div class="swiper-button-prev mt-4"></div>
-              <div class="swiper-button-next mt-4"></div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Ontdek alle verhalen section -->
-
-    <section class="w-full bg-red py-12">
-      <div class="text-center text-white">
-        <h2
-          class="text-3xl md:text-4xl font-bold flex items-center justify-center"
-        >
-          Ontdek alle verhalen op het slotfeest
-          <span class="ml-2">&rarr;</span>
-        </h2>
-        <p class="text-sm mt-4">20.10.2025, Brussel</p>
-      </div>
-    </section>
-
-    <!-- JavaScript for menu -->
-    <script>
-      const menuToggle = document.getElementById("menu-toggle");
-      const mobileMenu = document.getElementById("mobile-menu");
-      const menuClose = document.getElementById("menu-close");
-
-      // Open the menu
-      menuToggle.addEventListener("click", function () {
-        mobileMenu.classList.remove("hidden");
-      });
-
-      // Close the menu
-      menuClose.addEventListener("click", function () {
-        mobileMenu.classList.add("hidden");
-      });
-    </script>
-
-    <!-- JavaScript for dropdownmenu -->
-    <script>
-      // Open the dropdown when hovering over the button
-      function openDropdown() {
-        var dropdown = document.getElementById("dropdown-menu");
-        dropdown.classList.remove("hidden");
-      }
-
-      // Close the dropdown if clicked outside
-      document.addEventListener("click", function (event) {
-        var dropdown = document.getElementById("dropdown-menu");
-        var button = document.querySelector("#verhalen-dropdown button");
-
-        // Close if the click is outside the button or dropdown
-        if (
-          !button.contains(event.target) &&
-          !dropdown.contains(event.target)
-        ) {
-          dropdown.classList.add("hidden");
-        }
-      });
-
-      // Stop the dropdown from closing when hovering over the dropdown
+  <!-- JavaScript for dropdownmenu -->
+  <script>
+    // Open the dropdown when hovering over the button
+    function openDropdown() {
       var dropdown = document.getElementById("dropdown-menu");
-      dropdown.addEventListener("mouseenter", function () {
-        dropdown.classList.remove("hidden");
-      });
-      dropdown.addEventListener("mouseleave", function () {
-        // Do nothing, since the dropdown should not close when the mouse leaves the dropdown
-      });
-    </script>
-    <script>
-      const swiper = new Swiper(".swiper", {
-        // Optional parameters
-        direction: "horizontal",
-        loop: true,
-        slidesPerView: 1,
-        spaceBetween: 30,
-        pagination: {
-          el: ".swiper-pagination",
-          clickable: true,
+      dropdown.classList.remove("hidden");
+    }
+
+    // Close the dropdown if clicked outside
+    document.addEventListener("click", function (event) {
+      var dropdown = document.getElementById("dropdown-menu");
+      var button = document.querySelector("#verhalen-dropdown button");
+
+      // Close if the click is outside the button or dropdown
+      if (
+        !button.contains(event.target) &&
+        !dropdown.contains(event.target)
+      ) {
+        dropdown.classList.add("hidden");
+      }
+    });
+
+    // Stop the dropdown from closing when hovering over the dropdown
+    var dropdown = document.getElementById("dropdown-menu");
+    dropdown.addEventListener("mouseenter", function () {
+      dropdown.classList.remove("hidden");
+    });
+    dropdown.addEventListener("mouseleave", function () {
+      // Do nothing, since the dropdown should not close when the mouse leaves the dropdown
+    });
+  </script>
+
+  <!-- JavaScript for imagecarousel -->
+  <script>
+    const swiper = new Swiper(".swiper", {
+      // Optional parameters
+      direction: "horizontal",
+      loop: true,
+      slidesPerView: 1,
+      spaceBetween: 30,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+      breakpoints: {
+        640: {
+          slidesPerView: 2,
+          spaceBetween: 20,
         },
-        navigation: {
-          nextEl: ".swiper-button-next",
-          prevEl: ".swiper-button-prev",
+        1024: {
+          slidesPerView: 3,
+          spaceBetween: 30,
         },
-        breakpoints: {
-          640: {
-            slidesPerView: 2,
-            spaceBetween: 20,
-          },
-          1024: {
-            slidesPerView: 3,
-            spaceBetween: 30,
-          },
-        },
-      });
-    </script>
-  </body>
+      },
+    });
+  </script>
+</body>
+
 </html>
