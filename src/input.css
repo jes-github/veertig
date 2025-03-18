@@ -79,3 +79,42 @@
     @apply font-rethink-sans font-extrabold text-[90px] leading-[105px] text-black;
   }
 }
+
+/* Swiper General Styling */
+.swiper {
+  width: 100%;
+  height: 100%;
+  overflow: visible; /* Prevents button clipping */
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Prevent Swiper Clipping */
+.mySwiper {
+  position: relative;
+}
+
+/* Custom Navigation Buttons */
+.custom-prev,
+.custom-next {
+  background-color: black;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  font-size: 16px;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.custom-prev:hover,
+.custom-next:hover {
+  background-color: darkgray;
+}
