@@ -224,10 +224,8 @@
   </section>
 
   <!-- Verhalen: Welzijn door speelterrein Section -->
-  <div class="bg-light-pink border-b-3 border-black">
-    <section class="container flex flex-col md:flex-row px-4 py-12 bg-light-pink"
-      id="verhaal-welzijn-door-speelterrein">
-
+  <div class="bg-soft-pink border-b-3 border-black">
+    <section class="container flex flex-col md:flex-row px-4 py-12 bg-soft-pink" id="verhaal-welzijn-door-speelterrein">
       <!-- Left Section (Text + Controls) -->
       <div class="w-full md:w-5/12">
         <h2 class="text-4xl font-bold mb-4">Welzijn door speelterrein</h2>
@@ -239,76 +237,122 @@
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque nec eros ut magna.
           </p>
         </div>
-
-        <!-- Custom Navigation Buttons -->
-        <div class="flex items-center space-x-4 mt-6">
-          <button class="custom-prev">&larr; Prev</button>
-          <button class="custom-next">Next &rarr;</button>
+        <div class="flex">
+          <!-- welzijn-door-speelterrein-swiper Navigation Buttons -->
+          <div class="flex items-center space-x-4 mt-6">
+            <button class="welzijn-door-speelterrein-swiper-prev"><img src="assets/images/Arrow - left.svg"
+                alt="Vorige"></button>
+            <button class="welzijn-door-speelterrein-swiper-next"><img src="assets/images/Arrow - right.svg"
+                alt="Volgende"></button>
+          </div>
+          <!-- Pagination -->
+          <div class="welzijn-door-speelterrein-pagination mt-4"></div>
         </div>
       </div>
 
       <!-- Right Section (Swiper) -->
       <div class="w-full md:w-7/12">
-        <div class="swiper mySwiper">
+        <div class="swiper welzijn-door-speelterrein-swiper">
           <div class="swiper-wrapper">
             <!-- Slide 1 -->
             <div class="swiper-slide">
-              <div class="card bg-white rounded-lg shadow-md">
-                <img src="https://unsplash.it/640/425" alt="Card Image" class="w-full h-48 object-cover rounded" />
+              <div class="card">
+                <div class="overflow-hidden rounded-full">
+                  <img src="https://unsplash.it/640/425" alt="Card Image" class="w-full h-55 object-cover" />
+                </div>
                 <div class="p-4">
-                  <h2 class="text-lg font-bold mb-2">Story Title 1</h2>
-                  <p class="text-gray-600 mb-4">Subtext for the first story.</p>
-                  <a href="#" class="text-blue-600 hover:text-blue-800">Lees Meer</a>
+                  <div
+                    class="flex items-center justify-center bg-white border-3 border-light-red absolute top-48 right-0 px-4 py-0.5 font-bold my-auto">
+                    <img src="assets/images/pinpoint.svg" alt="Locatie" class="mr-2">Brussel
+                  </div>
+                  <div class="flex items-center my-auto text-sm">
+                    <img src="assets/images/time indication.svg" alt="Leestijd">
+                    <p class="">1 minuut</p>
+                  </div>
+                  <h2 class="text-lg font-bold mb-2">Titel, artikel,...</h2>
+                  <p class="text-gray-600 mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
+                    eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                  <a href="#" class="underline">Lees Meer</a>
                 </div>
               </div>
             </div>
 
             <!-- Slide 2 -->
             <div class="swiper-slide">
-              <div class="card bg-white rounded-lg shadow-md">
-                <img src="https://unsplash.it/640/425?random=1" alt="Card Image" class="w-full h-48 object-cover" />
+              <div class="card">
+                <div class="overflow-hidden rounded-full">
+                  <img src="https://unsplash.it/640/425?random=1" alt="Card Image" class="w-full h-55 object-cover" />
+                </div>
                 <div class="p-4">
-                  <h2 class="text-lg font-bold mb-2">Story Title 2</h2>
-                  <p class="text-gray-600 mb-4">Subtext for the second story.</p>
-                  <a href="#" class="text-blue-600 hover:text-blue-800">Lees Meer</a>
+                  <div
+                    class="flex items-center justify-center bg-white border-3 border-light-red absolute top-48 right-0 px-4 py-0.5 font-bold my-auto">
+                    <img src="assets/images/pinpoint.svg" alt="Locatie" class="mr-2">Brussel
+                  </div>
+                  <div class="flex items-center my-auto text-sm">
+                    <img src="assets/images/time indication.svg" alt="Leestijd">
+                    <p class="">1 minuut</p>
+                  </div>
+                  <h2 class="text-lg font-bold mb-2">Titel, artikel,...</h2>
+                  <p class="text-gray-600 mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
+                    eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                  <a href="#" class="underline">Lees Meer</a>
                 </div>
               </div>
             </div>
 
             <!-- Slide 3 -->
             <div class="swiper-slide">
-              <div class="card bg-white rounded-lg shadow-md">
-                <img src="https://unsplash.it/640/425?random=2" alt="Card Image" class="w-full h-48 object-cover" />
+              <div class="card">
+                <div class="overflow-hidden rounded-full">
+                  <img src="https://unsplash.it/640/425?random=2" alt="Card Image" class="w-full h-55 object-cover" />
+                </div>
                 <div class="p-4">
-                  <h2 class="text-lg font-bold mb-2">Story Title 3</h2>
-                  <p class="text-gray-600 mb-4">Subtext for the third story.</p>
-                  <a href="#" class="text-blue-600 hover:text-blue-800">Lees Meer</a>
+                  <div
+                    class="flex items-center justify-center bg-white border-3 border-light-red absolute top-48 right-0 px-4 py-0.5 font-bold my-auto">
+                    <img src="assets/images/pinpoint.svg" alt="Locatie" class="mr-2">Brussel
+                  </div>
+                  <div class="flex items-center my-auto text-sm">
+                    <img src="assets/images/time indication.svg" alt="Leestijd">
+                    <p class="">1 minuut</p>
+                  </div>
+                  <h2 class="text-lg font-bold mb-2">Titel, artikel,...</h2>
+                  <p class="text-gray-600 mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
+                    eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                  <a href="#" class="underline">Lees Meer</a>
                 </div>
               </div>
             </div>
 
             <!-- Slide 4 -->
             <div class="swiper-slide">
-              <div class="card bg-white rounded-lg shadow-md">
-                <img src="https://unsplash.it/640/425?random=3" alt="Card Image" class="w-full h-48 object-cover" />
+              <div class="card">
+                <div class="overflow-hidden rounded-full">
+                  <img src="https://unsplash.it/640/425?random=3" alt="Card Image" class="w-full h-55 object-cover" />
+                </div>
                 <div class="p-4">
-                  <h2 class="text-lg font-bold mb-2">Story Title 4</h2>
-                  <p class="text-gray-600 mb-4">Subtext for the fourth story.</p>
-                  <a href="#" class="text-blue-600 hover:text-blue-800">Lees Meer</a>
+                  <div
+                    class="flex items-center justify-center bg-white border-3 border-light-red absolute top-48 right-0 px-4 py-0.5 font-bold my-auto">
+                    <img src="assets/images/pinpoint.svg" alt="Locatie" class="mr-2">Brussel
+                  </div>
+                  <div class="flex items-center my-auto text-sm">
+                    <img src="assets/images/time indication.svg" alt="Leestijd">
+                    <p class="">1 minuut</p>
+                  </div>
+                  <h2 class="text-lg font-bold mb-2">Titel, artikel,...</h2>
+                  <p class="text-gray-600 mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
+                    eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                  <a href="#" class="underline">Lees Meer</a>
                 </div>
               </div>
             </div>
           </div>
-
-          <!-- Pagination -->
-          <div class="swiper-pagination mt-4"></div>
         </div>
       </div>
     </section>
   </div>
 
   <!-- Blijf op de hoogte Section -->
-  <section class="py-16 border-b-3 border-black">
+  <section class=" py-16 border-b-3 border-black">
     <div class="container mx-auto px-4">
       <div class="flex flex-col md:flex-row">
         <!-- Left half (signup form) -->
@@ -354,115 +398,240 @@
   </section>
 
   <!-- Verhalen: Ruimte voor ruimte en Werkzaamheidsgraag Section -->
-  <!-- Parent container for the two verhalen sections -->
-  <div class="wrapper bg-snow border-b-3 border-black">
-    <section class="container mx-auto px-4 py-12">
-      <!-- Parent container for the two verhalen sections -->
-      <div class="flex flex-col md:flex-row md:space-x-8">
-        <!-- Verhalen: Ruimte voor ruimte -->
-        <div class="w-full md:w-1/2">
-          <div id="verhaal-ruimte-voor-ruimte">
-            <h2 class="text-2xl font-bold mb-4">Ruimte voor Ruimte</h2>
-            <p class="text-gray-600 mb-6">
-              Subtext for the first story section. Brief description goes here.
-            </p>
-            <div class="swiper">
-              <div class="swiper-wrapper">
-                <!-- Card 1 -->
-                <div class="swiper-slide">
-                  <div class="card bg-white rounded-lg shadow-md">
-                    <img src="https://unsplash.it/640/425" alt="Card Image" class="w-full h-48 object-cover rounded" />
-                    <div class="p-4">
-                      <h2 class="text-lg font-bold mb-2">Story Title 1</h2>
-                      <p class="text-gray-600 mb-4">
-                        Subtext for the first story.
-                      </p>
-                      <a href="#" class="text-blue-600 hover:text-blue-800">Lees Meer</a>
-                    </div>
-                  </div>
-                </div>
+  <div class="border-b-3 border-black flex">
 
-                <!-- Card 2 -->
-                <div class="swiper-slide">
-                  <div class="card bg-white rounded-lg shadow-md">
-                    <img src="https://unsplash.it/640/425?random=1" alt="Card Image"
-                      class="w-full h-48 object-cover rounded" />
-                    <div class="p-4">
-                      <h2 class="text-lg font-bold mb-2">Story Title 2</h2>
-                      <p class="text-gray-600 mb-4">
-                        Subtext for the second story.
-                      </p>
-                      <a href="#" class="text-blue-600 hover:text-blue-800">Lees Meer</a>
-                    </div>
-                  </div>
-                </div>
+    <!-- Verhalen: Ruimte voor ruimte Section -->
+    <section class="container px-4 py-12 bg-snow" id="verhaal-ruimte-voor-ruimte">
+      <h2 class="text-4xl font-bold mb-4">Ruimte voor ruimte</h2>
+      <div class="flex items-start">
+        <!-- Swoosh Sign -->
+        <img src="assets/images/swoosh.svg" alt="Swoosh" class="w-16 h-auto mr-4" />
+        <!-- Placeholder Text -->
+        <p class="text-gray-700 text-lg">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque nec eros ut magna.
+        </p>
+      </div>
+      <div class="swiper ruimte-voor-ruimte-swiper">
+        <div class="swiper-wrapper">
 
-                <!-- Additional cards... -->
+          <!-- Slide 1 -->
+          <div class="swiper-slide px-32 py-16">
+            <div class="card border-3 border-black">
+              <div class="overflow-hidden">
+                <img src="https://unsplash.it/640/425" alt="Card Image" class="w-full h-55 object-cover" />
               </div>
-
-              <!-- Pagination -->
-              <div class="swiper-pagination mt-4"></div>
-
-              <!-- Navigation buttons -->
-              <div class="swiper-button-prev mt-4"></div>
-              <div class="swiper-button-next mt-4"></div>
+              <div class="p-4">
+                <div class="flex justify-end relative bottom-20 px-4 py-0.5 font-bold my-auto">
+                  <img src="assets/images/pinpoint.svg" alt="Locatie" class="mr-2">Brussel
+                </div>
+                <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
+                  eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                </p>
+                <h2 class="text-lg font-bold mb-2">Titel, artikel,...</h2>
+                <a href="#"
+                  class="bg-white border-3 border-black px-2 py-0.5 relative top-8 right-0 text-lg font-semibold">Lees
+                  Meer</a>
+              </div>
             </div>
           </div>
-        </div>
 
-        <!-- Verhalen: Werkzaamheidsgraag -->
-        <div class="w-full md:w-1/2">
-          <div id="verhaal-werkzaamheidsgraag">
-            <h2 class="text-2xl font-bold mb-4">Werkzaamheidsgraad</h2>
-            <p class="text-gray-600 mb-6">
-              Subtext for the second story section. Brief description goes here.
-            </p>
-            <div class="swiper">
-              <div class="swiper-wrapper">
-                <!-- Card 1 -->
-                <div class="swiper-slide">
-                  <div class="card bg-white rounded-lg shadow-md">
-                    <img src="https://unsplash.it/640/425" alt="Card Image" class="w-full h-48 object-cover rounded" />
-                    <div class="p-4">
-                      <h2 class="text-lg font-bold mb-2">Story Title 1</h2>
-                      <p class="text-gray-600 mb-4">
-                        Subtext for the first story.
-                      </p>
-                      <a href="#" class="text-blue-600 hover:text-blue-800">Lees Meer</a>
-                    </div>
-                  </div>
-                </div>
-
-                <!-- Card 2 -->
-                <div class="swiper-slide">
-                  <div class="card bg-white rounded-lg shadow-md">
-                    <img src="https://unsplash.it/640/425?random=1" alt="Card Image"
-                      class="w-full h-48 object-cover rounded" />
-                    <div class="p-4">
-                      <h2 class="text-lg font-bold mb-2">Story Title 2</h2>
-                      <p class="text-gray-600 mb-4">
-                        Subtext for the second story.
-                      </p>
-                      <a href="#" class="text-blue-600 hover:text-blue-800">Lees Meer</a>
-                    </div>
-                  </div>
-                </div>
-
-                <!-- Additional cards... -->
+          <!-- Slide 2 -->
+          <div class="swiper-slide px-32 py-16">
+            <div class="card border-3 border-black">
+              <div class="overflow-hidden">
+                <img src="https://unsplash.it/640/425?random=1" alt="Card Image" class="w-full h-55 object-cover" />
               </div>
-
-              <!-- Pagination -->
-              <div class="swiper-pagination mt-4"></div>
-
-              <!-- Navigation buttons -->
-              <div class="swiper-button-prev mt-4"></div>
-              <div class="swiper-button-next mt-4"></div>
+              <div class="p-4">
+                <div class="flex justify-end relative bottom-20 px-4 py-0.5 font-bold my-auto">
+                  <img src="assets/images/pinpoint.svg" alt="Locatie" class="mr-2">Brussel
+                </div>
+                <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
+                  eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                </p>
+                <h2 class="text-lg font-bold mb-2">Titel, artikel,...</h2>
+                <a href="#"
+                  class="bg-white border-3 border-black px-2 py-0.5 relative top-8 right-0 text-lg font-semibold">Lees
+                  Meer</a>
+              </div>
             </div>
           </div>
+
+          <!-- Slide 3 -->
+          <div class="swiper-slide px-32 py-16">
+            <div class="card border-3 border-black">
+              <div class="overflow-hidden">
+                <img src="https://unsplash.it/640/425?random=2" alt="Card Image" class="w-full h-55 object-cover" />
+              </div>
+              <div class="p-4">
+                <div class="flex justify-end relative bottom-20 px-4 py-0.5 font-bold my-auto">
+                  <img src="assets/images/pinpoint.svg" alt="Locatie" class="mr-2">Brussel
+                </div>
+                <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
+                  eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                </p>
+                <h2 class="text-lg font-bold mb-2">Titel, artikel,...</h2>
+                <a href="#"
+                  class="bg-white border-3 border-black px-2 py-0.5 relative top-8 right-0 text-lg font-semibold">Lees
+                  Meer</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Slide 4 -->
+          <div class="swiper-slide px-32 py-16">
+            <div class="card border-3 border-black">
+              <div class="overflow-hidden">
+                <img src="https://unsplash.it/640/425?random=3" alt="Card Image" class="w-full h-55 object-cover" />
+              </div>
+              <div class="p-4">
+                <div class="flex justify-end relative bottom-20 px-4 py-0.5 font-bold my-auto">
+                  <img src="assets/images/pinpoint.svg" alt="Locatie" class="mr-2">Brussel
+                </div>
+                <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
+                  eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                </p>
+                <h2 class="text-lg font-bold mb-2">Titel, artikel,...</h2>
+                <a href="#"
+                  class="bg-white border-3 border-black px-2 py-0.5 relative top-8 right-0 text-lg font-semibold">Lees
+                  Meer</a>
+              </div>
+            </div>
+          </div>
+
         </div>
       </div>
+
+      <div class="flex">
+        <!-- ruimte-voor-ruimte-swiper Navigation Buttons -->
+        <div class="flex items-center space-x-4 mt-6">
+          <button class="ruimte-voor-ruimte-swiper-prev"><img src="assets/images/Arrow - left.svg"
+              alt="Vorige"></button>
+          <button class="ruimte-voor-ruimte-swiper-next"><img src="assets/images/Arrow - right.svg"
+              alt="Volgende"></button>
+        </div>
+        <!-- Pagination -->
+        <div class="ruimte-voor-ruimte-pagination mt-4"></div>
+      </div>
+
     </section>
+
+    <!-- Verhalen: werkzaamheidsgraag Section -->
+    <section class="container px-4 py-12 bg-soft-pink border-l-3 border-black" id="verhaal-werkzaamheidsgraag">
+      <h2 class="text-4xl font-bold mb-4">Werkzaamheidsgraaaaaag</h2>
+      <div class="flex items-start">
+        <!-- Swoosh Sign -->
+        <img src="assets/images/swoosh.svg" alt="Swoosh" class="w-16 h-auto mr-4" />
+        <!-- Placeholder Text -->
+        <p class="text-gray-700 text-lg">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque nec eros ut magna.
+        </p>
+      </div>
+      <div class="swiper werkzaamheidsgraag-swiper">
+        <div class="swiper-wrapper">
+
+          <!-- Slide 1 -->
+          <div class="swiper-slide px-32 py-16">
+            <div class="card border-3 border-black">
+              <div class="overflow-hidden">
+                <img src="https://unsplash.it/640/425" alt="Card Image" class="w-full h-55 object-cover" />
+              </div>
+              <div class="p-4">
+                <div class="flex justify-end relative bottom-20 px-4 py-0.5 font-bold my-auto">
+                  <img src="assets/images/pinpoint.svg" alt="Locatie" class="mr-2">Brussel
+                </div>
+                <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
+                  eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                </p>
+                <h2 class="text-lg font-bold mb-2">Titel, artikel,...</h2>
+                <a href="#"
+                  class="bg-white border-3 border-black px-2 py-0.5 relative top-8 right-0 text-lg font-semibold">Lees
+                  Meer</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Slide 2 -->
+          <div class="swiper-slide px-32 py-16">
+            <div class="card border-3 border-black">
+              <div class="overflow-hidden">
+                <img src="https://unsplash.it/640/425?random=4" alt="Card Image" class="w-full h-55 object-cover" />
+              </div>
+              <div class="p-4">
+                <div class="flex justify-end relative bottom-20 px-4 py-0.5 font-bold my-auto">
+                  <img src="assets/images/pinpoint.svg" alt="Locatie" class="mr-2">Brussel
+                </div>
+                <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
+                  eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                </p>
+                <h2 class="text-lg font-bold mb-2">Titel, artikel,...</h2>
+                <a href="#"
+                  class="bg-white border-3 border-black px-2 py-0.5 relative top-8 right-0 text-lg font-semibold">Lees
+                  Meer</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Slide 3 -->
+          <div class="swiper-slide px-32 py-16">
+            <div class="card border-3 border-black">
+              <div class="overflow-hidden">
+                <img src="https://unsplash.it/640/425?random=5" alt="Card Image" class="w-full h-55 object-cover" />
+              </div>
+              <div class="p-4">
+                <div class="flex justify-end relative bottom-20 px-4 py-0.5 font-bold my-auto">
+                  <img src="assets/images/pinpoint.svg" alt="Locatie" class="mr-2">Brussel
+                </div>
+                <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
+                  eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                </p>
+                <h2 class="text-lg font-bold mb-2">Titel, artikel,...</h2>
+                <a href="#"
+                  class="bg-white border-3 border-black px-2 py-0.5 relative top-8 right-0 text-lg font-semibold">Lees
+                  Meer</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Slide 4 -->
+          <div class="swiper-slide px-32 py-16">
+            <div class="card border-3 border-black">
+              <div class="overflow-hidden">
+                <img src="https://unsplash.it/640/425?random=6" alt="Card Image" class="w-full h-55 object-cover" />
+              </div>
+              <div class="p-4">
+                <div class="flex justify-end relative bottom-20 px-4 py-0.5 font-bold my-auto">
+                  <img src="assets/images/pinpoint.svg" alt="Locatie" class="mr-2">Brussel
+                </div>
+                <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
+                  eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                </p>
+                <h2 class="text-lg font-bold mb-2">Titel, artikel,...</h2>
+                <a href="#"
+                  class="bg-white border-3 border-black px-2 py-0.5 relative top-8 right-0 text-lg font-semibold">Lees
+                  Meer</a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="flex">
+        <!-- werkzaamheidsgraag-swiper Navigation Buttons -->
+        <div class="flex items-center space-x-4 mt-6">
+          <button class="werkzaamheidsgraag-swiper-prev"><img src="assets/images/Arrow - left.svg"
+              alt="Vorige"></button>
+          <button class="werkzaamheidsgraag-swiper-next"><img src="assets/images/Arrow - right.svg"
+              alt="Volgende"></button>
+        </div>
+        <!-- Pagination -->
+        <div class="werkzaamheidsgraag-pagination mt-4"></div>
+      </div>
+
+    </section>
+
   </div>
+
 
 
   <!-- Quote sectie -->
@@ -485,174 +654,367 @@
   </section>
 
   <!-- Verhalen: Groei door latent talent -->
-  <section class="container mx-auto px-4 py-12" id="verhaal-groei-door-latent-talent">
-    <div class="swiper">
-      <div class="swiper-wrapper">
-        <!-- Card 1 -->
-        <div class="swiper-slide">
-          <div class="card bg-white rounded-lg shadow-md">
-            <img src="https://unsplash.it/640/425" alt="Card Image" class="w-full h-48 object-cover rounded" />
-            <div class="p-4">
-              <h2 class="text-lg font-bold mb-2">Story Title 1</h2>
-              <p class="text-gray-600 mb-4">Subtext for the first story.</p>
-              <a href="#" class="text-blue-600 hover:text-blue-800">Lees Meer</a>
-            </div>
-          </div>
+  <div class="bg-soft-pink border-b-3 border-black">
+    <section class="container flex flex-col md:flex-row px-4 py-12 bg-soft-pink" id="verhaal-groei-door-latent-talent">
+      <!-- Left Section (Text + Controls) -->
+      <div class="w-full md:w-5/12">
+        <h2 class="text-4xl font-bold mb-4">Groei door latent talent</h2>
+        <div class="flex items-start">
+          <!-- Swoosh Sign -->
+          <img src="assets/images/swoosh.svg" alt="Swoosh" class="w-16 h-auto mr-4" />
+          <!-- Placeholder Text -->
+          <p class="text-gray-700 text-lg">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque nec eros ut magna.
+          </p>
         </div>
-
-        <!-- Card 2 -->
-        <div class="swiper-slide">
-          <div class="card bg-white rounded-lg shadow-md">
-            <img src="https://unsplash.it/640/425?random=1" alt="Card Image" class="w-full h-48 object-cover" />
-            <div class="p-4">
-              <h2 class="text-lg font-bold mb-2">Story Title 2</h2>
-              <p class="text-gray-600 mb-4">Subtext for the second story.</p>
-              <a href="#" class="text-blue-600 hover:text-blue-800">Lees Meer</a>
-            </div>
+        <div class="flex">
+          <!-- groei-doorlatent-talent-swiper Navigation Buttons -->
+          <div class="flex items-center space-x-4 mt-6">
+            <button class="groei-door-latent-talent-swiper-prev"><img src="assets/images/Arrow - left.svg"
+                alt="Vorige"></button>
+            <button class="groei-door-latent-talent-swiper-next"><img src="assets/images/Arrow - right.svg"
+                alt="Volgende"></button>
           </div>
+          <!-- Pagination -->
+          <div class="groei-door-latent-talent-pagination mt-4"></div>
         </div>
+      </div>
 
-        <!-- Card 3 -->
-        <div class="swiper-slide">
-          <div class="card bg-white rounded-lg shadow-md">
-            <img src="https://unsplash.it/640/425?random=2" alt="Card Image" class="w-full h-48 object-cover" />
-            <div class="p-4">
-              <h2 class="text-lg font-bold mb-2">Story Title 3</h2>
-              <p class="text-gray-600 mb-4">Subtext for the third story.</p>
-              <a href="#" class="text-blue-600 hover:text-blue-800">Lees Meer</a>
+      <!-- Right Section (Swiper) -->
+      <div class="w-full md:w-7/12">
+        <div class="swiper groei-door-latent-talent-swiper">
+          <div class="swiper-wrapper">
+            <!-- Slide 1 -->
+            <div class="swiper-slide">
+              <div class="card">
+                <div class="overflow-hidden rounded-full">
+                  <img src="https://unsplash.it/640/425" alt="Card Image" class="w-full h-55 object-cover" />
+                </div>
+                <div class="p-4">
+                  <div
+                    class="flex items-center justify-center bg-white border-3 border-light-red absolute top-48 right-0 px-4 py-0.5 font-bold my-auto">
+                    <img src="assets/images/pinpoint.svg" alt="Locatie" class="mr-2">Brussel
+                  </div>
+                  <div class="flex items-center my-auto text-sm">
+                    <img src="assets/images/time indication.svg" alt="Leestijd">
+                    <p class="">1 minuut</p>
+                  </div>
+                  <h2 class="text-lg font-bold mb-2">Titel, artikel,...</h2>
+                  <p class="text-gray-600 mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
+                    eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                  <a href="#" class="underline">Lees Meer</a>
+                </div>
+              </div>
             </div>
-          </div>
-        </div>
 
-        <!-- Card 4 -->
-        <div class="swiper-slide">
-          <div class="card bg-white rounded-lg shadow-md">
-            <img src="https://unsplash.it/640/425?random=3" alt="Card Image" class="w-full h-48 object-cover" />
-            <div class="p-4">
-              <h2 class="text-lg font-bold mb-2">Story Title 4</h2>
-              <p class="text-gray-600 mb-4">Subtext for the fourth story.</p>
-              <a href="#" class="text-blue-600 hover:text-blue-800">Lees Meer</a>
+            <!-- Slide 2 -->
+            <div class="swiper-slide">
+              <div class="card">
+                <div class="overflow-hidden rounded-full">
+                  <img src="https://unsplash.it/640/425?random=1" alt="Card Image" class="w-full h-55 object-cover" />
+                </div>
+                <div class="p-4">
+                  <div
+                    class="flex items-center justify-center bg-white border-3 border-light-red absolute top-48 right-0 px-4 py-0.5 font-bold my-auto">
+                    <img src="assets/images/pinpoint.svg" alt="Locatie" class="mr-2">Brussel
+                  </div>
+                  <div class="flex items-center my-auto text-sm">
+                    <img src="assets/images/time indication.svg" alt="Leestijd">
+                    <p class="">1 minuut</p>
+                  </div>
+                  <h2 class="text-lg font-bold mb-2">Titel, artikel,...</h2>
+                  <p class="text-gray-600 mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
+                    eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                  <a href="#" class="underline">Lees Meer</a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Slide 3 -->
+            <div class="swiper-slide">
+              <div class="card">
+                <div class="overflow-hidden rounded-full">
+                  <img src="https://unsplash.it/640/425?random=2" alt="Card Image" class="w-full h-55 object-cover" />
+                </div>
+                <div class="p-4">
+                  <div
+                    class="flex items-center justify-center bg-white border-3 border-light-red absolute top-48 right-0 px-4 py-0.5 font-bold my-auto">
+                    <img src="assets/images/pinpoint.svg" alt="Locatie" class="mr-2">Brussel
+                  </div>
+                  <div class="flex items-center my-auto text-sm">
+                    <img src="assets/images/time indication.svg" alt="Leestijd">
+                    <p class="">1 minuut</p>
+                  </div>
+                  <h2 class="text-lg font-bold mb-2">Titel, artikel,...</h2>
+                  <p class="text-gray-600 mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
+                    eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                  <a href="#" class="underline">Lees Meer</a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Slide 4 -->
+            <div class="swiper-slide">
+              <div class="card">
+                <div class="overflow-hidden rounded-full">
+                  <img src="https://unsplash.it/640/425?random=3" alt="Card Image" class="w-full h-55 object-cover" />
+                </div>
+                <div class="p-4">
+                  <div
+                    class="flex items-center justify-center bg-white border-3 border-light-red absolute top-48 right-0 px-4 py-0.5 font-bold my-auto">
+                    <img src="assets/images/pinpoint.svg" alt="Locatie" class="mr-2">Brussel
+                  </div>
+                  <div class="flex items-center my-auto text-sm">
+                    <img src="assets/images/time indication.svg" alt="Leestijd">
+                    <p class="">1 minuut</p>
+                  </div>
+                  <h2 class="text-lg font-bold mb-2">Titel, artikel,...</h2>
+                  <p class="text-gray-600 mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
+                    eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                  <a href="#" class="underline">Lees Meer</a>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </div>
-
-      <!-- Pagination -->
-      <div class="swiper-pagination mt-4"></div>
-
-      <!-- Navigation buttons -->
-      <div class="swiper-button-prev mt-4"></div>
-      <div class="swiper-button-next mt-4"></div>
-    </div>
-  </section>
+    </section>
+  </div>
 
   <!-- Verhalen: Leerkans door nieuwe kansen en stem geven zonder stempel Section -->
-  <!-- Parent container for the two verhalen sections -->
-  <section class="container mx-auto px-4 py-12">
-    <div class="flex flex-col md:flex-row md:space-x-8">
-      <!-- Verhalen: leerkans door nieuwe kansen -->
-      <div class="w-full md:w-1/2">
-        <div id="verhaal-leerkans-door-nieuwe-kansen">
-          <h2 class="text-2xl font-bold mb-4">Ruimte voor Ruimte</h2>
-          <p class="text-gray-600 mb-6">
-            Subtext for the first story section. Brief description goes here.
-          </p>
-          <div class="swiper">
-            <div class="swiper-wrapper">
-              <!-- Card 1 -->
-              <div class="swiper-slide">
-                <div class="card bg-white rounded-lg shadow-md">
-                  <img src="https://unsplash.it/640/425" alt="Card Image" class="w-full h-48 object-cover rounded" />
-                  <div class="p-4">
-                    <h2 class="text-lg font-bold mb-2">Story Title 1</h2>
-                    <p class="text-gray-600 mb-4">
-                      Subtext for the first story.
-                    </p>
-                    <a href="#" class="text-blue-600 hover:text-blue-800">Lees Meer</a>
-                  </div>
-                </div>
-              </div>
+  <div class="border-b-3 border-black flex">
 
-              <!-- Card 2 -->
-              <div class="swiper-slide">
-                <div class="card bg-white rounded-lg shadow-md">
-                  <img src="https://unsplash.it/640/425?random=1" alt="Card Image"
-                    class="w-full h-48 object-cover rounded" />
-                  <div class="p-4">
-                    <h2 class="text-lg font-bold mb-2">Story Title 2</h2>
-                    <p class="text-gray-600 mb-4">
-                      Subtext for the second story.
-                    </p>
-                    <a href="#" class="text-blue-600 hover:text-blue-800">Lees Meer</a>
-                  </div>
-                </div>
-              </div>
+    <!-- Verhalen: leerkans door nieuwe kansen Section -->
+    <section class="container px-4 py-12 bg-soft-pink" id="verhaal-leerkans-door-nieuwe-kansen">
+      <h2 class="text-4xl font-bold mb-4">Leerkans door nieuwe kansen</h2>
+      <div class="flex items-start">
+        <!-- Swoosh Sign -->
+        <img src="assets/images/swoosh.svg" alt="Swoosh" class="w-16 h-auto mr-4" />
+        <!-- Placeholder Text -->
+        <p class="text-gray-700 text-lg">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque nec eros ut magna.
+        </p>
+      </div>
+      <div class="swiper leerkans-door-nieuwe-kansen-swiper">
+        <div class="swiper-wrapper">
 
-              <!-- Additional cards... -->
+          <!-- Slide 1 -->
+          <div class="swiper-slide px-32 py-16">
+            <div class="card border-3 border-black">
+              <div class="overflow-hidden">
+                <img src="https://unsplash.it/640/425" alt="Card Image" class="w-full h-55 object-cover" />
+              </div>
+              <div class="p-4">
+                <div class="flex justify-end relative bottom-20 px-4 py-0.5 font-bold my-auto">
+                  <img src="assets/images/pinpoint.svg" alt="Locatie" class="mr-2">Brussel
+                </div>
+                <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
+                  eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                </p>
+                <h2 class="text-lg font-bold mb-2">Titel, artikel,...</h2>
+                <a href="#"
+                  class="bg-white border-3 border-black px-2 py-0.5 relative top-8 right-0 text-lg font-semibold">Lees
+                  Meer</a>
+              </div>
             </div>
-
-            <!-- Pagination -->
-            <div class="swiper-pagination mt-4"></div>
-
-            <!-- Navigation buttons -->
-            <div class="swiper-button-prev mt-4"></div>
-            <div class="swiper-button-next mt-4"></div>
           </div>
+
+          <!-- Slide 2 -->
+          <div class="swiper-slide px-32 py-16">
+            <div class="card border-3 border-black">
+              <div class="overflow-hidden">
+                <img src="https://unsplash.it/640/425?random=1" alt="Card Image" class="w-full h-55 object-cover" />
+              </div>
+              <div class="p-4">
+                <div class="flex justify-end relative bottom-20 px-4 py-0.5 font-bold my-auto">
+                  <img src="assets/images/pinpoint.svg" alt="Locatie" class="mr-2">Brussel
+                </div>
+                <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
+                  eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                </p>
+                <h2 class="text-lg font-bold mb-2">Titel, artikel,...</h2>
+                <a href="#"
+                  class="bg-white border-3 border-black px-2 py-0.5 relative top-8 right-0 text-lg font-semibold">Lees
+                  Meer</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Slide 3 -->
+          <div class="swiper-slide px-32 py-16">
+            <div class="card border-3 border-black">
+              <div class="overflow-hidden">
+                <img src="https://unsplash.it/640/425?random=2" alt="Card Image" class="w-full h-55 object-cover" />
+              </div>
+              <div class="p-4">
+                <div class="flex justify-end relative bottom-20 px-4 py-0.5 font-bold my-auto">
+                  <img src="assets/images/pinpoint.svg" alt="Locatie" class="mr-2">Brussel
+                </div>
+                <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
+                  eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                </p>
+                <h2 class="text-lg font-bold mb-2">Titel, artikel,...</h2>
+                <a href="#"
+                  class="bg-white border-3 border-black px-2 py-0.5 relative top-8 right-0 text-lg font-semibold">Lees
+                  Meer</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Slide 4 -->
+          <div class="swiper-slide px-32 py-16">
+            <div class="card border-3 border-black">
+              <div class="overflow-hidden">
+                <img src="https://unsplash.it/640/425?random=3" alt="Card Image" class="w-full h-55 object-cover" />
+              </div>
+              <div class="p-4">
+                <div class="flex justify-end relative bottom-20 px-4 py-0.5 font-bold my-auto">
+                  <img src="assets/images/pinpoint.svg" alt="Locatie" class="mr-2">Brussel
+                </div>
+                <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
+                  eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                </p>
+                <h2 class="text-lg font-bold mb-2">Titel, artikel,...</h2>
+                <a href="#"
+                  class="bg-white border-3 border-black px-2 py-0.5 relative top-8 right-0 text-lg font-semibold">Lees
+                  Meer</a>
+              </div>
+            </div>
+          </div>
+
         </div>
       </div>
 
-      <!-- Verhalen: Stem geven zonder stempel -->
-      <div class="w-full md:w-1/2">
-        <div id="verhaal-stem-geven-zonder-stempel">
-          <h2 class="text-2xl font-bold mb-4">Werkzaamheidsgraag</h2>
-          <p class="text-gray-600 mb-6">
-            Subtext for the second story section. Brief description goes here.
-          </p>
-          <div class="swiper">
-            <div class="swiper-wrapper">
-              <!-- Card 1 -->
-              <div class="swiper-slide">
-                <div class="card bg-white rounded-lg shadow-md">
-                  <img src="https://unsplash.it/640/425" alt="Card Image" class="w-full h-48 object-cover rounded" />
-                  <div class="p-4">
-                    <h2 class="text-lg font-bold mb-2">Story Title 1</h2>
-                    <p class="text-gray-600 mb-4">
-                      Subtext for the first story.
-                    </p>
-                    <a href="#" class="text-blue-600 hover:text-blue-800">Lees Meer</a>
-                  </div>
-                </div>
-              </div>
+      <div class="flex">
+        <!-- leerkans-door-nieuwe-kansen-swiper Navigation Buttons -->
+        <div class="flex items-center space-x-4 mt-6">
+          <button class="leerkans-door-nieuwe-kansen-swiper-prev"><img src="assets/images/Arrow - left.svg"
+              alt="Vorige"></button>
+          <button class="leerkans-door-nieuwe-kansen-swiper-next"><img src="assets/images/Arrow - right.svg"
+              alt="Volgende"></button>
+        </div>
+        <!-- Pagination -->
+        <div class="leerkans-door-nieuwe-kansen-pagination mt-4"></div>
+      </div>
 
-              <!-- Card 2 -->
-              <div class="swiper-slide">
-                <div class="card bg-white rounded-lg shadow-md">
-                  <img src="https://unsplash.it/640/425?random=1" alt="Card Image"
-                    class="w-full h-48 object-cover rounded" />
-                  <div class="p-4">
-                    <h2 class="text-lg font-bold mb-2">Story Title 2</h2>
-                    <p class="text-gray-600 mb-4">
-                      Subtext for the second story.
-                    </p>
-                    <a href="#" class="text-blue-600 hover:text-blue-800">Lees Meer</a>
-                  </div>
-                </div>
-              </div>
+    </section>
 
-              <!-- Additional cards... -->
+    <!-- Verhalen: Stem geven zonder stempel Section -->
+    <section class="container px-4 py-12 bg-snow" id="verhaal-stem-geven-zonder-stempel">
+      <h2 class="text-4xl font-bold mb-4">Stem geven zonder stempel</h2>
+      <div class="flex items-start">
+        <!-- Swoosh Sign -->
+        <img src="assets/images/swoosh.svg" alt="Swoosh" class="w-16 h-auto mr-4" />
+        <!-- Placeholder Text -->
+        <p class="text-gray-700 text-lg">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque nec eros ut magna.
+        </p>
+      </div>
+      <div class="swiper stem-geven-zonder-stempel-swiper">
+        <div class="swiper-wrapper">
+
+          <!-- Slide 1 -->
+          <div class="swiper-slide px-32 py-16">
+            <div class="card border-3 border-black">
+              <div class="overflow-hidden">
+                <img src="https://unsplash.it/640/425" alt="Card Image" class="w-full h-55 object-cover" />
+              </div>
+              <div class="p-4">
+                <div class="flex justify-end relative bottom-20 px-4 py-0.5 font-bold my-auto">
+                  <img src="assets/images/pinpoint.svg" alt="Locatie" class="mr-2">Brussel
+                </div>
+                <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
+                  eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                </p>
+                <h2 class="text-lg font-bold mb-2">Titel, artikel,...</h2>
+                <a href="#"
+                  class="bg-white border-3 border-black px-2 py-0.5 relative top-8 right-0 text-lg font-semibold">Lees
+                  Meer</a>
+              </div>
             </div>
-
-            <!-- Pagination -->
-            <div class="swiper-pagination mt-4"></div>
-
-            <!-- Navigation buttons -->
-            <div class="swiper-button-prev mt-4"></div>
-            <div class="swiper-button-next mt-4"></div>
           </div>
+
+          <!-- Slide 2 -->
+          <div class="swiper-slide px-32 py-16">
+            <div class="card border-3 border-black">
+              <div class="overflow-hidden">
+                <img src="https://unsplash.it/640/425?random=1" alt="Card Image" class="w-full h-55 object-cover" />
+              </div>
+              <div class="p-4">
+                <div class="flex justify-end relative bottom-20 px-4 py-0.5 font-bold my-auto">
+                  <img src="assets/images/pinpoint.svg" alt="Locatie" class="mr-2">Brussel
+                </div>
+                <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
+                  eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                </p>
+                <h2 class="text-lg font-bold mb-2">Titel, artikel,...</h2>
+                <a href="#"
+                  class="bg-white border-3 border-black px-2 py-0.5 relative top-8 right-0 text-lg font-semibold">Lees
+                  Meer</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Slide 3 -->
+          <div class="swiper-slide px-32 py-16">
+            <div class="card border-3 border-black">
+              <div class="overflow-hidden">
+                <img src="https://unsplash.it/640/425?random=2" alt="Card Image" class="w-full h-55 object-cover" />
+              </div>
+              <div class="p-4">
+                <div class="flex justify-end relative bottom-20 px-4 py-0.5 font-bold my-auto">
+                  <img src="assets/images/pinpoint.svg" alt="Locatie" class="mr-2">Brussel
+                </div>
+                <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
+                  eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                </p>
+                <h2 class="text-lg font-bold mb-2">Titel, artikel,...</h2>
+                <a href="#"
+                  class="bg-white border-3 border-black px-2 py-0.5 relative top-8 right-0 text-lg font-semibold">Lees
+                  Meer</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Slide 4 -->
+          <div class="swiper-slide px-32 py-16">
+            <div class="card border-3 border-black">
+              <div class="overflow-hidden">
+                <img src="https://unsplash.it/640/425?random=3" alt="Card Image" class="w-full h-55 object-cover" />
+              </div>
+              <div class="p-4">
+                <div class="flex justify-end relative bottom-20 px-4 py-0.5 font-bold my-auto">
+                  <img src="assets/images/pinpoint.svg" alt="Locatie" class="mr-2">Brussel
+                </div>
+                <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
+                  eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                </p>
+                <h2 class="text-lg font-bold mb-2">Titel, artikel,...</h2>
+                <a href="#"
+                  class="bg-white border-3 border-black px-2 py-0.5 relative top-8 right-0 text-lg font-semibold">Lees
+                  Meer</a>
+              </div>
+            </div>
+          </div>
+
         </div>
       </div>
-    </div>
-  </section>
+
+      <div class="flex">
+        <!-- stem-geven-zonder-stempel-swiper Navigation Buttons -->
+        <div class="flex items-center space-x-4 mt-6">
+          <button class="stem-geven-zonder-stempel-swiper-prev"><img src="assets/images/Arrow - left.svg"
+              alt="Vorige"></button>
+          <button class="stem-geven-zonder-stempel-swiper-next"><img src="assets/images/Arrow - right.svg"
+              alt="Volgende"></button>
+        </div>
+        <!-- Pagination -->
+        <div class="stem-geven-zonder-stempel-pagination mt-4"></div>
+      </div>
+
+    </section>
+
+  </div>
 
   <!-- Ontdek alle verhalen section -->
   <section class="w-full bg-light-red py-12">
@@ -774,20 +1136,160 @@
     });
   </script>
 
-  <!-- JavaScript for imagecarousel -->
+  <!-- JavaScript for welzijn-door-speelterrein-swiper -->
   <script>
-    const swiper = new Swiper(".mySwiper", {
+    const welzijn_door_speelterrein_swiper = new Swiper(".welzijn-door-speelterrein-swiper", {
       direction: "horizontal",
       loop: true,
       slidesPerView: 1,
       spaceBetween: 30,
       pagination: {
-        el: ".swiper-pagination",
+        el: ".welzijn-door-speelterrein-pagination",
         clickable: true,
       },
       navigation: {
-        nextEl: ".custom-next",
-        prevEl: ".custom-prev",
+        nextEl: ".welzijn-door-speelterrein-swiper-next",
+        prevEl: ".welzijn-door-speelterrein-swiper-prev",
+      },
+      breakpoints: {
+        640: {
+          slidesPerView: 2,
+          spaceBetween: 20,
+        },
+        1024: {
+          slidesPerView: 3,
+          spaceBetween: 30,
+        },
+      },
+    });
+  </script>
+
+  <!-- JavaScript for ruimte-voor-ruimte-swiper -->
+  <script>
+    const ruimte_voor_ruimte_swiper = new Swiper(".ruimte-voor-ruimte-swiper", {
+      direction: "horizontal",
+      loop: true,
+      slidesPerView: 1,
+      spaceBetween: 30,
+      pagination: {
+        el: ".ruimte-voor-ruimte-pagination",
+        clickable: true,
+      },
+      navigation: {
+        nextEl: ".ruimte-voor-ruimte-swiper-next",
+        prevEl: ".ruimte-voor-ruimte-swiper-prev",
+      },
+      breakpoints: {
+        640: {
+          slidesPerView: 2,
+          spaceBetween: 20,
+        },
+        1024: {
+          slidesPerView: 2,
+          spaceBetween: 30,
+        },
+      },
+    });
+  </script>
+
+  <!-- JavaScript for werkzaamheidsgraag-swiper -->
+  <script>
+    const werkzaamheidsgraag_swiper = new Swiper(".werkzaamheidsgraag-swiper", {
+      direction: "horizontal",
+      loop: true,
+      slidesPerView: 1,
+      spaceBetween: 30,
+      pagination: {
+        el: ".werkzaamheidsgraag-pagination",
+        clickable: true,
+      },
+      navigation: {
+        nextEl: ".werkzaamheidsgraag-swiper-next",
+        prevEl: ".werkzaamheidsgraag-swiper-prev",
+      },
+      breakpoints: {
+        640: {
+          slidesPerView: 2,
+          spaceBetween: 20,
+        },
+        1024: {
+          slidesPerView: 2,
+          spaceBetween: 30,
+        },
+      },
+    });
+  </script>
+
+  <!-- JavaScript for leerkans-door-nieuwe-kansen-swiper -->
+  <script>
+    const leerkans_door_nieuwe_kansen_swiper = new Swiper(".leerkans-door-nieuwe-kansen-swiper", {
+      direction: "horizontal",
+      loop: true,
+      slidesPerView: 1,
+      spaceBetween: 30,
+      pagination: {
+        el: ".leerkans-door-nieuwe-kansen-pagination",
+        clickable: true,
+      },
+      navigation: {
+        nextEl: ".leerkans-door-nieuwe-kansen-swiper-next",
+        prevEl: ".leerkans-door-nieuwe-kansen-swiper-prev",
+      },
+      breakpoints: {
+        640: {
+          slidesPerView: 2,
+          spaceBetween: 20,
+        },
+        1024: {
+          slidesPerView: 2,
+          spaceBetween: 30,
+        },
+      },
+    });
+  </script>
+
+  <!-- JavaScript for stem-geven-zonder-stempel-swiper -->
+  <script>
+    const stem_geven_zonder_stempel_swiper = new Swiper(".stem-geven-zonder-stempel-swiper", {
+      direction: "horizontal",
+      loop: true,
+      slidesPerView: 1,
+      spaceBetween: 30,
+      pagination: {
+        el: ".stem-geven-zonder-stempel-pagination",
+        clickable: true,
+      },
+      navigation: {
+        nextEl: ".stem-geven-zonder-stempel-swiper-next",
+        prevEl: ".stem-geven-zonder-stempel-swiper-prev",
+      },
+      breakpoints: {
+        640: {
+          slidesPerView: 2,
+          spaceBetween: 20,
+        },
+        1024: {
+          slidesPerView: 2,
+          spaceBetween: 30,
+        },
+      },
+    });
+  </script>
+
+  <!-- JavaScript for groei-door-latent-talent-swiper -->
+  <script>
+    const groei_door_latent_talent_swiper = new Swiper(".groei-door-latent-talent-swiper", {
+      direction: "horizontal",
+      loop: true,
+      slidesPerView: 1,
+      spaceBetween: 30,
+      pagination: {
+        el: ".groei-door-latent-talent-pagination",
+        clickable: true,
+      },
+      navigation: {
+        nextEl: ".groei-door-latent-talent-swiper-next",
+        prevEl: ".groei-door-latent-talent-swiper-prev",
       },
       breakpoints: {
         640: {

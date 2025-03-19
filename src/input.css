@@ -80,41 +80,22 @@
   }
 }
 
+/* Prevent linked anchors from appearing under the navigation */
+section{
+  scroll-margin-top: 8em;
+}
+
 /* Swiper General Styling */
-.swiper {
-  width: 100%;
-  height: 100%;
-  overflow: visible; /* Prevents button clipping */
+.swiper-pagination-bullet{
+  width: 16px !important;
+  height: 16px !important;
+  background-color: var(--color-light-red) !important;
+  color: var(--color-light-red) !important;
+  border: 2px solid var(--color-light-red) !important;
+  opacity: 1 !important;
 }
-
-.swiper-slide {
-  text-align: center;
-  font-size: 18px;
-  background: #fff;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-/* Prevent Swiper Clipping */
-.mySwiper {
-  position: relative;
-}
-
-/* Custom Navigation Buttons */
-.custom-prev,
-.custom-next {
-  background-color: black;
-  color: white;
-  border: none;
-  padding: 10px 15px;
-  font-size: 16px;
-  border-radius: 50px;
-  cursor: pointer;
-  transition: background-color 0.3s;
-}
-
-.custom-prev:hover,
-.custom-next:hover {
-  background-color: darkgray;
+.swiper-pagination-bullet-active{
+  border: 2px solid !important;
+  background: none !important;
+  background-color: none !important;
 }
