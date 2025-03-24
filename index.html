@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="nl">
+<html class="scroll-smooth" lang="nl">
 
 <head>
   <meta charset="UTF-8" />
@@ -11,62 +11,90 @@
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 </head>
 
-<body class="mt-16">
-  <!-- Zorgt ervoor dat content niet onder navbar verdwijnt -->
-
+<body class="pt-32">
   <!-- Navigation Bar -->
   <nav
-    class="w-full fixed top-0 left-0 px-36 py-8 border-b-3 border-black flex justify-between items-center z-50 font-semibold bg-snow">
+    class="w-full fixed top-0 left-0 md:px-36 py-8 border-b-3 border-black flex justify-between items-center z-20 font-semibold bg-snow">
     <!-- Logo en menu (links) -->
     <div class="flex items-center space-x-24">
-      <a href="#"><img src="assets/images/JES_logo_zonderbaseline_rood.svg" alt="JES" /></a>
+      <a href="#"><img src="assets/images/JES_logo_zonderbaseline_rood.svg" class="max-w-xs md:max-w-sm lg:max-w-md"
+          alt="JES" /></a>
       <div class="hidden md:flex space-x-12">
-        <a href="#hoopkracht" class="hover:line-through"> Hoopkracht </a>
-        <a href="#nieuws" class="hover:line-through">Nieuws</a>
-
+        <a href="#hoopkracht"
+          class="relative after:block after:h-[2px] after:bg-black after:w-0 after:transition-all after:duration-200 hover:after:w-full after:absolute after:left-0 after:top-4 after:-translate-y-1">
+          Hoopkracht </a>
+        <a href="#nieuws"
+          class="relative after:block after:h-[2px] after:bg-black after:w-0 after:transition-all after:duration-200 hover:after:w-full after:absolute after:left-0 after:top-4 after:-translate-y-1">Nieuws</a>
         <!-- Verhalen Dropdown -->
         <div class="relative" id="verhalen-dropdown">
-          <button class="hover:line-through focus:outline-none" onmouseenter="openDropdown()">
+          <button
+            class="relative after:block after:h-[2px] after:bg-black after:w-0 after:transition-all after:duration-200 hover:after:w-full after:absolute after:left-0 after:top-4 after:-translate-y-1 focus:outline-none"
+            onmouseenter="openDropdown()">
             Verhalen
           </button>
           <div id="dropdown-menu" class="absolute left-0 mt-2 w-64 bg-light-red text-white shadow-lg hidden p-2">
-            <a href="#verhaal-welzijn-door-speelterrein" class="block px-4 py-2 hover:line-through">Welzijn door
+            <a href="#verhaal-welzijn-door-speelterrein"
+              class="block px-4 py-2 relative after:block after:h-[2px] after:bg-black after:w-0 after:transition-all after:duration-200 hover:after:w-full after:absolute after:left-0 after:top-4 after:-translate-y-1">Welzijn
+              door
               speelterrein</a>
-            <a href="#verhaal-ontharden-door-ontmoeten" class="block px-4 py-2 hover:line-through">Ontharden door
+            <a href="#verhaal-ontharden-door-ontmoeten"
+              class="block px-4 py-2 relative after:block after:h-[2px] after:bg-black after:w-0 after:transition-all after:duration-200 hover:after:w-full after:absolute after:left-0 after:top-4 after:-translate-y-1">Ontharden
+              door
               ontmoeten</a>
-            <a href="#verhaal-groei-door-latent-talent" class="block px-4 py-2 hover:line-through">Groei door latent
+            <a href="#verhaal-groei-door-latent-talent"
+              class="block px-4 py-2 relative after:block after:h-[2px] after:bg-black after:w-0 after:transition-all after:duration-200 hover:after:w-full after:absolute after:left-0 after:top-4 after:-translate-y-1">Groei
+              door latent
               talent</a>
-            <a href="#verhaal-ruimte-voor-ruimte" class="block px-4 py-2 hover:line-through">Ruimte voor ruimte</a>
-            <a href="#verhaal-leerkans-door-nieuwe-kans" class="block px-4 py-2 hover:line-through">Leerkans door nieuwe
+            <a href="#verhaal-ruimte-voor-ruimte"
+              class="block px-4 py-2 relative after:block after:h-[2px] after:bg-black after:w-0 after:transition-all after:duration-200 hover:after:w-full after:absolute after:left-0 after:top-4 after:-translate-y-1">Ruimte
+              voor ruimte</a>
+            <a href="#verhaal-leerkans-door-nieuwe-kans"
+              class="block px-4 py-2 relative after:block after:h-[2px] after:bg-black after:w-0 after:transition-all after:duration-200 hover:after:w-full after:absolute after:left-0 after:top-4 after:-translate-y-1">Leerkans
+              door nieuwe
               kans</a>
-            <a href="#verhaal-stem-geven-zonder-stempel" class="block px-4 py-2 hover:line-through">Stem geven zonder
+            <a href="#verhaal-stem-geven-zonder-stempel"
+              class="block px-4 py-2 relative after:block after:h-[2px] after:bg-black after:w-0 after:transition-all after:duration-200 hover:after:w-full after:absolute after:left-0 after:top-4 after:-translate-y-1">Stem
+              geven zonder
               stempel</a>
-            <a href="#verhaal-werkzaamheidsgraag" class="block px-4 py-2 hover:line-through">Werkzaamheidsgraag</a>
+            <a href="#verhaal-werkzaamheidsgraag"
+              class="block px-4 py-2 relative after:block after:h-[2px] after:bg-black after:w-0 after:transition-all after:duration-200 hover:after:w-full after:absolute after:left-0 after:top-4 after:-translate-y-1">Werkzaamheidsgraag</a>
           </div>
         </div>
-
-        <a href="#event" class="hover:line-through">Event</a>
+        <a href="#event"
+          class="relative after:block after:h-[2px] after:bg-black after:w-0 after:transition-all after:duration-200 hover:after:w-full after:absolute after:left-0 after:top-4 after:-translate-y-1">Event</a>
       </div>
     </div>
-
     <!-- Rechts: Zoekicoon + Extra links -->
-    <div class="hidden md:flex space-x-12 items-center">
-      <button class="text-gray-600 hover:line-through">
-        🔍
+    <div class="hidden md:flex space-x-12 relative top-2">
+      <!-- Search Input -->
+      <div class="relative w-64">
+        <input type="text" id="search" placeholder="Zoeken"
+          class="p-2 border-2 border-black w-full relative -top-2 invisible opacity-0 transition-all duration-300 focus:outline-none">
+        <!-- Dropdown List -->
+        <ul id="results" class="absolute w-full bg-white border border-gray-300 mt-1 rounded-lg shadow-lg hidden">
+        </ul>
+      </div>
+      <button>
+        <img src="assets/images/zoeken - icoontje.svg" id="searchBtn" class="cursor-pointer h-8 w-8 relative -top-2"
+          alt="Zoeken">
         <!-- Zoekicoon -->
       </button>
-      <a href="#over" class="hover:line-through">Over JES vzw</a>
-      <a href="#contact" class="hover:line-through">Contact</a>
+      <a href="#over-jes"
+        class="relative after:block after:h-[2px] after:bg-black after:w-0 after:transition-all after:duration-200 hover:after:w-full after:absolute after:left-0 after:top-4 after:-translate-y-1">
+        Over JES vzw
+      </a>
+      <a href="#contact"
+        class="relative after:block after:h-[2px] after:bg-black after:w-0 after:transition-all after:duration-200 hover:after:w-full after:absolute after:left-0 after:top-4 after:-translate-y-1">Contact</a>
     </div>
-
     <!-- Hamburger Menu (Mobiel & Tablet) -->
-    <button id="menu-toggle" class="md:hidden text-gray-600 hover:line-through">
+    <button id="menu-toggle"
+      class="md:hidden text-gray-600 relative after:block after:h-[2px] after:bg-black after:w-0 after:transition-all after:duration-200 hover:after:w-full after:absolute after:left-0 after:top-4 after:-translate-y-1">
       <img src="assets/images/hamburger - icoon.svg" alt="hamburger menu" />
       <!-- Hamburger Icon -->
     </button>
   </nav>
   <!-- Mobile & Tablet Menu -->
-  <div id="mobile-menu" class="fixed inset-0 bg-white hidden flex flex-col z-50 p-6">
+  <div id="mobile-menu" class="fixed inset-0 bg-white hidden flex flex-col z-20 p-6">
     <!-- Top bar with Logo and Close button -->
     <div class="w-full flex items-center justify-between mb-6">
       <!-- Logo -->
@@ -74,47 +102,62 @@
       <!-- Close button -->
       <button id="menu-close" class="text-gray-600 text-2xl">✕</button>
     </div>
-
     <!-- Search bar (just below the top bar) -->
     <div class="w-full flex items-center border-b-2 border-gray-300 pb-2 mb-6">
       <input type="text" placeholder="Zoeken..." class="flex-grow outline-none p-2" />
       <button class="ml-2 text-gray-600">🔍</button>
     </div>
-
     <!-- Menu items - Vertically stacked -->
     <div class="w-full space-y-4">
-      <a href="#hoopkracht" class="hover:line-through block text-center">Hoopkracht</a>
-      <a href="#nieuws" class="hover:line-through block text-center">Nieuws</a>
-
+      <a href="#hoopkracht"
+        class="relative after:block after:h-[2px] after:bg-black after:w-0 after:transition-all after:duration-200 hover:after:w-full after:absolute after:left-0 after:top-4 after:-translate-y-1 block text-center">Hoopkracht</a>
+      <a href="#nieuws"
+        class="relative after:block after:h-[2px] after:bg-black after:w-0 after:transition-all after:duration-200 hover:after:w-full after:absolute after:left-0 after:top-4 after:-translate-y-1 block text-center">Nieuws</a>
       <!-- Verhalen dropdown -->
       <div class="space-y-2">
         <p class="font-bold text-center text-gray-700">Verhalen</p>
-        <a href="#verhaal-welzijn-door-speelterrein" class="block hover:line-through text-center">Welzijn door
+        <a href="#verhaal-welzijn-door-speelterrein"
+          class="block relative after:block after:h-[2px] after:bg-black after:w-0 after:transition-all after:duration-200 hover:after:w-full after:absolute after:left-0 after:top-4 after:-translate-y-1 text-center">Welzijn
+          door
           speelterrein</a>
-        <a href="#verhaal-ontharden-door-ontmoeten" class="block hover:line-through text-center">Ontharden door
+        <a href="#verhaal-ontharden-door-ontmoeten"
+          class="block relative after:block after:h-[2px] after:bg-black after:w-0 after:transition-all after:duration-200 hover:after:w-full after:absolute after:left-0 after:top-4 after:-translate-y-1 text-center">Ontharden
+          door
           ontmoeten</a>
-        <a href="#verhaal-groei-door-latent-talent" class="block hover:line-through text-center">Groei door latent
+        <a href="#verhaal-groei-door-latent-talent"
+          class="block relative after:block after:h-[2px] after:bg-black after:w-0 after:transition-all after:duration-200 hover:after:w-full after:absolute after:left-0 after:top-4 after:-translate-y-1 text-center">Groei
+          door latent
           talent</a>
-        <a href="#verhaal-ruimte-voor-ruimte" class="block hover:line-through text-center">Ruimte voor ruimte</a>
-        <a href="#verhaal-leerkans-door-nieuwe-kans" class="block hover:line-through text-center">Leerkans door nieuwe
+        <a href="#verhaal-ruimte-voor-ruimte"
+          class="block relative after:block after:h-[2px] after:bg-black after:w-0 after:transition-all after:duration-200 hover:after:w-full after:absolute after:left-0 after:top-4 after:-translate-y-1 text-center">Ruimte
+          voor ruimte</a>
+        <a href="#verhaal-leerkans-door-nieuwe-kans"
+          class="block relative after:block after:h-[2px] after:bg-black after:w-0 after:transition-all after:duration-200 hover:after:w-full after:absolute after:left-0 after:top-4 after:-translate-y-1 text-center">Leerkans
+          door nieuwe
           kans</a>
-        <a href="#verhaal-stem-geven-zonder-stempel" class="block hover:line-through text-center">Stem geven zonder
+        <a href="#verhaal-stem-geven-zonder-stempel"
+          class="block relative after:block after:h-[2px] after:bg-black after:w-0 after:transition-all after:duration-200 hover:after:w-full after:absolute after:left-0 after:top-4 after:-translate-y-1 text-center">Stem
+          geven zonder
           stempel</a>
-        <a href="#verhaal-werkzaamheidsgraag" class="block hover:line-through text-center">Werkzaamheidsgraag</a>
+        <a href="#verhaal-werkzaamheidsgraag"
+          class="block relative after:block after:h-[2px] after:bg-black after:w-0 after:transition-all after:duration-200 hover:after:w-full after:absolute after:left-0 after:top-4 after:-translate-y-1 text-center">Werkzaamheidsgraag</a>
       </div>
-
-      <a href="#" class="hover:line-through block text-center">Event</a>
-      <a href="#" class="hover:line-through block text-center">Over JES vzw</a>
-      <a href="#" class="hover:line-through block text-center">Contact</a>
+      <a href="#"
+        class="relative after:block after:h-[2px] after:bg-black after:w-0 after:transition-all after:duration-200 hover:after:w-full after:absolute after:left-0 after:top-4 after:-translate-y-1 block text-center">Event</a>
+      <a href="#"
+        class="relative after:block after:h-[2px] after:bg-black after:w-0 after:transition-all after:duration-200 hover:after:w-full after:absolute after:left-0 after:top-4 after:-translate-y-1 block text-center">Over
+        JES vzw</a>
+      <a href="#"
+        class="relative after:block after:h-[2px] after:bg-black after:w-0 after:transition-all after:duration-200 hover:after:w-full after:absolute after:left-0 after:top-4 after:-translate-y-1 block text-center">Contact</a>
     </div>
   </div>
-
   <!-- Header Section -->
-  <section class="w-screen flex md:flex-row items-center justify-between border-b-3 border-black bg-snow">
+  <section id="header"
+    class="w-screen flex flex-col md:flex-row items-center justify-between border-b-3 border-black bg-snow md:pl-36">
     <!-- Left side: Logo, Subtitle, Button -->
-    <div class="w-full md:w-1/3 flex flex-col items-start gap-6">
+    <div class="w-full md:w-1/3 flex flex-col items-start gap-6 relative z-10">
       <!-- Logo -->
-      <img src="assets/images/hoopkracht.svg" alt="Hoopkracht" class="w-[110%] max-w-none z-10" />
+      <img src="assets/images/hoopkracht.svg" alt="Hoopkracht" class="w-[110%] max-w-none md:mb-6 z-10" />
       <!-- Subtitle -->
       <p class="text-base font-semibold text-black pr-32">
         Lorem Ipsum is simply dummy text of the printing and typesetting
@@ -124,28 +167,28 @@
       </p>
       <!-- Button -->
       <a href="https://www.jes.be" target="_blank"
-        class="px-3 py-0.5 border-3 border-light-red bg-white text-light-red hover:bg-light-red hover:text-white transition duration-200 font-semibold">
+        class="mt-4 px-3 py-0.5 border-3 border-light-red bg-white text-light-red hover:bg-light-red hover:text-white transition duration-200 font-semibold">
         Ik schrijf me in
       </a>
+      <a href="#hoopkracht"><img src="assets/images/Arrow - down.svg" alt="naar beneden" class="mt-4"></a>
     </div>
-
     <!-- Video -->
-    <div class="w-full md:w-2/3 h-auto">
-      <video class="w-full h-full object-cover mt-88" autoplay muted loop>
+    <div class="w-full md:w-2/3 h-auto relative">
+      <video class="w-full h-full object-cover md:mt-0 mt-32" autoplay muted loop>
         <source src="https://docs.material-tailwind.com/demo.mp4" type="video/mp4" />
-        Your browser does not support the video tag.
+        Je browser ondersteunt geen video.
       </video>
     </div>
   </section>
-
   <!-- Hoopkracht en Event Section -->
-  <div class="flex flex-col md:flex-row border-b-3 border-black bg-soft-pink">
+  <div class="flex flex-col md:flex-row border-b-3 bg-soft-pink" id="#hoopkracht">
     <!-- Hoopkracht Section -->
-    <section id="hoopkracht" class="w-full md:w-1/2 bg-soft-pink py-12 ">
-      <h2 class="text-4xl font-extrabold text-black mb-12">
-        Waarom hoopkracht?
-      </h2>
-
+    <section id="hoopkracht" class="w-full md:w-1/2 bg-soft-pink md:pl-36">
+      <div class="border-r-3 border-black">
+        <h2 id="Waarom hoopkracht" class="text-4xl leading-4xl font-extrabold text-black pt-12 pb-16">
+          Waarom hoopkracht?
+        </h2>
+      </div>
       <!-- Three-column Layout -->
       <div class="grid grid-cols-[auto_1fr_auto] items-start">
         <div class="flex justify-center md:justify-start mt-3">
@@ -163,15 +206,15 @@
           </p>
         </div>
         <div
-          class="flex justify-center border-t-3  border-t-black border-b-3  border-b-black border-l-3  border-l-black bg-light-pink px-12 py-4 z-10 ">
-          <img src="assets/images/label.svg" alt="Icon" class="w-30 h-30" />
+          class="flex justify-center border-t-3  border-t-black border-b-3  border-b-black border-l-3  border-l-black border-r-3  border-r-light-pink bg-light-pink px-12 py-4 z-10 ">
+          <img src="assets/images/label.svg" alt="Icon" />
         </div>
       </div>
+      <div class="min-h-12/12 border-r-3 border-black"></div>
     </section>
-
     <!-- Event Section -->
     <section id="event" class="w-full md:w-1/2 p-6 md:p-12 bg-light-pink">
-      <h2 class="text-4xl mb-8">Event</h2>
+      <h2 id="event" class="text-4xl leading-4xl mb-8">Event</h2>
       <h3 class="text-lg">JES feest</h3>
       <p class="text-sm mb-4">Locatie Brussel, 26 Nov 2025</p>
       <p class="text-base mb-12">
@@ -189,7 +232,6 @@
       </p>
     </section>
   </div>
-
   <!-- Nieuws Section -->
   <section class="relative">
     <div class="flex flex-col md:flex-row  border-b-3 border-black">
@@ -202,12 +244,11 @@
         <img src="https://unsplash.it/640/425?random" alt="Right news image" class="w-full h-full object-cover" />
       </div>
     </div>
-
     <!-- Centered news square -->
     <div class="absolute inset-0 flex items-center justify-center">
       <!-- Square Box with Aspect Ratio -->
       <div class="bg-light-red border-4 border-white p-6 w-100 h-100 aspect-square flex flex-col justify-center">
-        <h2 class="text-white text-xl font-bold mb-2">Nieuws</h2>
+        <h2 id="nieuws" class="text-white text-xl font-bold mb-2">Nieuws</h2>
         <p class="text-white mb-4 text-base">Subtext goes here</p>
         <p class="text-white text-base">Subtext lorem lazarus lapin lizardos salome balak alaf met</p>
         <p class="text-white mb-4 text-sm">Datum en thema</p>
@@ -222,34 +263,33 @@
       </div>
     </div>
   </section>
-
   <!-- Verhalen: Welzijn door speelterrein Section -->
-  <div class="bg-soft-pink border-b-3 border-black">
-    <section class="container flex flex-col md:flex-row px-4 py-12 bg-soft-pink" id="verhaal-welzijn-door-speelterrein">
+  <div class="bg-light-pink border-b-3 border-black  md:pl-36">
+    <section class="container flex flex-col md:flex-row pl-4 py-12 bg-light-pink"
+      id="verhaal-welzijn-door-speelterrein">
       <!-- Left Section (Text + Controls) -->
       <div class="w-full md:w-5/12">
-        <h2 class="text-4xl font-bold mb-4">Welzijn door speelterrein</h2>
+        <h2 id="welzijn door speelterrein" class="text-4xl leading-4xl font-bold mb-4">Welzijn door speelterrein</h2>
         <div class="flex items-start">
           <!-- Swoosh Sign -->
-          <img src="assets/images/swoosh.svg" alt="Swoosh" class="w-16 h-auto mr-4" />
+          <img src="assets/images/swoosh.svg" alt="Swoosh" class="w-16 h-auto mr-4 mt-4" />
           <!-- Placeholder Text -->
           <p class="text-gray-700 text-lg">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque nec eros ut magna.
           </p>
         </div>
-        <div class="flex">
+        <div class="flex items-center ml-22 space-x-16">
           <!-- welzijn-door-speelterrein-swiper Navigation Buttons -->
           <div class="flex items-center space-x-4 mt-6">
-            <button class="welzijn-door-speelterrein-swiper-prev"><img src="assets/images/Arrow - left.svg"
-                alt="Vorige"></button>
-            <button class="welzijn-door-speelterrein-swiper-next"><img src="assets/images/Arrow - right.svg"
-                alt="Volgende"></button>
+            <button class="welzijn-door-speelterrein-swiper-prev cursor-pointer"><img
+                src="assets/images/Arrow - left.svg" alt="Vorige"></button>
+            <button class="welzijn-door-speelterrein-swiper-next cursor-pointer"><img
+                src="assets/images/Arrow - right.svg" alt="Volgende"></button>
           </div>
           <!-- Pagination -->
-          <div class="welzijn-door-speelterrein-pagination mt-4"></div>
+          <div class="welzijn-door-speelterrein-pagination mt-8"></div>
         </div>
       </div>
-
       <!-- Right Section (Swiper) -->
       <div class="w-full md:w-7/12">
         <div class="swiper welzijn-door-speelterrein-swiper">
@@ -272,11 +312,10 @@
                   <h2 class="text-lg font-bold mb-2">Titel, artikel,...</h2>
                   <p class="text-gray-600 mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
                     eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                  <a href="#" class="underline">Lees Meer</a>
+                  <a href="#" class="underline">Lees Meer &#8594;</a>
                 </div>
               </div>
             </div>
-
             <!-- Slide 2 -->
             <div class="swiper-slide">
               <div class="card">
@@ -295,11 +334,10 @@
                   <h2 class="text-lg font-bold mb-2">Titel, artikel,...</h2>
                   <p class="text-gray-600 mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
                     eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                  <a href="#" class="underline">Lees Meer</a>
+                  <a href="#" class="underline">Lees Meer &#8594;</a>
                 </div>
               </div>
             </div>
-
             <!-- Slide 3 -->
             <div class="swiper-slide">
               <div class="card">
@@ -318,11 +356,10 @@
                   <h2 class="text-lg font-bold mb-2">Titel, artikel,...</h2>
                   <p class="text-gray-600 mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
                     eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                  <a href="#" class="underline">Lees Meer</a>
+                  <a href="#" class="underline">Lees Meer &#8594;</a>
                 </div>
               </div>
             </div>
-
             <!-- Slide 4 -->
             <div class="swiper-slide">
               <div class="card">
@@ -341,7 +378,7 @@
                   <h2 class="text-lg font-bold mb-2">Titel, artikel,...</h2>
                   <p class="text-gray-600 mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
                     eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                  <a href="#" class="underline">Lees Meer</a>
+                  <a href="#" class="underline">Lees Meer &#8594;</a>
                 </div>
               </div>
             </div>
@@ -350,21 +387,20 @@
       </div>
     </section>
   </div>
-
   <!-- Blijf op de hoogte Section -->
   <section class=" py-16 border-b-3 border-black">
     <div class="container mx-auto px-4">
       <div class="flex flex-col md:flex-row">
         <!-- Left half (signup form) -->
         <div class="w-full md:w-1/2 mb-8 md:mb-0 md:pr-8">
-          <h2 class="text-4xl font-bold mb-8">Blijf op de hoogte</h2>
+          <h2 id="blijf op de hoogte" class="text-4xl leading-4xl font-bold mb-8">Blijf op de hoogte</h2>
           <p class="text-lg font-semibold mb-6">
             Meer van dat. Schrijf me in op de nieuwsbrief.
           </p>
           <form action="https://formsubmit.co/pieter.vandereyken@gmail.com" method="POST">
             <div class="mb-4 flex items-center">
               <!-- Adjust the width of the input field here -->
-              <input type="email" placeholder="E-mail" class="w-1/4 p-2 border-2 border-black font-bold text-black mr-2"
+              <input type="email" placeholder="E-mail" class="w-2/4 p-2 border-2 border-black font-bold text-black mr-2"
                 required />
               <!-- The button is now next to the input field -->
               <button type="submit" class=" text-white px-4 py-2 rounded">
@@ -380,29 +416,25 @@
             </div>
           </form>
         </div>
-
-        <!-- Right half (text content) -->
         <div class="w-full md:w-1/2">
-          <p class="mb-4 text-lg">
+          <p class="mb-4 text-lg font-semibold">
             Quote - newsletter brings you the latest updates, exclusive offers,
             and insightful content directly to your inbox. Don't miss out on
             important announcements and special promotions.
           </p>
           <img src="assets/images/swoosh.svg" alt="Swoosh">
-          <p class="text-lg font-medium">
+          <p class="text-lg font-semibold">
             Naam jongere
           </p>
         </div>
       </div>
     </div>
   </section>
-
   <!-- Verhalen: Ruimte voor ruimte en Werkzaamheidsgraag Section -->
-  <div class="border-b-3 border-black flex">
-
+  <div class="border-b-3 border-black flex flex-col md:flex-row">
     <!-- Verhalen: Ruimte voor ruimte Section -->
-    <section class="container px-4 py-12 bg-snow" id="verhaal-ruimte-voor-ruimte">
-      <h2 class="text-4xl font-bold mb-4">Ruimte voor ruimte</h2>
+    <section class="container px-4 bg-snow w-full md:w-1/2" id="verhaal-ruimte-voor-ruimte">
+      <h2 id="ruimte voor ruimte" class="text-4xl leading-4xl font-bold mb-4">Ruimte <br>voor ruimte</h2>
       <div class="flex items-start">
         <!-- Swoosh Sign -->
         <img src="assets/images/swoosh.svg" alt="Swoosh" class="w-16 h-auto mr-4" />
@@ -413,9 +445,8 @@
       </div>
       <div class="swiper ruimte-voor-ruimte-swiper">
         <div class="swiper-wrapper">
-
           <!-- Slide 1 -->
-          <div class="swiper-slide px-32 py-16">
+          <div class="swiper-slide">
             <div class="card border-3 border-black">
               <div class="overflow-hidden">
                 <img src="https://unsplash.it/640/425" alt="Card Image" class="w-full h-55 object-cover" />
@@ -436,7 +467,7 @@
           </div>
 
           <!-- Slide 2 -->
-          <div class="swiper-slide px-32 py-16">
+          <div class="swiper-slide">
             <div class="card border-3 border-black">
               <div class="overflow-hidden">
                 <img src="https://unsplash.it/640/425?random=1" alt="Card Image" class="w-full h-55 object-cover" />
@@ -457,7 +488,7 @@
           </div>
 
           <!-- Slide 3 -->
-          <div class="swiper-slide px-32 py-16">
+          <div class="swiper-slide">
             <div class="card border-3 border-black">
               <div class="overflow-hidden">
                 <img src="https://unsplash.it/640/425?random=2" alt="Card Image" class="w-full h-55 object-cover" />
@@ -478,7 +509,7 @@
           </div>
 
           <!-- Slide 4 -->
-          <div class="swiper-slide px-32 py-16">
+          <div class="swiper-slide">
             <div class="card border-3 border-black">
               <div class="overflow-hidden">
                 <img src="https://unsplash.it/640/425?random=3" alt="Card Image" class="w-full h-55 object-cover" />
@@ -500,24 +531,25 @@
 
         </div>
       </div>
-
-      <div class="flex">
-        <!-- ruimte-voor-ruimte-swiper Navigation Buttons -->
-        <div class="flex items-center space-x-4 mt-6">
-          <button class="ruimte-voor-ruimte-swiper-prev"><img src="assets/images/Arrow - left.svg"
-              alt="Vorige"></button>
-          <button class="ruimte-voor-ruimte-swiper-next"><img src="assets/images/Arrow - right.svg"
-              alt="Volgende"></button>
-        </div>
+      <div class="flex flex-col items-center">
         <!-- Pagination -->
-        <div class="ruimte-voor-ruimte-pagination mt-4"></div>
+        <div class="ruimte-voor-ruimte-pagination mt-4 flex justify-center w-full"></div>
+        <div>
+          <!-- ruimte-voor-ruimte-swiper Navigation Buttons -->
+          <div class="flex items-center space-x-4 mt-6">
+            <button class="ruimte-voor-ruimte-swiper-prev"><img src="assets/images/Arrow - left.svg"
+                alt="Vorige"></button>
+            <button class="ruimte-voor-ruimte-swiper-next"><img src="assets/images/Arrow - right.svg"
+                alt="Volgende"></button>
+          </div>
+        </div>
       </div>
 
     </section>
-
     <!-- Verhalen: werkzaamheidsgraag Section -->
-    <section class="container px-4 py-12 bg-soft-pink border-l-3 border-black" id="verhaal-werkzaamheidsgraag">
-      <h2 class="text-4xl font-bold mb-4">Werkzaamheidsgraaaaaag</h2>
+    <section class="container w-full md:w-1/2 px-4 bg-soft-pink border-l-3 border-black"
+      id="verhaal-werkzaamheidsgraag">
+      <h2 werkzaamheidsgraag class="text-4xl leading-4xl font-bold mb-4 break-words">Werkzaamheidsgraaaaaag</h2>
       <div class="flex items-start">
         <!-- Swoosh Sign -->
         <img src="assets/images/swoosh.svg" alt="Swoosh" class="w-16 h-auto mr-4" />
@@ -528,9 +560,8 @@
       </div>
       <div class="swiper werkzaamheidsgraag-swiper">
         <div class="swiper-wrapper">
-
           <!-- Slide 1 -->
-          <div class="swiper-slide px-32 py-16">
+          <div class="swiper-slide">
             <div class="card border-3 border-black">
               <div class="overflow-hidden">
                 <img src="https://unsplash.it/640/425" alt="Card Image" class="w-full h-55 object-cover" />
@@ -549,9 +580,8 @@
               </div>
             </div>
           </div>
-
           <!-- Slide 2 -->
-          <div class="swiper-slide px-32 py-16">
+          <div class="swiper-slide">
             <div class="card border-3 border-black">
               <div class="overflow-hidden">
                 <img src="https://unsplash.it/640/425?random=4" alt="Card Image" class="w-full h-55 object-cover" />
@@ -570,9 +600,8 @@
               </div>
             </div>
           </div>
-
           <!-- Slide 3 -->
-          <div class="swiper-slide px-32 py-16">
+          <div class="swiper-slide">
             <div class="card border-3 border-black">
               <div class="overflow-hidden">
                 <img src="https://unsplash.it/640/425?random=5" alt="Card Image" class="w-full h-55 object-cover" />
@@ -591,9 +620,8 @@
               </div>
             </div>
           </div>
-
           <!-- Slide 4 -->
-          <div class="swiper-slide px-32 py-16">
+          <div class="swiper-slide">
             <div class="card border-3 border-black">
               <div class="overflow-hidden">
                 <img src="https://unsplash.it/640/425?random=6" alt="Card Image" class="w-full h-55 object-cover" />
@@ -612,37 +640,33 @@
               </div>
             </div>
           </div>
-
         </div>
       </div>
+      <div class="flex flex-col items-center">
+        <!-- Centered Pagination -->
+        <div class="werkzaamheidsgraag-pagination mt-4 flex justify-center w-full"></div>
 
-      <div class="flex">
-        <!-- werkzaamheidsgraag-swiper Navigation Buttons -->
-        <div class="flex items-center space-x-4 mt-6">
-          <button class="werkzaamheidsgraag-swiper-prev"><img src="assets/images/Arrow - left.svg"
-              alt="Vorige"></button>
-          <button class="werkzaamheidsgraag-swiper-next"><img src="assets/images/Arrow - right.svg"
-              alt="Volgende"></button>
+        <!-- Centered Navigation Buttons -->
+        <div class="flex items-center space-x-4 mt-6 justify-center">
+          <button class="werkzaamheidsgraag-swiper-prev">
+            <img src="assets/images/Arrow - left.svg" alt="Vorige">
+          </button>
+          <button class="werkzaamheidsgraag-swiper-next">
+            <img src="assets/images/Arrow - right.svg" alt="Volgende">
+          </button>
         </div>
-        <!-- Pagination -->
-        <div class="werkzaamheidsgraag-pagination mt-4"></div>
       </div>
 
     </section>
-
   </div>
-
-
-
   <!-- Quote sectie -->
   <section class="mx-auto px-4 py-16 bg-snow border-b-3 border-black">
     <div class="mx-30">
-      <p class="text-4xl font-bold mb-4 text-light-red">
+      <p class="text-4xl leading-4xl font-bold mb-4 text-light-red">
         "Stedelijke leiders zetten anderen snel in beweging.
       </p>
-      <p>-------------</p>
       <p class="text-lg mb-6 font-semibold">
-        Hafza Mazgout<br>
+        <span class="border-t-2 border-black pt-2">Hafza Mazgout</span><br>
         Pleinpatrona
       </p>
       <a href="https://jes.be" target="_blank">
@@ -652,37 +676,35 @@
       </a>
     </div>
   </section>
-
   <!-- Verhalen: Groei door latent talent -->
-  <div class="bg-soft-pink border-b-3 border-black">
-    <section class="container flex flex-col md:flex-row px-4 py-12 bg-soft-pink" id="verhaal-groei-door-latent-talent">
+  <div class="bg-soft-pink border-b-3 border-black  md:pl-36">
+    <section class="container flex flex-col md:flex-row pl-4 py-12 bg-soft-pink" id="verhaal-welzijn-door-speelterrein">
       <!-- Left Section (Text + Controls) -->
       <div class="w-full md:w-5/12">
-        <h2 class="text-4xl font-bold mb-4">Groei door latent talent</h2>
+        <h2 id="groei door latent talent" class="text-4xl leading-4xl font-bold mb-4">Groei door latent talent</h2>
         <div class="flex items-start">
           <!-- Swoosh Sign -->
-          <img src="assets/images/swoosh.svg" alt="Swoosh" class="w-16 h-auto mr-4" />
+          <img src="assets/images/swoosh.svg" alt="Swoosh" class="w-16 h-auto mr-4 mt-4" />
           <!-- Placeholder Text -->
           <p class="text-gray-700 text-lg">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque nec eros ut magna.
           </p>
         </div>
-        <div class="flex">
-          <!-- groei-doorlatent-talent-swiper Navigation Buttons -->
+        <div class="flex items-center ml-22 space-x-16">
+          <!-- welzijn-door-speelterrein-swiper Navigation Buttons -->
           <div class="flex items-center space-x-4 mt-6">
-            <button class="groei-door-latent-talent-swiper-prev"><img src="assets/images/Arrow - left.svg"
-                alt="Vorige"></button>
-            <button class="groei-door-latent-talent-swiper-next"><img src="assets/images/Arrow - right.svg"
-                alt="Volgende"></button>
+            <button class="welzijn-door-speelterrein-swiper-prev cursor-pointer"><img
+                src="assets/images/Arrow - left.svg" alt="Vorige"></button>
+            <button class="welzijn-door-speelterrein-swiper-next cursor-pointer"><img
+                src="assets/images/Arrow - right.svg" alt="Volgende"></button>
           </div>
           <!-- Pagination -->
-          <div class="groei-door-latent-talent-pagination mt-4"></div>
+          <div class="welzijn-door-speelterrein-pagination mt-8"></div>
         </div>
       </div>
-
       <!-- Right Section (Swiper) -->
       <div class="w-full md:w-7/12">
-        <div class="swiper groei-door-latent-talent-swiper">
+        <div class="swiper welzijn-door-speelterrein-swiper">
           <div class="swiper-wrapper">
             <!-- Slide 1 -->
             <div class="swiper-slide">
@@ -702,11 +724,10 @@
                   <h2 class="text-lg font-bold mb-2">Titel, artikel,...</h2>
                   <p class="text-gray-600 mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
                     eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                  <a href="#" class="underline">Lees Meer</a>
+                  <a href="#" class="underline">Lees Meer &#8594;</a>
                 </div>
               </div>
             </div>
-
             <!-- Slide 2 -->
             <div class="swiper-slide">
               <div class="card">
@@ -725,11 +746,10 @@
                   <h2 class="text-lg font-bold mb-2">Titel, artikel,...</h2>
                   <p class="text-gray-600 mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
                     eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                  <a href="#" class="underline">Lees Meer</a>
+                  <a href="#" class="underline">Lees Meer &#8594;</a>
                 </div>
               </div>
             </div>
-
             <!-- Slide 3 -->
             <div class="swiper-slide">
               <div class="card">
@@ -748,11 +768,10 @@
                   <h2 class="text-lg font-bold mb-2">Titel, artikel,...</h2>
                   <p class="text-gray-600 mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
                     eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                  <a href="#" class="underline">Lees Meer</a>
+                  <a href="#" class="underline">Lees Meer &#8594;</a>
                 </div>
               </div>
             </div>
-
             <!-- Slide 4 -->
             <div class="swiper-slide">
               <div class="card">
@@ -771,7 +790,7 @@
                   <h2 class="text-lg font-bold mb-2">Titel, artikel,...</h2>
                   <p class="text-gray-600 mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
                     eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                  <a href="#" class="underline">Lees Meer</a>
+                  <a href="#" class="underline">Lees Meer &#8594;</a>
                 </div>
               </div>
             </div>
@@ -780,13 +799,11 @@
       </div>
     </section>
   </div>
-
   <!-- Verhalen: Leerkans door nieuwe kansen en stem geven zonder stempel Section -->
-  <div class="border-b-3 border-black flex">
-
-    <!-- Verhalen: leerkans door nieuwe kansen Section -->
-    <section class="container px-4 py-12 bg-soft-pink" id="verhaal-leerkans-door-nieuwe-kansen">
-      <h2 class="text-4xl font-bold mb-4">Leerkans door nieuwe kansen</h2>
+  <div class="border-b-3 border-black flex flex-col md:flex-row">
+    <!-- Verhalen: Leerkans door nieuwe kansen Section -->
+    <section class="container px-4 bg-snow w-full md:w-1/2" id="verhaal-leerkans-door-nieuwe-kansen">
+      <h2 id="Leerkans door nieuwe kansen" class="text-4xl leading-4xl font-bold mb-4">Leerkans door nieuwe kansen</h2>
       <div class="flex items-start">
         <!-- Swoosh Sign -->
         <img src="assets/images/swoosh.svg" alt="Swoosh" class="w-16 h-auto mr-4" />
@@ -797,9 +814,8 @@
       </div>
       <div class="swiper leerkans-door-nieuwe-kansen-swiper">
         <div class="swiper-wrapper">
-
           <!-- Slide 1 -->
-          <div class="swiper-slide px-32 py-16">
+          <div class="swiper-slide">
             <div class="card border-3 border-black">
               <div class="overflow-hidden">
                 <img src="https://unsplash.it/640/425" alt="Card Image" class="w-full h-55 object-cover" />
@@ -820,7 +836,7 @@
           </div>
 
           <!-- Slide 2 -->
-          <div class="swiper-slide px-32 py-16">
+          <div class="swiper-slide">
             <div class="card border-3 border-black">
               <div class="overflow-hidden">
                 <img src="https://unsplash.it/640/425?random=1" alt="Card Image" class="w-full h-55 object-cover" />
@@ -841,7 +857,7 @@
           </div>
 
           <!-- Slide 3 -->
-          <div class="swiper-slide px-32 py-16">
+          <div class="swiper-slide">
             <div class="card border-3 border-black">
               <div class="overflow-hidden">
                 <img src="https://unsplash.it/640/425?random=2" alt="Card Image" class="w-full h-55 object-cover" />
@@ -862,7 +878,7 @@
           </div>
 
           <!-- Slide 4 -->
-          <div class="swiper-slide px-32 py-16">
+          <div class="swiper-slide">
             <div class="card border-3 border-black">
               <div class="overflow-hidden">
                 <img src="https://unsplash.it/640/425?random=3" alt="Card Image" class="w-full h-55 object-cover" />
@@ -884,24 +900,24 @@
 
         </div>
       </div>
-
-      <div class="flex">
-        <!-- leerkans-door-nieuwe-kansen-swiper Navigation Buttons -->
-        <div class="flex items-center space-x-4 mt-6">
-          <button class="leerkans-door-nieuwe-kansen-swiper-prev"><img src="assets/images/Arrow - left.svg"
-              alt="Vorige"></button>
-          <button class="leerkans-door-nieuwe-kansen-swiper-next"><img src="assets/images/Arrow - right.svg"
-              alt="Volgende"></button>
-        </div>
+      <div class="flex flex-col items-center">
         <!-- Pagination -->
-        <div class="leerkans-door-nieuwe-kansen-pagination mt-4"></div>
+        <div class="leerkans-door-nieuwe-kansen-pagination mt-4 flex justify-center w-full"></div>
+        <!-- leerkans-door-nieuwe-kansen-swiper Navigation Buttons -->
+        <div>
+          <div class="flex items-center space-x-4 mt-6">
+            <button class="leerkans-door-nieuwe-kansen-swiper-prev"><img src="assets/images/Arrow - left.svg"
+                alt="Vorige"></button>
+            <button class="leerkans-door-nieuwe-kansen-swiper-next"><img src="assets/images/Arrow - right.svg"
+                alt="Volgende"></button>
+          </div>
+        </div>
       </div>
-
     </section>
-
-    <!-- Verhalen: Stem geven zonder stempel Section -->
-    <section class="container px-4 py-12 bg-snow" id="verhaal-stem-geven-zonder-stempel">
-      <h2 class="text-4xl font-bold mb-4">Stem geven zonder stempel</h2>
+    <!-- Verhalen: stem geven zonder stempel Section -->
+    <section class="container w-full md:w-1/2 px-4 bg-soft-pink border-l-3 border-black"
+      id="verhaal-stem-geven-zonder-stempel">
+      <h2 class="text-4xl leading-4xl font-bold mb-4 break-words">Stem geven zonder stempel</h2>
       <div class="flex items-start">
         <!-- Swoosh Sign -->
         <img src="assets/images/swoosh.svg" alt="Swoosh" class="w-16 h-auto mr-4" />
@@ -912,9 +928,8 @@
       </div>
       <div class="swiper stem-geven-zonder-stempel-swiper">
         <div class="swiper-wrapper">
-
           <!-- Slide 1 -->
-          <div class="swiper-slide px-32 py-16">
+          <div class="swiper-slide">
             <div class="card border-3 border-black">
               <div class="overflow-hidden">
                 <img src="https://unsplash.it/640/425" alt="Card Image" class="w-full h-55 object-cover" />
@@ -933,12 +948,11 @@
               </div>
             </div>
           </div>
-
           <!-- Slide 2 -->
-          <div class="swiper-slide px-32 py-16">
+          <div class="swiper-slide">
             <div class="card border-3 border-black">
               <div class="overflow-hidden">
-                <img src="https://unsplash.it/640/425?random=1" alt="Card Image" class="w-full h-55 object-cover" />
+                <img src="https://unsplash.it/640/425?random=4" alt="Card Image" class="w-full h-55 object-cover" />
               </div>
               <div class="p-4">
                 <div class="flex justify-end relative bottom-20 px-4 py-0.5 font-bold my-auto">
@@ -954,12 +968,11 @@
               </div>
             </div>
           </div>
-
           <!-- Slide 3 -->
-          <div class="swiper-slide px-32 py-16">
+          <div class="swiper-slide">
             <div class="card border-3 border-black">
               <div class="overflow-hidden">
-                <img src="https://unsplash.it/640/425?random=2" alt="Card Image" class="w-full h-55 object-cover" />
+                <img src="https://unsplash.it/640/425?random=5" alt="Card Image" class="w-full h-55 object-cover" />
               </div>
               <div class="p-4">
                 <div class="flex justify-end relative bottom-20 px-4 py-0.5 font-bold my-auto">
@@ -975,12 +988,11 @@
               </div>
             </div>
           </div>
-
           <!-- Slide 4 -->
-          <div class="swiper-slide px-32 py-16">
+          <div class="swiper-slide">
             <div class="card border-3 border-black">
               <div class="overflow-hidden">
-                <img src="https://unsplash.it/640/425?random=3" alt="Card Image" class="w-full h-55 object-cover" />
+                <img src="https://unsplash.it/640/425?random=6" alt="Card Image" class="w-full h-55 object-cover" />
               </div>
               <div class="p-4">
                 <div class="flex justify-end relative bottom-20 px-4 py-0.5 font-bold my-auto">
@@ -996,11 +1008,12 @@
               </div>
             </div>
           </div>
-
         </div>
       </div>
+      <div class="flex flex-col items-center">
+        <!-- Pagination -->
+        <div class="stem-geven-zonder-stempel-pagination mt-4 flex justify-center w-full"></div>
 
-      <div class="flex">
         <!-- stem-geven-zonder-stempel-swiper Navigation Buttons -->
         <div class="flex items-center space-x-4 mt-6">
           <button class="stem-geven-zonder-stempel-swiper-prev"><img src="assets/images/Arrow - left.svg"
@@ -1008,25 +1021,21 @@
           <button class="stem-geven-zonder-stempel-swiper-next"><img src="assets/images/Arrow - right.svg"
               alt="Volgende"></button>
         </div>
-        <!-- Pagination -->
-        <div class="stem-geven-zonder-stempel-pagination mt-4"></div>
       </div>
-
     </section>
-
   </div>
-
   <!-- Ontdek alle verhalen section -->
   <section class="w-full bg-light-red py-12">
     <div class="text-center text-white">
-      <h2 class="text-3xl md:text-4xl font-bold flex items-center justify-center text-white ml-4 my-16">
+      <h2 class="text-3xl md:text-4xl leading-4xl font-bold flex items-center justify-center text-white ml-4 my-16">
         Ontdek alle verhalen op het slotfeest
         <span class="ml-2">&rarr;</span>
       </h2>
-      <p class="text-sm my-8 font-semibold">26.10.2025, Brussel</p>
+      <p class="text-sm my-8 font-semibold pt-2"><span class="border-t-1 border-light-pink py-4">
+          26.10.2025,
+          Brussel</span></p>
     </div>
   </section>
-
   <!-- Footer section -->
   <footer class="py-12 bg-snow">
     <div class="hidden md:grid md:grid-cols-3 md:gap-8">
@@ -1045,7 +1054,6 @@
           <li><a href="#contact" class="hover:underline">Contact</a></li>
         </ul>
       </div>
-
       <!-- Column 2: Title & Subtext -->
       <div>
         <h3 class="text-lg font-bold mb-4">
@@ -1064,7 +1072,6 @@
           <a href="#" class="underline ml-8">Cookie</a>
         </p>
       </div>
-
       <!-- Column 3: Meer JES-nieuws -->
       <div class="mr-32">
         <h3 class="text-lg font-bold mb-4">Meer JES-nieuws</h3>
@@ -1085,8 +1092,17 @@
     <div>
       <img class="ml-auto mr-24 mt-8" src="assets/images/JES_logo_zonderbaseline_rood.svg" alt="JES">
     </div>
+    <a href="#" class="fixed bottom-8 right-8">
+      <img src="assets/images/Arrow - up.svg" alt="Terug omhoog" class="h16 w-16 z-50">
+    </a>
   </footer>
-
+  <!-- JavaScript to add pading to navbar -->
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const navbar = document.querySelector("nav");
+      document.body.style.paddingTop = navbar.offsetHeight + "px";
+    });
+  </script>
   <!-- JavaScript for menu -->
   <script>
     const menuToggle = document.getElementById("menu-toggle");
@@ -1103,7 +1119,6 @@
       mobileMenu.classList.add("hidden");
     });
   </script>
-
   <!-- JavaScript for dropdownmenu -->
   <script>
     // Open the dropdown when hovering over the button
@@ -1135,7 +1150,6 @@
       // Do nothing, since the dropdown should not close when the mouse leaves the dropdown
     });
   </script>
-
   <!-- JavaScript for welzijn-door-speelterrein-swiper -->
   <script>
     const welzijn_door_speelterrein_swiper = new Swiper(".welzijn-door-speelterrein-swiper", {
@@ -1163,7 +1177,6 @@
       },
     });
   </script>
-
   <!-- JavaScript for ruimte-voor-ruimte-swiper -->
   <script>
     const ruimte_voor_ruimte_swiper = new Swiper(".ruimte-voor-ruimte-swiper", {
@@ -1191,7 +1204,6 @@
       },
     });
   </script>
-
   <!-- JavaScript for werkzaamheidsgraag-swiper -->
   <script>
     const werkzaamheidsgraag_swiper = new Swiper(".werkzaamheidsgraag-swiper", {
@@ -1219,7 +1231,6 @@
       },
     });
   </script>
-
   <!-- JavaScript for leerkans-door-nieuwe-kansen-swiper -->
   <script>
     const leerkans_door_nieuwe_kansen_swiper = new Swiper(".leerkans-door-nieuwe-kansen-swiper", {
@@ -1247,7 +1258,6 @@
       },
     });
   </script>
-
   <!-- JavaScript for stem-geven-zonder-stempel-swiper -->
   <script>
     const stem_geven_zonder_stempel_swiper = new Swiper(".stem-geven-zonder-stempel-swiper", {
@@ -1275,7 +1285,6 @@
       },
     });
   </script>
-
   <!-- JavaScript for groei-door-latent-talent-swiper -->
   <script>
     const groei_door_latent_talent_swiper = new Swiper(".groei-door-latent-talent-swiper", {
@@ -1301,6 +1310,69 @@
           spaceBetween: 30,
         },
       },
+    });
+  </script>
+  <!-- JavaScript to search trough tiltes -->
+  <script>
+    document.getElementById("search").addEventListener("input", function () {
+      let filter = this.value.toLowerCase();
+      let headings = document.querySelectorAll("h1, h2, h3, h4, h5, h6");
+      let resultsBox = document.getElementById("results");
+
+      // Clear previous results
+      resultsBox.innerHTML = "";
+
+      // Show dropdown if input is not empty
+      if (filter) {
+        let matches = [];
+
+        headings.forEach(heading => {
+          let text = heading.textContent.toLowerCase();
+
+          if (text.includes(filter)) {
+            matches.push(`<li class="p-2 hover:bg-gray-200 cursor-pointer" 
+                            onclick="scrollToHeading('${heading.id}')">${heading.textContent}</li>`);
+          }
+        });
+
+        // If matches found, display them
+        if (matches.length > 0) {
+          resultsBox.innerHTML = matches.join("");
+          resultsBox.classList.remove("hidden");
+        } else {
+          resultsBox.classList.add("hidden");
+        }
+      } else {
+        resultsBox.classList.add("hidden"); // Hide dropdown if input is empty
+      }
+    });
+
+    function scrollToHeading(id) {
+      let element = document.getElementById(id);
+      if (element) {
+        element.scrollIntoView({ behavior: "smooth", block: "start" });
+        document.getElementById("results").classList.add("hidden"); // Hide dropdown after click
+      }
+    }
+  </script>
+  <!-- Show searchbox -->
+  <script>
+    const searchBtn = document.getElementById("searchBtn");
+    const searchInput = document.getElementById("search");
+
+    searchBtn.addEventListener("click", () => {
+      searchInput.classList.toggle("opacity-0");
+      searchInput.classList.toggle("invisible");
+
+      if (!searchInput.classList.contains("opacity-0")) {
+        searchInput.focus();
+      }
+    });
+
+    document.addEventListener("click", (event) => {
+      if (!searchBtn.contains(event.target) && !searchInput.contains(event.target)) {
+        searchInput.classList.add("opacity-0", "invisible");
+      }
     });
   </script>
 
