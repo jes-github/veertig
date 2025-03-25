@@ -16,11 +16,11 @@
   --font-rethink-sans: "Rethink Sans", sans-serif;
 
   /* Font Sizes */
-  --text-sm: 16px;
-  --text-base: 21px;
-  --text-lg: 27px;
-  --text-xl: 40px;
-  --text-4xl: 90px;
+  --text-sm: 1rem;   /* 16px */
+  --text-base: 1.3125rem;  /* 21px */
+  --text-lg: 1.6875rem;   /* 27px */
+  --text-xl: 2.5rem;   /* 40px */
+  --text-4xl: 5.625rem;   /* 90px */
 
   /* Font Weights */
   --font-weight-normal: 400;
@@ -30,11 +30,11 @@
   --font-weight-extrabold: 800;
 
   /* Line Heights */
-  --leading-tight: 21px;
-  --leading-normal: 28px;
-  --leading-relaxed: 34px;
-  --leading-loose: 52px;
-  --leading-4xl: 105px;
+  --leading-tight: 1.3125rem;   /* 21px */
+  --leading-normal: 1.75rem;    /* 28px */
+  --leading-relaxed: 2.125rem;  /* 34px */
+  --leading-loose: 3.25rem;    /* 52px */
+  --leading-4xl: 6.5625rem;    /* 105px */
 }
 
 @layer base {
