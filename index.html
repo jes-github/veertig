@@ -11,15 +11,15 @@
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 </head>
 
-<body class="pt-32">
+<body class="pt-40 bg-snow">
   <!-- Navigation Bar -->
   <nav
-    class="w-full fixed top-0 left-0 md:px-36 py-8 border-b-3 border-black flex justify-between items-center z-20 font-semibold bg-snow">
+    class="w-full fixed top-0 left-0 lg:px-36 py-8 border-b-3 border-black flex justify-between items-center z-20 font-semibold bg-snow">
     <!-- Logo en menu (links) -->
     <div class="flex items-center space-x-24">
-      <a href="#"><img src="assets/images/JES_logo_zonderbaseline_rood.svg" class="max-w-xs md:max-w-sm lg:max-w-md"
+      <a href="#"><img src="assets/images/JES_logo_zonderbaseline_rood.svg" class="max-w-xs lg:max-w-sm lg:max-w-md"
           alt="JES" /></a>
-      <div class="hidden md:flex space-x-12">
+      <div class="hidden lg:flex space-x-12">
         <a href="#hoopkracht"
           class="relative after:block after:h-[2px] after:bg-black after:w-0 after:transition-all after:duration-200 hover:after:w-full after:absolute after:left-0 after:top-4 after:-translate-y-1">
           Hoopkracht </a>
@@ -28,36 +28,39 @@
         <!-- Verhalen Dropdown -->
         <div class="relative" id="verhalen-dropdown">
           <button
-            class="relative after:block after:h-[2px] after:bg-black after:w-0 after:transition-all after:duration-200 hover:after:w-full after:absolute after:left-0 after:top-4 after:-translate-y-1 focus:outline-none"
+            class="relative after:block after:h-[2px] after:bg-black after:w-0 after:transition-all after:duration-200 hover:after:w-auto after:absolute after:left-0 after:top-4 after:-translate-y-1 focus:outline-none"
             onmouseenter="openDropdown()">
             Verhalen
           </button>
           <div id="dropdown-menu" class="absolute left-0 mt-2 w-64 bg-light-red text-white shadow-lg hidden p-2">
             <a href="#verhaal-welzijn-door-speelterrein"
-              class="block px-4 py-2 relative after:block after:h-[2px] after:bg-snow after:w-0 after:transition-all after:duration-200 hover:after:w-full after:absolute after:left-0 after:top-6.5 after:-translate-y-2">Welzijn
-              door
-              speelterrein</a>
+              class="mx-4 my-2 inline-block text-center relative after:block after:h-[2px] after:bg-snow after:w-0 after:transition-all after:duration-200 hover:after:w-full after:absolute after:left-1/2 after:-translate-x-1/2 after:top-1/2">
+              Welzijn door speelterrein
+            </a>
             <a href="#verhaal-ontharden-door-ontmoeten"
-              class="block px-4 py-2 relative after:block after:h-[2px] after:bg-snow after:w-0 after:transition-all after:duration-200 hover:after:w-full after:absolute after:left-0 after:top-6.5 after:-translate-y-1">Ontharden
-              door
-              ontmoeten</a>
+              class="mx-4 my-2 inline-block text-center relative after:block after:h-[2px] after:bg-snow after:w-0 after:transition-all after:duration-200 hover:after:w-full after:absolute after:left-1/2 after:-translate-x-1/2 after:top-1/2">
+              Ontharden door ontmoeten
+            </a>
             <a href="#verhaal-groei-door-latent-talent"
-              class="block px-4 py-2 relative after:block after:h-[2px] after:bg-snow after:w-0 after:transition-all after:duration-200 hover:after:w-full after:absolute after:left-0 after:top-6.5 after:-translate-y-1">Groei
-              door latent
-              talent</a>
+              class="mx-4 my-2 inline-block text-center relative after:block after:h-[2px] after:bg-snow after:w-0 after:transition-all after:duration-200 hover:after:w-full after:absolute after:left-1/2 after:-translate-x-1/2 after:top-1/2">
+              Groei door latent talent
+            </a>
             <a href="#verhaal-ruimte-voor-ruimte"
-              class="block px-4 py-2 relative after:block after:h-[2px] after:bg-snow after:w-0 after:transition-all after:duration-200 hover:after:w-full after:absolute after:left-0 after:top-6.5 after:-translate-y-1">Ruimte
-              voor ruimte</a>
+              class="mx-4 my-2 inline-block text-center relative after:block after:h-[2px] after:bg-snow after:w-0 after:transition-all after:duration-200 hover:after:w-full after:absolute after:left-1/2 after:-translate-x-1/2 after:top-1/2">
+              Ruimte voor ruimte
+            </a>
             <a href="#verhaal-leerkans-door-nieuwe-kans"
-              class="block px-4 py-2 relative after:block after:h-[2px] after:bg-snow after:w-0 after:transition-all after:duration-200 hover:after:w-full after:absolute after:left-0 after:top-6.5 after:-translate-y-1">Leerkans
-              door nieuwe
-              kans</a>
+              class="mx-4 my-2 inline-block text-center relative after:block after:h-[2px] after:bg-snow after:w-0 after:transition-all after:duration-200 hover:after:w-full after:absolute after:left-1/2 after:-translate-x-1/2 after:top-1/2">
+              Leerkans door nieuwe kans
+            </a>
             <a href="#verhaal-stem-geven-zonder-stempel"
-              class="block px-4 py-2 relative after:block after:h-[2px] after:bg-snow after:w-0 after:transition-all after:duration-200 hover:after:w-full after:absolute after:left-0 after:top-6.5 after:-translate-y-1">Stem
-              geven zonder
-              stempel</a>
+              class="mx-4 my-2 inline-block text-center relative after:block after:h-[2px] after:bg-snow after:w-0 after:transition-all after:duration-200 hover:after:w-full after:absolute after:left-1/2 after:-translate-x-1/2 after:top-1/2">
+              Stem geven zonder stempel
+            </a>
             <a href="#verhaal-werkzaamheidsgraag"
-              class="block px-4 py-2 relative after:block after:h-[2px] after:bg-snow after:w-0 after:transition-all after:duration-200 hover:after:w-full after:absolute after:left-0 after:top-6.5 after:-translate-y-1">Werkzaamheidsgraag</a>
+              class="mx-4 my-2 inline-block text-center relative after:block after:h-[2px] after:bg-snow after:w-0 after:transition-all after:duration-200 hover:after:w-full after:absolute after:left-1/2 after:-translate-x-1/2 after:top-1/2">
+              Werkzaamheidsgraag
+            </a>
           </div>
         </div>
         <a href="#event"
@@ -65,7 +68,7 @@
       </div>
     </div>
     <!-- Rechts: Zoekicoon + Extra links -->
-    <div class="hidden md:flex space-x-12 relative top-2">
+    <div class="hidden lg:flex space-x-12 relative top-2">
       <!-- Search Input -->
       <div class="relative w-64">
         <input type="text" id="search" placeholder="Zoeken"
@@ -88,7 +91,7 @@
     </div>
     <!-- Hamburger Menu (Mobiel & Tablet) -->
     <button id="menu-toggle"
-      class="md:hidden text-gray-600 relative after:block after:h-[2px] after:bg-black after:w-0 after:transition-all after:duration-200 hover:after:w-full after:absolute after:left-0 after:top-4 after:-translate-y-1">
+      class="lg:hidden text-gray-600 relative after:block after:h-[2px] after:bg-black after:w-0 after:transition-all after:duration-200 hover:after:w-full after:absolute after:left-0 after:top-4 after:-translate-y-1">
       <img src="assets/images/hamburger - icoon.svg" alt="hamburger menu" />
       <!-- Hamburger Icon -->
     </button>
@@ -135,72 +138,69 @@
       <a href="#" class="relative block text-center text-snow font-semibold">Contact</a>
     </div>
   </div>
+
   <!-- Header Section -->
-  <section
-    class="w-screen flex flex-col md:flex-row items-start md:items-center justify-between border-b-3 border-black bg-snow md:pl-36">
+  <section class="relative w-screen min-h-screen flex flex-col lg:flex-row border-b-3 border-black bg-snow">
 
     <!-- Left side: Logo, Subtitle, Button -->
-    <div class="w-full md:w-1/3 flex flex-col items-start gap-6 relative z-10">
+    <div class="w-full lg:w-1/3 flex flex-col items-start gap-6 relative z-10">
       <!-- Logo -->
       <img src="assets/images/hoopkracht.svg" alt="Hoopkracht"
-        class="w-[80%] max-w-xs md:w-[110%] md:max-w-none md:mb-6 z-10 order-1" />
+        class="w-[80%] max-w-xs lg:w-[110%] lg:max-w-none lg:mb-6 z-10 order-1" />
 
       <!-- Subtitle -->
-      <p class="text-base font-semibold text-black pr-6 md:pr-32 order-2">
-        Lorem Ipsum is simply dummy text of the printing and typesetting
-        industry. Lorem Ipsum has been the industry's standard dummy text ever
-        since the 1500s, when an unknown printer took a galley of type and
-        scrambled it to make a type specimen book.
+      <p class="text-base font-semibold text-black pr-6 lg:pr-32 order-2">
+        Lorem Ipsum is simply dummy text of the printing and typesetting industry.
       </p>
 
-      <!-- Video (onder de tekst op mobile, links op desktop) -->
-      <div class="w-full h-auto relative order-3 md:hidden">
-        <video class="w-full h-full object-cover md:mt-0 mt-6 border-4 border-black md:border-0" autoplay muted loop>
+      <!-- Mobile Video -->
+      <div class="w-full h-auto relative order-3 lg:hidden">
+        <video class="w-full mt-6 border-4 border-black lg:border-0" autoplay muted loop>
           <source src="https://docs.material-tailwind.com/demo.mp4" type="video/mp4" />
-          Je browser ondersteunt geen video.
         </video>
       </div>
 
-      <!-- Knop -->
+      <!-- Button -->
       <a href="https://www.jes.be" target="_blank"
-        class="mt-4 px-3 py-0.5 relative md:block -top-16 md:top-0 border-3 border-light-red bg-white text-light-red hover:bg-light-red hover:text-white transition duration-200 font-semibold order-4">
+        class="mt-4 px-4 py-1 border-3 border-light-red bg-white text-light-red hover:bg-light-red hover:text-white transition duration-200 font-semibold order-4">
         Ik schrijf me in
       </a>
 
-      <!-- Pijl -->
+      <!-- Arrow -->
       <a href="#hoopkracht" class="order-5">
         <img src="assets/images/Arrow - down.svg" alt="naar beneden" class="mt-4">
       </a>
     </div>
 
-    <!-- Video alleen zichtbaar op grotere schermen -->
-    <div class="w-full md:w-2/3 h-auto relative md:block hidden">
-      <video class="w-full h-full object-cover md:mt-0" autoplay muted loop>
+
+    <!-- Video (Large Screens Only) -->
+    <div class="w-full lg:w-2/3 relative hidden lg:block">
+      <video class="absolute bottom-0 left-0 w-full h-[83.33%] object-cover" autoplay muted loop>
         <source src="https://docs.material-tailwind.com/demo.mp4" type="video/mp4" />
-        Je browser ondersteunt geen video.
       </video>
     </div>
 
   </section>
 
   <!-- Hoopkracht en Event Section -->
-  <div class="flex flex-col md:flex-row bg-soft-pink" id="#hoopkracht">
+  <div class="flex flex-col lg:flex-row bg-soft-pink" id="hoopkracht">
     <!-- Hoopkracht Section -->
-    <section id="hoopkracht" class="w-full md:w-1/2 bg-soft-pink md:pl-36 border-b-3 border-black">
+    <section id="hoopkracht" class="w-full lg:w-1/2 bg-soft-pink lg:pl-36 border-b-3 border-black relative">
       <div class="border-r-3 border-black">
-        <h2 id="Waarom hoopkracht" class="text-xl leading-xl md:text-4xl md:leading-4xl font-extrabold text-black">
+        <h2 id="Waarom hoopkracht" class="text-xl leading-xl lg:text-4xl lg:leading-4xl font-extrabold text-black">
           Waarom hoopkracht?
         </h2>
       </div>
       <!-- Three-column Layout -->
       <div class="grid grid-cols-[auto_1fr_auto] items-start">
-        <div class="flex justify-center md:justify-start mt-3">
-          <img src="assets/images/swoosh.svg" alt="Swoosh">
+        <div class="flex justify-center lg:justify-start mt-3">
+          <!-- Swoosh afbeelding zonder rechter border -->
+          <img src="assets/images/swoosh.svg" alt="Swoosh" class="max-w-full h-auto">
         </div>
         <div>
           <p class="text-base pr-8 pl-4">
             Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
+            Lorem 1500s.
           </p>
           <p class="mt-4">
             <a href="jes.be" class="font-semibold flex items-center underline pl-4">
@@ -208,63 +208,59 @@
             </a>
           </p>
         </div>
-        <div
-          class="hidden md:flex justify-center border-t-3  border-t-black border-b-3  border-b-black border-l-3  border-l-black border-r-3  border-r-light-pink bg-light-pink px-12 py-4 z-10 ">
-          <img src="assets/images/label.svg" alt="Icon" />
+        <div class="hidden lg:flex justify-center border-t-3 border-b-3 border-l-3 bg-light-pink px-12 py-4 z-10">
+          <img src="assets/images/label.svg" alt="Icon" class="max-w-3/4 h-auto">
         </div>
       </div>
       <div class="min-h-12/12 border-r-3 border-black"></div>
     </section>
+
     <!-- Event Section -->
     <section id="event"
-      class="w-full md:w-1/2 p-6 md:p-12 bg-light-pink flex flex-col md:flex-row items-start md:items-center gap-8 border-b-3 border-black">
+      class="w-full lg:w-1/2 p-6 lg:p-12 bg-light-pink flex flex-col lg:flex-row items-start lg:items-center gap-8 border-b-3 border-black">
       <!-- Tekst + Knop Container -->
-      <div class="flex-1">
-        <h2 class="md:text-4xl md:leading-4xl text-xl leading-xl mb-8">Event</h2>
+      <div class="flex-1 relative">
+        <h2 class="lg:text-4xl lg:leading-4xl text-xl leading-xl mb-8">Event</h2>
         <h3 class="text-base">JES feest</h3>
         <p class="text-sm mb-4">Locatie Brussel, 26 Nov 2025</p>
         <p class="text-base mb-6 font-semibold">
-          Lorem Ipsum is simply dummy text of the printing and typesetting
-          industry. Lorem Ipsum has been the industry's standard dummy text ever
-          since the 1500s, when an unknown printer took a galley of type and
-          scrambled it to make a type specimen book.
+          Lorem Ipsum is simply dummy text of the printing and typesetting industry.
         </p>
-
         <!-- Knop onder de tekst op grote schermen -->
         <a href="https://www.jes.be" target="_blank"
-          class="hidden md:inline-block px-6 py-3 border-2 border-red-600 bg-white text-light-red-600 hover:bg-light-red hover:text-white transition duration-200">
+          class="mt-4 px-4 py-1 relative lg:inline-block -top-16 lg:top-0 border-3 border-light-red bg-white text-light-red hover:bg-light-red hover:text-white transition duration-200 font-semibold order-4">
           Ik schrijf me in
         </a>
       </div>
 
-      <!-- Foto + Knop (alleen zichtbaar op mobile) -->
-      <div class="flex-1 flex flex-col items-center md:items-end">
-        <img src="https://unsplash.it/640/425" alt="Image"
-          class="w-40 h-40 md:w-64 md:h-64 rounded-full object-cover mb-4" />
-
+      <!-- Foto + Knop -->
+      <div class="flex-1 flex flex-col items-center lg:items-end relative overflow-x-hidden">
+        <img src="https://unsplash.it/640/640" alt="Image"
+          class="w-40 h-40 lg:w-120 lg:h-93 rounded-full object-cover mb-4" />
         <!-- Knop voor mobile (onder de foto) -->
         <a href="https://www.jes.be" target="_blank"
-          class="md:hidden px-4 py-1 border-3 border-red-600 bg-white text-light-red font-semibold  block text-center relative -top-12">
+          class="lg:hidden px-4 py-1 border-3 border-red-600 bg-white text-light-red font-semibold block text-center relative -top-12">
           Ik schrijf me in
         </a>
       </div>
     </section>
   </div>
+
   <!-- Nieuws Section -->
   <section class="relative">
-    <div class="flex flex-col md:flex-row border-b-3 border-black">
+    <div class="flex flex-col lg:flex-row border-b-3 border-black">
       <!-- Left Image -->
-      <div class="w-full md:w-5/12 md:h-[38rem]">
+      <div class="w-full lg:w-5/12 lg:h-[38rem]">
         <img src="https://unsplash.it/640/425" alt="Left news image" class="w-full h-full object-cover" />
       </div>
       <!-- Right Image -->
-      <div class="w-full md:w-7/12 md:h-[38rem]">
+      <div class="w-full lg:w-7/12 lg:h-[38rem]">
         <img src="https://unsplash.it/640/425?random" alt="Right news image" class="w-full h-full object-cover" />
       </div>
     </div>
 
     <!-- Nieuws Square -->
-    <div class="absolute inset-0 flex items-center justify-start md:justify-center p-6">
+    <div class="absolute inset-0 flex items-center justify-start lg:justify-center p-6">
       <!-- Square Box -->
       <div class="bg-light-red border-4 border-white p-6 w-100 h-100 aspect-square flex flex-col justify-center">
         <h2 id="nieuws" class="text-white text-xl font-bold mb-2">Nieuws</h2>
@@ -276,7 +272,7 @@
           Lees meer &#8594;
         </a>
         <button
-          class="px-3 py-0.5 border-3 border-white bg-light-red text-white hover:bg-red-600 hover:text-white transition duration-200 font-semibold">
+          class="px-4 py-2 border-3 w-fit border-white bg-light-red text-white hover:bg-red-600 hover:text-snow transition duration-200 font-semibold">
           Meer verhalen over dit thema
         </button>
       </div>
@@ -284,21 +280,21 @@
   </section>
 
   <!-- Verhalen: Welzijn door speelterrein Section -->
-  <div class="md:bg-light-pink bg-soft-pink border-b-3 border-black  md:pl-36">
-    <section class="container flex flex-col md:flex-row pl-4 py-12" id="verhaal-welzijn-door-speelterrein">
+  <div class="lg:bg-light-pink bg-soft-pink border-b-3 border-black  lg:pl-36">
+    <section class="container flex flex-col lg:flex-row pl-4 py-12" id="verhaal-welzijn-door-speelterrein">
       <!-- Left Section (Text + Controls) -->
-      <div class="md:w-5/12">
-        <h2 id="welzijn door speelterrein" class="md:text-4xl md:leading-4xl text-xl leading-xl font-bold">Welzijn door
+      <div class="lg:w-5/12">
+        <h2 id="welzijn door speelterrein" class="lg:text-4xl lg:leading-4xl text-xl leading-xl font-bold">Welzijn door
           speelterrein</h2>
         <div class="flex items-start">
           <!-- Swoosh Sign -->
           <img src="assets/images/swoosh.svg" alt="Swoosh" class="w-16 h-auto mr-4 mt-4" />
           <!-- Placeholder Text -->
-          <p class="md:text-lg text-base text-semibold">
+          <p class="lg:text-lg text-base text-semibold">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque nec eros ut magna.
           </p>
         </div>
-        <div class="hidden md:flex items-center ml-22 space-x-16">
+        <div class="hidden lg:flex items-center ml-22 space-x-16">
           <!-- welzijn-door-speelterrein-swiper Navigation Buttons -->
           <div class="flex items-center space-x-4 mt-6">
             <button class="welzijn-door-speelterrein-swiper-prev cursor-pointer"><img
@@ -307,22 +303,28 @@
                 src="assets/images/Arrow - right.svg" alt="Volgende"></button>
           </div>
           <!-- Pagination -->
-          <div class="hidden md:block welzijn-door-speelterrein-pagination mt-8"></div>
+          <div class="hidden lg:block welzijn-door-speelterrein-pagination mt-8"></div>
         </div>
       </div>
       <!-- Right Section (Swiper) -->
-      <div class="w-full md:w-7/12">
-        <div class="swiper welzijn-door-speelterrein-swiper">
+      <div class="w-full lg:w-7/12 overflow-visible">
+        <div class="swiper welzijn-door-speelterrein-swiper overflow-visible">
           <div class="swiper-wrapper">
             <!-- Slide 1 -->
             <div class="swiper-slide">
               <div class="card">
-                <div class="flex md:block justify-center">
-                  <img src="https://unsplash.it/640/425" alt="Card Image" class="md:w-full w-60 h-60 rounded-full" />
+                <!-- left and right arrows -->
+                <img src="assets/images/Arrow - left.svg" alt="Vorige slide"
+                  class="absolute left-0 top-1/3 transform -translate-y-1/2 w-8 h-8">
+                <img src="assets/images/Arrow - right.svg" alt="Volgende slide"
+                  class="absolute right-0 top-1/3 transform -translate-y-1/2 w-8 h-8">
+                <div class="flex lg:block justify-center">
+                  <img src="https://unsplash.it/640/640" alt="Card Image"
+                    class="lg:w-120 lg:h-105 w-60 h-60 rounded-full" />
                 </div>
                 <div class="p-4">
                   <div
-                    class="flex items-center justify-center bg-white border-3 border-light-red absolute top-48 md:right-0 right-24  px-4 py-0.5 font-bold my-auto">
+                    class="flex items-center justify-center bg-white border-3 border-light-red absolute top-95 lg:right-0 right-24  px-4 py-0.5 font-bold my-auto">
                     <img src="assets/images/pinpoint.svg" alt="Locatie" class="mr-2">Brussel
                   </div>
                   <div class="flex items-center my-auto text-sm">
@@ -339,13 +341,13 @@
             <!-- Slide 2 -->
             <div class="swiper-slide">
               <div class="card">
-                <div class="flex md:block justify-center">
+                <div class="flex lg:block justify-center">
                   <img src="https://unsplash.it/640/425?random=1" alt="Card Image"
-                    class="md:w-full w-60 h-60 rounded-full" />
+                    class="lg:w-120 lg:h-105 w-60 h-60 rounded-full" />
                 </div>
                 <div class="p-4">
                   <div
-                    class="flex items-center justify-center md:bg-white bg-none border-3 border-light-red absolute top-48 md:right-0 right-24  px-4 py-0.5 font-semi-bold my-auto">
+                    class="flex items-center justify-center lg:bg-white bg-none border-3 border-light-red absolute top-95 lg:right-0 right-24  px-4 py-0.5 font-semi-bold my-auto">
                     <img src="assets/images/pinpoint.svg" alt="Locatie" class="mr-2">Brussel
                   </div>
                   <div class="flex items-center my-auto text-sm">
@@ -362,13 +364,13 @@
             <!-- Slide 3 -->
             <div class="swiper-slide">
               <div class="card">
-                <div class="flex md:block justify-center">
+                <div class="flex lg:block justify-center">
                   <img src="https://unsplash.it/640/425?random=2" alt="Card Image"
-                    class="md:w-full w-60 h-60 rounded-full" />
+                    class="lg:w-120 lg:h-105 w-60 h-60 rounded-full" />
                 </div>
                 <div class="p-4">
                   <div
-                    class="flex items-center justify-center md:bg-white bg-none border-3 border-light-red absolute top-48 md:right-0 right-24 px-4 py-0.5 font-semi-bold my-auto">
+                    class="flex items-center justify-center lg:bg-white bg-none border-3 border-light-red absolute top-95 lg:right-0 right-24 px-4 py-0.5 font-semi-bold my-auto">
                     <img src="assets/images/pinpoint.svg" alt="Locatie" class="mr-2">Brussel
                   </div>
                   <div class="flex items-center my-auto text-sm">
@@ -385,13 +387,13 @@
             <!-- Slide 4 -->
             <div class="swiper-slide">
               <div class="card">
-                <div class="flex md:block justify-center">
+                <div class="flex lg:block justify-center">
                   <img src="https://unsplash.it/640/425?random=3" alt="Card Image"
-                    class="md:w-full w-60 h-60 rounded-full" />
+                    class="lg:w-120 lg:h-105 w-60 h-60 rounded-full" />
                 </div>
                 <div class="p-4">
                   <div
-                    class="flex items-center justify-center md:bg-white bg-none border-3 border-light-red absolute top-48 md:right-0 right-24  px-4 py-0.5 font-semi-bold my-auto">
+                    class="flex items-center justify-center lg:bg-white bg-none border-3 border-light-red absolute top-95 lg:right-0 right-24  px-4 py-0.5 font-semi-bold my-auto">
                     <img src="assets/images/pinpoint.svg" alt="Locatie" class="mr-2">Brussel
                   </div>
                   <div class="flex items-center my-auto text-sm">
@@ -413,12 +415,12 @@
   <!-- Blijf op de hoogte Section -->
   <section class=" py-16 border-b-3 border-black">
     <div class="container mx-auto px-4">
-      <div class="flex flex-col md:flex-row">
+      <div class="flex flex-col lg:flex-row">
         <!-- Left half (signup form) -->
-        <div class="w-full md:w-1/2 mb-8 md:mb-0 md:pr-8">
-          <h2 id="blijf op de hoogte" class="md:text-4xl md:leading-4xl text-xl leading-xl font-bold mb-8">Blijf op de
+        <div class="w-full lg:w-1/2 mb-8 lg:mb-0 lg:pr-8">
+          <h2 id="blijf op de hoogte" class="lg:text-4xl lg:leading-4xl text-xl leading-xl font-bold mb-8">Blijf op de
             hoogte</h2>
-          <p class="md:text-lg text-base font-semibold">
+          <p class="lg:text-lg text-base font-semibold">
             Meer van dat.
           </p>
           <div class="flex items-center">
@@ -430,7 +432,7 @@
             </a>
           </div>
         </div>
-        <div class="w-full md:w-1/2">
+        <div class="w-full lg:w-1/2">
           <p class="mb-4 text-lg font-semibold">
             Quote - newsletter brings you the latest updates, exclusive offers,
             and insightful content directly to your inbox. Don't miss out on
@@ -445,16 +447,16 @@
     </div>
   </section>
   <!-- Verhalen: Ruimte voor ruimte en Werkzaamheidsgraag Section -->
-  <div class="border-b-3 border-black flex flex-col md:flex-row">
+  <div class="border-b-3 border-black flex flex-col lg:flex-row">
     <!-- Verhalen: Ruimte voor ruimte Section -->
-    <section class="container px-4 bg-snow w-full md:w-1/2" id="verhaal-ruimte-voor-ruimte">
-      <h2 id="ruimte voor ruimte" class="md:text-4xl md:leading-4xl text-xl leading-xl font-bold mb-4">Ruimte voor
+    <section class="container px-4 bg-snow w-full lg:w-1/2" id="verhaal-ruimte-voor-ruimte">
+      <h2 id="ruimte voor ruimte" class="lg:text-4xl lg:leading-4xl text-xl leading-xl font-bold mb-4">Ruimte<br> voor
         ruimte</h2>
       <div class="flex items-start">
         <!-- Swoosh Sign -->
         <img src="assets/images/swoosh.svg" alt="Swoosh" class="w-16 h-auto mr-4" />
         <!-- Placeholder Text -->
-        <p class="md:text-lg text-base font-semibold">
+        <p class="lg:text-lg text-base font-semibold">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque nec eros ut magna.
         </p>
       </div>
@@ -462,7 +464,7 @@
         <div class="swiper-wrapper">
           <!-- Slide 1 -->
           <div class="swiper-slide">
-            <div class="card border-3 border-black">
+            <div class="card border-3 border-black mb-4">
               <div class="overflow-hidden">
                 <img src="https://unsplash.it/640/425" alt="Card Image" class="w-full" />
               </div>
@@ -483,7 +485,7 @@
 
           <!-- Slide 2 -->
           <div class="swiper-slide">
-            <div class="card border-3 border-black">
+            <div class="card border-3 border-black mb-4">
               <div class="overflow-hidden">
                 <img src="https://unsplash.it/640/425?random=1" alt="Card Image" class="w-full" />
               </div>
@@ -504,7 +506,7 @@
 
           <!-- Slide 3 -->
           <div class="swiper-slide">
-            <div class="card border-3 border-black">
+            <div class="card border-3 border-black mb-4">
               <div class="overflow-hidden">
                 <img src="https://unsplash.it/640/425?random=2" alt="Card Image" class="w-full" />
               </div>
@@ -525,7 +527,7 @@
 
           <!-- Slide 4 -->
           <div class="swiper-slide">
-            <div class="card border-3 border-black">
+            <div class="card border-3 border-black mb-4">
               <div class="overflow-hidden">
                 <img src="https://unsplash.it/640/425?random=3" alt="Card Image" class="w-full" />
               </div>
@@ -546,12 +548,12 @@
 
         </div>
       </div>
-      <div class="hidden md:flex flex-col items-center">
+      <div class="hidden lg:flex flex-col items-center">
         <!-- Pagination -->
-        <div class="ruimte-voor-ruimte-pagination mt-4 flex justify-center w-full"></div>
+        <div class="ruimte-voor-ruimte-pagination lg:mt-16 mt-4 flex justify-center w-full"></div>
         <div>
           <!-- ruimte-voor-ruimte-swiper Navigation Buttons -->
-          <div class="flex items-center space-x-4 mt-6">
+          <div class="flex items-center space-x-4 mt-6 lg:my-12">
             <button class="ruimte-voor-ruimte-swiper-prev"><img src="assets/images/Arrow - left.svg"
                 alt="Vorige"></button>
             <button class="ruimte-voor-ruimte-swiper-next"><img src="assets/images/Arrow - right.svg"
@@ -562,9 +564,9 @@
 
     </section>
     <!-- Verhalen: werkzaamheidsgraag Section -->
-    <section class="container w-full md:w-1/2 px-4 bg-soft-pink border-l-3 border-black"
+    <section class="container w-full lg:w-1/2 px-4 bg-soft-pink border-l-3 border-black"
       id="verhaal-werkzaamheidsgraag">
-      <h2 werkzaamheidsgraag class="md:text-4xl md:leading-4xl text-xl leading-xl font-bold mb-4 break-words">
+      <h2 werkzaamheidsgraag class="lg:text-4xl lg:leading-4xl text-xl leading-xl font-bold mb-4 break-words">
         Werkzaamheidsgraaaaaag</h2>
       <div class="flex items-start">
         <!-- Swoosh Sign -->
@@ -578,7 +580,7 @@
         <div class="swiper-wrapper">
           <!-- Slide 1 -->
           <div class="swiper-slide">
-            <div class="card border-3 border-black">
+            <div class="card border-3 border-black mb-4">
               <div class="overflow-hidden">
                 <img src="https://unsplash.it/640/425" alt="Card Image" class="w-full" />
               </div>
@@ -598,7 +600,7 @@
           </div>
           <!-- Slide 2 -->
           <div class="swiper-slide">
-            <div class="card border-3 border-black">
+            <div class="card border-3 border-black mb-4">
               <div class="overflow-hidden">
                 <img src="https://unsplash.it/640/425?random=4" alt="Card Image" class="w-full" />
               </div>
@@ -618,7 +620,7 @@
           </div>
           <!-- Slide 3 -->
           <div class="swiper-slide">
-            <div class="card border-3 border-black">
+            <div class="card border-3 border-black mb-4">
               <div class="overflow-hidden">
                 <img src="https://unsplash.it/640/425?random=5" alt="Card Image" class="w-full" />
               </div>
@@ -638,7 +640,7 @@
           </div>
           <!-- Slide 4 -->
           <div class="swiper-slide">
-            <div class="card border-3 border-black">
+            <div class="card border-3 border-black mb-4">
               <div class="overflow-hidden">
                 <img src="https://unsplash.it/640/425?random=6" alt="Card Image" class="w-full" />
               </div>
@@ -658,7 +660,7 @@
           </div>
         </div>
       </div>
-      <div class="hidden md:flex flex-col items-center">
+      <div class="hidden lg:flex flex-col items-center">
         <!-- Centered Pagination -->
         <div class="werkzaamheidsgraag-pagination mt-4 flex justify-center w-full"></div>
 
@@ -677,27 +679,34 @@
   </div>
   <!-- Quote sectie -->
   <section class="mx-auto px-4 py-16 bg-snow border-b-3 border-black">
-    <div class="md:mx-30">
-      <p class="md:text-4xl md:leading-4xl text-xl leading-xl font-bold mb-4 text-light-red">
-        "Stedelijke leiders zetten anderen snel in beweging.
-      </p>
-      <p class="text-lg mb-6 font-semibold">
-        <span class="border-t-2 border-black pt-2">Hafza Mazgout</span><br>
-        Pleinpatrona
-      </p>
-      <a href="https://jes.be" target="_blank">
-        <button class="bg-black text-white py-2 px-4">
-          Meer over Pleinpatrons
-        </button>
-      </a>
+    <div class="flex">
+      <!-- Column 1: Opening Quote -->
+      <div class="lg:text-4xl lg:leading-4xl text-xl leading-xl font-bold text-light-red pr-2">"</div>
+
+      <!-- Column 2: Quote Content -->
+      <div>
+        <p class="lg:text-4xl lg:leading-4xl text-xl leading-xl font-bold mb-4 text-light-red">
+          Stedelijke leiders zetten anderen snel in beweging.
+        </p>
+        <p class="text-lg mb-6 font-semibold">
+          <span class="border-t-2 border-black pt-2">Hafza Mazgout</span><br>
+          Pleinpatrona
+        </p>
+        <a href="https://jes.be" target="_blank">
+          <button class="bg-black text-white py-2 px-4">
+            Meer over Pleinpatrons
+          </button>
+        </a>
+      </div>
     </div>
   </section>
+
   <!-- Verhalen: Groei door latent talent -->
-  <div class="bg-soft-pink border-b-3 border-black  md:pl-36">
-    <section class="container flex flex-col md:flex-row pl-4 py-12 bg-soft-pink" id="verhaal-groei-door-latent-talent">
+  <div class="bg-soft-pink border-b-3 border-black  lg:pl-36">
+    <section class="container flex flex-col lg:flex-row pl-4 py-12 bg-soft-pink" id="verhaal-groei-door-latent-talent">
       <!-- Left Section (Text + Controls) -->
-      <div class="w-full md:w-5/12">
-        <h2 id="groei door latent talent" class="md:text-4xl md:leading-4xl text-xl leading-xl font-bold mb-4">Groei
+      <div class="w-full lg:w-5/12">
+        <h2 id="groei door latent talent" class="lg:text-4xl lg:leading-4xl text-xl leading-xl font-bold mb-4">Groei
           door latent talent</h2>
         <div class="flex items-start">
           <!-- Swoosh Sign -->
@@ -707,7 +716,7 @@
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque nec eros ut magna.
           </p>
         </div>
-        <div class="hidden md:flex items-center ml-22 space-x-16">
+        <div class="hidden lg:flex items-center ml-22 space-x-16">
           <!-- groei-door-latent-talent-swiper Navigation Buttons -->
           <div class="flex items-center space-x-4 mt-6">
             <button class="groei-door-latent-talent-swiper-prev cursor-pointer"><img
@@ -720,18 +729,19 @@
         </div>
       </div>
       <!-- Right Section (Swiper) -->
-      <div class="w-full md:w-7/12">
+      <div class="w-full lg:w-7/12">
         <div class="swiper groei-door-latent-talent-swiper">
           <div class="swiper-wrapper">
             <!-- Slide 1 -->
             <div class="swiper-slide">
               <div class="card">
-                <div class="flex md:block justify-center">
-                  <img src="https://unsplash.it/640/425" alt="Card Image" class="md:w-full w-60 h-60 rounded-full" />
+                <div class="flex lg:block justify-center">
+                  <img src="https://unsplash.it/640/425" alt="Card Image"
+                    class="lg:w-120 lg:h-105 w-60 h-60 rounded-full" />
                 </div>
                 <div class="p-4">
                   <div
-                    class="flex items-center justify-center bg-white border-3 border-light-red absolute top-48 md:right-0 right-24  px-4 py-0.5 font-semi-bold my-auto">
+                    class="flex items-center justify-center bg-white border-3 border-light-red absolute top-95 lg:right-0 right-24  px-4 py-0.5 font-semi-bold my-auto">
                     <img src="assets/images/pinpoint.svg" alt="Locatie" class="mr-2">Brussel
                   </div>
                   <div class="flex items-center my-auto text-sm">
@@ -748,13 +758,13 @@
             <!-- Slide 2 -->
             <div class="swiper-slide">
               <div class="card">
-                <div class="flex md:block justify-center">
+                <div class="flex lg:block justify-center">
                   <img src="https://unsplash.it/640/425?random=1" alt="Card Image"
-                    class="md:w-full w-60 h-60 rounded-full" />
+                    class="lg:w-120 lg:h-105 w-60 h-60 rounded-full" />
                 </div>
                 <div class="p-4">
                   <div
-                    class="flex items-center justify-center bg-white border-3 border-light-red absolute top-48 md:right-0 right-24  px-4 py-0.5 font-semi-bold my-auto">
+                    class="flex items-center justify-center bg-white border-3 border-light-red absolute top-95 lg:right-0 right-24  px-4 py-0.5 font-semi-bold my-auto">
                     <img src="assets/images/pinpoint.svg" alt="Locatie" class="mr-2">Brussel
                   </div>
                   <div class="flex items-center my-auto text-sm">
@@ -771,13 +781,13 @@
             <!-- Slide 3 -->
             <div class="swiper-slide">
               <div class="card">
-                <div class="flex md:block justify-center">
+                <div class="flex lg:block justify-center">
                   <img src="https://unsplash.it/640/425?random=2" alt="Card Image"
-                    class="md:w-full w-60 h-60 rounded-full" />
+                    class="lg:w-120 lg:h-105 w-60 h-60 rounded-full" />
                 </div>
                 <div class="p-4">
                   <div
-                    class="flex items-center justify-center bg-white border-3 border-light-red absolute top-48 md:right-0 right-24  px-4 py-0.5 font-semi-bold my-auto">
+                    class="flex items-center justify-center bg-white border-3 border-light-red absolute top-95 lg:right-0 right-24  px-4 py-0.5 font-semi-bold my-auto">
                     <img src="assets/images/pinpoint.svg" alt="Locatie" class="mr-2">Brussel
                   </div>
                   <div class="flex items-center my-auto text-sm">
@@ -794,13 +804,13 @@
             <!-- Slide 4 -->
             <div class="swiper-slide">
               <div class="card">
-                <div class="flex md:block justify-center">
+                <div class="flex lg:block justify-center">
                   <img src="https://unsplash.it/640/425?random=3" alt="Card Image"
-                    class="md:w-full w-60 h-60 rounded-full" />
+                    class="lg:w-120 lg:h-105 w-60 h-60 rounded-full" />
                 </div>
                 <div class="p-4">
                   <div
-                    class="flex items-center justify-center bg-white border-3 border-light-red absolute top-48 md:right-0 right-24  px-4 py-0.5 font-semi-bold my-auto">
+                    class="flex items-center justify-center bg-white border-3 border-light-red absolute top-95 lg:right-0 right-24  px-4 py-0.5 font-semi-bold my-auto">
                     <img src="assets/images/pinpoint.svg" alt="Locatie" class="mr-2">Brussel
                   </div>
                   <div class="flex items-center my-auto text-sm">
@@ -820,10 +830,10 @@
     </section>
   </div>
   <!-- Verhalen: Leerkans door nieuwe kansen en stem geven zonder stempel Section -->
-  <div class="border-b-3 border-black flex flex-col md:flex-row">
+  <div class="border-b-3 border-black flex flex-col lg:flex-row">
     <!-- Verhalen: Leerkans door nieuwe kansen Section -->
-    <section class="container px-4 bg-snow w-full md:w-1/2" id="verhaal-leerkans-door-nieuwe-kansen">
-      <h2 id="Leerkans door nieuwe kansen" class="md:text-4xl md:leading-4xl text-xl leading-xl font-bold mb-4">Leerkans
+    <section class="container px-4 bg-snow w-full lg:w-1/2" id="verhaal-leerkans-door-nieuwe-kansen">
+      <h2 id="Leerkans door nieuwe kansen" class="lg:text-4xl lg:leading-4xl text-xl leading-xl font-bold mb-4">Leerkans
         door nieuwe kansen</h2>
       <div class="flex items-start">
         <!-- Swoosh Sign -->
@@ -837,7 +847,7 @@
         <div class="swiper-wrapper">
           <!-- Slide 1 -->
           <div class="swiper-slide">
-            <div class="card border-3 border-black">
+            <div class="card border-3 border-black mb-4">
               <div class="overflow-hidden">
                 <img src="https://unsplash.it/640/425" alt="Card Image" class="w-full" />
               </div>
@@ -858,7 +868,7 @@
 
           <!-- Slide 2 -->
           <div class="swiper-slide">
-            <div class="card border-3 border-black">
+            <div class="card border-3 border-black mb-4">
               <div class="overflow-hidden">
                 <img src="https://unsplash.it/640/425?random=1" alt="Card Image" class="w-full" />
               </div>
@@ -879,7 +889,7 @@
 
           <!-- Slide 3 -->
           <div class="swiper-slide">
-            <div class="card border-3 border-black">
+            <div class="card border-3 border-black mb-4">
               <div class="overflow-hidden">
                 <img src="https://unsplash.it/640/425?random=2" alt="Card Image" class="w-full" />
               </div>
@@ -900,7 +910,7 @@
 
           <!-- Slide 4 -->
           <div class="swiper-slide">
-            <div class="card border-3 border-black">
+            <div class="card border-3 border-black mb-4">
               <div class="overflow-hidden">
                 <img src="https://unsplash.it/640/425?random=3" alt="Card Image" class="w-full" />
               </div>
@@ -921,7 +931,7 @@
 
         </div>
       </div>
-      <div class="hidden md:flex flex-col items-center">
+      <div class="hidden lg:flex flex-col items-center">
         <!-- Pagination -->
         <div class="leerkans-door-nieuwe-kansen-pagination mt-4 flex justify-center w-full"></div>
         <!-- leerkans-door-nieuwe-kansen-swiper Navigation Buttons -->
@@ -936,9 +946,9 @@
       </div>
     </section>
     <!-- Verhalen: stem geven zonder stempel Section -->
-    <section class="container w-full md:w-1/2 px-4 bg-soft-pink border-l-3 border-black"
+    <section class="container w-full lg:w-1/2 px-4 bg-soft-pink border-l-3 border-black"
       id="verhaal-stem-geven-zonder-stempel">
-      <h2 class="md:text-4xl md:leading-4xl text-xl leading-xl font-bold mb-4 break-words">Stem geven zonder stempel
+      <h2 class="lg:text-4xl lg:leading-4xl text-xl leading-xl font-bold mb-4 break-words">Stem geven zonder stempel
       </h2>
       <div class="flex items-start">
         <!-- Swoosh Sign -->
@@ -952,7 +962,7 @@
         <div class="swiper-wrapper">
           <!-- Slide 1 -->
           <div class="swiper-slide">
-            <div class="card border-3 border-black">
+            <div class="card border-3 border-black mb-4">
               <div class="overflow-hidden">
                 <img src="https://unsplash.it/640/425" alt="Card Image" class="w-full" />
               </div>
@@ -972,7 +982,7 @@
           </div>
           <!-- Slide 2 -->
           <div class="swiper-slide">
-            <div class="card border-3 border-black">
+            <div class="card border-3 border-black mb-4">
               <div class="overflow-hidden">
                 <img src="https://unsplash.it/640/425?random=4" alt="Card Image" class="w-full" />
               </div>
@@ -992,7 +1002,7 @@
           </div>
           <!-- Slide 3 -->
           <div class="swiper-slide">
-            <div class="card border-3 border-black">
+            <div class="card border-3 border-black mb-4">
               <div class="overflow-hidden">
                 <img src="https://unsplash.it/640/425?random=5" alt="Card Image" class="w-full" />
               </div>
@@ -1012,7 +1022,7 @@
           </div>
           <!-- Slide 4 -->
           <div class="swiper-slide">
-            <div class="card border-3 border-black">
+            <div class="card border-3 border-black mb-4">
               <div class="overflow-hidden">
                 <img src="https://unsplash.it/640/425?random=6" alt="Card Image" class="w-full" />
               </div>
@@ -1032,7 +1042,7 @@
           </div>
         </div>
       </div>
-      <div class="hidden md:flex flex-col items-center">
+      <div class="hidden lg:flex flex-col items-center">
         <!-- Pagination -->
         <div class="stem-geven-zonder-stempel-pagination mt-4 flex justify-center w-full"></div>
 
@@ -1050,7 +1060,7 @@
   <section class="w-full bg-light-red py-12">
     <div class="text-center text-white">
       <h2
-        class="text-3xl md:md:text-4xl md:leading-4xl text-xl leading-xl font-bold flex items-center justify-center text-white ml-4 my-16">
+        class="text-3xl lg:lg:text-4xl lg:leading-4xl text-xl leading-xl font-bold flex items-center justify-center text-white ml-4 my-16">
         Ontdek alle verhalen op het slotfeest
         <span class="ml-2">&rarr;</span>
       </h2>
@@ -1062,42 +1072,40 @@
   <!-- Footer section -->
   <footer class="bg-snow">
     <!-- Grid Container -->
-    <div class="flex">
-      <div class="">
-        <!-- Column 1: Links -->
-        <div class="">
-          <ul class="space-y-2 uppercase text-sm font-semibold">
-            <li><a href="#hoopkracht" class="hover:underline">Hoopkracht</a></li>
-            <li><a href="#nieuws" class="hover:underline">Nieuws</a></li>
-            <li><a href="#verhalen" class="hover:underline">Verhalen</a></li>
-            <li><a href="#slotevent" class="hover:underline">Slotevent</a></li>
-            <li><a href="#jes-vzw" class="hover:underline">JES VZW</a></li>
-            <li><a href="#contact" class="hover:underline">Contact</a></li>
-          </ul>
-        </div>
+    <div class="flex flex-wrap">
+      <!-- Column 1: Links -->
+      <div class="w-1/2 lg:w-1/3">
+        <ul class="space-y-2 uppercase text-sm font-semibold">
+          <li><a href="#hoopkracht" class="hover:underline">Hoopkracht</a></li>
+          <li><a href="#nieuws" class="hover:underline">Nieuws</a></li>
+          <li><a href="#verhalen" class="hover:underline">Verhalen</a></li>
+          <li><a href="#slotevent" class="hover:underline">Slotevent</a></li>
+          <li><a href="#jes-vzw" class="hover:underline">JES VZW</a></li>
+          <li><a href="#contact" class="hover:underline">Contact</a></li>
+        </ul>
+      </div>
 
-        <!-- Column 2: Title & Subtext -->
-        <div class="">
-          <h3 class="text-lg font-bold mb-4">40 jaar JES. 40 jaar hoopkracht.</h3>
-          <p class="text-sm mb-4">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua.
-          </p>
-          <p class="text-sm mb-8">
-            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
-            nisi ut aliquip ex ea commodo consequat.
-          </p>
-          <p class="text-sm mb-4">
-            © 2025 <a href="#" class="underline ml-4">Privacy</a>
-            <a href="#" class="underline ml-4">Cookie</a>
-          </p>
-        </div>
+      <!-- Column 2: Title & Subtext -->
+      <div class="w-1/2 lg:w-1/3">
+        <h3 class="text-lg font-bold mb-4">40 jaar JES. 40 jaar hoopkracht.</h3>
+        <p class="text-sm mb-4">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        </p>
+        <p class="text-sm mb-8">
+          Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+          nisi ut aliquip ex ea commodo consequat.
+        </p>
+        <p class="text-sm mb-4">
+          © 2025 <a href="#" class="underline ml-4 font-semibold">Privacy</a>
+          <a href="#" class="underline ml-4 font-semibold">Cookie</a>
+        </p>
       </div>
 
       <!-- Column 3: Meer JES-nieuws -->
-      <div class="">
+      <div class="w-full lg:w-1/3">
         <h3 class="text-lg font-bold mb-4">Meer JES-nieuws</h3>
-        <a href="#verhalen" class="inline-block py-1 px-3 mb-4 bg-light-red text-white">
+        <a href="#verhalen" class="py-1 px-3 mb-4 bg-light-red text-white">
           Volg alle verhalen op de voet
         </a>
         <p class="text-sm mb-8">
@@ -1105,7 +1113,7 @@
           nisi ut aliquip ex ea commodo consequat.
         </p>
         <p class="text-sm mb-2">
-          Werkhuizenstraat 3<br />
+          Werkhuizenstraat 3
           1080 Sint-Jans-Molenbeek
         </p>
         <p class="text-sm">Tel. 02/411 68 83</p>
@@ -1113,7 +1121,7 @@
     </div>
 
     <!-- Logo -->
-    <div class="mt-8 flex justify-center md:justify-end md:mr-24">
+    <div class="mt-8 flex justify-end lg:mr-24">
       <img src="assets/images/JES_logo_zonderbaseline_rood.svg" alt="JES">
     </div>
 
@@ -1123,14 +1131,6 @@
     </a>
   </footer>
 
-
-  <!-- JavaScript to add pading to navbar -->
-  <script>
-    document.addEventListener("DOMContentLoaded", function () {
-      const navbar = document.querySelector("nav");
-      document.body.style.paddingTop = navbar.offsetHeight + "px";
-    });
-  </script>
   <!-- JavaScript for menu -->
   <script>
     const menuToggle = document.getElementById("menu-toggle");
@@ -1178,168 +1178,8 @@
       // Do nothing, since the dropdown should not close when the mouse leaves the dropdown
     });
   </script>
-  <!-- JavaScript for welzijn-door-speelterrein-swiper -->
-  <script>
-    const welzijn_door_speelterrein_swiper = new Swiper(".welzijn-door-speelterrein-swiper", {
-      direction: "horizontal",
-      loop: true,
-      slidesPerView: 1,
-      spaceBetween: 30,
-      pagination: {
-        el: ".welzijn-door-speelterrein-pagination",
-        clickable: true,
-      },
-      navigation: {
-        nextEl: ".welzijn-door-speelterrein-swiper-next",
-        prevEl: ".welzijn-door-speelterrein-swiper-prev",
-      },
-      breakpoints: {
-        640: {
-          slidesPerView: 2,
-          spaceBetween: 20,
-        },
-        1024: {
-          slidesPerView: 3,
-          spaceBetween: 30,
-        },
-      },
-    });
-  </script>
-  <!-- JavaScript for ruimte-voor-ruimte-swiper -->
-  <script>
-    const ruimte_voor_ruimte_swiper = new Swiper(".ruimte-voor-ruimte-swiper", {
-      direction: "horizontal",
-      loop: true,
-      slidesPerView: 1,
-      spaceBetween: 30,
-      pagination: {
-        el: ".ruimte-voor-ruimte-pagination",
-        clickable: true,
-      },
-      navigation: {
-        nextEl: ".ruimte-voor-ruimte-swiper-next",
-        prevEl: ".ruimte-voor-ruimte-swiper-prev",
-      },
-      breakpoints: {
-        640: {
-          slidesPerView: 2,
-          spaceBetween: 20,
-        },
-        1024: {
-          slidesPerView: 2,
-          spaceBetween: 30,
-        },
-      },
-    });
-  </script>
-  <!-- JavaScript for werkzaamheidsgraag-swiper -->
-  <script>
-    const werkzaamheidsgraag_swiper = new Swiper(".werkzaamheidsgraag-swiper", {
-      direction: "horizontal",
-      loop: true,
-      slidesPerView: 1,
-      spaceBetween: 30,
-      pagination: {
-        el: ".werkzaamheidsgraag-pagination",
-        clickable: true,
-      },
-      navigation: {
-        nextEl: ".werkzaamheidsgraag-swiper-next",
-        prevEl: ".werkzaamheidsgraag-swiper-prev",
-      },
-      breakpoints: {
-        640: {
-          slidesPerView: 2,
-          spaceBetween: 20,
-        },
-        1024: {
-          slidesPerView: 2,
-          spaceBetween: 30,
-        },
-      },
-    });
-  </script>
-  <!-- JavaScript for leerkans-door-nieuwe-kansen-swiper -->
-  <script>
-    const leerkans_door_nieuwe_kansen_swiper = new Swiper(".leerkans-door-nieuwe-kansen-swiper", {
-      direction: "horizontal",
-      loop: true,
-      slidesPerView: 1,
-      spaceBetween: 30,
-      pagination: {
-        el: ".leerkans-door-nieuwe-kansen-pagination",
-        clickable: true,
-      },
-      navigation: {
-        nextEl: ".leerkans-door-nieuwe-kansen-swiper-next",
-        prevEl: ".leerkans-door-nieuwe-kansen-swiper-prev",
-      },
-      breakpoints: {
-        640: {
-          slidesPerView: 2,
-          spaceBetween: 20,
-        },
-        1024: {
-          slidesPerView: 2,
-          spaceBetween: 30,
-        },
-      },
-    });
-  </script>
-  <!-- JavaScript for stem-geven-zonder-stempel-swiper -->
-  <script>
-    const stem_geven_zonder_stempel_swiper = new Swiper(".stem-geven-zonder-stempel-swiper", {
-      direction: "horizontal",
-      loop: true,
-      slidesPerView: 1,
-      spaceBetween: 30,
-      pagination: {
-        el: ".stem-geven-zonder-stempel-pagination",
-        clickable: true,
-      },
-      navigation: {
-        nextEl: ".stem-geven-zonder-stempel-swiper-next",
-        prevEl: ".stem-geven-zonder-stempel-swiper-prev",
-      },
-      breakpoints: {
-        640: {
-          slidesPerView: 2,
-          spaceBetween: 20,
-        },
-        1024: {
-          slidesPerView: 2,
-          spaceBetween: 30,
-        },
-      },
-    });
-  </script>
-  <!-- JavaScript for groei-door-latent-talent-swiper -->
-  <script>
-    const groei_door_latent_talent_swiper = new Swiper(".groei-door-latent-talent-swiper", {
-      direction: "horizontal",
-      loop: true,
-      slidesPerView: 1,
-      spaceBetween: 30,
-      pagination: {
-        el: ".groei-door-latent-talent-pagination",
-        clickable: true,
-      },
-      navigation: {
-        nextEl: ".groei-door-latent-talent-swiper-next",
-        prevEl: ".groei-door-latent-talent-swiper-prev",
-      },
-      breakpoints: {
-        640: {
-          slidesPerView: 2,
-          spaceBetween: 20,
-        },
-        1024: {
-          slidesPerView: 3,
-          spaceBetween: 30,
-        },
-      },
-    });
-  </script>
+  <!-- JavaScript for dropdownmenu -->
+  <script src="src/sliders.js"></script>
   <!-- JavaScript to search trough tiltes -->
   <script>
     document.getElementById("search").addEventListener("input", function () {
