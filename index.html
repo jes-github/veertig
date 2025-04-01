@@ -11,244 +11,249 @@
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 </head>
 
-<body class="pt-40 bg-snow">
+<body class="bg-snow pt-40">
   <!-- Navigation Bar -->
   <nav
-    class="w-full fixed top-0 left-0 lg:px-36 py-8 border-b-3 border-black flex justify-between items-center z-20 font-semibold bg-snow">
+    class="top-0 left-0 z-20 fixed flex justify-between items-center bg-snow px-8 lg:px-36 py-8 border-b-3 border-black w-full font-semibold">
     <!-- Logo en menu (links) -->
     <div class="flex items-center space-x-24">
       <a href="#"><img src="assets/images/JES_logo_zonderbaseline_rood.svg" class="max-w-xs lg:max-w-sm lg:max-w-md"
           alt="JES" /></a>
       <div class="hidden lg:flex space-x-12">
         <a href="#hoopkracht"
-          class="relative after:block after:h-[2px] after:bg-black after:w-0 after:transition-all after:duration-200 hover:after:w-full after:absolute after:left-0 after:top-4 after:-translate-y-1">
+          class="after:block after:top-4 after:left-0 after:absolute relative after:bg-black after:w-0 hover:after:w-full after:h-[2px] after:transition-all after:-translate-y-1 after:duration-200">
           Hoopkracht </a>
         <a href="#nieuws"
-          class="relative after:block after:h-[2px] after:bg-black after:w-0 after:transition-all after:duration-200 hover:after:w-full after:absolute after:left-0 after:top-4 after:-translate-y-1">Nieuws</a>
+          class="after:block after:top-4 after:left-0 after:absolute relative after:bg-black after:w-0 hover:after:w-full after:h-[2px] after:transition-all after:-translate-y-1 after:duration-200">Nieuws</a>
         <!-- Verhalen Dropdown -->
         <div class="relative" id="verhalen-dropdown">
           <button
-            class="relative after:block after:h-[2px] after:bg-black after:w-0 after:transition-all after:duration-200 hover:after:w-auto after:absolute after:left-0 after:top-4 after:-translate-y-1 focus:outline-none"
+            class="after:block after:top-4 after:left-0 after:absolute relative after:bg-black focus:outline-none after:w-0 hover:after:w-auto after:h-[2px] after:transition-all after:-translate-y-1 after:duration-200"
             onmouseenter="openDropdown()">
             Verhalen
           </button>
-          <div id="dropdown-menu" class="absolute left-0 mt-2 w-64 bg-light-red text-white shadow-lg hidden p-2">
+          <div id="dropdown-menu" class="hidden left-0 absolute bg-light-red shadow-lg mt-2 p-2 w-64 text-white">
             <a href="#verhaal-welzijn-door-speelterrein"
-              class="mx-4 my-2 inline-block text-center relative after:block after:h-[2px] after:bg-snow after:w-0 after:transition-all after:duration-200 hover:after:w-full after:absolute after:left-1/2 after:-translate-x-1/2 after:top-1/2">
-              Welzijn door speelterrein
+              class="after:block inline-block after:top-1/2 after:left-1/2 after:absolute relative after:bg-snow mx-4 my-2 after:w-0 hover:after:w-full after:h-[2px] text-center after:transition-all after:-translate-x-1/2 after:duration-200">
+              border-black card bg-whitepeelterrein
             </a>
             <a href="#verhaal-ontharden-door-ontmoeten"
-              class="mx-4 my-2 inline-block text-center relative after:block after:h-[2px] after:bg-snow after:w-0 after:transition-all after:duration-200 hover:after:w-full after:absolute after:left-1/2 after:-translate-x-1/2 after:top-1/2">
+              class="after:block inline-block after:top-1/2 after:left-1/2 after:absolute relative after:bg-snow mx-4 my-2 after:w-0 hover:after:w-full after:h-[2px] text-center after:transition-all after:-translate-x-1/2 after:duration-200">
               Ontharden door ontmoeten
             </a>
             <a href="#verhaal-groei-door-latent-talent"
-              class="mx-4 my-2 inline-block text-center relative after:block after:h-[2px] after:bg-snow after:w-0 after:transition-all after:duration-200 hover:after:w-full after:absolute after:left-1/2 after:-translate-x-1/2 after:top-1/2">
+              class="after:block inline-block after:top-1/2 after:left-1/2 after:absolute relative after:bg-snow mx-4 my-2 after:w-0 hover:after:w-full after:h-[2px] text-center after:transition-all after:-translate-x-1/2 after:duration-200">
               Groei door latent talent
             </a>
             <a href="#verhaal-ruimte-voor-ruimte"
-              class="mx-4 my-2 inline-block text-center relative after:block after:h-[2px] after:bg-snow after:w-0 after:transition-all after:duration-200 hover:after:w-full after:absolute after:left-1/2 after:-translate-x-1/2 after:top-1/2">
+              class="after:block inline-block after:top-1/2 after:left-1/2 after:absolute relative after:bg-snow mx-4 my-2 after:w-0 hover:after:w-full after:h-[2px] text-center after:transition-all after:-translate-x-1/2 after:duration-200">
               Ruimte voor ruimte
             </a>
             <a href="#verhaal-leerkans-door-nieuwe-kans"
-              class="mx-4 my-2 inline-block text-center relative after:block after:h-[2px] after:bg-snow after:w-0 after:transition-all after:duration-200 hover:after:w-full after:absolute after:left-1/2 after:-translate-x-1/2 after:top-1/2">
+              class="after:block inline-block after:top-1/2 after:left-1/2 after:absolute relative after:bg-snow mx-4 my-2 after:w-0 hover:after:w-full after:h-[2px] text-center after:transition-all after:-translate-x-1/2 after:duration-200">
               Leerkans door nieuwe kans
             </a>
             <a href="#verhaal-stem-geven-zonder-stempel"
-              class="mx-4 my-2 inline-block text-center relative after:block after:h-[2px] after:bg-snow after:w-0 after:transition-all after:duration-200 hover:after:w-full after:absolute after:left-1/2 after:-translate-x-1/2 after:top-1/2">
+              class="after:block inline-block after:top-1/2 after:left-1/2 after:absolute relative after:bg-snow mx-4 my-2 after:w-0 hover:after:w-full after:h-[2px] text-center after:transition-all after:-translate-x-1/2 after:duration-200">
               Stem geven zonder stempel
             </a>
             <a href="#verhaal-werkzaamheidsgraag"
-              class="mx-4 my-2 inline-block text-center relative after:block after:h-[2px] after:bg-snow after:w-0 after:transition-all after:duration-200 hover:after:w-full after:absolute after:left-1/2 after:-translate-x-1/2 after:top-1/2">
+              class="after:block inline-block after:top-1/2 after:left-1/2 after:absolute relative after:bg-snow mx-4 my-2 after:w-0 hover:after:w-full after:h-[2px] text-center after:transition-all after:-translate-x-1/2 after:duration-200">
               Werkzaamheidsgraag
             </a>
           </div>
         </div>
         <a href="#event"
-          class="relative after:block after:h-[2px] after:bg-black after:w-0 after:transition-all after:duration-200 hover:after:w-full after:absolute after:left-0 after:top-4 after:-translate-y-1">Event</a>
+          class="after:block after:top-4 after:left-0 after:absolute relative after:bg-black after:w-0 hover:after:w-full after:h-[2px] after:transition-all after:-translate-y-1 after:duration-200">Event</a>
       </div>
     </div>
     <!-- Rechts: Zoekicoon + Extra links -->
-    <div class="hidden lg:flex space-x-12 relative top-2">
+    <div class="hidden top-2 relative lg:flex space-x-12">
       <!-- Search Input -->
       <div class="relative w-64">
         <input type="text" id="search" placeholder="Zoeken"
-          class="p-2 border-2 border-black w-full relative -top-2 invisible opacity-0 transition-all duration-300 focus:outline-none">
+          class="invisible -top-2 relative opacity-0 p-2 border-2 border-black focus:outline-none w-full transition-all duration-300">
         <!-- Dropdown List -->
-        <ul id="results" class="absolute w-full bg-white border border-gray-300 mt-1 rounded-lg shadow-lg hidden">
+        <ul id="results" class="hidden absolute bg-white shadow-lg mt-1 border border-gray-300 rounded-lg w-full">
         </ul>
       </div>
       <button>
-        <img src="assets/images/zoeken - icoontje.svg" id="searchBtn" class="cursor-pointer h-8 w-8 relative -top-2"
+        <img src="assets/images/zoeken - icoontje.svg" id="searchBtn" class="-top-2 relative w-8 h-8 cursor-pointer"
           alt="Zoeken">
         <!-- Zoekicoon -->
       </button>
       <a href="#over-jes"
-        class="relative after:block after:h-[2px] after:bg-black after:w-0 after:transition-all after:duration-200 hover:after:w-full after:absolute after:left-0 after:top-4 after:-translate-y-1">
+        class="after:block after:top-4 after:left-0 after:absolute relative after:bg-black after:w-0 hover:after:w-full after:h-[2px] after:transition-all after:-translate-y-1 after:duration-200">
         Over JES vzw
       </a>
       <a href="#contact"
-        class="relative after:block after:h-[2px] after:bg-black after:w-0 after:transition-all after:duration-200 hover:after:w-full after:absolute after:left-0 after:top-4 after:-translate-y-1">Contact</a>
+        class="after:block after:top-4 after:left-0 after:absolute relative after:bg-black after:w-0 hover:after:w-full after:h-[2px] after:transition-all after:-translate-y-1 after:duration-200">Contact</a>
     </div>
     <!-- Hamburger Menu (Mobiel & Tablet) -->
-    <button id="menu-toggle"
-      class="lg:hidden text-gray-600 relative after:block after:h-[2px] after:bg-black after:w-0 after:transition-all after:duration-200 hover:after:w-full after:absolute after:left-0 after:top-4 after:-translate-y-1">
+    <button id="menu-toggle" class="lg:hidden after:block after:top-4 after:left-0 after:absolute relative">
       <img src="assets/images/hamburger - icoon.svg" alt="hamburger menu" />
       <!-- Hamburger Icon -->
     </button>
   </nav>
+
   <!-- Mobile & Tablet Menu -->
-  <div id="mobile-menu" class="fixed inset-0 bg-light-red hidden flex flex-col z-20 h-2/3">
+  <div id="mobile-menu" class="hidden z-20 fixed inset-0 flex flex-col bg-light-red h-2/3">
     <!-- Top bar with Logo and Close button -->
-    <div class="w-full flex items-center justify-between mb-6 bg-snow p-8">
+    <div class="flex justify-between items-center bg-snow mb-6 p-8 w-full">
       <!-- Logo -->
-      <div class="text-xl font-bold"><img src="assets/images/JES_logo_zonderbaseline_rood.svg" alt="JES"></div>
+      <div class="font-bold text-xl"><img src="assets/images/JES_logo_zonderbaseline_rood.svg" alt="JES"></div>
       <!-- Close button -->
-      <button id="menu-close" class="text-gray-600 text-2xl">✕</button>
+      <button id="menu-close" class="text-2xl">✕</button>
     </div>
     <!-- Search bar (just below the top bar) -->
     <!-- Menu items - Vertically stacked -->
-    <div class="w-full space-y-4 bg-light-red">
-      <a href="#hoopkracht" class="relative block text-center text-snow font-semibold">Hoopkracht</a>
-      <a href="#nieuws" class="relative block text-center text-snow font-semibold">Nieuws</a>
+    <div class="space-y-4 bg-light-red w-full">
+      <a href="#hoopkracht" class="block relative font-semibold text-snow text-center">Hoopkracht</a>
+      <a href="#nieuws" class="block relative font-semibold text-snow text-center">Nieuws</a>
       <!-- Verhalen dropdown -->
       <div class="space-y-2">
-        <p class="font-semibold text-center text-snow">Verhalen</p>
-        <a href="#verhaal-welzijn-door-speelterrein" class="block relative text-center font-semibold">Welzijn
+        <p class="font-semibold text-snow text-center">Verhalen</p>
+        <a href="#verhaal-welzijn-door-speelterrein" class="block relative font-semibold text-center">Welzijn
           door
           speelterrein</a>
-        <a href="#verhaal-ontharden-door-ontmoeten" class="block relative text-center font-semibold">Ontharden
+        <a href="#verhaal-ontharden-door-ontmoeten" class="block relative font-semibold text-center">Ontharden
           door
           ontmoeten</a>
-        <a href="#verhaal-groei-door-latent-talent" class="block relative text-center font-semibold">Groei
+        <a href="#verhaal-groei-door-latent-talent" class="block relative font-semibold text-center">Groei
           door latent
           talent</a>
-        <a href="#verhaal-ruimte-voor-ruimte" class="block relative text-center font-semibold">Ruimte
+        <a href="#verhaal-ruimte-voor-ruimte" class="block relative font-semibold text-center">Ruimte
           voor ruimte</a>
-        <a href="#verhaal-leerkans-door-nieuwe-kans" class="block relative text-center font-semibold">Leerkans
+        <a href="#verhaal-leerkans-door-nieuwe-kans" class="block relative font-semibold text-center">Leerkans
           door nieuwe
           kans</a>
-        <a href="#verhaal-stem-geven-zonder-stempel" class="block relative text-center font-semibold">Stem
+        <a href="#verhaal-stem-geven-zonder-stempel" class="block relative font-semibold text-center">Stem
           geven zonder
           stempel</a>
-        <a href="#verhaal-werkzaamheidsgraag" class="block relative text-center font-semibold">Werkzaamheidsgraag</a>
+        <a href="#verhaal-werkzaamheidsgraag" class="block relative font-semibold text-center">Werkzaamheidsgraag</a>
       </div>
-      <a href="#" class="relative block text-center text-snow font-semibold">Event</a>
-      <a href="#" class="relative block text-center text-snow">Over
+      <a href="#" class="block relative font-semibold text-snow text-center">Event</a>
+      <a href="#" class="block relative text-snow text-center">Over
         JES vzw</a>
-      <a href="#" class="relative block text-center text-snow font-semibold">Contact</a>
+      <a href="#" class="block relative font-semibold text-snow text-center">Contact</a>
     </div>
   </div>
 
   <!-- Header Section -->
-  <section class="relative w-screen min-h-screen flex flex-col lg:flex-row border-b-3 border-black bg-snow">
-
+  <section
+    class="relative flex lg:flex-row flex-col bg-snow px-8 lg:pl-36 border-b-3 border-black w-screen min-h-screen">
     <!-- Left side: Logo, Subtitle, Button -->
-    <div class="w-full lg:w-1/3 flex flex-col items-start gap-6 relative z-10">
+    <div class="z-10 relative flex flex-col items-start gap-4 lg:gap-6 w-full lg:w-1/3">
       <!-- Logo -->
       <img src="assets/images/hoopkracht.svg" alt="Hoopkracht"
-        class="w-[80%] max-w-xs lg:w-[110%] lg:max-w-none lg:mb-6 z-10 order-1" />
+        class="z-10 order-1 lg:mb-6 w-[80%] lg:w-[110%] lg:max-w-none max-w-xs" />
 
       <!-- Subtitle -->
-      <p class="text-base font-semibold text-black pr-6 lg:pr-32 order-2">
+      <p class="order-2 pr-6 lg:pr-32 font-semibold text-black text-base">
         Lorem Ipsum is simply dummy text of the printing and typesetting industry.
       </p>
 
       <!-- Mobile Video -->
-      <div class="w-full h-auto relative order-3 lg:hidden">
-        <video class="w-full mt-6 border-4 border-black lg:border-0" autoplay muted loop>
+      <div class="lg:hidden relative order-3 w-full h-auto">
+        <video class="mt-6 border-4 lg:border-0 border-black w-full" autoplay muted loop>
           <source src="https://docs.material-tailwind.com/demo.mp4" type="video/mp4" />
         </video>
       </div>
 
       <!-- Button -->
       <a href="https://www.jes.be" target="_blank"
-        class="mt-4 px-4 py-1 border-3 border-light-red bg-white text-light-red hover:bg-light-red hover:text-white transition duration-200 font-semibold order-4">
+        class="lg:hidden top-125 left-10 z-50 absolute order-4 bg-white hover:bg-light-red mt-4 px-4 py-1 border-3 border-light-red font-semibold text-light-red hover:text-white transition duration-200">
+        Ik schrijf me in
+      </a>
+
+      <!-- Button -->
+      <a href="https://www.jes.be" target="_blank"
+        class="hidden lg:block order-4 bg-white hover:bg-light-red mt-4 px-4 py-1 border-3 border-light-red font-semibold text-light-red hover:text-white transition duration-200">
         Ik schrijf me in
       </a>
 
       <!-- Arrow -->
       <a href="#hoopkracht" class="order-5">
-        <img src="assets/images/Arrow - down.svg" alt="naar beneden" class="mt-4">
+        <img src="assets/images/Arrow - down.svg" alt="naar beneden" class="mt-4 pb-8">
       </a>
     </div>
-
-
     <!-- Video (Large Screens Only) -->
-    <div class="w-full lg:w-2/3 relative hidden lg:block">
-      <video class="absolute bottom-0 left-0 w-full h-[83.33%] object-cover" autoplay muted loop>
+    <div class="hidden lg:block relative w-full lg:w-2/3">
+      <video class="bottom-0 left-0 absolute w-full h-[83.33%] object-cover" autoplay muted loop>
         <source src="https://docs.material-tailwind.com/demo.mp4" type="video/mp4" />
       </video>
     </div>
-
   </section>
 
   <!-- Hoopkracht en Event Section -->
-  <div class="flex flex-col lg:flex-row bg-soft-pink" id="hoopkracht">
+  <div class="flex lg:flex-row flex-col bg-soft-pink" id="hoopkracht">
     <!-- Hoopkracht Section -->
-    <section id="hoopkracht" class="w-full lg:w-1/2 bg-soft-pink lg:pl-36 border-b-3 border-black relative">
-      <div class="border-r-3 border-black">
-        <h2 id="Waarom hoopkracht" class="text-xl leading-xl lg:text-4xl lg:leading-4xl font-extrabold text-black">
-          Waarom hoopkracht?
-        </h2>
-      </div>
+    <section id="hoopkracht"
+      class="relative bg-soft-pink px-8 lg:py-16 pt-8 pb-32 lg:pl-36 border-b-3 border-black w-full lg:w-7/12">
+      <h2 id="Waarom hoopkracht" class="font-extrabold text-black text-xl lg:text-4xl leading-xl lg:leading-4xl">
+        Waarom hoopkracht?
+      </h2>
       <!-- Three-column Layout -->
-      <div class="grid grid-cols-[auto_1fr_auto] items-start">
+      <div class="items-start grid grid-cols-[auto_1fr_auto] lg:pt-16">
         <div class="flex justify-center lg:justify-start mt-3">
           <!-- Swoosh afbeelding zonder rechter border -->
-          <img src="assets/images/swoosh.svg" alt="Swoosh" class="max-w-full h-auto">
+          <img src="assets/images/swoosh.svg" alt="Swoosh" class="lg:pb-8 max-w-full h-auto">
         </div>
         <div>
-          <p class="text-base pr-8 pl-4">
+          <p class="pr-8 lg:pb-8 pl-4 font-semibold text-base">
             Lorem Ipsum is simply dummy text of the printing and typesetting industry.
             Lorem 1500s.
           </p>
-          <p class="mt-4">
-            <a href="jes.be" class="font-semibold flex items-center underline pl-4">
+          <p>
+            <a href="jes.be" class="flex items-center pl-4 font-semibold underline">
               Lees meer &#8594;
             </a>
           </p>
         </div>
-        <div class="hidden lg:flex justify-center border-t-3 border-b-3 border-l-3 bg-light-pink px-12 py-4 z-10">
+        <div
+          class="hidden left-10 lg:flex justify-center bg-light-pink px-12 py-4 border-t-3 border-r-4 border-r-light-pink border-b-3 border-l-3 translate-x-1">
           <img src="assets/images/label.svg" alt="Icon" class="max-w-3/4 h-auto">
         </div>
       </div>
-      <div class="min-h-12/12 border-r-3 border-black"></div>
+      <div class="min-h-12/12"></div>
     </section>
 
     <!-- Event Section -->
     <section id="event"
-      class="w-full lg:w-1/2 p-6 lg:p-12 bg-light-pink flex flex-col lg:flex-row items-start lg:items-center gap-8 border-b-3 border-black">
+      class="flex lg:flex-row flex-col items-center lg:items-start bg-light-pink px-8 lg:py-16 lg:pl-16 border-b-3 border-black lg:border-l-3 w-full lg:w-5/12">
+
       <!-- Tekst + Knop Container -->
-      <div class="flex-1 relative">
-        <h2 class="lg:text-4xl lg:leading-4xl text-xl leading-xl mb-8">Event</h2>
-        <h3 class="text-base">JES feest</h3>
-        <p class="text-sm mb-4">Locatie Brussel, 26 Nov 2025</p>
-        <p class="text-base mb-6 font-semibold">
+      <div class="relative flex flex-col flex-1 items-center lg:items-start w-full max-w-md">
+        <h2 class="pt-32 lg:pt-0 w-full text-xl lg:text-4xl text-left leading-xl lg:leading-4xl">Event</h2>
+        <h3 class="w-full text-base text-left">JES feest</h3>
+        <p class="mb-4 w-full text-sm text-left">Locatie Brussel, 26 Nov 2025</p>
+        <p class="mb-6 w-full font-semibold text-base text-left">
           Lorem Ipsum is simply dummy text of the printing and typesetting industry.
         </p>
         <!-- Knop onder de tekst op grote schermen -->
         <a href="https://www.jes.be" target="_blank"
-          class="mt-4 px-4 py-1 relative lg:inline-block -top-16 lg:top-0 border-3 border-light-red bg-white text-light-red hover:bg-light-red hover:text-white transition duration-200 font-semibold order-4">
+          class="hidden lg:inline-block relative order-4 bg-white hover:bg-light-red mt-4 px-4 py-1 border-3 border-light-red font-semibold text-light-red hover:text-white transition duration-200">
           Ik schrijf me in
         </a>
       </div>
 
       <!-- Foto + Knop -->
-      <div class="flex-1 flex flex-col items-center lg:items-end relative overflow-x-hidden">
+      <div class="relative flex flex-col items-center lg:items-end overflow-x-hidden">
         <img src="https://unsplash.it/640/640" alt="Image"
-          class="w-40 h-40 lg:w-120 lg:h-93 rounded-full object-cover mb-4" />
+          class="mb-4 rounded-full w-40 lg:w-120 h-40 lg:h-93 object-cover" />
         <!-- Knop voor mobile (onder de foto) -->
         <a href="https://www.jes.be" target="_blank"
-          class="lg:hidden px-4 py-1 border-3 border-red-600 bg-white text-light-red font-semibold block text-center relative -top-12">
+          class="lg:hidden block -top-12 relative bg-white px-4 py-1 border-3 border-red-600 font-semibold text-light-red text-center">
           Ik schrijf me in
         </a>
       </div>
     </section>
+
   </div>
 
   <!-- Nieuws Section -->
   <section class="relative">
-    <div class="flex flex-col lg:flex-row border-b-3 border-black">
+    <div class="flex lg:flex-row flex-col border-b-3 border-black">
       <!-- Left Image -->
       <div class="w-full lg:w-5/12 lg:h-[38rem]">
         <img src="https://unsplash.it/640/425" alt="Left news image" class="w-full h-full object-cover" />
@@ -260,19 +265,19 @@
     </div>
 
     <!-- Nieuws Square -->
-    <div class="absolute inset-0 flex items-center justify-start lg:justify-center p-6">
+    <div class="absolute inset-0 flex justify-start lg:justify-center items-center p-6">
       <!-- Square Box -->
-      <div class="bg-light-red border-4 border-white p-6 w-100 h-100 aspect-square flex flex-col justify-center">
-        <h2 id="nieuws" class="text-white text-xl font-bold mb-2">Nieuws</h2>
-        <p class="text-white mb-4 text-base">Subtext goes here</p>
+      <div class="flex flex-col justify-center bg-light-red p-6 border-4 border-white w-100 h-100 aspect-square">
+        <h2 id="nieuws" class="mb-2 font-bold text-white text-xl">Nieuws</h2>
+        <p class="mb-4 text-white text-base">Subtext goes here</p>
         <p class="text-white text-base">Subtext lorem lazarus lapin lizardos salome balak alaf met</p>
-        <p class="text-white mb-4 text-sm">Datum en thema</p>
-        <p class="text-white mb-4 text-base">subtext</p>
-        <a href="jes.be" class="font-semibold flex items-center underline text-white pb-8">
+        <p class="mb-4 text-white text-sm">Datum en thema</p>
+        <p class="mb-4 text-white text-base">subtext</p>
+        <a href="jes.be" class="flex items-center pb-8 font-semibold text-white underline">
           Lees meer &#8594;
         </a>
         <button
-          class="px-4 py-2 border-3 w-fit border-white bg-light-red text-white hover:bg-red-600 hover:text-snow transition duration-200 font-semibold">
+          class="bg-light-red hover:bg-red-600 px-4 py-2 border-3 border-white w-fit font-semibold text-white hover:text-snow transition duration-200">
           Meer verhalen over dit thema
         </button>
       </div>
@@ -280,82 +285,83 @@
   </section>
 
   <!-- Verhalen: Welzijn door speelterrein Section -->
-  <div class="lg:bg-light-pink bg-soft-pink border-b-3 border-black  lg:pl-36">
-    <section class="container flex flex-col lg:flex-row pl-4 py-12" id="verhaal-welzijn-door-speelterrein">
+  <div class="bg-soft-pink lg:bg-light-pink px-8 lg:pl-36 border-b-3 border-black">
+    <section class="flex lg:flex-row flex-col py-16 lg:pl-4 container" id="verhaal-welzijn-door-speelterrein">
       <!-- Left Section (Text + Controls) -->
       <div class="lg:w-5/12">
-        <h2 id="welzijn door speelterrein" class="lg:text-4xl lg:leading-4xl text-xl leading-xl font-bold">Welzijn door
+        <h2 id=" welzijn door speelterrein" class="font-bold text-xl lg:text-4xl leading-xl lg:leading-4xl">Welzijn
+          door
           speelterrein</h2>
-        <div class="flex items-start">
+        <div class="flex items-start py-8 pr-16">
           <!-- Swoosh Sign -->
-          <img src="assets/images/swoosh.svg" alt="Swoosh" class="w-16 h-auto mr-4 mt-4" />
+          <img src="assets/images/swoosh.svg" alt="Swoosh" class="mt-4 mr-4 w-16 h-auto" />
           <!-- Placeholder Text -->
-          <p class="lg:text-lg text-base text-semibold">
+          <p class="font-semibold lg:text-lg">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque nec eros ut magna.
           </p>
         </div>
-        <div class="hidden lg:flex items-center ml-22 space-x-16">
+        <div class="hidden lg:flex items-center space-x-16 ml-22">
           <!-- welzijn-door-speelterrein-swiper Navigation Buttons -->
           <div class="flex items-center space-x-4 mt-6">
-            <button class="welzijn-door-speelterrein-swiper-prev cursor-pointer"><img
+            <button class="cursor-pointer welzijn-door-speelterrein-swiper-prev"><img
                 src="assets/images/Arrow - left.svg" alt="Vorige"></button>
-            <button class="welzijn-door-speelterrein-swiper-next cursor-pointer"><img
+            <button class="cursor-pointer welzijn-door-speelterrein-swiper-next"><img
                 src="assets/images/Arrow - right.svg" alt="Volgende"></button>
           </div>
           <!-- Pagination -->
-          <div class="hidden lg:block welzijn-door-speelterrein-pagination mt-8"></div>
+          <div class="hidden lg:block mt-8 welzijn-door-speelterrein-pagination"></div>
         </div>
       </div>
       <!-- Right Section (Swiper) -->
       <div class="w-full lg:w-7/12 overflow-visible">
-        <div class="swiper welzijn-door-speelterrein-swiper overflow-visible">
+        <div class="overflow-visible swiper welzijn-door-speelterrein-swiper">
           <div class="swiper-wrapper">
             <!-- Slide 1 -->
             <div class="swiper-slide">
               <div class="card">
                 <!-- left and right arrows -->
                 <img src="assets/images/Arrow - left.svg" alt="Vorige slide"
-                  class="absolute left-0 top-1/3 transform -translate-y-1/2 w-8 h-8">
+                  class="top-1/3 left-0 absolute w-8 h-8 -translate-y-1/2 transform">
                 <img src="assets/images/Arrow - right.svg" alt="Volgende slide"
-                  class="absolute right-0 top-1/3 transform -translate-y-1/2 w-8 h-8">
-                <div class="flex lg:block justify-center">
+                  class="top-1/3 right-0 absolute w-8 h-8 -translate-y-1/2 transform">
+                <div class="lg:block flex justify-center">
                   <img src="https://unsplash.it/640/640" alt="Card Image"
-                    class="lg:w-120 lg:h-105 w-60 h-60 rounded-full" />
+                    class="rounded-full w-60 lg:w-120 h-60 lg:h-105" />
                 </div>
-                <div class="p-4">
+                <div class="px-4 pb-4">
                   <div
-                    class="flex items-center justify-center bg-white border-3 border-light-red absolute top-95 lg:right-0 right-24  px-4 py-0.5 font-bold my-auto">
+                    class="top-95 right-24 lg:right-0 absolute flex justify-center items-center bg-white my-auto px-4 py-0.5 border-3 border-light-red font-bold">
                     <img src="assets/images/pinpoint.svg" alt="Locatie" class="mr-2">Brussel
                   </div>
                   <div class="flex items-center my-auto text-sm">
                     <img src="assets/images/time indication.svg" alt="Leestijd">
                     <p class="">1 minuut</p>
                   </div>
-                  <h2 class="text-lg font-bold mb-2">Titel, artikel,...</h2>
+                  <h2 class="mb-2 font-bold text-lg">Titel, artikel,...</h2>
                   <p class="mb-4 font-semibold">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
                     eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                  <a href="#" class="underline font-bold">Lees Meer &#8594;</a>
+                  <a href="#" class="font-bold underline">Lees Meer &#8594;</a>
                 </div>
               </div>
             </div>
             <!-- Slide 2 -->
             <div class="swiper-slide">
               <div class="card">
-                <div class="flex lg:block justify-center">
+                <div class="lg:block flex justify-center">
                   <img src="https://unsplash.it/640/425?random=1" alt="Card Image"
-                    class="lg:w-120 lg:h-105 w-60 h-60 rounded-full" />
+                    class="rounded-full w-60 lg:w-120 h-60 lg:h-105" />
                 </div>
-                <div class="p-4">
+                <div class="px-4 pb-4">
                   <div
-                    class="flex items-center justify-center lg:bg-white bg-none border-3 border-light-red absolute top-95 lg:right-0 right-24  px-4 py-0.5 font-semi-bold my-auto">
+                    class="top-95 right-24 lg:right-0 absolute flex justify-center items-center lg:bg-white bg-none my-auto px-4 py-0.5 border-3 border-light-red font-semi-bold">
                     <img src="assets/images/pinpoint.svg" alt="Locatie" class="mr-2">Brussel
                   </div>
                   <div class="flex items-center my-auto text-sm">
                     <img src="assets/images/time indication.svg" alt="Leestijd">
                     <p class="">1 minuut</p>
                   </div>
-                  <h2 class="text-lg font-bold mb-2">Titel, artikel,...</h2>
-                  <p class="text-gray-600 mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
+                  <h2 class="mb-2 font-bold text-lg">Titel, artikel,...</h2>
+                  <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
                     eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                   <a href="#" class="underline">Lees Meer &#8594;</a>
                 </div>
@@ -364,21 +370,21 @@
             <!-- Slide 3 -->
             <div class="swiper-slide">
               <div class="card">
-                <div class="flex lg:block justify-center">
+                <div class="lg:block flex justify-center">
                   <img src="https://unsplash.it/640/425?random=2" alt="Card Image"
-                    class="lg:w-120 lg:h-105 w-60 h-60 rounded-full" />
+                    class="rounded-full w-60 lg:w-120 h-60 lg:h-105" />
                 </div>
-                <div class="p-4">
+                <div class="px-4 pb-4">
                   <div
-                    class="flex items-center justify-center lg:bg-white bg-none border-3 border-light-red absolute top-95 lg:right-0 right-24 px-4 py-0.5 font-semi-bold my-auto">
+                    class="top-95 right-24 lg:right-0 absolute flex justify-center items-center lg:bg-white bg-none my-auto px-4 py-0.5 border-3 border-light-red font-semi-bold">
                     <img src="assets/images/pinpoint.svg" alt="Locatie" class="mr-2">Brussel
                   </div>
                   <div class="flex items-center my-auto text-sm">
                     <img src="assets/images/time indication.svg" alt="Leestijd">
                     <p class="">1 minuut</p>
                   </div>
-                  <h2 class="text-lg font-bold mb-2">Titel, artikel,...</h2>
-                  <p class="text-gray-600 mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
+                  <h2 class="mb-2 font-bold text-lg">Titel, artikel,...</h2>
+                  <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
                     eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                   <a href="#" class="underline">Lees Meer &#8594;</a>
                 </div>
@@ -387,21 +393,21 @@
             <!-- Slide 4 -->
             <div class="swiper-slide">
               <div class="card">
-                <div class="flex lg:block justify-center">
+                <div class="lg:block flex justify-center">
                   <img src="https://unsplash.it/640/425?random=3" alt="Card Image"
-                    class="lg:w-120 lg:h-105 w-60 h-60 rounded-full" />
+                    class="rounded-full w-60 lg:w-120 h-60 lg:h-105" />
                 </div>
-                <div class="p-4">
+                <div class="px-4 pb-4">
                   <div
-                    class="flex items-center justify-center lg:bg-white bg-none border-3 border-light-red absolute top-95 lg:right-0 right-24  px-4 py-0.5 font-semi-bold my-auto">
+                    class="top-95 right-24 lg:right-0 absolute flex justify-center items-center lg:bg-white bg-none my-auto px-4 py-0.5 border-3 border-light-red font-semi-bold">
                     <img src="assets/images/pinpoint.svg" alt="Locatie" class="mr-2">Brussel
                   </div>
                   <div class="flex items-center my-auto text-sm">
                     <img src="assets/images/time indication.svg" alt="Leestijd">
                     <p class="">1 minuut</p>
                   </div>
-                  <h2 class="text-lg font-bold mb-2">Titel, artikel,...</h2>
-                  <p class="text-gray-600 mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
+                  <h2 class="mb-2 font-bold text-lg">Titel, artikel,...</h2>
+                  <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
                     eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                   <a href="#" class="underline">Lees Meer &#8594;</a>
                 </div>
@@ -412,51 +418,55 @@
       </div>
     </section>
   </div>
+
   <!-- Blijf op de hoogte Section -->
-  <section class=" py-16 border-b-3 border-black">
-    <div class="container mx-auto px-4">
-      <div class="flex flex-col lg:flex-row">
+  <section class="px-8 py-16 border-b-3 border-black">
+    <div class="mx-auto lg:px-4 container">
+      <div class="flex lg:flex-row flex-col">
         <!-- Left half (signup form) -->
-        <div class="w-full lg:w-1/2 mb-8 lg:mb-0 lg:pr-8">
-          <h2 id="blijf op de hoogte" class="lg:text-4xl lg:leading-4xl text-xl leading-xl font-bold mb-8">Blijf op de
+        <div class="mb-8 lg:mb-0 lg:pl-16 w-full lg:w-1/2">
+          <h2 id="blijf op de hoogte" class="mb-8 font-bold text-xl lg:text-4xl leading-xl lg:leading-4xl">Blijf op de
             hoogte</h2>
-          <p class="lg:text-lg text-base font-semibold">
+          <p class="font-semibold text-base lg:text-lg">
             Meer van dat.
           </p>
           <div class="flex items-center">
-            <p class="text-lg font-bold">
+            <p class="font-bold text-lg">
               <a href="https://jes.be/inschrijven-nieuwsbrief/">Schrijf me in op de nieuwsbrief.</a>
             </p>
-            <a class="text-white px-4 py-2 rounded" target="_blank" href="https://jes.be/inschrijven-nieuwsbrief/">
+            <a class="px-4 py-2 rounded text-white" target="_blank" href="https://jes.be/inschrijven-nieuwsbrief/">
               <img src="assets/images/Arrow - right.svg" alt="Schrijf je in op onze nieuwsbrief" />
             </a>
           </div>
         </div>
-        <div class="w-full lg:w-1/2">
-          <p class="mb-4 text-lg font-semibold">
+        <div class="lg:pl-16 w-full lg:w-1/2">
+          <p class="mb-4 font-semibold text-lg">
             Quote - newsletter brings you the latest updates, exclusive offers,
             and insightful content directly to your inbox. Don't miss out on
             important announcements and special promotions.
           </p>
           <img src="assets/images/swoosh.svg" alt="Swoosh">
-          <p class="text-lg font-semibold">
+          <p class="font-semibold text-lg">
             Naam jongere
           </p>
         </div>
       </div>
     </div>
   </section>
+
   <!-- Verhalen: Ruimte voor ruimte en Werkzaamheidsgraag Section -->
-  <div class="border-b-3 border-black flex flex-col lg:flex-row">
+  <div class="flex lg:flex-row flex-col border-b-3 border-black">
     <!-- Verhalen: Ruimte voor ruimte Section -->
-    <section class="container px-4 bg-snow w-full lg:w-1/2" id="verhaal-ruimte-voor-ruimte">
-      <h2 id="ruimte voor ruimte" class="lg:text-4xl lg:leading-4xl text-xl leading-xl font-bold mb-4">Ruimte<br> voor
+    <section class="bg-snow px-4 lg:py-16 lg:pl-32 w-full lg:w-1/2 container" id="verhaal-ruimte-voor-ruimte">
+      <h2 id="ruimte voor ruimte" class="mb-4 font-bold text-xl lg:text-4xl leading-xl lg:leading-4xl">Ruimte<br
+          class="hidden lg:block">
+        voor
         ruimte</h2>
       <div class="flex items-start">
         <!-- Swoosh Sign -->
-        <img src="assets/images/swoosh.svg" alt="Swoosh" class="w-16 h-auto mr-4" />
+        <img src="assets/images/swoosh.svg" alt="Swoosh" class="mr-4 lg:py-8 w-16 h-auto" />
         <!-- Placeholder Text -->
-        <p class="lg:text-lg text-base font-semibold">
+        <p class="lg:pt-8 lg:pr-16 lg:pb-16 font-semibold text-base lg:text-lg">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque nec eros ut magna.
         </p>
       </div>
@@ -464,20 +474,20 @@
         <div class="swiper-wrapper">
           <!-- Slide 1 -->
           <div class="swiper-slide">
-            <div class="card border-3 border-black mb-4">
+            <div class="bg-white mb-4 border-3 border-black card">
               <div class="overflow-hidden">
                 <img src="https://unsplash.it/640/425" alt="Card Image" class="w-full" />
               </div>
-              <div class="p-4">
-                <div class="flex justify-end relative bottom-20 px-4 py-0.5 font-bold my-auto">
+              <div class="px-4 pb-4">
+                <div class="right-4 bottom-70 absolute flex justify-end my-auto px-4 py-0.5 font-bold">
                   <img src="assets/images/pinpoint.svg" alt="Locatie" class="mr-2">Brussel
                 </div>
-                <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
+                <p class="pt-4 pb-8">Nozem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
                   eiusmod tempor incididunt ut labore et dolore magna aliqua.
                 </p>
-                <h2 class="text-lg font-bold mb-2">Titel, artikel,...</h2>
+                <h2 class="mb-2 font-bold text-lg">Titel, artikel,...</h2>
                 <a href="#"
-                  class="bg-white border-3 border-black px-2 py-0.5 relative top-8 right-0 text-lg font-semibold">Lees
+                  class="top-8 right-0 relative bg-white px-2 py-0.5 border-3 border-black font-semibold text-lg">Lees
                   Meer</a>
               </div>
             </div>
@@ -485,20 +495,20 @@
 
           <!-- Slide 2 -->
           <div class="swiper-slide">
-            <div class="card border-3 border-black mb-4">
+            <div class="bg-white mb-4 border-3 border-black card">
               <div class="overflow-hidden">
                 <img src="https://unsplash.it/640/425?random=1" alt="Card Image" class="w-full" />
               </div>
-              <div class="p-4">
-                <div class="flex justify-end relative bottom-20 px-4 py-0.5 font-bold my-auto">
+              <div class="px-4 pb-4">
+                <div class="right-4 bottom-70 absolute flex justify-end my-auto px-4 py-0.5 font-bold">
                   <img src="assets/images/pinpoint.svg" alt="Locatie" class="mr-2">Brussel
                 </div>
-                <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
+                <p class="pt-4 pb-8">Nozem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
                   eiusmod tempor incididunt ut labore et dolore magna aliqua.
                 </p>
-                <h2 class="text-lg font-bold mb-2">Titel, artikel,...</h2>
+                <h2 class="mb-2 font-bold text-lg">Titel, artikel,...</h2>
                 <a href="#"
-                  class="bg-white border-3 border-black px-2 py-0.5 relative top-8 right-0 text-lg font-semibold">Lees
+                  class="top-8 right-0 relative bg-white px-2 py-0.5 border-3 border-black font-semibold text-lg">Lees
                   Meer</a>
               </div>
             </div>
@@ -506,20 +516,20 @@
 
           <!-- Slide 3 -->
           <div class="swiper-slide">
-            <div class="card border-3 border-black mb-4">
+            <div class="bg-white mb-4 border-3 border-black card">
               <div class="overflow-hidden">
                 <img src="https://unsplash.it/640/425?random=2" alt="Card Image" class="w-full" />
               </div>
-              <div class="p-4">
-                <div class="flex justify-end relative bottom-20 px-4 py-0.5 font-bold my-auto">
+              <div class="px-4 pb-4">
+                <div class="right-4 bottom-70 absolute flex justify-end my-auto px-4 py-0.5 font-bold">
                   <img src="assets/images/pinpoint.svg" alt="Locatie" class="mr-2">Brussel
                 </div>
-                <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
+                <p class="pt-4 pb-8">Nozem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
                   eiusmod tempor incididunt ut labore et dolore magna aliqua.
                 </p>
-                <h2 class="text-lg font-bold mb-2">Titel, artikel,...</h2>
+                <h2 class="mb-2 font-bold text-lg">Titel, artikel,...</h2>
                 <a href="#"
-                  class="bg-white border-3 border-black px-2 py-0.5 relative top-8 right-0 text-lg font-semibold">Lees
+                  class="top-8 right-0 relative bg-white px-2 py-0.5 border-3 border-black font-semibold text-lg">Lees
                   Meer</a>
               </div>
             </div>
@@ -527,20 +537,20 @@
 
           <!-- Slide 4 -->
           <div class="swiper-slide">
-            <div class="card border-3 border-black mb-4">
+            <div class="bg-white mb-4 border-3 border-black card">
               <div class="overflow-hidden">
                 <img src="https://unsplash.it/640/425?random=3" alt="Card Image" class="w-full" />
               </div>
-              <div class="p-4">
-                <div class="flex justify-end relative bottom-20 px-4 py-0.5 font-bold my-auto">
+              <div class="px-4 pb-4">
+                <div class="right-4 bottom-70 absolute flex justify-end my-auto px-4 py-0.5 font-bold">
                   <img src="assets/images/pinpoint.svg" alt="Locatie" class="mr-2">Brussel
                 </div>
-                <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
+                <p class="pt-4 pb-8">Nozem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
                   eiusmod tempor incididunt ut labore et dolore magna aliqua.
                 </p>
-                <h2 class="text-lg font-bold mb-2">Titel, artikel,...</h2>
+                <h2 class="mb-2 font-bold text-lg">Titel, artikel,...</h2>
                 <a href="#"
-                  class="bg-white border-3 border-black px-2 py-0.5 relative top-8 right-0 text-lg font-semibold">Lees
+                  class="top-8 right-0 relative bg-white px-2 py-0.5 border-3 border-black font-semibold text-lg">Lees
                   Meer</a>
               </div>
             </div>
@@ -550,10 +560,10 @@
       </div>
       <div class="hidden lg:flex flex-col items-center">
         <!-- Pagination -->
-        <div class="ruimte-voor-ruimte-pagination lg:mt-16 mt-4 flex justify-center w-full"></div>
+        <div class="flex justify-center mt-4 lg:mt-16 w-full ruimte-voor-ruimte-pagination"></div>
         <div>
           <!-- ruimte-voor-ruimte-swiper Navigation Buttons -->
-          <div class="flex items-center space-x-4 mt-6 lg:my-12">
+          <div class="flex items-center space-x-4 lg:my-12 mt-6">
             <button class="ruimte-voor-ruimte-swiper-prev"><img src="assets/images/Arrow - left.svg"
                 alt="Vorige"></button>
             <button class="ruimte-voor-ruimte-swiper-next"><img src="assets/images/Arrow - right.svg"
@@ -564,15 +574,15 @@
 
     </section>
     <!-- Verhalen: werkzaamheidsgraag Section -->
-    <section class="container w-full lg:w-1/2 px-4 bg-soft-pink border-l-3 border-black"
+    <section class="bg-soft-pink px-4 lg:py-16 lg:pl-16 border-black border-l-3 w-full lg:w-1/2 container"
       id="verhaal-werkzaamheidsgraag">
-      <h2 werkzaamheidsgraag class="lg:text-4xl lg:leading-4xl text-xl leading-xl font-bold mb-4 break-words">
+      <h2 werkzaamheidsgraag class="mb-4 font-bold text-xl lg:text-4xl break-words leading-xl lg:leading-4xl">
         Werkzaamheidsgraaaaaag</h2>
       <div class="flex items-start">
         <!-- Swoosh Sign -->
-        <img src="assets/images/swoosh.svg" alt="Swoosh" class="w-16 h-auto mr-4" />
+        <img src="assets/images/swoosh.svg" alt="Swoosh" class="mr-4 lg:py-8 w-16 h-auto" />
         <!-- Placeholder Text -->
-        <p class="text-gray-700 text-lg">
+        <p class="lg:pt-8 lg:pr-16 lg:pb-16 font-semibold text-base lg:text-lg">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque nec eros ut magna.
         </p>
       </div>
@@ -580,80 +590,80 @@
         <div class="swiper-wrapper">
           <!-- Slide 1 -->
           <div class="swiper-slide">
-            <div class="card border-3 border-black mb-4">
+            <div class="bg-white mb-4 border-3 border-black card">
               <div class="overflow-hidden">
                 <img src="https://unsplash.it/640/425" alt="Card Image" class="w-full" />
               </div>
-              <div class="p-4">
-                <div class="flex justify-end relative bottom-20 px-4 py-0.5 font-bold my-auto">
+              <div class="px-4 pb-4">
+                <div class="right-4 bottom-70 absolute flex justify-end my-auto px-4 py-0.5 font-bold">
                   <img src="assets/images/pinpoint.svg" alt="Locatie" class="mr-2">Brussel
                 </div>
-                <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
+                <p class="pt-4 pb-8">Nozem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
                   eiusmod tempor incididunt ut labore et dolore magna aliqua.
                 </p>
-                <h2 class="text-lg font-bold mb-2">Titel, artikel,...</h2>
+                <h2 class="mb-2 font-bold text-lg">Titel, artikel,...</h2>
                 <a href="#"
-                  class="bg-white border-3 border-black px-2 py-0.5 relative top-8 right-0 text-lg font-semibold">Lees
+                  class="top-8 right-0 relative bg-white px-2 py-0.5 border-3 border-black font-semibold text-lg">Lees
                   Meer</a>
               </div>
             </div>
           </div>
           <!-- Slide 2 -->
           <div class="swiper-slide">
-            <div class="card border-3 border-black mb-4">
+            <div class="bg-white mb-4 border-3 border-black card">
               <div class="overflow-hidden">
                 <img src="https://unsplash.it/640/425?random=4" alt="Card Image" class="w-full" />
               </div>
-              <div class="p-4">
-                <div class="flex justify-end relative bottom-20 px-4 py-0.5 font-bold my-auto">
+              <div class="px-4 pb-4">
+                <div class="right-4 bottom-70 absolute flex justify-end my-auto px-4 py-0.5 font-bold">
                   <img src="assets/images/pinpoint.svg" alt="Locatie" class="mr-2">Brussel
                 </div>
-                <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
+                <p class="pt-4 pb-8">Nozem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
                   eiusmod tempor incididunt ut labore et dolore magna aliqua.
                 </p>
-                <h2 class="text-lg font-bold mb-2">Titel, artikel,...</h2>
+                <h2 class="mb-2 font-bold text-lg">Titel, artikel,...</h2>
                 <a href="#"
-                  class="bg-white border-3 border-black px-2 py-0.5 relative top-8 right-0 text-lg font-semibold">Lees
+                  class="top-8 right-0 relative bg-white px-2 py-0.5 border-3 border-black font-semibold text-lg">Lees
                   Meer</a>
               </div>
             </div>
           </div>
           <!-- Slide 3 -->
           <div class="swiper-slide">
-            <div class="card border-3 border-black mb-4">
+            <div class="bg-white mb-4 border-3 border-black card">
               <div class="overflow-hidden">
                 <img src="https://unsplash.it/640/425?random=5" alt="Card Image" class="w-full" />
               </div>
-              <div class="p-4">
-                <div class="flex justify-end relative bottom-20 px-4 py-0.5 font-bold my-auto">
+              <div class="px-4 pb-4">
+                <div class="right-4 bottom-70 absolute flex justify-end my-auto px-4 py-0.5 font-bold">
                   <img src="assets/images/pinpoint.svg" alt="Locatie" class="mr-2">Brussel
                 </div>
-                <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
+                <p class="pt-4 pb-8">Nozem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
                   eiusmod tempor incididunt ut labore et dolore magna aliqua.
                 </p>
-                <h2 class="text-lg font-bold mb-2">Titel, artikel,...</h2>
+                <h2 class="mb-2 font-bold text-lg">Titel, artikel,...</h2>
                 <a href="#"
-                  class="bg-white border-3 border-black px-2 py-0.5 relative top-8 right-0 text-lg font-semibold">Lees
+                  class="top-8 right-0 relative bg-white px-2 py-0.5 border-3 border-black font-semibold text-lg">Lees
                   Meer</a>
               </div>
             </div>
           </div>
           <!-- Slide 4 -->
           <div class="swiper-slide">
-            <div class="card border-3 border-black mb-4">
+            <div class="bg-white mb-4 border-3 border-black card">
               <div class="overflow-hidden">
                 <img src="https://unsplash.it/640/425?random=6" alt="Card Image" class="w-full" />
               </div>
-              <div class="p-4">
-                <div class="flex justify-end relative bottom-20 px-4 py-0.5 font-bold my-auto">
+              <div class="px-4 pb-4">
+                <div class="right-4 bottom-70 absolute flex justify-end my-auto px-4 py-0.5 font-bold">
                   <img src="assets/images/pinpoint.svg" alt="Locatie" class="mr-2">Brussel
                 </div>
-                <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
+                <p class="pt-4 pb-8">Nozem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
                   eiusmod tempor incididunt ut labore et dolore magna aliqua.
                 </p>
-                <h2 class="text-lg font-bold mb-2">Titel, artikel,...</h2>
+                <h2 class="mb-2 font-bold text-lg">Titel, artikel,...</h2>
                 <a href="#"
-                  class="bg-white border-3 border-black px-2 py-0.5 relative top-8 right-0 text-lg font-semibold">Lees
+                  class="top-8 right-0 relative bg-white px-2 py-0.5 border-3 border-black font-semibold text-lg">Lees
                   Meer</a>
               </div>
             </div>
@@ -662,10 +672,10 @@
       </div>
       <div class="hidden lg:flex flex-col items-center">
         <!-- Centered Pagination -->
-        <div class="werkzaamheidsgraag-pagination mt-4 flex justify-center w-full"></div>
+        <div class="flex justify-center lg:my-16 w-full werkzaamheidsgraag-pagination"></div>
 
         <!-- Centered Navigation Buttons -->
-        <div class="flex items-center space-x-4 mt-6 justify-center">
+        <div class="flex justify-center items-center space-x-4">
           <button class="werkzaamheidsgraag-swiper-prev">
             <img src="assets/images/Arrow - left.svg" alt="Vorige">
           </button>
@@ -677,23 +687,24 @@
 
     </section>
   </div>
+
   <!-- Quote sectie -->
-  <section class="mx-auto px-4 py-16 bg-snow border-b-3 border-black">
+  <section class="bg-snow mx-auto lg:px-36 lg:py-16 border-b-3 border-black">
     <div class="flex">
       <!-- Column 1: Opening Quote -->
-      <div class="lg:text-4xl lg:leading-4xl text-xl leading-xl font-bold text-light-red pr-2">"</div>
+      <div class="pr-2 font-bold text-light-red text-xl lg:text-4xl leading-xl lg:leading-4xl">"</div>
 
       <!-- Column 2: Quote Content -->
       <div>
-        <p class="lg:text-4xl lg:leading-4xl text-xl leading-xl font-bold mb-4 text-light-red">
+        <p class="mb-4 font-bold text-light-red text-xl lg:text-4xl leading-xl lg:leading-4xl">
           Stedelijke leiders zetten anderen snel in beweging.
         </p>
-        <p class="text-lg mb-6 font-semibold">
-          <span class="border-t-2 border-black pt-2">Hafza Mazgout</span><br>
+        <p class="mb-6 font-semibold text-lg">
+          <span class="pt-2 border-t-3 border-black">Hafza Mazgout</span><br>
           Pleinpatrona
         </p>
         <a href="https://jes.be" target="_blank">
-          <button class="bg-black text-white py-2 px-4">
+          <button class="bg-black px-4 py-2 text-white">
             Meer over Pleinpatrons
           </button>
         </a>
@@ -702,30 +713,31 @@
   </section>
 
   <!-- Verhalen: Groei door latent talent -->
-  <div class="bg-soft-pink border-b-3 border-black  lg:pl-36">
-    <section class="container flex flex-col lg:flex-row pl-4 py-12 bg-soft-pink" id="verhaal-groei-door-latent-talent">
+  <div class="bg-soft-pink lg:pl-36 border-b-3 border-black">
+    <section class="flex lg:flex-row flex-col bg-soft-pink lg:py-16 pl-4 container"
+      id="verhaal-groei-door-latent-talent">
       <!-- Left Section (Text + Controls) -->
       <div class="w-full lg:w-5/12">
-        <h2 id="groei door latent talent" class="lg:text-4xl lg:leading-4xl text-xl leading-xl font-bold mb-4">Groei
+        <h2 id="groei door latent talent" class="mb-4 font-bold text-xl lg:text-4xl leading-xl lg:leading-4xl">Groei
           door latent talent</h2>
-        <div class="flex items-start">
+        <div class="flex items-start py-8 pr-16">
           <!-- Swoosh Sign -->
-          <img src="assets/images/swoosh.svg" alt="Swoosh" class="w-16 h-auto mr-4 mt-4" />
+          <img src="assets/images/swoosh.svg" alt="Swoosh" class="mt-4 mr-4 w-16 h-auto" />
           <!-- Placeholder Text -->
-          <p class="text-gray-700 text-lg">
+          <p class="font-semibold text-lg">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque nec eros ut magna.
           </p>
         </div>
-        <div class="hidden lg:flex items-center ml-22 space-x-16">
+        <div class="hidden lg:flex items-center space-x-16 ml-22">
           <!-- groei-door-latent-talent-swiper Navigation Buttons -->
           <div class="flex items-center space-x-4 mt-6">
-            <button class="groei-door-latent-talent-swiper-prev cursor-pointer"><img
+            <button class="cursor-pointer groei-door-latent-talent-swiper-prev"><img
                 src="assets/images/Arrow - left.svg" alt="Vorige"></button>
-            <button class="groei-door-latent-talent-swiper-next cursor-pointer"><img
+            <button class="cursor-pointer groei-door-latent-talent-swiper-next"><img
                 src="assets/images/Arrow - right.svg" alt="Volgende"></button>
           </div>
           <!-- Pagination -->
-          <div class="groei-door-latent-talent-pagination mt-8"></div>
+          <div class="mt-8 groei-door-latent-talent-pagination"></div>
         </div>
       </div>
       <!-- Right Section (Swiper) -->
@@ -735,21 +747,21 @@
             <!-- Slide 1 -->
             <div class="swiper-slide">
               <div class="card">
-                <div class="flex lg:block justify-center">
+                <div class="lg:block flex justify-center">
                   <img src="https://unsplash.it/640/425" alt="Card Image"
-                    class="lg:w-120 lg:h-105 w-60 h-60 rounded-full" />
+                    class="rounded-full w-60 lg:w-120 h-60 lg:h-105" />
                 </div>
-                <div class="p-4">
+                <div class="px-4 pb-4">
                   <div
-                    class="flex items-center justify-center bg-white border-3 border-light-red absolute top-95 lg:right-0 right-24  px-4 py-0.5 font-semi-bold my-auto">
+                    class="top-95 right-24 lg:right-0 absolute flex justify-center items-center bg-white my-auto px-4 py-0.5 border-3 border-light-red font-semi-bold">
                     <img src="assets/images/pinpoint.svg" alt="Locatie" class="mr-2">Brussel
                   </div>
                   <div class="flex items-center my-auto text-sm">
                     <img src="assets/images/time indication.svg" alt="Leestijd">
                     <p class="">1 minuut</p>
                   </div>
-                  <h2 class="text-lg font-bold mb-2">Titel, artikel,...</h2>
-                  <p class="text-gray-600 mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
+                  <h2 class="mb-2 font-bold text-lg">Titel, artikel,...</h2>
+                  <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
                     eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                   <a href="#" class="underline">Lees Meer &#8594;</a>
                 </div>
@@ -758,21 +770,21 @@
             <!-- Slide 2 -->
             <div class="swiper-slide">
               <div class="card">
-                <div class="flex lg:block justify-center">
+                <div class="lg:block flex justify-center">
                   <img src="https://unsplash.it/640/425?random=1" alt="Card Image"
-                    class="lg:w-120 lg:h-105 w-60 h-60 rounded-full" />
+                    class="rounded-full w-60 lg:w-120 h-60 lg:h-105" />
                 </div>
-                <div class="p-4">
+                <div class="px-4 pb-4">
                   <div
-                    class="flex items-center justify-center bg-white border-3 border-light-red absolute top-95 lg:right-0 right-24  px-4 py-0.5 font-semi-bold my-auto">
+                    class="top-95 right-24 lg:right-0 absolute flex justify-center items-center bg-white my-auto px-4 py-0.5 border-3 border-light-red font-semi-bold">
                     <img src="assets/images/pinpoint.svg" alt="Locatie" class="mr-2">Brussel
                   </div>
                   <div class="flex items-center my-auto text-sm">
                     <img src="assets/images/time indication.svg" alt="Leestijd">
                     <p class="">1 minuut</p>
                   </div>
-                  <h2 class="text-lg font-bold mb-2">Titel, artikel,...</h2>
-                  <p class="text-gray-600 mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
+                  <h2 class="mb-2 font-bold text-lg">Titel, artikel,...</h2>
+                  <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
                     eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                   <a href="#" class="underline">Lees Meer &#8594;</a>
                 </div>
@@ -781,21 +793,21 @@
             <!-- Slide 3 -->
             <div class="swiper-slide">
               <div class="card">
-                <div class="flex lg:block justify-center">
+                <div class="lg:block flex justify-center">
                   <img src="https://unsplash.it/640/425?random=2" alt="Card Image"
-                    class="lg:w-120 lg:h-105 w-60 h-60 rounded-full" />
+                    class="rounded-full w-60 lg:w-120 h-60 lg:h-105" />
                 </div>
-                <div class="p-4">
+                <div class="px-4 pb-4">
                   <div
-                    class="flex items-center justify-center bg-white border-3 border-light-red absolute top-95 lg:right-0 right-24  px-4 py-0.5 font-semi-bold my-auto">
+                    class="top-95 right-24 lg:right-0 absolute flex justify-center items-center bg-white my-auto px-4 py-0.5 border-3 border-light-red font-semi-bold">
                     <img src="assets/images/pinpoint.svg" alt="Locatie" class="mr-2">Brussel
                   </div>
                   <div class="flex items-center my-auto text-sm">
                     <img src="assets/images/time indication.svg" alt="Leestijd">
                     <p class="">1 minuut</p>
                   </div>
-                  <h2 class="text-lg font-bold mb-2">Titel, artikel,...</h2>
-                  <p class="text-gray-600 mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
+                  <h2 class="mb-2 font-bold text-lg">Titel, artikel,...</h2>
+                  <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
                     eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                   <a href="#" class="underline">Lees Meer &#8594;</a>
                 </div>
@@ -804,21 +816,21 @@
             <!-- Slide 4 -->
             <div class="swiper-slide">
               <div class="card">
-                <div class="flex lg:block justify-center">
+                <div class="lg:block flex justify-center">
                   <img src="https://unsplash.it/640/425?random=3" alt="Card Image"
-                    class="lg:w-120 lg:h-105 w-60 h-60 rounded-full" />
+                    class="rounded-full w-60 lg:w-120 h-60 lg:h-105" />
                 </div>
-                <div class="p-4">
+                <div class="px-4 pb-4">
                   <div
-                    class="flex items-center justify-center bg-white border-3 border-light-red absolute top-95 lg:right-0 right-24  px-4 py-0.5 font-semi-bold my-auto">
+                    class="top-95 right-24 lg:right-0 absolute flex justify-center items-center bg-white my-auto px-4 py-0.5 border-3 border-light-red font-semi-bold">
                     <img src="assets/images/pinpoint.svg" alt="Locatie" class="mr-2">Brussel
                   </div>
                   <div class="flex items-center my-auto text-sm">
                     <img src="assets/images/time indication.svg" alt="Leestijd">
                     <p class="">1 minuut</p>
                   </div>
-                  <h2 class="text-lg font-bold mb-2">Titel, artikel,...</h2>
-                  <p class="text-gray-600 mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
+                  <h2 class="mb-2 font-bold text-lg">Titel, artikel,...</h2>
+                  <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
                     eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                   <a href="#" class="underline">Lees Meer &#8594;</a>
                 </div>
@@ -829,17 +841,18 @@
       </div>
     </section>
   </div>
+
   <!-- Verhalen: Leerkans door nieuwe kansen en stem geven zonder stempel Section -->
-  <div class="border-b-3 border-black flex flex-col lg:flex-row">
+  <div class="flex lg:flex-row flex-col border-b-3 border-black">
     <!-- Verhalen: Leerkans door nieuwe kansen Section -->
-    <section class="container px-4 bg-snow w-full lg:w-1/2" id="verhaal-leerkans-door-nieuwe-kansen">
-      <h2 id="Leerkans door nieuwe kansen" class="lg:text-4xl lg:leading-4xl text-xl leading-xl font-bold mb-4">Leerkans
+    <section class="bg-snow px-4 lg:py-16 lg:pl-32 w-full lg:w-1/2 container" id="verhaal-leerkans-door-nieuwe-kansen">
+      <h2 id="leerkans-door-nieuwe-kansen" class="mb-4 font-bold text-xl lg:text-4xl leading-xl lg:leading-4xl">Leerkans
         door nieuwe kansen</h2>
       <div class="flex items-start">
         <!-- Swoosh Sign -->
-        <img src="assets/images/swoosh.svg" alt="Swoosh" class="w-16 h-auto mr-4" />
+        <img src="assets/images/swoosh.svg" alt="Swoosh" class="mr-4 lg:py-8 w-16 h-auto" />
         <!-- Placeholder Text -->
-        <p class="text-gray-700 text-lg">
+        <p class="lg:pt-8 lg:pr-16 lg:pb-16 font-semibold text-base lg:text-lg">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque nec eros ut magna.
         </p>
       </div>
@@ -847,20 +860,20 @@
         <div class="swiper-wrapper">
           <!-- Slide 1 -->
           <div class="swiper-slide">
-            <div class="card border-3 border-black mb-4">
+            <div class="bg-white mb-4 border-3 border-black card">
               <div class="overflow-hidden">
                 <img src="https://unsplash.it/640/425" alt="Card Image" class="w-full" />
               </div>
-              <div class="p-4">
-                <div class="flex justify-end relative bottom-20 px-4 py-0.5 font-bold my-auto">
+              <div class="px-4 pb-4">
+                <div class="right-4 bottom-70 absolute flex justify-end my-auto px-4 py-0.5 font-bold">
                   <img src="assets/images/pinpoint.svg" alt="Locatie" class="mr-2">Brussel
                 </div>
-                <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
+                <p class="pt-4 pb-8">Nozem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
                   eiusmod tempor incididunt ut labore et dolore magna aliqua.
                 </p>
-                <h2 class="text-lg font-bold mb-2">Titel, artikel,...</h2>
+                <h2 class="mb-2 font-bold text-lg">Titel, artikel,...</h2>
                 <a href="#"
-                  class="bg-white border-3 border-black px-2 py-0.5 relative top-8 right-0 text-lg font-semibold">Lees
+                  class="top-8 right-0 relative bg-white px-2 py-0.5 border-3 border-black font-semibold text-lg">Lees
                   Meer</a>
               </div>
             </div>
@@ -868,20 +881,20 @@
 
           <!-- Slide 2 -->
           <div class="swiper-slide">
-            <div class="card border-3 border-black mb-4">
+            <div class="bg-white mb-4 border-3 border-black card">
               <div class="overflow-hidden">
                 <img src="https://unsplash.it/640/425?random=1" alt="Card Image" class="w-full" />
               </div>
-              <div class="p-4">
-                <div class="flex justify-end relative bottom-20 px-4 py-0.5 font-bold my-auto">
+              <div class="px-4 pb-4">
+                <div class="right-4 bottom-70 absolute flex justify-end my-auto px-4 py-0.5 font-bold">
                   <img src="assets/images/pinpoint.svg" alt="Locatie" class="mr-2">Brussel
                 </div>
-                <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
+                <p class="pt-4 pb-8">Nozem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
                   eiusmod tempor incididunt ut labore et dolore magna aliqua.
                 </p>
-                <h2 class="text-lg font-bold mb-2">Titel, artikel,...</h2>
+                <h2 class="mb-2 font-bold text-lg">Titel, artikel,...</h2>
                 <a href="#"
-                  class="bg-white border-3 border-black px-2 py-0.5 relative top-8 right-0 text-lg font-semibold">Lees
+                  class="top-8 right-0 relative bg-white px-2 py-0.5 border-3 border-black font-semibold text-lg">Lees
                   Meer</a>
               </div>
             </div>
@@ -889,20 +902,20 @@
 
           <!-- Slide 3 -->
           <div class="swiper-slide">
-            <div class="card border-3 border-black mb-4">
+            <div class="bg-white mb-4 border-3 border-black card">
               <div class="overflow-hidden">
                 <img src="https://unsplash.it/640/425?random=2" alt="Card Image" class="w-full" />
               </div>
-              <div class="p-4">
-                <div class="flex justify-end relative bottom-20 px-4 py-0.5 font-bold my-auto">
+              <div class="px-4 pb-4">
+                <div class="right-4 bottom-70 absolute flex justify-end my-auto px-4 py-0.5 font-bold">
                   <img src="assets/images/pinpoint.svg" alt="Locatie" class="mr-2">Brussel
                 </div>
-                <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
+                <p class="pt-4 pb-8">Nozem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
                   eiusmod tempor incididunt ut labore et dolore magna aliqua.
                 </p>
-                <h2 class="text-lg font-bold mb-2">Titel, artikel,...</h2>
+                <h2 class="mb-2 font-bold text-lg">Titel, artikel,...</h2>
                 <a href="#"
-                  class="bg-white border-3 border-black px-2 py-0.5 relative top-8 right-0 text-lg font-semibold">Lees
+                  class="top-8 right-0 relative bg-white px-2 py-0.5 border-3 border-black font-semibold text-lg">Lees
                   Meer</a>
               </div>
             </div>
@@ -910,20 +923,20 @@
 
           <!-- Slide 4 -->
           <div class="swiper-slide">
-            <div class="card border-3 border-black mb-4">
+            <div class="bg-white mb-4 border-3 border-black card">
               <div class="overflow-hidden">
                 <img src="https://unsplash.it/640/425?random=3" alt="Card Image" class="w-full" />
               </div>
-              <div class="p-4">
-                <div class="flex justify-end relative bottom-20 px-4 py-0.5 font-bold my-auto">
+              <div class="px-4 pb-4">
+                <div class="right-4 bottom-70 absolute flex justify-end my-auto px-4 py-0.5 font-bold">
                   <img src="assets/images/pinpoint.svg" alt="Locatie" class="mr-2">Brussel
                 </div>
-                <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
+                <p class="pt-4 pb-8">Nozem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
                   eiusmod tempor incididunt ut labore et dolore magna aliqua.
                 </p>
-                <h2 class="text-lg font-bold mb-2">Titel, artikel,...</h2>
+                <h2 class="mb-2 font-bold text-lg">Titel, artikel,...</h2>
                 <a href="#"
-                  class="bg-white border-3 border-black px-2 py-0.5 relative top-8 right-0 text-lg font-semibold">Lees
+                  class="top-8 right-0 relative bg-white px-2 py-0.5 border-3 border-black font-semibold text-lg">Lees
                   Meer</a>
               </div>
             </div>
@@ -933,10 +946,10 @@
       </div>
       <div class="hidden lg:flex flex-col items-center">
         <!-- Pagination -->
-        <div class="leerkans-door-nieuwe-kansen-pagination mt-4 flex justify-center w-full"></div>
-        <!-- leerkans-door-nieuwe-kansen-swiper Navigation Buttons -->
+        <div class="flex justify-center mt-4 lg:mt-16 w-full leerkans-door-nieuwe-kansen-pagination"></div>
         <div>
-          <div class="flex items-center space-x-4 mt-6">
+          <!-- leerkans-door-nieuwe-kansen-swiper Navigation Buttons -->
+          <div class="flex items-center space-x-4 lg:my-12 mt-6">
             <button class="leerkans-door-nieuwe-kansen-swiper-prev"><img src="assets/images/Arrow - left.svg"
                 alt="Vorige"></button>
             <button class="leerkans-door-nieuwe-kansen-swiper-next"><img src="assets/images/Arrow - right.svg"
@@ -944,17 +957,18 @@
           </div>
         </div>
       </div>
+
     </section>
-    <!-- Verhalen: stem geven zonder stempel Section -->
-    <section class="container w-full lg:w-1/2 px-4 bg-soft-pink border-l-3 border-black"
+    <!-- Verhalen: stem gevenzonder stempel Section -->
+    <section class="bg-soft-pink px-4 lg:py-16 lg:pl-16 border-black border-l-3 w-full lg:w-1/2 container"
       id="verhaal-stem-geven-zonder-stempel">
-      <h2 class="lg:text-4xl lg:leading-4xl text-xl leading-xl font-bold mb-4 break-words">Stem geven zonder stempel
-      </h2>
+      <h2 class="mb-4 font-bold text-xl lg:text-4xl break-words leading-xl lg:leading-4xl">
+        Stem geven zonder stempel</h2>
       <div class="flex items-start">
         <!-- Swoosh Sign -->
-        <img src="assets/images/swoosh.svg" alt="Swoosh" class="w-16 h-auto mr-4" />
+        <img src="assets/images/swoosh.svg" alt="Swoosh" class="mr-4 lg:py-8 w-16 h-auto" />
         <!-- Placeholder Text -->
-        <p class="text-gray-700 text-lg">
+        <p class="lg:pt-8 lg:pr-16 lg:pb-16 font-semibold text-base lg:text-lg">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque nec eros ut magna.
         </p>
       </div>
@@ -962,80 +976,80 @@
         <div class="swiper-wrapper">
           <!-- Slide 1 -->
           <div class="swiper-slide">
-            <div class="card border-3 border-black mb-4">
+            <div class="bg-white mb-4 border-3 border-black card">
               <div class="overflow-hidden">
                 <img src="https://unsplash.it/640/425" alt="Card Image" class="w-full" />
               </div>
-              <div class="p-4">
-                <div class="flex justify-end relative bottom-20 px-4 py-0.5 font-bold my-auto">
+              <div class="px-4 pb-4">
+                <div class="right-4 bottom-70 absolute flex justify-end my-auto px-4 py-0.5 font-bold">
                   <img src="assets/images/pinpoint.svg" alt="Locatie" class="mr-2">Brussel
                 </div>
-                <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
+                <p class="pt-4 pb-8">Nozem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
                   eiusmod tempor incididunt ut labore et dolore magna aliqua.
                 </p>
-                <h2 class="text-lg font-bold mb-2">Titel, artikel,...</h2>
+                <h2 class="mb-2 font-bold text-lg">Titel, artikel,...</h2>
                 <a href="#"
-                  class="bg-white border-3 border-black px-2 py-0.5 relative top-8 right-0 text-lg font-semibold">Lees
+                  class="top-8 right-0 relative bg-white px-2 py-0.5 border-3 border-black font-semibold text-lg">Lees
                   Meer</a>
               </div>
             </div>
           </div>
           <!-- Slide 2 -->
           <div class="swiper-slide">
-            <div class="card border-3 border-black mb-4">
+            <div class="bg-white mb-4 border-3 border-black card">
               <div class="overflow-hidden">
                 <img src="https://unsplash.it/640/425?random=4" alt="Card Image" class="w-full" />
               </div>
-              <div class="p-4">
-                <div class="flex justify-end relative bottom-20 px-4 py-0.5 font-bold my-auto">
+              <div class="px-4 pb-4">
+                <div class="right-4 bottom-70 absolute flex justify-end my-auto px-4 py-0.5 font-bold">
                   <img src="assets/images/pinpoint.svg" alt="Locatie" class="mr-2">Brussel
                 </div>
-                <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
+                <p class="pt-4 pb-8">Nozem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
                   eiusmod tempor incididunt ut labore et dolore magna aliqua.
                 </p>
-                <h2 class="text-lg font-bold mb-2">Titel, artikel,...</h2>
+                <h2 class="mb-2 font-bold text-lg">Titel, artikel,...</h2>
                 <a href="#"
-                  class="bg-white border-3 border-black px-2 py-0.5 relative top-8 right-0 text-lg font-semibold">Lees
+                  class="top-8 right-0 relative bg-white px-2 py-0.5 border-3 border-black font-semibold text-lg">Lees
                   Meer</a>
               </div>
             </div>
           </div>
           <!-- Slide 3 -->
           <div class="swiper-slide">
-            <div class="card border-3 border-black mb-4">
+            <div class="bg-white mb-4 border-3 border-black card">
               <div class="overflow-hidden">
                 <img src="https://unsplash.it/640/425?random=5" alt="Card Image" class="w-full" />
               </div>
-              <div class="p-4">
-                <div class="flex justify-end relative bottom-20 px-4 py-0.5 font-bold my-auto">
+              <div class="px-4 pb-4">
+                <div class="right-4 bottom-70 absolute flex justify-end my-auto px-4 py-0.5 font-bold">
                   <img src="assets/images/pinpoint.svg" alt="Locatie" class="mr-2">Brussel
                 </div>
-                <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
+                <p class="pt-4 pb-8">Nozem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
                   eiusmod tempor incididunt ut labore et dolore magna aliqua.
                 </p>
-                <h2 class="text-lg font-bold mb-2">Titel, artikel,...</h2>
+                <h2 class="mb-2 font-bold text-lg">Titel, artikel,...</h2>
                 <a href="#"
-                  class="bg-white border-3 border-black px-2 py-0.5 relative top-8 right-0 text-lg font-semibold">Lees
+                  class="top-8 right-0 relative bg-white px-2 py-0.5 border-3 border-black font-semibold text-lg">Lees
                   Meer</a>
               </div>
             </div>
           </div>
           <!-- Slide 4 -->
           <div class="swiper-slide">
-            <div class="card border-3 border-black mb-4">
+            <div class="bg-white mb-4 border-3 border-black card">
               <div class="overflow-hidden">
                 <img src="https://unsplash.it/640/425?random=6" alt="Card Image" class="w-full" />
               </div>
-              <div class="p-4">
-                <div class="flex justify-end relative bottom-20 px-4 py-0.5 font-bold my-auto">
+              <div class="px-4 pb-4">
+                <div class="right-4 bottom-70 absolute flex justify-end my-auto px-4 py-0.5 font-bold">
                   <img src="assets/images/pinpoint.svg" alt="Locatie" class="mr-2">Brussel
                 </div>
-                <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
+                <p class="pt-4 pb-8">Nozem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
                   eiusmod tempor incididunt ut labore et dolore magna aliqua.
                 </p>
-                <h2 class="text-lg font-bold mb-2">Titel, artikel,...</h2>
+                <h2 class="mb-2 font-bold text-lg">Titel, artikel,...</h2>
                 <a href="#"
-                  class="bg-white border-3 border-black px-2 py-0.5 relative top-8 right-0 text-lg font-semibold">Lees
+                  class="top-8 right-0 relative bg-white px-2 py-0.5 border-3 border-black font-semibold text-lg">Lees
                   Meer</a>
               </div>
             </div>
@@ -1043,39 +1057,44 @@
         </div>
       </div>
       <div class="hidden lg:flex flex-col items-center">
-        <!-- Pagination -->
-        <div class="stem-geven-zonder-stempel-pagination mt-4 flex justify-center w-full"></div>
+        <!-- Centered Pagination -->
+        <div class="flex justify-center lg:my-16 w-full stem-geven-zonder-stempel-pagination"></div>
 
-        <!-- stem-geven-zonder-stempel-swiper Navigation Buttons -->
-        <div class="flex items-center space-x-4 mt-6">
-          <button class="stem-geven-zonder-stempel-swiper-prev"><img src="assets/images/Arrow - left.svg"
-              alt="Vorige"></button>
-          <button class="stem-geven-zonder-stempel-swiper-next"><img src="assets/images/Arrow - right.svg"
-              alt="Volgende"></button>
+        <!-- Centered Navigation Buttons -->
+        <div class="flex justify-center items-center space-x-4">
+          <button class="stem-geven-zonder-stempel-swiper-prev">
+            <img src="assets/images/Arrow - left.svg" alt="Vorige">
+          </button>
+          <button class="stem-geven-zonder-stempel-swiper-next">
+            <img src="assets/images/Arrow - right.svg" alt="Volgende">
+          </button>
         </div>
       </div>
+
     </section>
   </div>
+
   <!-- Ontdek alle verhalen section -->
-  <section class="w-full bg-light-red py-12">
-    <div class="text-center text-white">
+  <section class="bg-light-red py-12 w-full">
+    <div class="text-white text-center">
       <h2
-        class="text-3xl lg:lg:text-4xl lg:leading-4xl text-xl leading-xl font-bold flex items-center justify-center text-white ml-4 my-16">
+        class="flex justify-center items-center my-16 ml-4 font-bold text-white text-xl text-3xl lg:lg:text-4xl leading-xl lg:leading-4xl">
         Ontdek alle verhalen op het slotfeest
         <span class="ml-2">&rarr;</span>
       </h2>
-      <p class="text-sm my-8 font-semibold pt-2"><span class="border-t-1 border-light-pink py-4">
+      <p class="my-8 pt-2 font-semibold text-sm"><span class="py-4 border-t-1 border-light-pink">
           26.10.2025,
           Brussel</span></p>
     </div>
   </section>
+
   <!-- Footer section -->
-  <footer class="bg-snow">
+  <footer class="bg-snow lg:px-36 lg:py-16">
     <!-- Grid Container -->
     <div class="flex flex-wrap">
       <!-- Column 1: Links -->
-      <div class="w-1/2 lg:w-1/3">
-        <ul class="space-y-2 uppercase text-sm font-semibold">
+      <div class="lg:pt-16 lg:pl-32 w-1/2 lg:w-1/3">
+        <ul class="space-y-2 font-bold text-sm uppercase">
           <li><a href="#hoopkracht" class="hover:underline">Hoopkracht</a></li>
           <li><a href="#nieuws" class="hover:underline">Nieuws</a></li>
           <li><a href="#verhalen" class="hover:underline">Verhalen</a></li>
@@ -1086,33 +1105,33 @@
       </div>
 
       <!-- Column 2: Title & Subtext -->
-      <div class="w-1/2 lg:w-1/3">
-        <h3 class="text-lg font-bold mb-4">40 jaar JES. 40 jaar hoopkracht.</h3>
-        <p class="text-sm mb-4">
+      <div class="lg:pr-16 w-1/2 lg:w-1/3">
+        <h3 class="mb-4 font-bold text-lg">40 jaar JES. 40 jaar hoopkracht.</h3>
+        <p class="mb-4 text-sm">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua.
         </p>
-        <p class="text-sm mb-8">
+        <p class="mb-8 text-sm">
           Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
           nisi ut aliquip ex ea commodo consequat.
         </p>
-        <p class="text-sm mb-4">
-          © 2025 <a href="#" class="underline ml-4 font-semibold">Privacy</a>
-          <a href="#" class="underline ml-4 font-semibold">Cookie</a>
+        <p class="mb-4 text-sm">
+          © 2025 <a href="#" class="ml-4 font-semibold underline">Privacy</a>
+          <a href="#" class="ml-4 font-semibold underline">Cookie</a>
         </p>
       </div>
 
       <!-- Column 3: Meer JES-nieuws -->
       <div class="w-full lg:w-1/3">
-        <h3 class="text-lg font-bold mb-4">Meer JES-nieuws</h3>
-        <a href="#verhalen" class="py-1 px-3 mb-4 bg-light-red text-white">
+        <h3 class="mb-4 font-bold text-lg">Meer JES-nieuws</h3>
+        <a href="#verhalen" class="bg-light-red lg:mb-4 px-3 py-1 text-white">
           Volg alle verhalen op de voet
         </a>
-        <p class="text-sm mb-8">
+        <p class="my-8 text-sm">
           Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
           nisi ut aliquip ex ea commodo consequat.
         </p>
-        <p class="text-sm mb-2">
+        <p class="mb-2 text-sm">
           Werkhuizenstraat 3
           1080 Sint-Jans-Molenbeek
         </p>
@@ -1121,13 +1140,13 @@
     </div>
 
     <!-- Logo -->
-    <div class="mt-8 flex justify-end lg:mr-24">
+    <div class="flex justify-end mt-8 lg:mr-24">
       <img src="assets/images/JES_logo_zonderbaseline_rood.svg" alt="JES">
     </div>
 
     <!-- Back to Top Button -->
-    <a href="#" class="fixed bottom-8 right-8">
-      <img src="assets/images/Arrow - up.svg" alt="Terug omhoog" class="h-16 w-16 z-50">
+    <a href="#" class="right-8 bottom-8 fixed">
+      <img src="assets/images/Arrow - up.svg" alt="Terug omhoog" class="z-50 w-16 h-16">
     </a>
   </footer>
 
@@ -1147,39 +1166,48 @@
       mobileMenu.classList.add("hidden");
     });
   </script>
+
   <!-- JavaScript for dropdownmenu -->
   <script>
+    let dropdownTimeout;
+
     // Open the dropdown when hovering over the button
     function openDropdown() {
-      var dropdown = document.getElementById("dropdown-menu");
-      dropdown.classList.remove("hidden");
+      clearTimeout(dropdownTimeout); // Clear any existing timeout
+      document.getElementById("dropdown-menu").classList.remove("hidden");
     }
 
-    // Close the dropdown if clicked outside
-    document.addEventListener("click", function (event) {
+    // Close the dropdown with a delay when no longer hovered over
+    function closeDropdown() {
+      dropdownTimeout = setTimeout(() => {
+        document.getElementById("dropdown-menu").classList.add("hidden");
+      }, 1000); // 1 second delay before closing
+    }
+
+    document.addEventListener("DOMContentLoaded", function () {
       var dropdown = document.getElementById("dropdown-menu");
       var button = document.querySelector("#verhalen-dropdown button");
 
-      // Close if the click is outside the button or dropdown
-      if (
-        !button.contains(event.target) &&
-        !dropdown.contains(event.target)
-      ) {
-        dropdown.classList.add("hidden");
-      }
-    });
+      // Show dropdown on hover
+      button.addEventListener("mouseenter", openDropdown);
+      dropdown.addEventListener("mouseenter", openDropdown);
 
-    // Stop the dropdown from closing when hovering over the dropdown
-    var dropdown = document.getElementById("dropdown-menu");
-    dropdown.addEventListener("mouseenter", function () {
-      dropdown.classList.remove("hidden");
-    });
-    dropdown.addEventListener("mouseleave", function () {
-      // Do nothing, since the dropdown should not close when the mouse leaves the dropdown
+      // Hide dropdown when mouse leaves (after delay)
+      button.addEventListener("mouseleave", closeDropdown);
+      dropdown.addEventListener("mouseleave", closeDropdown);
+
+      // Close the dropdown if clicked outside
+      document.addEventListener("click", function (event) {
+        if (!button.contains(event.target) && !dropdown.contains(event.target)) {
+          dropdown.classList.add("hidden");
+        }
+      });
     });
   </script>
-  <!-- JavaScript for dropdownmenu -->
+
+  <!-- JavaScript for sliders -->
   <script src="src/sliders.js"></script>
+
   <!-- JavaScript to search trough tiltes -->
   <script>
     document.getElementById("search").addEventListener("input", function () {
@@ -1198,7 +1226,7 @@
           let text = heading.textContent.toLowerCase();
 
           if (text.includes(filter)) {
-            matches.push(`<li class="p-2 hover:bg-gray-200 cursor-pointer" 
+            matches.push(`<li class="hover:bg-gray-200 p-2 cursor-pointer" 
                             onclick="scrollToHeading('${heading.id}')">${heading.textContent}</li>`);
           }
         });
@@ -1223,6 +1251,7 @@
       }
     }
   </script>
+
   <!-- Show searchbox -->
   <script>
     const searchBtn = document.getElementById("searchBtn");
