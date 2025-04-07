@@ -1,3 +1,10 @@
+import { initGroeiDoorLatentTalentSlider } from "./sliders/groeiDoorLatentTalent.js";
+import { initLeerkansDoorNieuweKansenSlider } from "./sliders/leerkansDoorNieuweKansen.js";
+import { initRuimteVoorRuimteSlider } from "./sliders/ruimteVoorRuimte.js";
+import { initStemGevenZonderStempelSlider } from "./sliders/stemGevenZonderStempel.js";
+import { initWelzijnDoorSpeelterreinSlider } from "./sliders/welzijnDoorSpeelterrein.js";
+import { initWerkzaamheidsgraagSlider } from "./sliders/werkzaamheidsgraag.js";
+
 document.addEventListener("DOMContentLoaded", function () {
 	const sliderConfigs = [
 		{ className: "welzijn-door-speelterrein-swiper" },
@@ -34,4 +41,12 @@ document.addEventListener("DOMContentLoaded", function () {
 			},
 		});
 	});
+
+	// Init specifieke sliders
+	initWelzijnDoorSpeelterreinSlider();
+	initRuimteVoorRuimteSlider();
+	initWerkzaamheidsgraagSlider();
+	initGroeiDoorLatentTalentSlider()
+	initLeerkansDoorNieuweKansenSlider()
+	initStemGevenZonderStempelSlider()
 });
