@@ -53,6 +53,7 @@
     --color-snow: #fffafa;
     --color-light-pink: #fff4f6;
     --color-soft-pink: #fcd3db;
+    --color-pink: #f692a4;
     --color-light-red: #ee274a;
     --font-rethink-sans: "Rethink Sans", sans-serif;
     --leading-4xl: 6.5625rem;
@@ -837,6 +838,9 @@
   }
   .bg-light-red {
     background-color: var(--color-light-red);
+  }
+  .bg-pink {
+    background-color: var(--color-pink);
   }
   .bg-snow {
     background-color: var(--color-snow);
