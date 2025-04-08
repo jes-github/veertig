@@ -20,8 +20,9 @@ export async function initWelzijnDoorSpeelterreinSlider() {
                 prevEl: ".welzijn-door-speelterrein-swiper-prev",
             },
             breakpoints: {
-                640: { slidesPerView: 1.5, spaceBetween: 20 },
-                1024: { slidesPerView: 2, spaceBetween: 30 },
+                0: { slidesPerView: 1, spaceBetween: 20 },
+                640: { slidesPerView: 2, spaceBetween: 20 },
+                1024: { slidesPerView: 2.5, spaceBetween: 30 },
             },
         });
     } catch (error) {
@@ -59,8 +60,10 @@ export async function initWelzijnDoorSpeelterreinSlider() {
                         <div class="swiper-slide">
                             <div class="card">
                                 <div class="lg:block flex justify-center">
-                                    <img src="${slide.image}" alt="${slide.title}" 
-                                         class="rounded-full w-60 lg:w-120 h-60 lg:h-105" />
+                                    <div class="aspect-h-1 aspect-w-1">
+                                        <img src="${slide.image}" alt="${slide.title}" 
+                                         class="rounded-full w-60 lg:w-80 h-60 lg:h-80" />
+                                    </div>
                                 </div>
                                 <div class="px-4 pb-4">
                                     <div class="top-95 right-24 lg:right-0 absolute flex justify-center items-center bg-white my-auto px-4 py-0.5 border-3 border-light-red font-bold">

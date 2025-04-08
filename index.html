@@ -12,7 +12,8 @@
 </head>
 
 <body class="bg-snow pt-40">
-  <!-- Navigation Bar -->
+
+  <!-- Navigation -->
   <nav
     class="top-0 left-0 z-20 fixed flex justify-between items-center bg-snow px-8 lg:px-36 py-8 border-b-3 border-black w-full font-semibold">
     <!-- Logo en menu (links) -->
@@ -98,6 +99,7 @@
 
   <!-- Mobile & Tablet Menu -->
   <div id="mobile-menu" class="hidden z-20 fixed inset-0 flex flex-col bg-light-red h-2/3">
+
     <!-- Top bar with Logo and Close button -->
     <div class="flex justify-between items-center bg-snow mb-6 p-8 w-full">
       <!-- Logo -->
@@ -105,8 +107,9 @@
       <!-- Close button -->
       <button id="menu-close" class="text-2xl">✕</button>
     </div>
-    <!-- Search bar (just below the top bar) -->
-    <!-- Menu items - Vertically stacked -->
+
+    <!-- Search bar -->
+    <!-- Menu items -->
     <div class="space-y-4 bg-light-red w-full">
       <a href="#hoopkracht" class="block relative font-semibold text-snow text-center">Hoopkracht</a>
       <a href="#nieuws" class="block relative font-semibold text-snow text-center">Nieuws</a>
@@ -139,9 +142,9 @@
     </div>
   </div>
 
-  <!-- Header Section -->
-  <section
-    class="relative flex lg:flex-row flex-col bg-snow px-8 lg:pl-36 border-b-3 border-black w-screen min-h-screen">
+  <!-- Header-->
+  <header
+    class="relative flex lg:flex-row flex-col bg-snow px-8 lg:px-0 lg:pl-36 border-b-3 border-black w-screen min-h-screen">
     <!-- Left side: Logo, Subtitle, Button -->
     <div class="z-10 relative flex flex-col items-start gap-4 lg:gap-6 w-full lg:w-1/3">
       <!-- Logo -->
@@ -178,343 +181,234 @@
       </a>
     </div>
     <!-- Video (Large Screens Only) -->
-    <div class="hidden lg:block relative w-full lg:w-2/3">
-      <video class="bottom-0 left-0 absolute w-full h-[83.33%] object-cover" autoplay muted loop>
+    <div class="hidden lg:block relative w-full lg:w-2/3 overflow-hidden">
+      <video class="bottom-0 left-5 absolute w-full h-[83.33%] object-cover overflow-hidden" autoplay muted loop>
         <source src="https://docs.material-tailwind.com/demo.mp4" type="video/mp4" />
       </video>
     </div>
-  </section>
+  </header>
 
-  <!-- Hoopkracht en Event Section -->
-  <div class="flex lg:flex-row flex-col bg-soft-pink" id="hoopkracht">
-    <!-- Hoopkracht Section -->
-    <section id="hoopkracht"
-      class="relative bg-soft-pink px-8 lg:py-16 pt-8 pb-32 lg:pl-36 border-b-3 border-black w-full lg:w-7/12">
-      <h2 id="Waarom hoopkracht" class="font-extrabold text-black text-xl lg:text-4xl leading-xl lg:leading-4xl">
-        Waarom hoopkracht?
-      </h2>
-      <!-- Three-column Layout -->
-      <div class="items-start grid grid-cols-[auto_1fr_auto] lg:pt-16">
-        <div class="flex justify-center lg:justify-start mt-3">
-          <!-- Swoosh afbeelding zonder rechter border -->
-          <img src="assets/images/swoosh.svg" alt="Swoosh" class="lg:pb-8 max-w-full h-auto">
+  <main>
+
+    <!-- Hoopkracht en Event wrapper -->
+    <div class="flex lg:flex-row flex-col overflow-hidden">
+
+      <!-- Hoopkracht Section -->
+      <section id="hoopkracht"
+        class="relative bg-soft-pink px-8 lg:py-16 pt-8 pb-32 lg:pl-36 border-b-3 border-black w-full lg:w-7/12">
+        <div class="container">
+          <h2 id="Waarom hoopkracht" class="font-extrabold text-black text-xl lg:text-4xl leading-xl lg:leading-4xl">
+            Waarom hoopkracht?
+          </h2>
+          <!-- Three-column Layout -->
+          <div class="items-start grid grid-cols-[auto_1fr_auto] lg:pt-16">
+            <div class="flex justify-center lg:justify-start mt-3">
+              <!-- Swoosh afbeelding zonder rechter border -->
+              <img src="assets/images/swoosh.svg" alt="Swoosh" class="lg:pb-8 max-w-full h-auto">
+            </div>
+            <div>
+              <p class="pr-8 lg:pb-8 pl-4 font-semibold text-base">
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                Lorem 1500s.
+              </p>
+              <p>
+                <a href="jes.be" class="flex items-center pl-4 font-semibold underline">
+                  Lees meer &#8594;
+                </a>
+              </p>
+            </div>
+            <div
+              class="hidden lg:flex justify-center bg-light-pink px-12 py-4 border-t-3 border-r-4 border-r-light-pink border-b-3 border-l-3 translate-x-9">
+              <img src="assets/images/label.svg" alt="Icon" class="max-w-3/4 h-auto">
+            </div>
+            <div
+              class="lg:hidden left-10 justify-center bg-light-pink px-12 py-4 border-3 border-black -translate-x-64 translate-y-55">
+              <img src="assets/images/label.svg" alt="Icon" class="max-w-3/4 h-auto">
+            </div>
+          </div>
         </div>
-        <div>
-          <p class="pr-8 lg:pb-8 pl-4 font-semibold text-base">
+      </section>
+
+      <!-- Event Section -->
+      <section id="event"
+        class="flex lg:flex-row flex-col items-center lg:items-start bg-light-pink px-8 lg:py-16 lg:pl-16 border-b-3 border-black lg:border-l-3 w-full lg:w-5/12">
+        <!-- Tekst + Knop -->
+        <div class="relative flex flex-col flex-1 items-center lg:items-start w-full max-w-md">
+          <h2 class="pt-32 lg:pt-0 w-full text-xl lg:text-4xl text-left leading-xl lg:leading-4xl">Event</h2>
+          <h3 class="w-full text-base text-left">JES feest</h3>
+          <p class="mb-4 w-full text-sm text-left">Locatie Brussel, 26 Nov 2025</p>
+          <p class="mb-6 w-full font-semibold text-base text-left">
             Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-            Lorem 1500s.
           </p>
-          <p>
-            <a href="jes.be" class="flex items-center pl-4 font-semibold underline">
-              Lees meer &#8594;
-            </a>
-          </p>
+          <!-- Knop onder de tekst op grote schermen -->
+          <a href="https://www.jes.be" target="_blank"
+            class="hidden lg:inline-block relative order-4 bg-white hover:bg-light-red mt-4 px-4 py-1 border-3 border-light-red font-semibold text-light-red hover:text-white transition duration-200">
+            Ik schrijf me in
+          </a>
         </div>
-        <div
-          class="hidden left-10 lg:flex justify-center bg-light-pink px-12 py-4 border-t-3 border-r-4 border-r-light-pink border-b-3 border-l-3 translate-x-1">
-          <img src="assets/images/label.svg" alt="Icon" class="max-w-3/4 h-auto">
-        </div>
-        <div
-          class="lg:hidden left-10 justify-center bg-light-pink px-12 py-4 border-3 border-black -translate-x-64 translate-y-55">
-          <img src="assets/images/label.svg" alt="Icon" class="max-w-3/4 h-auto">
-        </div>
-      </div>
-      <div class="min-h-12/12"></div>
-    </section>
-
-    <!-- Event Section -->
-    <section id="event"
-      class="flex lg:flex-row flex-col items-center lg:items-start bg-light-pink px-8 lg:py-16 lg:pl-16 border-b-3 border-black lg:border-l-3 w-full lg:w-5/12">
-
-      <!-- Tekst + Knop Container -->
-      <div class="relative flex flex-col flex-1 items-center lg:items-start w-full max-w-md">
-        <h2 class="pt-32 lg:pt-0 w-full text-xl lg:text-4xl text-left leading-xl lg:leading-4xl">Event</h2>
-        <h3 class="w-full text-base text-left">JES feest</h3>
-        <p class="mb-4 w-full text-sm text-left">Locatie Brussel, 26 Nov 2025</p>
-        <p class="mb-6 w-full font-semibold text-base text-left">
-          Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-        </p>
-        <!-- Knop onder de tekst op grote schermen -->
-        <a href="https://www.jes.be" target="_blank"
-          class="hidden lg:inline-block relative order-4 bg-white hover:bg-light-red mt-4 px-4 py-1 border-3 border-light-red font-semibold text-light-red hover:text-white transition duration-200">
-          Ik schrijf me in
-        </a>
-      </div>
-
-      <!-- Foto + Knop -->
-      <div class="relative flex flex-col items-center lg:items-end overflow-x-hidden">
-        <img src="https://unsplash.it/640/640" alt="Image"
-          class="mb-4 rounded-full w-40 lg:w-120 h-40 lg:h-93 object-cover" />
-        <!-- Knop voor mobile (onder de foto) -->
-        <a href="https://www.jes.be" target="_blank"
-          class="lg:hidden block -top-12 relative bg-white px-4 py-1 border-3 border-red-600 font-semibold text-light-red text-center">
-          Ik schrijf me in
-        </a>
-      </div>
-    </section>
-
-  </div>
-
-  <!-- Nieuws Section -->
-  <section class="relative">
-    <div class="flex lg:flex-row flex-col border-b-3 border-black">
-      <!-- Left Image -->
-      <div class="w-full lg:w-5/12 lg:h-[38rem]">
-        <img src="https://unsplash.it/640/425" alt="Left news image" class="w-full h-full object-cover" />
-      </div>
-      <!-- Right Image -->
-      <div class="w-full lg:w-7/12 lg:h-[38rem]">
-        <img src="https://unsplash.it/640/425?random" alt="Right news image" class="w-full h-full object-cover" />
-      </div>
-    </div>
-
-    <!-- Nieuws Square -->
-    <div class="absolute inset-0 flex justify-start lg:justify-center items-center p-6">
-      <!-- Square Box -->
-      <div class="flex flex-col justify-center bg-light-red p-6 border-4 border-white w-100 h-100 aspect-square">
-        <h2 id="nieuws" class="mb-2 font-bold text-white text-xl">Nieuws</h2>
-        <p class="mb-4 text-white text-base">Subtext goes here</p>
-        <p class="text-white text-base">Subtext lorem lazarus lapin lizardos salome balak alaf met</p>
-        <p class="mb-4 text-white text-sm">Datum en thema</p>
-        <p class="mb-4 text-white text-base">subtext</p>
-        <a href="jes.be" class="flex items-center pb-8 font-semibold text-white underline">
-          Lees meer &#8594;
-        </a>
-        <button
-          class="bg-light-red hover:bg-red-600 px-4 py-2 border-3 border-white w-fit font-semibold text-white hover:text-snow transition duration-200">
-          Meer verhalen over dit thema
-        </button>
-      </div>
-    </div>
-  </section>
-
-  <!-- Verhalen: Welzijn door speelterrein Section -->
-  <div class="bg-soft-pink lg:bg-light-pink px-8 lg:pl-36 border-b-3 border-black">
-    <section class="flex lg:flex-row flex-col py-16 lg:pl-4 container" id="verhaal-welzijn-door-speelterrein">
-    </section>
-  </div>
-
-  <!-- Blijf op de hoogte Section -->
-  <section class="px-8 py-16 border-b-3 border-black">
-    <div class="mx-auto lg:px-4 container">
-      <div class="flex lg:flex-row flex-col">
-        <!-- Left half (signup form) -->
-        <div class="mb-8 lg:mb-0 lg:pl-16 w-full lg:w-1/2">
-          <h2 id="blijf op de hoogte" class="mb-8 font-bold text-xl lg:text-4xl leading-xl lg:leading-4xl">Blijf op de
-            hoogte</h2>
-          <p class="font-semibold text-base lg:text-lg">
-            Meer van dat.
-          </p>
-          <div class="flex items-center">
-            <p class="font-bold text-lg">
-              <a href="https://jes.be/inschrijven-nieuwsbrief/">Schrijf me in op de nieuwsbrief.</a>
-            </p>
-            <a class="px-4 py-2 rounded text-white" target="_blank" href="https://jes.be/inschrijven-nieuwsbrief/">
-              <img src="assets/images/Arrow - right.svg" alt="Schrijf je in op onze nieuwsbrief" />
-            </a>
+        <!-- Foto + Knop -->
+        <div class="relative flex flex-col items-center lg:items-end">
+          <div class="w-40 lg:w-100 aspect-h-1 aspect-w-1 lg:translate-x-30">
+            <img src="https://unsplash.it/640/640" alt="Image" class="rounded-full object-cover" />
           </div>
+          <!-- Knop voor mobile (onder de foto) -->
+          <a href="https://www.jes.be" target="_blank"
+            class="lg:hidden block -top-12 relative bg-white px-4 py-1 border-3 border-red-600 font-semibold text-light-red text-center">
+            Ik schrijf me in
+          </a>
         </div>
-        <div class="lg:pl-16 w-full lg:w-1/2">
-          <p class="mb-4 font-semibold text-lg">
-            Quote - newsletter brings you the latest updates, exclusive offers,
-            and insightful content directly to your inbox. Don't miss out on
-            important announcements and special promotions.
-          </p>
-          <img src="assets/images/swoosh.svg" alt="Swoosh">
-          <p class="font-semibold text-lg">
-            Naam jongere
-          </p>
+      </section>
+
+    </div>
+
+    <!-- Nieuws Section -->
+    <section class="relative">
+      <div class="flex lg:flex-row flex-col border-b-3 border-black">
+        <!-- Left Image -->
+        <div class="w-full lg:w-5/12 lg:h-[38rem]">
+          <img src="https://unsplash.it/640/425" alt="Left news image" class="w-full h-full object-cover" />
+        </div>
+        <!-- Right Image -->
+        <div class="w-full lg:w-7/12 lg:h-[38rem]">
+          <img src="https://unsplash.it/640/425?random" alt="Right news image" class="w-full h-full object-cover" />
         </div>
       </div>
-    </div>
-  </section>
-
-  <!-- Verhalen: Ruimte voor ruimte en Werkzaamheidsgraag Section -->
-  <div class="flex lg:flex-row flex-col border-b-3 border-black">
-    <!-- Verhalen: Ruimte voor ruimte Section -->
-    <section
-      class="bg-snow px-8 py-16 lg:pl-16 border-t-3 lg:border-t-0 border-black lg:border-l-3 w-full lg:w-1/2 container"
-      id="ruimte-voor-ruimte">
-      <div id="ruimteVoorRuimteSliderContainer"></div>
-    </section>
-
-    <!-- Verhalen: werkzaamheidsgraag Section -->
-    <section
-      class="bg-soft-pink px-8 py-16 lg:pl-16 border-t-3 lg:border-t-0 border-black lg:border-l-3 w-full lg:w-1/2 container"
-      id="verhaal-werkzaamheidsgraag">
-    </section>
-  </div>
-
-
-  <!-- Quote sectie -->
-  <section class="bg-snow mx-auto px-8 lg:px-36 py-16 border-b-3 border-black">
-    <div class="flex">
-      <!-- Column 1: Opening Quote -->
-      <div class="pr-2 font-bold text-light-red text-xl lg:text-4xl leading-xl lg:leading-4xl">"</div>
-
-      <!-- Column 2: Quote Content -->
-      <div>
-        <p class="mb-4 font-bold text-light-red text-xl lg:text-4xl leading-xl lg:leading-4xl">
-          Stedelijke leiders zetten anderen snel in beweging.
-        </p>
-        <p class="mb-6 font-semibold text-lg">
-          <span class="pt-2 border-t-3 border-black">Hafza Mazgout</span><br>
-          Pleinpatrona
-        </p>
-        <a href="https://jes.be" target="_blank">
-          <button class="bg-black px-4 py-2 text-white">
-            Meer over Pleinpatrons
+      <!-- Nieuws Square -->
+      <div class="absolute inset-0 flex justify-start lg:justify-center items-center p-6">
+        <!-- Square Box -->
+        <div class="flex flex-col justify-center bg-light-red p-6 border-4 border-white w-100 h-100 aspect-square">
+          <h2 id="nieuws" class="mb-2 font-bold text-white text-xl">Nieuws</h2>
+          <p class="mb-4 text-white text-base">Subtext goes here</p>
+          <p class="text-white text-base">Subtext lorem lazarus lapin lizardos salome balak alaf met</p>
+          <p class="mb-4 text-white text-sm">Datum en thema</p>
+          <p class="mb-4 text-white text-base">subtext</p>
+          <a href="jes.be" class="flex items-center pb-8 font-semibold text-white underline">
+            Lees meer &#8594;
+          </a>
+          <button
+            class="bg-light-red hover:bg-red-600 px-4 py-2 border-3 border-white w-fit font-semibold text-white hover:text-snow transition duration-200">
+            Meer verhalen over dit thema
           </button>
-        </a>
-      </div>
-    </div>
-  </section>
-
-  <!-- Verhalen: Groei door latent talent -->
-  <div class="bg-soft-pink px-8 py-16 lg:pl-36 border-b-3 border-black">
-    <section class="flex lg:flex-row flex-col bg-soft-pink pl-4 container" id="verhaal-groei-door-latent-talent">
-    </section>
-  </div>
-
-  <!-- Verhalen: Leerkans door nieuwe kansen en stem geven zonder stempel Section -->
-  <div class="flex lg:flex-row flex-col border-b-3 border-black">
-    <!-- Verhalen: Leerkans door nieuwe kansen Section -->
-    <section class="bg-snow px-8 py-16 lg:pl-32 w-full lg:w-1/2 container" id="verhaal-leerkans-door-nieuwe-kansen">
-      <h2 id="leerkans-door-nieuwe-kansen" class="mb-4 font-bold text-xl lg:text-4xl leading-xl lg:leading-4xl">Leerkans
-        door nieuwe kansen</h2>
-      <div class="flex items-start py-8 pr-16">
-        <!-- Swoosh Sign -->
-        <img src="assets/images/swoosh.svg" alt="Swoosh" class="mt-4 mr-4 lg:py-8 w-16 h-auto" />
-        <!-- Placeholder Text -->
-        <p class="lg:pt-8 lg:pr-16 lg:pb-16 font-semibold text-base lg:text-lg">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque nec eros ut magna.
-        </p>
-      </div>
-      <div class="swiper leerkans-door-nieuwe-kansen-swiper">
-        <div class="swiper-wrapper">
-          <!-- Slide 1 -->
-          <div class="swiper-slide">
-            <div class="bg-white mb-4 border-3 border-black card">
-              <div class="overflow-hidden">
-                <img src="https://unsplash.it/640/425" alt="Card Image" class="w-full" />
-              </div>
-              <div class="px-4 pb-4">
-                <div class="right-4 bottom-70 absolute flex justify-end my-auto px-4 py-0.5 font-bold">
-                  <img src="assets/images/pinpoint.svg" alt="Locatie" class="mr-2">Brussel
-                </div>
-                <p class="pt-4 pb-8">Nozem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
-                  eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                </p>
-                <h2 class="mb-2 font-bold text-lg">Titel, artikel,...</h2>
-                <a href="#"
-                  class="top-8 right-0 relative bg-white px-2 py-0.5 border-3 border-black font-semibold text-lg">Lees
-                  Meer</a>
-              </div>
-            </div>
-          </div>
-
-          <!-- Slide 2 -->
-          <div class="swiper-slide">
-            <div class="bg-white mb-4 border-3 border-black card">
-              <div class="overflow-hidden">
-                <img src="https://unsplash.it/640/425?random=1" alt="Card Image" class="w-full" />
-              </div>
-              <div class="px-4 pb-4">
-                <div class="right-4 bottom-70 absolute flex justify-end my-auto px-4 py-0.5 font-bold">
-                  <img src="assets/images/pinpoint.svg" alt="Locatie" class="mr-2">Brussel
-                </div>
-                <p class="pt-4 pb-8">Nozem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
-                  eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                </p>
-                <h2 class="mb-2 font-bold text-lg">Titel, artikel,...</h2>
-                <a href="#"
-                  class="top-8 right-0 relative bg-white px-2 py-0.5 border-3 border-black font-semibold text-lg">Lees
-                  Meer</a>
-              </div>
-            </div>
-          </div>
-
-          <!-- Slide 3 -->
-          <div class="swiper-slide">
-            <div class="bg-white mb-4 border-3 border-black card">
-              <div class="overflow-hidden">
-                <img src="https://unsplash.it/640/425?random=2" alt="Card Image" class="w-full" />
-              </div>
-              <div class="px-4 pb-4">
-                <div class="right-4 bottom-70 absolute flex justify-end my-auto px-4 py-0.5 font-bold">
-                  <img src="assets/images/pinpoint.svg" alt="Locatie" class="mr-2">Brussel
-                </div>
-                <p class="pt-4 pb-8">Nozem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
-                  eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                </p>
-                <h2 class="mb-2 font-bold text-lg">Titel, artikel,...</h2>
-                <a href="#"
-                  class="top-8 right-0 relative bg-white px-2 py-0.5 border-3 border-black font-semibold text-lg">Lees
-                  Meer</a>
-              </div>
-            </div>
-          </div>
-
-          <!-- Slide 4 -->
-          <div class="swiper-slide">
-            <div class="bg-white mb-4 border-3 border-black card">
-              <div class="overflow-hidden">
-                <img src="https://unsplash.it/640/425?random=3" alt="Card Image" class="w-full" />
-              </div>
-              <div class="px-4 pb-4">
-                <div class="right-4 bottom-70 absolute flex justify-end my-auto px-4 py-0.5 font-bold">
-                  <img src="assets/images/pinpoint.svg" alt="Locatie" class="mr-2">Brussel
-                </div>
-                <p class="pt-4 pb-8">Nozem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
-                  eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                </p>
-                <h2 class="mb-2 font-bold text-lg">Titel, artikel,...</h2>
-                <a href="#"
-                  class="top-8 right-0 relative bg-white px-2 py-0.5 border-3 border-black font-semibold text-lg">Lees
-                  Meer</a>
-              </div>
-            </div>
-          </div>
-
         </div>
       </div>
-      <div class="hidden lg:flex flex-col items-center">
-        <!-- Pagination -->
-        <div class="flex justify-center mt-4 lg:mt-16 w-full leerkans-door-nieuwe-kansen-pagination"></div>
+    </section>
+
+    <!-- Verhalen: Welzijn door speelterrein Section -->
+    <div class="bg-soft-pink lg:bg-light-pink px-8 lg:px-0 lg:pl-36 border-b-3 border-black overflow-hidden">
+      <section class="flex lg:flex-row flex-col py-16 lg:pl-4" id="verhaal-welzijn-door-speelterrein">
+      </section>
+    </div>
+
+    <!-- Blijf op de hoogte Section -->
+    <section class="px-8 py-16 border-b-3 border-black">
+      <div class="mx-auto lg:px-4 container">
+        <div class="flex lg:flex-row flex-col">
+          <!-- Left half (signup form) -->
+          <div class="mb-8 lg:mb-0 lg:pl-16 w-full lg:w-1/2">
+            <h2 id="blijf op de hoogte" class="mb-8 font-bold text-xl lg:text-4xl leading-xl lg:leading-4xl">Blijf op de
+              hoogte</h2>
+            <p class="font-semibold text-base lg:text-lg">
+              Meer van dat.
+            </p>
+            <div class="flex items-center">
+              <p class="font-bold text-lg">
+                <a href="https://jes.be/inschrijven-nieuwsbrief/">Schrijf me in op de nieuwsbrief.</a>
+              </p>
+              <a class="px-4 py-2 rounded text-white" target="_blank" href="https://jes.be/inschrijven-nieuwsbrief/">
+                <img src="assets/images/Arrow - right.svg" alt="Schrijf je in op onze nieuwsbrief" />
+              </a>
+            </div>
+          </div>
+          <div class="lg:pl-16 w-full lg:w-1/2">
+            <p class="mb-4 font-semibold text-lg">
+              Quote - newsletter brings you the latest updates, exclusive offers,
+              and insightful content directly to your inbox. Don't miss out on
+              important announcements and special promotions.
+            </p>
+            <img src="assets/images/swoosh.svg" alt="Swoosh">
+            <p class="font-semibold text-lg">
+              Naam jongere
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Verhalen: Ruimte voor ruimte en Werkzaamheidsgraag -->
+    <div class="flex lg:flex-row flex-col border-b-3 border-black">
+      <!-- Verhalen: Ruimte voor ruimte Section -->
+      <section
+        class="bg-snow px-8 py-16 lg:pl-16 border-t-3 lg:border-t-0 border-black lg:border-l-3 w-full lg:w-1/2 container"
+        id="ruimte-voor-ruimte">
+        <div id="ruimteVoorRuimteSliderContainer"></div>
+      </section>
+      <!-- Verhalen: werkzaamheidsgraag Section -->
+      <section
+        class="bg-soft-pink px-8 py-16 lg:pl-16 border-t-3 lg:border-t-0 border-black lg:border-l-3 w-full lg:w-1/2 container"
+        id="verhaal-werkzaamheidsgraag">
+      </section>
+    </div>
+
+    <!-- Quote sectie -->
+    <section class="bg-snow mx-auto px-8 lg:px-36 py-16 border-b-3 border-black">
+      <div class="flex">
+        <!-- Column 1: Opening Quote -->
+        <div class="pr-2 font-bold text-light-red text-xl lg:text-4xl leading-xl lg:leading-4xl">"</div>
+        <!-- Column 2: Quote Content -->
         <div>
-          <!-- leerkans-door-nieuwe-kansen-swiper Navigation Buttons -->
-          <div class="flex items-center space-x-4 lg:my-12 mt-6">
-            <button class="leerkans-door-nieuwe-kansen-swiper-prev"><img src="assets/images/Arrow - left.svg"
-                alt="Vorige"></button>
-            <button class="leerkans-door-nieuwe-kansen-swiper-next"><img src="assets/images/Arrow - right.svg"
-                alt="Volgende"></button>
-          </div>
+          <p class="mb-4 font-bold text-light-red text-xl lg:text-4xl leading-xl lg:leading-4xl">
+            Stedelijke leiders zetten anderen snel in beweging.
+          </p>
+          <p class="mb-6 font-semibold text-lg">
+            <span class="pt-2 border-t-3 border-black">Hafza Mazgout</span><br>
+            Pleinpatrona
+          </p>
+          <a href="https://jes.be" target="_blank">
+            <button class="bg-black px-4 py-2 text-white">
+              Meer over Pleinpatrons
+            </button>
+          </a>
         </div>
       </div>
-
     </section>
-    <!-- Verhalen: stem gevenzonder stempel Section -->
-    <section
-      class="bg-soft-pink px-8 py-16 lg:pl-16 border-t-3 lg:border-t-0 border-black lg:border-l-3 w-full lg:w-1/2 container"
-      id="verhaal-stem-geven-zonder-stempel">
-    </section>
-  </div>
 
-  <!-- Ontdek alle verhalen section -->
-  <section class="bg-light-red py-12 w-full">
-    <div class="text-white text-center">
-      <h2
-        class="flex justify-center items-center my-16 ml-4 font-bold text-white text-xl text-3xl lg:lg:text-4xl leading-xl lg:leading-4xl">
-        Ontdek alle verhalen op het slotfeest
-        <span class="ml-2">&rarr;</span>
-      </h2>
-      <p class="my-8 pt-2 font-semibold text-sm"><span class="py-4 border-t-1 border-light-pink">
-          26.10.2025,
-          Brussel</span></p>
+    <!-- Verhalen: Groei door latent talent -->
+    <div class="bg-soft-pink px-8 lg:px-0 py-16 lg:pl-36 border-b-3 border-black overflow-hidden">
+      <section class="flex lg:flex-row flex-col bg-soft-pink pl-4" id="verhaal-groei-door-latent-talent">
+      </section>
     </div>
-  </section>
 
-  <!-- Footer section -->
+    <!-- Verhalen: Leerkans door nieuwe kansen en stem geven zonder stempel Section -->
+    <div class="flex lg:flex-row flex-col border-b-3 border-black">
+
+      <!-- Verhalen: Leerkans door nieuwe kansen Section -->
+      <section class="bg-snow px-8 py-16 lg:pl-32 w-full lg:w-1/2 container" id="verhaal-leerkans-door-nieuwe-kansen">
+      </section>
+
+      <!-- Verhalen: stem gevenzonder stempel Section -->
+      <section
+        class="bg-soft-pink px-8 py-16 lg:pl-16 border-t-3 lg:border-t-0 border-black lg:border-l-3 w-full lg:w-1/2 container"
+        id="verhaal-stem-geven-zonder-stempel">
+      </section>
+    </div>
+
+    <!-- Ontdek alle verhalen section -->
+    <section class="bg-light-red py-12 w-full">
+      <div class="text-white text-center">
+        <h2
+          class="flex justify-center items-center my-16 ml-4 font-bold text-white text-xl text-3xl lg:lg:text-4xl leading-xl lg:leading-4xl">
+          Ontdek alle verhalen op het slotfeest
+          <span class="ml-2">&rarr;</span>
+        </h2>
+        <p class="my-8 pt-2 font-semibold text-sm"><span class="py-4 border-t-1 border-light-pink">
+            26.10.2025,
+            Brussel</span></p>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
   <footer class="bg-snow px-8 lg:px-36 py-16">
     <!-- Grid Container -->
     <div class="flex flex-wrap">
@@ -577,128 +471,19 @@
   </footer>
 
   <!-- JavaScript for menu -->
-  <script>
-    const menuToggle = document.getElementById("menu-toggle");
-    const mobileMenu = document.getElementById("mobile-menu");
-    const menuClose = document.getElementById("menu-close");
+  <script src="js/menu.js"></script>
 
-    // Open the menu
-    menuToggle.addEventListener("click", function () {
-      mobileMenu.classList.remove("hidden");
-    });
-
-    // Close the menu
-    menuClose.addEventListener("click", function () {
-      mobileMenu.classList.add("hidden");
-    });
-  </script>
-
-  <!-- JavaScript for dropdownmenu -->
-  <script>
-    let dropdownTimeout;
-
-    // Open the dropdown when hovering over the button
-    function openDropdown() {
-      clearTimeout(dropdownTimeout); // Clear any existing timeout
-      document.getElementById("dropdown-menu").classList.remove("hidden");
-    }
-
-    // Close the dropdown with a delay when no longer hovered over
-    function closeDropdown() {
-      dropdownTimeout = setTimeout(() => {
-        document.getElementById("dropdown-menu").classList.add("hidden");
-      }, 1000); // 1 second delay before closing
-    }
-
-    document.addEventListener("DOMContentLoaded", function () {
-      var dropdown = document.getElementById("dropdown-menu");
-      var button = document.querySelector("#verhalen-dropdown button");
-
-      // Show dropdown on hover
-      button.addEventListener("mouseenter", openDropdown);
-      dropdown.addEventListener("mouseenter", openDropdown);
-
-      // Hide dropdown when mouse leaves (after delay)
-      button.addEventListener("mouseleave", closeDropdown);
-      dropdown.addEventListener("mouseleave", closeDropdown);
-
-      // Close the dropdown if clicked outside
-      document.addEventListener("click", function (event) {
-        if (!button.contains(event.target) && !dropdown.contains(event.target)) {
-          dropdown.classList.add("hidden");
-        }
-      });
-    });
-  </script>
+  <!-- JavaScript for dropdown menu -->
+  <script src="js/dropdownMenu.js"></script>
 
   <!-- JavaScript for sliders -->
   <script type="module" src="js/sliders.js"></script>
 
-  <!-- JavaScript to search trough tiltes -->
-  <script>
-    document.getElementById("search").addEventListener("input", function () {
-      let filter = this.value.toLowerCase();
-      let headings = document.querySelectorAll("h1, h2, h3, h4, h5, h6");
-      let resultsBox = document.getElementById("results");
+  <!-- JavaScript to search through titles -->
+  <script src="js/searchTitles.js"></script>
 
-      // Clear previous results
-      resultsBox.innerHTML = "";
-
-      // Show dropdown if input is not empty
-      if (filter) {
-        let matches = [];
-
-        headings.forEach(heading => {
-          let text = heading.textContent.toLowerCase();
-
-          if (text.includes(filter)) {
-            matches.push(`<li class="hover:bg-gray-200 p-2 cursor-pointer" 
-                            onclick="scrollToHeading('${heading.id}')">${heading.textContent}</li>`);
-          }
-        });
-
-        // If matches found, display them
-        if (matches.length > 0) {
-          resultsBox.innerHTML = matches.join("");
-          resultsBox.classList.remove("hidden");
-        } else {
-          resultsBox.classList.add("hidden");
-        }
-      } else {
-        resultsBox.classList.add("hidden"); // Hide dropdown if input is empty
-      }
-    });
-
-    function scrollToHeading(id) {
-      let element = document.getElementById(id);
-      if (element) {
-        element.scrollIntoView({ behavior: "smooth", block: "start" });
-        document.getElementById("results").classList.add("hidden"); // Hide dropdown after click
-      }
-    }
-  </script>
-
-  <!-- Show searchbox -->
-  <script>
-    const searchBtn = document.getElementById("searchBtn");
-    const searchInput = document.getElementById("search");
-
-    searchBtn.addEventListener("click", () => {
-      searchInput.classList.toggle("opacity-0");
-      searchInput.classList.toggle("invisible");
-
-      if (!searchInput.classList.contains("opacity-0")) {
-        searchInput.focus();
-      }
-    });
-
-    document.addEventListener("click", (event) => {
-      if (!searchBtn.contains(event.target) && !searchInput.contains(event.target)) {
-        searchInput.classList.add("opacity-0", "invisible");
-      }
-    });
-  </script>
-
+  <!-- Show search box -->
+  <script src="js/searchBox.js"></script>
 </body>
 
 </html>

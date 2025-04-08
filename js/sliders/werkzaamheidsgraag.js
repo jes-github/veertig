@@ -18,7 +18,7 @@ export async function initWerkzaamheidsgraagSlider() {
         prevEl: ".werkzaamheidsgraag-swiper-prev",
       },
       breakpoints: {
-        640: { slidesPerView: 2, spaceBetween: 20 },
+        640: { slidesPerView: 2, spaceBetween: 30 },
         1024: { slidesPerView: 2, spaceBetween: 30 },
       },
     });
