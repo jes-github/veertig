@@ -50,6 +50,18 @@ export async function initGroeiDoorLatentTalentSlider() {
                     </div>
                     <div class="hidden lg:block mt-8 groei-door-latent-talent-pagination"></div>
                 </div>
+            <div class="relative lg:hidden">
+                <div class="absolute top-27 left-0 w-full h-full flex justify-between items-center z-50">
+                    <button class="cursor-pointer groei-door-latent-talent-swiper-prev">
+                        <img src="assets/images/Arrow - left.svg" alt="Vorige">
+                    </button>
+                    <button class="cursor-pointer groei-door-latent-talent-swiper-next">
+                        <img src="assets/images/Arrow - right.svg" alt="Volgende">
+                    </button>
+                </div>
+                <div class="hidden lg:block mt-8 groei-door-latent-talent-pagination"></div>
+            </div>
+
             </div>
             <div class="w-full lg:w-7/12 overflow-visible">
                 <div class="overflow-visible swiper groei-door-latent-talent-swiper">
@@ -66,7 +78,7 @@ export async function initGroeiDoorLatentTalentSlider() {
                                     </div>
                                 </div>
                                 <div class="px-4 pb-4">
-                                    <div class="top-95 right-24 lg:right-0 absolute flex justify-center items-center bg-white my-auto px-4 py-0.5 border-3 border-light-red font-bold">
+                                    <div class="top-50 right-25 lg:top-70 lg:right-10 absolute flex justify-center items-center bg-white my-auto px-4 py-0.5 border-3 border-light-red font-bold">
                                         <img src="assets/images/pinpoint.svg" alt="Locatie" class="mr-2">${slide.location}
                                     </div>
                                     <div class="flex items-center my-auto text-sm">

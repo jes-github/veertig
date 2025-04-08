@@ -7,15 +7,15 @@ export async function initLeerkansDoorNieuweKansenSlider() {
     const data = await response.json();
     generateLeerkansDoorNieuweKansenSlider(data.slides);
 
-    new Swiper(".leerkansDoorNieuweKansen-swiper", {
+    new Swiper(".leerkans-door-nieuwe-kansen-swiper", {
       loop: true,
       pagination: {
-        el: ".leerkansDoorNieuweKansen-pagination",
+        el: ".leerkans-door-nieuwe-kansen-pagination",
         clickable: true,
       },
       navigation: {
-        nextEl: ".leerkansDoorNieuweKansen-swiper-next",
-        prevEl: ".leerkansDoorNieuweKansen-swiper-prev",
+        nextEl: ".leerkans-door-nieuwe-kansen-swiper-next",
+        prevEl: ".leerkans-door-nieuwe-kansen-swiper-prev",
       },
       breakpoints: {
         640: { slidesPerView: 2, spaceBetween: 30 },
@@ -23,12 +23,12 @@ export async function initLeerkansDoorNieuweKansenSlider() {
       },
     });
   } catch (error) {
-    console.error("Error loading leerkansDoorNieuweKansen slider:", error);
+    console.error("Error loading leerkans-door-nieuwe-kansen slider:", error);
   }
 
   function generateLeerkansDoorNieuweKansenSlider(slides) {
     let sliderHTML = `
-      <h2 leerkansDoorNieuweKansen class="mb-4 font-bold text-xl lg:text-4xl break-words leading-xl lg:leading-4xl">
+      <h2 class="mb-4 font-bold text-xl lg:text-4xl break-words leading-xl lg:leading-4xl">
         Leerkans door nieuwe kansen
       </h2>
       <div class="flex items-start py-8 pr-16">
@@ -37,7 +37,7 @@ export async function initLeerkansDoorNieuweKansenSlider() {
           Inspirerende projecten rond ruimte en herbestemming. Bekijk hier enkele voorbeelden.
         </p>
       </div>
-      <div class="swiper leerkansDoorNieuweKansen-swiper">
+      <div class="swiper leerkans-door-nieuwe-kansen-swiper">
         <div class="swiper-wrapper">
     `;
 
@@ -67,17 +67,28 @@ export async function initLeerkansDoorNieuweKansenSlider() {
         </div>
       </div>
 
-      <div class="hidden lg:flex flex-col items-center">
-        <div class="flex justify-center lg:my-16 w-full leerkansDoorNieuweKansen-pagination"></div>
+            <div class="hidden lg:flex flex-col items-center">
+        <div class="flex justify-center lg:my-16 w-full leerkans-door-nieuwe-kansen-pagination"></div>
         <div class="flex justify-center items-center space-x-4">
-          <button class="leerkansDoorNieuweKansen-swiper-prev">
+          <button class="leerkans-door-nieuwe-kansen-swiper-prev">
             <img src="assets/images/Arrow - left.svg" alt="Vorige">
           </button>
-          <button class="leerkansDoorNieuweKansen-swiper-next">
+          <button class="leerkans-door-nieuwe-kansen-swiper-next">
             <img src="assets/images/Arrow - right.svg" alt="Volgende">
           </button>
         </div>
       </div>
+
+    <div class="relative lg:hidden">
+      <div class="absolute -top-55 -translate-y-1/2 w-full flex justify-between items-center z-50 px-4">
+        <button class="cursor-pointer leerkans-door-nieuwe-kansen-swiper-prev -ml-8">
+          <img src="assets/images/Arrow - left.svg" alt="Vorige" />
+        </button>
+        <button class="cursor-pointer leerkans-door-nieuwe-kansen-swiper-next -mr-8">
+          <img src="assets/images/Arrow - right.svg" alt="Volgende" />
+        </button>
+      </div>
+    </div>
     `;
 
     container.innerHTML = sliderHTML;

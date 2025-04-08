@@ -78,6 +78,17 @@ export async function initWerkzaamheidsgraagSlider() {
           </button>
         </div>
       </div>
+
+    <div class="relative lg:hidden">
+      <div class="absolute -top-55 -translate-y-1/2 w-full flex justify-between items-center z-50 px-4">
+        <button class="cursor-pointer werkzaamheidsgraag-swiper-prev -ml-8">
+          <img src="assets/images/Arrow - left.svg" alt="Vorige" />
+        </button>
+        <button class="cursor-pointer werkzaamheidsgraag-swiper-next -mr-8">
+          <img src="assets/images/Arrow - right.svg" alt="Volgende" />
+        </button>
+      </div>
+    </div>
     `;
 
     container.innerHTML = sliderHTML;
