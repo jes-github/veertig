@@ -51,7 +51,7 @@ export async function initGroeiDoorLatentTalentSlider() {
                     <div class="hidden lg:block mt-8 groei-door-latent-talent-pagination"></div>
                 </div>
             <div class="relative lg:hidden">
-                <div class="absolute top-27 left-0 w-full h-full flex justify-between items-center z-50">
+                <div class="absolute top-27 left-0 w-full h-full flex justify-between items-center z-10">
                     <button class="cursor-pointer groei-door-latent-talent-swiper-prev">
                         <img src="assets/images/Arrow - left.svg" alt="Vorige">
                     </button>
