@@ -15,12 +15,12 @@
 
   <!-- Navigation -->
   <nav
-    class="top-0 left-0 z-20 fixed flex justify-between items-center bg-snow px-8 lg:px-36 py-8 border-b-3 border-black w-full font-semibold">
+    class="top-0 left-0 z-20 fixed flex justify-between items-center bg-snow px-8 xl:px-36 py-8 border-b-3 border-black w-full font-semibold">
     <!-- Logo en menu (links) -->
     <div class="flex items-center space-x-24">
-      <a href="#"><img src="assets/images/JES_logo_zonderbaseline_rood.svg" class="max-w-xs lg:max-w-sm lg:max-w-md"
+      <a href="#"><img src="assets/images/JES_logo_zonderbaseline_rood.svg" class="max-w-xs xl:max-w-sm xl:max-w-md"
           alt="JES" /></a>
-      <div class="hidden lg:flex space-x-12">
+      <div class="hidden xl:flex space-x-12">
         <a href="#hoopkracht"
           class="after:block after:top-4 after:left-0 after:absolute relative after:bg-black after:w-0 hover:after:w-full after:h-[2px] after:transition-all after:-translate-y-1 after:duration-200">
           Hoopkracht </a>
@@ -69,7 +69,7 @@
       </div>
     </div>
     <!-- Rechts: Zoekicoon + Extra links -->
-    <div class="hidden top-2 relative lg:flex space-x-12">
+    <div class="hidden top-2 relative xl:flex space-x-12">
       <!-- Search Input -->
       <div class="relative w-64">
         <input type="text" id="search" placeholder="Zoeken"
@@ -91,11 +91,26 @@
         class="after:block after:top-4 after:left-0 after:absolute relative after:bg-black after:w-0 hover:after:w-full after:h-[2px] after:transition-all after:-translate-y-1 after:duration-200">Contact</a>
     </div>
     <!-- Hamburger Menu (Mobiel & Tablet) -->
-    <button id="menu-toggle" class="lg:hidden after:block after:top-4 after:left-0 after:absolute relative">
+    <button id="menu-toggle" class="xl:hidden after:block after:top-4 after:left-0 after:absolute relative">
       <img src="assets/images/hamburger - icoon.svg" alt="hamburger menu" />
       <!-- Hamburger Icon -->
     </button>
   </nav>
+
+  <!-- Toggle Button -->
+  <!-- <button data-toggle-collapse="mobile-menu" id="menu-toggle">
+    <img id="menu-icon" src="assets/images/hamburger - icoon.svg" alt="menu icon" />
+  </button> -->
+
+  <!-- Mobile Menu -->
+  <!-- <div id="mobile-menu"
+    class="opacity-0 max-h-0 overflow-hidden transition-all duration-300 ease-in-out pointer-events-none">
+    <nav class="space-y-4 bg-light-red p-4">
+      <a href="#hoopkracht" class="font-semibold text-white">Hoopkracht</a>
+      <a href="#nieuws" class="font-semibold text-white">Nieuws</a>
+    </nav>
+  </div> -->
+
 
   <!-- Mobile & Tablet Menu -->
   <div id="mobile-menu" class="hidden z-20 fixed inset-0 flex flex-col bg-light-red h-2/3">
@@ -144,34 +159,34 @@
 
   <!-- Header-->
   <header
-    class="relative flex lg:flex-row flex-col bg-snow px-8 lg:px-0 lg:pl-36 border-b-3 border-black w-screen min-h-screen">
+    class="relative flex xl:flex-row flex-col bg-snow px-8 xl:px-0 xl:pl-36 border-b-3 border-black w-screen min-h-screen">
     <!-- Left side: Logo, Subtitle, Button -->
-    <div class="z-10 relative flex flex-col items-start gap-4 lg:gap-6 w-full lg:w-1/3">
+    <div class="z-10 relative flex flex-col items-start gap-4 xl:gap-6 w-full xl:w-1/3">
       <!-- Logo -->
       <img src="assets/images/hoopkracht.svg" alt="Hoopkracht"
-        class="z-10 order-1 lg:mb-6 w-[80%] lg:w-[110%] lg:max-w-none max-w-xs" />
+        class="z-10 order-1 xl:mb-6 w-[80%] xl:w-[110%] xl:max-w-none max-w-xs" />
 
       <!-- Subtitle -->
-      <p class="order-2 pr-6 lg:pr-32 font-semibold text-black text-base">
+      <p class="order-2 pr-6 xl:pr-32 font-semibold text-black text-base">
         Lorem Ipsum is simply dummy text of the printing and typesetting industry.
       </p>
 
-      <!-- Mobile Video -->
-      <div class="lg:hidden relative order-3 w-full h-auto">
-        <video class="mt-6 border-4 lg:border-0 border-black w-full" autoplay muted loop>
+      <!-- Mobile Video + Button Wrapper -->
+      <div class="xl:hidden relative order-3 w-full h-auto">
+        <video class="mt-6 border-4 border-black w-full" autoplay muted loop>
           <source src="https://docs.material-tailwind.com/demo.mp4" type="video/mp4" />
         </video>
+
+        <!-- Button over video, onderaan gecentreerd -->
+        <a href="https://www.jes.be" target="_blank"
+          class="-bottom-4 left-25 z-10 absolute bg-white hover:bg-light-red px-4 py-1 border-3 border-light-red font-semibold text-light-red hover:text-white transition -translate-x-1/2 duration-200 transform">
+          Ik schrijf me in
+        </a>
       </div>
 
       <!-- Button -->
       <a href="https://www.jes.be" target="_blank"
-        class="lg:hidden top-125 left-10 z-50 absolute order-4 bg-white hover:bg-light-red mt-4 px-4 py-1 border-3 border-light-red font-semibold text-light-red hover:text-white transition duration-200">
-        Ik schrijf me in
-      </a>
-
-      <!-- Button -->
-      <a href="https://www.jes.be" target="_blank"
-        class="hidden lg:block order-4 bg-white hover:bg-light-red mt-4 px-4 py-1 border-3 border-light-red font-semibold text-light-red hover:text-white transition duration-200">
+        class="hidden xl:block order-4 bg-white hover:bg-light-red mt-4 px-4 py-1 border-3 border-light-red font-semibold text-light-red hover:text-white transition duration-200">
         Ik schrijf me in
       </a>
 
@@ -181,7 +196,7 @@
       </a>
     </div>
     <!-- Video (Large Screens Only) -->
-    <div class="hidden lg:block relative w-full lg:w-2/3 overflow-hidden">
+    <div class="hidden xl:block relative w-full xl:w-2/3 overflow-hidden">
       <video class="bottom-0 left-5 absolute w-full h-[83.33%] object-cover overflow-hidden" autoplay muted loop>
         <source src="https://docs.material-tailwind.com/demo.mp4" type="video/mp4" />
       </video>
@@ -191,23 +206,23 @@
   <main>
 
     <!-- Hoopkracht en Event wrapper -->
-    <div class="flex lg:flex-row flex-col overflow-hidden">
+    <div class="flex xl:flex-row flex-col overflow-hidden">
 
       <!-- Hoopkracht Section -->
       <section id="hoopkracht"
-        class="relative bg-soft-pink px-8 lg:py-16 pt-8 pb-32 lg:pl-36 border-b-3 border-black w-full lg:w-7/12">
+        class="relative bg-soft-pink px-8 xl:py-16 pt-8 pb-32 xl:pl-36 border-b-3 border-black w-full xl:w-7/12">
         <div class="container">
-          <h2 id="Waarom hoopkracht" class="font-extrabold text-black text-xl lg:text-4xl leading-xl lg:leading-4xl">
+          <h2 id="Waarom hoopkracht" class="font-extrabold text-black text-xl xl:text-4xl leading-xl xl:leading-4xl">
             Waarom hoopkracht?
           </h2>
           <!-- Three-column Layout -->
-          <div class="items-start grid grid-cols-[auto_1fr_auto] lg:pt-16">
-            <div class="flex justify-center lg:justify-start mt-3">
+          <div class="items-start grid grid-cols-[auto_1fr_auto] xl:pt-16">
+            <div class="flex justify-center xl:justify-start mt-3">
               <!-- Swoosh afbeelding zonder rechter border -->
-              <img src="assets/images/swoosh.svg" alt="Swoosh" class="lg:pb-8 max-w-full h-auto">
+              <img src="assets/images/swoosh.svg" alt="Swoosh" class="xl:pb-8 max-w-full h-auto">
             </div>
             <div>
-              <p class="pr-8 lg:pb-8 pl-4 font-semibold text-base">
+              <p class="pr-8 xl:pb-8 pl-4 font-semibold text-base">
                 Lorem Ipsum is simply dummy text of the printing and typesetting industry.
                 Lorem 1500s.
               </p>
@@ -218,11 +233,11 @@
               </p>
             </div>
             <div
-              class="hidden lg:flex justify-center bg-light-pink px-12 py-4 border-t-3 border-r-4 border-r-light-pink border-b-3 border-l-3 translate-x-9">
+              class="hidden xl:flex justify-center bg-light-pink px-12 py-4 border-t-3 border-r-4 border-r-light-pink border-b-3 border-l-3 translate-x-9">
               <img src="assets/images/label.svg" alt="Icon" class="max-w-3/4 h-auto">
             </div>
             <div
-              class="lg:hidden left-10 justify-center bg-light-pink px-12 py-4 border-3 border-black -translate-x-64 translate-y-55">
+              class="xl:hidden top-[72%] left-1/2 absolute bg-light-pink px-12 py-4 border-3 border-black -translate-x-1/2 transform">
               <img src="assets/images/label.svg" alt="Icon" class="max-w-3/4 h-auto">
             </div>
           </div>
@@ -231,10 +246,10 @@
 
       <!-- Event Section -->
       <section id="event"
-        class="flex lg:flex-row flex-col items-center lg:items-start bg-light-pink px-8 lg:py-16 lg:pl-16 border-b-3 border-black lg:border-l-3 w-full lg:w-5/12">
+        class="flex xl:flex-row flex-col items-center xl:items-start bg-light-pink px-8 xl:py-16 pb-16 xl:pl-16 border-b-3 border-black xl:border-l-3 w-full xl:w-5/12">
         <!-- Tekst + Knop -->
-        <div class="relative flex flex-col flex-1 items-center lg:items-start w-full max-w-md">
-          <h2 class="pt-32 lg:pt-0 w-full text-xl lg:text-4xl text-left leading-xl lg:leading-4xl">Event</h2>
+        <div class="relative flex flex-col flex-1 items-center xl:items-start w-full max-w-md">
+          <h2 class="pt-32 xl:pt-0 w-full text-xl xl:text-4xl text-left leading-xl xl:leading-4xl">Event</h2>
           <h3 class="w-full text-base text-left">JES feest</h3>
           <p class="mb-4 w-full text-sm text-left">Locatie Brussel, 26 Nov 2025</p>
           <p class="mb-6 w-full font-semibold text-base text-left">
@@ -242,18 +257,18 @@
           </p>
           <!-- Knop onder de tekst op grote schermen -->
           <a href="https://www.jes.be" target="_blank"
-            class="hidden lg:inline-block relative order-4 bg-white hover:bg-light-red mt-4 px-4 py-1 border-3 border-light-red font-semibold text-light-red hover:text-white transition duration-200">
+            class="hidden xl:inline-block relative order-4 bg-white hover:bg-light-red mt-4 px-4 py-1 border-3 border-light-red font-semibold text-light-red hover:text-white transition duration-200">
             Ik schrijf me in
           </a>
         </div>
         <!-- Foto + Knop -->
-        <div class="relative flex flex-col items-center lg:items-end">
-          <div class="w-40 lg:w-100 aspect-h-1 aspect-w-1 lg:translate-x-30">
+        <div class="relative flex flex-col items-center xl:items-end">
+          <div class="w-60 xl:w-100 aspect-h-1 aspect-w-1 xl:translate-x-30">
             <img src="https://unsplash.it/640/640" alt="Image" class="rounded-full object-cover" />
           </div>
           <!-- Knop voor mobile (onder de foto) -->
           <a href="https://www.jes.be" target="_blank"
-            class="lg:hidden block -top-12 relative bg-white px-4 py-1 border-3 border-red-600 font-semibold text-light-red text-center">
+            class="xl:hidden block top-11/12 absolute bg-white px-4 py-1 border-3 border-red-600 font-semibold text-light-red text-center">
             Ik schrijf me in
           </a>
         </div>
@@ -263,18 +278,18 @@
 
     <!-- Nieuws Section -->
     <section class="relative">
-      <div class="flex lg:flex-row flex-col border-b-3 border-black">
+      <div class="flex xl:flex-row flex-col border-b-3 border-black">
         <!-- Left Image -->
-        <div class="w-full lg:w-5/12 lg:h-[38rem]">
+        <div class="w-full xl:w-5/12 xl:h-[38rem]">
           <img src="https://unsplash.it/640/425" alt="Left news image" class="w-full h-full object-cover" />
         </div>
         <!-- Right Image -->
-        <div class="w-full lg:w-7/12 lg:h-[38rem]">
+        <div class="w-full xl:w-7/12 xl:h-[38rem]">
           <img src="https://unsplash.it/640/425?random" alt="Right news image" class="w-full h-full object-cover" />
         </div>
       </div>
       <!-- Nieuws Square -->
-      <div class="absolute inset-0 flex justify-start lg:justify-center items-center p-6">
+      <div class="absolute inset-0 flex justify-start xl:justify-center items-center p-6">
         <!-- Square Box -->
         <div class="flex flex-col justify-center bg-light-red p-6 border-4 border-white w-100 h-100 aspect-square">
           <h2 id="nieuws" class="mb-2 font-bold text-white text-xl">Nieuws</h2>
@@ -294,20 +309,20 @@
     </section>
 
     <!-- Verhalen: Welzijn door speelterrein Section -->
-    <div class="bg-soft-pink lg:bg-light-pink px-8 lg:px-0 lg:pl-36 border-b-3 border-black overflow-hidden">
-      <section class="flex lg:flex-row flex-col py-16 lg:pl-4" id="verhaal-welzijn-door-speelterrein">
+    <div class="bg-soft-pink xl:bg-light-pink px-8 xl:px-0 xl:pl-36 border-b-3 border-black overflow-hidden">
+      <section class="flex xl:flex-row flex-col py-16 xl:pl-4" id="verhaal-welzijn-door-speelterrein">
       </section>
     </div>
 
     <!-- Blijf op de hoogte Section -->
     <section class="px-8 py-16 border-b-3 border-black">
-      <div class="mx-auto lg:px-4 container">
-        <div class="flex lg:flex-row flex-col">
+      <div class="mx-auto xl:px-4 container">
+        <div class="flex xl:flex-row flex-col">
           <!-- Left half (signup form) -->
-          <div class="mb-8 lg:mb-0 lg:pl-16 w-full lg:w-1/2">
-            <h2 id="blijf op de hoogte" class="mb-8 font-bold text-xl lg:text-4xl leading-xl lg:leading-4xl">Blijf op de
+          <div class="mb-8 xl:mb-0 xl:pl-16 w-full xl:w-1/2">
+            <h2 id="blijf op de hoogte" class="mb-8 font-bold text-xl xl:text-4xl leading-xl xl:leading-4xl">Blijf op de
               hoogte</h2>
-            <p class="font-semibold text-base lg:text-lg">
+            <p class="font-semibold text-base xl:text-lg">
               Meer van dat.
             </p>
             <div class="flex items-center">
@@ -319,7 +334,7 @@
               </a>
             </div>
           </div>
-          <div class="lg:pl-16 w-full lg:w-1/2">
+          <div class="xl:pl-16 w-full xl:w-1/2">
             <p class="mb-4 font-semibold text-lg">
               Quote - newsletter brings you the latest updates, exclusive offers,
               and insightful content directly to your inbox. Don't miss out on
@@ -335,28 +350,27 @@
     </section>
 
     <!-- Verhalen: Ruimte voor ruimte en Werkzaamheidsgraag -->
-    <div class="flex lg:flex-row flex-col border-b-3 border-black">
+    <div class="flex xl:flex-row flex-col border-b-3 border-black">
       <!-- Verhalen: Ruimte voor ruimte Section -->
-      <section
-        class="bg-snow px-8 py-16 lg:pl-16 border-t-3 lg:border-t-0 border-black lg:border-l-3 w-full lg:w-1/2 container"
+      <section class="bg-snow px-8 py-16 xl:pl-16 border-t-3 xl:border-t-0 border-black xl:border-l-3 w-full xl:w-1/2"
         id="ruimte-voor-ruimte">
         <div id="ruimteVoorRuimteSliderContainer"></div>
       </section>
       <!-- Verhalen: werkzaamheidsgraag Section -->
       <section
-        class="bg-soft-pink px-8 py-16 lg:pl-16 border-t-3 lg:border-t-0 border-black lg:border-l-3 w-full lg:w-1/2 container"
+        class="bg-soft-pink px-8 py-16 xl:pl-16 border-t-3 xl:border-t-0 border-black xl:border-l-3 w-full xl:w-1/2"
         id="verhaal-werkzaamheidsgraag">
       </section>
     </div>
 
     <!-- Quote sectie -->
-    <section class="bg-snow mx-auto px-8 lg:px-36 py-16 border-b-3 border-black">
+    <section class="bg-snow mx-auto px-8 xl:px-36 py-16 border-b-3 border-black">
       <div class="flex">
         <!-- Column 1: Opening Quote -->
-        <div class="pr-2 font-bold text-light-red text-xl lg:text-4xl leading-xl lg:leading-4xl">"</div>
+        <div class="pr-2 font-bold text-light-red text-xl xl:text-4xl leading-xl xl:leading-4xl">"</div>
         <!-- Column 2: Quote Content -->
         <div>
-          <p class="mb-4 font-bold text-light-red text-xl lg:text-4xl leading-xl lg:leading-4xl">
+          <p class="mb-4 font-bold text-light-red text-xl xl:text-4xl leading-xl xl:leading-4xl">
             Stedelijke leiders zetten anderen snel in beweging.
           </p>
           <p class="mb-6 font-semibold text-lg">
@@ -373,21 +387,21 @@
     </section>
 
     <!-- Verhalen: Groei door latent talent -->
-    <div class="bg-soft-pink px-8 lg:px-0 py-16 lg:pl-36 border-b-3 border-black overflow-hidden">
-      <section class="flex lg:flex-row flex-col bg-soft-pink pl-4" id="verhaal-groei-door-latent-talent">
+    <div class="bg-soft-pink px-8 xl:px-0 py-16 xl:pl-36 border-b-3 border-black overflow-hidden">
+      <section class="flex xl:flex-row flex-col bg-soft-pink pl-4" id="verhaal-groei-door-latent-talent">
       </section>
     </div>
 
     <!-- Verhalen: Leerkans door nieuwe kansen en stem geven zonder stempel Section -->
-    <div class="flex lg:flex-row flex-col border-b-3 border-black">
+    <div class="flex xl:flex-row flex-col border-b-3 border-black">
 
       <!-- Verhalen: Leerkans door nieuwe kansen Section -->
-      <section class="bg-snow px-8 py-16 lg:pl-32 w-full lg:w-1/2 container" id="verhaal-leerkans-door-nieuwe-kansen">
+      <section class="bg-snow px-8 py-16 xl:pl-32 w-full xl:w-1/2" id="verhaal-leerkans-door-nieuwe-kansen">
       </section>
 
       <!-- Verhalen: stem gevenzonder stempel Section -->
       <section
-        class="bg-soft-pink px-8 py-16 lg:pl-16 border-t-3 lg:border-t-0 border-black lg:border-l-3 w-full lg:w-1/2 container"
+        class="bg-soft-pink px-8 py-16 xl:pl-16 border-t-3 xl:border-t-0 border-black xl:border-l-3 w-full xl:w-1/2"
         id="verhaal-stem-geven-zonder-stempel">
       </section>
     </div>
@@ -396,7 +410,7 @@
     <section class="bg-light-red py-12 w-full">
       <div class="text-white text-center">
         <h2
-          class="flex justify-center items-center my-16 ml-4 font-bold text-white text-xl text-3xl lg:lg:text-4xl leading-xl lg:leading-4xl">
+          class="flex justify-center items-center my-16 ml-4 font-bold text-white text-xl text-3xl xl:xl:text-4xl leading-xl xl:leading-4xl">
           Ontdek alle verhalen op het slotfeest
           <span class="ml-2">&rarr;</span>
         </h2>
@@ -409,11 +423,11 @@
   </main>
 
   <!-- Footer -->
-  <footer class="bg-snow px-8 lg:px-36 py-16">
+  <footer class="bg-snow px-8 xl:px-36 py-16">
     <!-- Grid Container -->
     <div class="flex flex-wrap">
       <!-- Column 1: Links -->
-      <div class="lg:pt-18 lg:pl-32 w-1/2 lg:w-1/3">
+      <div class="xl:pt-18 xl:pl-32 w-1/2 xl:w-1/3">
         <ul class="space-y-2 font-bold text-sm uppercase">
           <li><a href="#hoopkracht" class="hover:underline">Hoopkracht</a></li>
           <li><a href="#nieuws" class="hover:underline">Nieuws</a></li>
@@ -425,7 +439,7 @@
       </div>
 
       <!-- Column 2: Title & Subtext -->
-      <div class="lg:pr-16 w-1/2 lg:w-1/3">
+      <div class="xl:pr-16 w-1/2 xl:w-1/3">
         <h3 class="mb-4 font-bold text-lg">40 jaar JES. 40 jaar hoopkracht.</h3>
         <p class="mb-4 text-sm">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
@@ -442,9 +456,9 @@
       </div>
 
       <!-- Column 3: Meer JES-nieuws -->
-      <div class="w-full lg:w-1/3">
+      <div class="w-full xl:w-1/3">
         <h3 class="mb-4 font-bold text-lg">Meer JES-nieuws</h3>
-        <a href="#verhalen" class="bg-light-red lg:mb-4 px-3 py-1 text-white">
+        <a href="#verhalen" class="bg-light-red xl:mb-4 px-3 py-1 text-white">
           Volg alle verhalen op de voet
         </a>
         <p class="my-8 text-sm">
@@ -460,7 +474,7 @@
     </div>
 
     <!-- Logo -->
-    <div class="flex justify-end mt-8 lg:mr-24">
+    <div class="flex justify-end mt-8 xl:mr-24">
       <img src="assets/images/JES_logo_zonderbaseline_rood.svg" alt="JES">
     </div>
 
@@ -481,5 +495,8 @@
 
   <!-- JavaScript to search through titles -->
   <script src="js/searchTitles.js"></script>
+
+  <!-- JavaScript to collapse menu -->
+  <script src="js/collapse.js"></script>
 
 </html>

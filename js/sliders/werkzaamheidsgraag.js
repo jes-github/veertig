@@ -18,8 +18,9 @@ export async function initWerkzaamheidsgraagSlider() {
         prevEl: ".werkzaamheidsgraag-swiper-prev",
       },
       breakpoints: {
-        640: { slidesPerView: 2, spaceBetween: 30 },
-        1024: { slidesPerView: 2, spaceBetween: 30 },
+        0: { slidesPerView: 1, spaceBetween: 20 },
+        640: { slidesPerView: 2, spaceBetween: 20 },
+        1280: { slidesPerView: 2, spaceBetween: 30 },
       },
     });
   } catch (error) {
@@ -28,12 +29,12 @@ export async function initWerkzaamheidsgraagSlider() {
 
   function generateWerkzaamheidsGraagSlider(slides) {
     let sliderHTML = `
-      <h2 werkzaamheidsgraag class="mb-4 font-bold text-xl lg:text-4xl break-words leading-xl lg:leading-4xl">
+      <h2 werkzaamheidsgraag class="mb-4 font-bold text-xl xl:text-4xl break-words leading-xl xl:leading-4xl">
         Werkzaamheidsgraaaaaaag
       </h2>
       <div class="flex items-start py-8 pr-16">
-        <img src="assets/images/swoosh.svg" alt="Swoosh" class="mt-4 mr-4 lg:py-8 w-16 h-auto" />
-        <p class="lg:pt-8 lg:pr-16 lg:pb-16 font-semibold text-base lg:text-lg">
+        <img src="assets/images/swoosh.svg" alt="Swoosh" class="mt-4 mr-4 xl:py-8 w-16 h-auto" />
+        <p class="xl:pt-8 xl:pr-16 xl:pb-16 font-semibold text-base xl:text-lg">
           Inspirerende projecten rond ruimte en herbestemming. Bekijk hier enkele voorbeelden.
         </p>
       </div>
@@ -67,8 +68,8 @@ export async function initWerkzaamheidsgraagSlider() {
         </div>
       </div>
 
-      <div class="hidden lg:flex flex-col items-center">
-        <div class="flex justify-center lg:my-16 w-full werkzaamheidsgraag-pagination"></div>
+      <div class="hidden xl:flex flex-col items-center">
+        <div class="flex justify-center xl:my-16 w-full werkzaamheidsgraag-pagination"></div>
         <div class="flex justify-center items-center space-x-4">
           <button class="werkzaamheidsgraag-swiper-prev">
             <img src="assets/images/Arrow - left.svg" alt="Vorige">
@@ -79,7 +80,7 @@ export async function initWerkzaamheidsgraagSlider() {
         </div>
       </div>
 
-    <div class="relative lg:hidden">
+    <div class="relative xl:hidden">
       <div class="absolute -top-55 -translate-y-1/2 w-full flex justify-between items-center z-10 px-4">
         <button class="cursor-pointer werkzaamheidsgraag-swiper-prev -ml-8">
           <img src="assets/images/Arrow - left.svg" alt="Vorige" />
