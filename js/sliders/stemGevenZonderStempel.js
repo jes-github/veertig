@@ -35,7 +35,7 @@ export async function initStemGevenZonderStempelSlider() {
       <div class="flex items-start py-8 pr-16">
         <img src="assets/images/swoosh.svg" alt="Swoosh" class="mt-4 mr-4 xl:py-8 w-16 h-auto" />
         <p class="xl:pt-8 xl:pr-16 xl:pb-16 font-semibold text-base xl:text-lg">
-          Inspirerende projecten rond ruimte en herbestemming. Bekijk hier enkele voorbeelden.
+          Jongeren kennen de noden en dynamieken in hun buurt natuurlijk heel goed. Ze liggen echt wakker van er leeft en beweegt in hun wijk. Wie de stad richting wil geven, kan dan ook niet om de jongeren heen die er opgroeien. Sommige jongens en meisjes delen als woordvoerder graag wat er volgens hen beter kan. JES versterkt hun stem: binnen de eigen organisatie, in de stad én in de maatchappij.
         </p>
       </div>
       <div class="swiper stem-geven-zonder-stempel-swiper">

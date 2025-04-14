@@ -35,7 +35,7 @@ export async function initLeerkansDoorNieuweKansenSlider() {
       <div class="flex items-start py-8 pr-16">
         <img src="assets/images/swoosh.svg" alt="Swoosh" class="mt-4 mr-4 xl:py-8 w-16 h-auto" />
         <p class="xl:pt-8 xl:pr-16 xl:pb-16 font-semibold text-base xl:text-lg">
-          Inspirerende projecten rond ruimte en herbestemming. Bekijk hier enkele voorbeelden.
+          Als jongere je weg mogen zoeken. Dat vinden we bij JES één van de mooiste cadeaus die je hen kan geven. Een cadeau dat uiteindelijk niet alleen onze jongeren zelf uitpakken, maar ook de buurt en de stad. Daar zijn onze workshops en opleidingen, trajecten naar duurzaam werk, geattesteerde cursussen, … sprekende voorbeelden van.
         </p>
       </div>
       <div class="swiper leerkans-door-nieuwe-kansen-swiper">

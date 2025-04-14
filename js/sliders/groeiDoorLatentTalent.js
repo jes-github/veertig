@@ -36,7 +36,7 @@ export async function initGroeiDoorLatentTalentSlider() {
                 <div class="flex items-start py-8 pr-16">
                     <img src="assets/images/swoosh.svg" alt="Swoosh" class="mt-4 mr-4 w-16 h-auto" />
                     <p class="font-semibold xl:text-lg">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque nec.
+                        Onze stadjongeren zitten tjokvol ideeën, drive en talent. Die willen we ook tot uiting laten komen. Daarom vinden we het bij JES belangrijk om jongeren zoveel mogelijk te prikkelen. Benieuwd welk talent er via cursussen, studioworkshops, experiment, …  komt bovendrijven?
                     </p>
                 </div>
                 <div class="hidden xl:flex items-center space-x-16 ml-22">
@@ -86,7 +86,7 @@ export async function initGroeiDoorLatentTalentSlider() {
                                         <p>${slide.duration}</p>
                                     </div>
                                     <h2 class="mb-2 font-bold text-lg">${slide.title}</h2>
-                                    <p class="mb-4 font-semibold">${slide.description}</p>
+                                    <p class="mb-4 font-semibold">${slide.text}</p>
                                     <a href="${slide.link}" class="font-bold underline">Lees Meer &#8594;</a>
                                 </div>
                             </div>

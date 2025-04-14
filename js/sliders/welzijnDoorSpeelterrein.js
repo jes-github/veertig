@@ -36,7 +36,7 @@ export async function initWelzijnDoorSpeelterreinSlider() {
                 <div class="flex items-start py-8 pr-16">
                     <img src="assets/images/swoosh.svg" alt="Swoosh" class="mt-4 mr-4 w-16 h-auto" />
                     <p class="font-semibold xl:text-lg">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque nec.
+                        Jongeren hebben nood aan speelterrein. Deze verhalen tonen aan hoe onze stadsjongeren via speelruimte ontdekken, mekaar ontmoeten, leren, experimenteren en vooral gewoon spelen. Want gewoon jong zijn, daar gaat het als jongere toch om?
                     </p>
                 </div>
                 <div class="hidden xl:flex items-center space-x-16 ml-22">
@@ -82,10 +82,10 @@ export async function initWelzijnDoorSpeelterreinSlider() {
                                     </div>
                                     <div class="flex items-center my-auto text-sm">
                                         <img src="assets/images/time indication.svg" alt="Leestijd">
-                                        <p>${slide.duration}</p>
+                                        <p> &nbsp ${slide.duration}</p>
                                     </div>
                                     <h2 class="mb-2 font-bold text-lg">${slide.title}</h2>
-                                    <p class="mb-4 font-semibold">${slide.description}</p>
+                                    <p class="mb-4 font-semibold">${slide.text}</p>
                                     <a href="${slide.link}" class="font-bold underline">Lees Meer &#8594;</a>
                                 </div>
                             </div>

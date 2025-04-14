@@ -2,24 +2,24 @@
   "slides": [
     {
       "image": "https://unsplash.it/640/425",
-      "location": "Brussel",
-      "text": "Nozem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-      "title": "Titel, artikel,...",
-      "link": "#"
+      "location": "Gent",
+      "text": "Groots dromen? Sowieso! In juli stellen jonge anderstalige nieuwskomers hun ideale stad voor bij JES Gent. Via een open lab, uitstappen en activiteiten frissen deze scholieren er spelenderwijs hun Nederlands op. Door te praten, te spelen, te doen en na te denken. Afspraak van 7 tot 18 juli in De Expeditie.",
+      "title": "Zomerlabo",
+      "link": "https://docs.google.com/forms/d/e/1FAIpQLSdUHNNhcJF6M6bdcFKbVmj_ftjFkph5O_Cn9RwLvjCkZvOpZg/viewform?usp=header"
     },
     {
       "image": "https://unsplash.it/640/425?random=1",
-      "location": "Brussel",
-      "text": "Nozem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-      "title": "Titel, artikel,...",
-      "link": "#"
+      "location": "JES",
+      "text": "Veel diversiteit, weinig speelruimte. Een realiteit voor heel wat jongeren in de stad. Onze cursussen tot animator-, hoofdanimator- of instructeur zitten vol tips & tricks om daar net maximaal gebruik van te maken. Zo versterken we stadsjongeren die graag met andere kinderen en jongeren aan de slag willen.",
+      "title": "Attestcursussen",
+      "link": "https://jes.be/vorming/"
     },
     {
       "image": "https://unsplash.it/640/425?random=2",
       "location": "Brussel",
-      "text": "Nozem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-      "title": "Titel, artikel,...",
-      "link": "#"
+      "text": "Hoe leidt een fietsles tot een job? Leren fietsen werkt ontspannend, doorbreekt je comfortzone en is een succeservaring. Met Compagnon de Route, een jobcoachingsinitiatief voor voornamelijk alleenstaande mama’s die ver van de arbeidsmarkt staan, pakken we stapsgewijs de fasen aan die uiteindelijk leiden tot een job.",
+      "title": "Compagnon de Route",
+      "link": "https://jesbrussels.be/vrouwenempowerendoorfietsles/"
     },
     {
       "image": "https://unsplash.it/640/425?random=3",

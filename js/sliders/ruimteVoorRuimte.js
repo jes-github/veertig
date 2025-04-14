@@ -35,7 +35,7 @@ export async function initRuimteVoorRuimteSlider() {
       <div class="flex items-start py-8 pr-16">
         <img src="assets/images/swoosh.svg" alt="Swoosh" class="mt-4 mr-4 xl:py-8 w-16 h-auto" />
         <p class="xl:pt-8 xl:pr-16 xl:pb-16 font-semibold text-base xl:text-lg">
-          Inspirerende projecten rond ruimte en herbestemming. Bekijk hier enkele voorbeelden.
+          Mentale ruimte om gewoon jezelf te mogen zijn, een fysiek plekje waar je terecht kan. Ruimte om jezelf te ontplooien. Recht op publieke ruimte. Ademruimte
         </p>
       </div>
       <div class="swiper ruimte-voor-ruimte-swiper">

@@ -1,32 +1,32 @@
 {
   "slides": [
     {
-      "image": "https://unsplash.it/640/425",
+      "image": "assets/images/Ruimte-voor-ruimte/Ruimte-voor-ruimte-Gender-en-de-stad.png",
       "location": "Brussel",
-      "text": "Nozem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-      "title": "Titel, artikel,...",
+      "text": "Gender en de stad: Les filles (ne) traînent (pas) is een reflectie op de publieke ruimte. Hoe beleven meisjes de stad? Hoe maken ze zich de stad eigen? Hoe trekken we het binaire man-vrouw-denken open? Vanuit gesprekken met meisjes en de architectuurgeschiedenis van de stad belichten we dynamieken die doorgaans verborgen blijven. ",
+      "title": "Gender en de stad",
       "link": "#"
     },
     {
-      "image": "https://unsplash.it/640/425?random=1",
-      "location": "Brussel",
-      "text": "Nozem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-      "title": "Titel, artikel,...",
+      "image": "assets/images/Ruimte-voor-ruimte/Ruimte-voor-ruimte-Thaiboks.png",
+      "location": "Antwerpen",
+      "text": "Kinderen die lachen, luide kreten. Uitlaatklep én discipline. Wereldkampioenen en lesgevers Nordin Ben Moh, Amira Leurs en Youssef El-Haji vertellen hoe de Thaiboksclub in De Branderij een plek is waar jongeren tot en met 12 jaar hun energie kwijt kunnen.",
+      "title": "Thaiboks Borgerhout",
+      "link": "https://jesantwerpen.be/interview-met-de-thai-boks-werking/"
+    },
+    {
+      "image": "assets/images/Ruimte-voor-ruimte/Ruimte-voor-ruimte-Thinsy.png",
+      "location": "Overkop Gent",
+      "text": "Plots staat Thinsy’s wereld stil. Als ijverige student moet Thinsy plots alles opnieuw aanleren. In april 2017 loopt ze een Niet-Aangeboren Hersenletsel (NAH) op. Een pakkende docu over hoe Thinsy het oké vindt om niet helemaal oké te zijn.",
+      "title": "Thinsy’s levensverhaal",
       "link": "#"
     },
     {
-      "image": "https://unsplash.it/640/425?random=2",
+      "image": "assets/images/Ruimte-voor-ruimte/Ruimte-voor-ruimte-JES-box.png",
       "location": "Brussel",
-      "text": "Nozem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-      "title": "Titel, artikel,...",
-      "link": "#"
-    },
-    {
-      "image": "https://unsplash.it/640/425?random=3",
-      "location": "Brussel",
-      "text": "Nozem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-      "title": "Titel, artikel,...",
-      "link": "#"
+      "text": "Even een koffie drinken, chillen en andere jongeren ontmoeten. De JES-box in Kuregem is een vertrouwde, veilige plek van verbinding. Gebouwd voor en door jongeren uit de buurt. Straathoekwerkers Salim en Brahim vertellen waarom dat zo belangrijk is voor de jongeren én de buurt.",
+      "title": "JES-box",
+      "link": "https://jes.be/de-jesbox-een-nieuwe-dynamiek-in-kuregem/blog/"
     }
   ]
 }
