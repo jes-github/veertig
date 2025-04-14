@@ -1,5 +1,6 @@
 import { initGroeiDoorLatentTalentSlider } from "./sliders/groeiDoorLatentTalent.js";
 import { initLeerkansDoorNieuweKansenSlider } from "./sliders/leerkansDoorNieuweKansen.js";
+import { initOnthardenDoorOntmoetenSlider } from "./sliders/onthardenDoorOntmoeten.js";
 import { initRuimteVoorRuimteSlider } from "./sliders/ruimteVoorRuimte.js";
 import { initStemGevenZonderStempelSlider } from "./sliders/stemGevenZonderStempel.js";
 import { initWelzijnDoorSpeelterreinSlider } from "./sliders/welzijnDoorSpeelterrein.js";
@@ -12,7 +13,9 @@ document.addEventListener("DOMContentLoaded", function () {
 		{ className: "werkzaamheidsgraag-swiper" },
 		{ className: "leerkans-door-nieuwe-kansen-swiper" },
 		{ className: "stem-geven-zonder-stempel-swiper" },
-		{ className: "groei-door-latent-talent-swiper" }
+		{ className: "groei-door-latent-talent-swiper" },
+		{ className: "ontharden-door-ontmoeten-swiper" }
+
 	];
 
 	sliderConfigs.forEach(config => {
@@ -49,4 +52,5 @@ document.addEventListener("DOMContentLoaded", function () {
 	initGroeiDoorLatentTalentSlider()
 	initLeerkansDoorNieuweKansenSlider()
 	initStemGevenZonderStempelSlider()
+	initOnthardenDoorOntmoetenSlider()
 });

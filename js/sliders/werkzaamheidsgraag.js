@@ -29,7 +29,7 @@ export async function initWerkzaamheidsgraagSlider() {
 
   function generateWerkzaamheidsGraagSlider(slides) {
     let sliderHTML = `
-      <h2 werkzaamheidsgraag class="mb-4 font-bold text-xl xl:text-4xl break-words leading-xl xl:leading-4xl">
+      <h2 id="Werkzaamheidsgraaaaaaag" werkzaamheidsgraag class="mb-4 font-bold text-xl xl:text-4xl break-words leading-xl xl:leading-4xl">
         Werkzaamheidsgraaaaaaag
       </h2>
       <div class="flex items-start py-8 pr-16">
@@ -44,23 +44,23 @@ export async function initWerkzaamheidsgraagSlider() {
 
     slides.forEach(slide => {
       sliderHTML += `
-          <div class="swiper-slide">
-            <div class="bg-white mb-4 border-3 border-black card">
-              <div class="overflow-hidden">
-                <img src="${slide.image}" alt="Card Image" class="w-full" />
-              </div>
-              <div class="px-4 pb-4 relative">
-                <div class="right-4 bottom-70 absolute flex justify-end my-auto px-4 py-0.5 font-bold">
-                  <img src="assets/images/pinpoint.svg" alt="Locatie" class="mr-2">${slide.location}
-                </div>
-                <p class="pt-4 pb-8">${slide.text}</p>
-                <h2 class="mb-2 font-bold text-lg">${slide.title}</h2>
-                <a href="${slide.link}" class="top-8 right-0 relative bg-white px-2 py-0.5 border-3 border-black font-semibold text-lg">
-                  Lees Meer
-                </a>
+        <div class="swiper-slide">
+          <div class="bg-white mb-4 border-3 border-black">
+            <div class="relative overflow-hidden">
+              <img src="${slide.image}" alt="Card Image" class="w-full" />
+              <div class="absolute bottom-2 right-2 flex items-center px-4 py-0.5 font-bold">
+                <img src="assets/images/pinpoint.svg" alt="Locatie" class="mr-2">${slide.location}
               </div>
             </div>
+            <div class="px-4 pb-4">
+              <p class="pt-4 pb-8">${slide.text}</p>
+              <h2 id="${slide.title}" class="mb-2 font-bold text-lg">${slide.title}</h2>
+              <a href="${slide.link}" class="top-8 right-0 relative bg-white px-2 py-0.5 border-3 border-black font-semibold text-lg">
+                Lees Meer
+              </a>
+            </div>
           </div>
+        </div>
       `;
     });
 

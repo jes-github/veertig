@@ -1,23 +1,23 @@
-export async function initGroeiDoorLatentTalentSlider() {
-    const container = document.getElementById("verhaal-groei-door-latent-talent");
+export async function initOnthardenDoorOntmoetenSlider() {
+    const container = document.getElementById("verhaal-ontharden-door-ontmoeten");
     if (!container) return;
 
     try {
-        const response = await fetch("src/groei-door-latent-talent.json");
+        const response = await fetch("src/ontharden-door-ontmoeten.json");
         const data = await response.json();
-        generateGroeiDoorLatentTalentSlider(data.slides);
+        generateOnthardenDoorOntmoetenSlider(data.slides);
 
-        new Swiper(".groei-door-latent-talent-swiper", {
+        new Swiper(".ontharden-door-ontmoeten-swiper", {
             loop: true,
             slidesPerView: 1,
             spaceBetween: 20,
             pagination: {
-                el: ".groei-door-latent-talent-pagination",
+                el: ".ontharden-door-ontmoeten-pagination",
                 clickable: true,
             },
             navigation: {
-                nextEl: ".groei-door-latent-talent-swiper-next",
-                prevEl: ".groei-door-latent-talent-swiper-prev",
+                nextEl: ".ontharden-door-ontmoeten-swiper-next",
+                prevEl: ".ontharden-door-ontmoeten-swiper-prev",
             },
             breakpoints: {
                 0: { slidesPerView: 1, spaceBetween: 20 },
@@ -26,45 +26,44 @@ export async function initGroeiDoorLatentTalentSlider() {
             },
         });
     } catch (error) {
-        console.error("Error loading groei-door-latent-talent slider:", error);
+        console.error("Error loading ontharden-door-ontmoeten slider:", error);
     }
 
-    function generateGroeiDoorLatentTalentSlider(slides) {
+    function generateOnthardenDoorOntmoetenSlider(slides) {
         let sliderHTML = `
             <div class="xl:w-5/12">
-                <h2 id="Groei door latent talent" class="font-bold text-xl xl:text-4xl leading-xl xl:leading-4xl">Groei door latent talent</h2>
+                <h2 id="Ontharden door ontmoeten" class="font-bold text-xl xl:text-4xl leading-xl xl:leading-4xl">Ontharden door ontmoeten</h2>
                 <div class="flex items-start py-8 pr-16">
                     <img src="assets/images/swoosh.svg" alt="Swoosh" class="mt-4 mr-4 w-16 h-auto" />
                     <p class="font-semibold xl:text-lg">
-                        Onze stadjongeren zitten tjokvol ideeën, drive en talent. Die willen we ook tot uiting laten komen. Daarom vinden we het bij JES belangrijk om jongeren zoveel mogelijk te prikkelen. Benieuwd welk talent er via cursussen, studioworkshops, experiment, …  komt bovendrijven?
+                        Bruggen bouwen. Tussen jongeren en de buurt, tussen jongeren en werkgevers, tussen jongeren en politie, tussen jongeren en het beleid, tussen jongeren onderling, … als ontmoetingsplek gelooft JES dat je sterke steden samen bouwt. Hoe krijgen we dat voor mekaar?
                     </p>
                 </div>
                 <div class="hidden xl:flex items-center space-x-16 ml-22">
                     <div class="flex items-center space-x-4 mt-6">
-                        <button class="cursor-pointer groei-door-latent-talent-swiper-prev">
+                        <button class="cursor-pointer ontharden-door-ontmoeten-swiper-prev">
                             <img src="assets/images/Arrow - left.svg" alt="Vorige">
                         </button>
-                        <button class="cursor-pointer groei-door-latent-talent-swiper-next">
+                        <button class="cursor-pointer ontharden-door-ontmoeten-swiper-next">
                             <img src="assets/images/Arrow - right.svg" alt="Volgende">
                         </button>
                     </div>
-                    <div class="hidden xl:block mt-8 groei-door-latent-talent-pagination"></div>
+                    <div class="hidden xl:block mt-8 ontharden-door-ontmoeten-pagination"></div>
                 </div>
-            <div class="relative xl:hidden">
-                <div class="absolute top-27 left-0 w-full h-full flex justify-between items-center z-10">
-                    <button class="cursor-pointer groei-door-latent-talent-swiper-prev">
-                        <img src="assets/images/Arrow - left.svg" alt="Vorige">
-                    </button>
-                    <button class="cursor-pointer groei-door-latent-talent-swiper-next">
-                        <img src="assets/images/Arrow - right.svg" alt="Volgende">
-                    </button>
+                <div class="relative xl:hidden">
+                    <div class="absolute top-27 left-0 w-full h-full flex justify-between items-center z-10">
+                        <button class="cursor-pointer ontharden-door-ontmoeten-swiper-prev">
+                            <img src="assets/images/Arrow - left.svg" alt="Vorige">
+                        </button>
+                        <button class="cursor-pointer ontharden-door-ontmoeten-swiper-next">
+                            <img src="assets/images/Arrow - right.svg" alt="Volgende">
+                        </button>
+                    </div>
+                    <div class="hidden xl:block mt-8 ontharden-door-ontmoeten-pagination"></div>
                 </div>
-                <div class="hidden xl:block mt-8 groei-door-latent-talent-pagination"></div>
-            </div>
-
             </div>
             <div class="w-full xl:w-7/12 overflow-visible">
-                <div class="overflow-visible swiper groei-door-latent-talent-swiper">
+                <div class="overflow-visible swiper ontharden-door-ontmoeten-swiper">
                     <div class="swiper-wrapper">`;
 
         slides.forEach(slide => {
@@ -83,7 +82,7 @@ export async function initGroeiDoorLatentTalentSlider() {
                                     </div>
                                     <div class="flex items-center my-auto text-sm">
                                         <img src="assets/images/time indication.svg" alt="Leestijd">
-                                        <p>${slide.duration}</p>
+                                        <p> &nbsp ${slide.duration}</p>
                                     </div>
                                     <h2 id="${slide.title}" class="mb-2 font-bold text-lg">${slide.title}</h2>
                                     <p class="mb-4 font-semibold">${slide.text}</p>
