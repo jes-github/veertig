@@ -53,7 +53,7 @@ export async function initRuimteVoorRuimteSlider() {
               </div>
             </div>
             <div class="px-4 pb-4">
-              <p class="pt-4 pb-8">${slide.text}</p>
+              <p class="pt-4 pb-8 min-h-70">${slide.text}</p>
               <h2 id="${slide.title}" class="mb-2 font-bold text-lg">${slide.title}</h2>
               <a href="${slide.link}" class="top-8 right-0 relative bg-white px-2 py-0.5 border-3 border-black font-semibold text-lg">
                 Lees Meer

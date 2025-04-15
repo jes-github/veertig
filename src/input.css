@@ -48,35 +48,35 @@
   h4,
   h5,
   h6 {
-    @apply font-rethink-sans font-extrabold leading-loose text-4xl text-black;
+    @apply font-rethink-sans font-extrabold text-black text-4xl leading-loose;
   }
 
   .quote {
-    @apply font-rethink-sans font-bold text-4xl leading-[52px] text-black;
+    @apply font-rethink-sans font-bold text-black text-4xl leading-[52px];
   }
 
   .link {
-    @apply font-rethink-sans font-semibold text-base leading-[21px] text-black underline;
+    @apply font-rethink-sans font-semibold text-black text-base underline leading-[21px];
   }
 
   .button {
-    @apply font-rethink-sans font-bold text-lg leading-[28px] text-black;
+    @apply font-rethink-sans font-bold text-black text-lg leading-[28px];
   }
 
   .body {
-    @apply font-rethink-sans font-normal text-base leading-[21px] text-black;
+    @apply font-rethink-sans font-normal text-black text-base leading-[21px];
   }
 
   .lead {
-    @apply font-rethink-sans font-medium text-lg leading-[28px] text-black;
+    @apply font-rethink-sans font-medium text-black text-lg leading-[28px];
   }
 
   .label {
-    @apply font-rethink-sans font-semibold text-2xl leading-[34px] text-black;
+    @apply font-rethink-sans font-semibold text-black text-2xl leading-[34px];
   }
 
   .h1 {
-    @apply font-rethink-sans font-extrabold text-[90px] leading-[105px] text-black;
+    @apply font-rethink-sans font-extrabold text-[90px] text-black leading-[105px];
   }
 }
 
@@ -86,6 +86,7 @@ section{
 }
 
 /* Swiper General Styling */
+
 .swiper-pagination-bullet{
   width: 16px !important;
   height: 16px !important;
