@@ -66,23 +66,6 @@ searchInput.addEventListener("input", function () {
 	}
 });
 
-// skip headings without id
-headings.forEach((heading) => {
-	if (!heading.id) return; // Skip headings with no ID
-
-	const text = heading.textContent.toLowerCase();
-
-	if (text.includes(filter)) {
-		const li = document.createElement("li");
-		li.textContent = heading.textContent;
-		li.className = "hover:bg-gray-200 p-2 cursor-pointer";
-		li.addEventListener("click", () => scrollToHeading(heading.id));
-
-		resultsBox.appendChild(li);
-	}
-});
-
-
 // Scroll to heading and hide results
 function scrollToHeading(id) {
 	const element = document.getElementById(id);

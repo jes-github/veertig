@@ -21,9 +21,14 @@ export async function initGroeiDoorLatentTalentSlider() {
             },
             breakpoints: {
                 0: { slidesPerView: 1, spaceBetween: 20 },
-                640: { slidesPerView: 2, spaceBetween: 20 },
+                768: { slidesPerView: 2, spaceBetween: 20 },
                 1280: { slidesPerView: 2.5, spaceBetween: 30 },
             },
+            lazy: {
+                loadPrevNext: true,
+                loadOnTransitionStart: true,
+            },
+            watchSlidesProgress: true,
         });
     } catch (error) {
         console.error("Error loading groei-door-latent-talent slider:", error);
@@ -51,7 +56,7 @@ export async function initGroeiDoorLatentTalentSlider() {
                     <div class="hidden xl:block mt-8 groei-door-latent-talent-pagination"></div>
                 </div>
             <div class="relative xl:hidden">
-                <div class="absolute top-27 left-0 w-full h-full flex justify-between items-center z-10">
+                <div class="absolute top-55 left-0 w-full h-full flex justify-between items-center z-10">
                     <button class="cursor-pointer groei-door-latent-talent-swiper-prev">
                         <img src="assets/images/Arrow - left.svg" alt="Vorige">
                     </button>
@@ -74,16 +79,17 @@ export async function initGroeiDoorLatentTalentSlider() {
                                 <div class="xl:block flex justify-center">
                                     <div class="aspect-h-1 aspect-w-1">
                                         <img src="${slide.image}" alt="${slide.title}" 
-                                         class="rounded-full w-60 xl:w-80 h-60 xl:h-80" />
+                                         class="rounded-full max-md:w-100 max-md:h-100 w-80 h-80 swiper-lazy" />
                                     </div>
                                 </div>
+                                <div class="swiper-lazy-preloader"></div>
                                 <div class="px-4 pb-4">
-                                    <div class="top-50 right-25 xl:top-70 xl:right-10 absolute flex justify-center items-center bg-white my-auto px-4 py-0.5 border-3 border-light-red font-bold">
+                                    <div class="max-md:top-90 top-70 right-[20%] absolute flex justify-center items-center bg-white my-auto px-4 py-0.5 border-3 border-light-red font-bold">
                                         <img src="assets/images/pinpoint.svg" alt="Locatie" class="mr-2">${slide.location}
                                     </div>
                                     <div class="flex items-center my-auto text-sm">
                                         <img src="assets/images/time indication.svg" alt="Leestijd">
-                                        <p>${slide.duration}</p>
+                                        <p> &nbsp ${slide.duration}</p>
                                     </div>
                                     <h2 id="${slide.title}" class="mb-2 font-bold text-lg">${slide.title}</h2>
                                     <p class="mb-4 font-semibold">${slide.text}</p>

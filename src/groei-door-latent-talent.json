@@ -1,32 +1,36 @@
 {
   "slides": [
     {
-      "image": "assets/images/Groei-door-latent-talent/Groei-door-latent-talent-UrbanRecCity.png",
+      "duration": "5",
+      "image": "assets/images/Groei-door-latent-talent/Groei-door-latent-talent-UrbanRecCity.webp",
       "location": "Antwerpen",
       "text": "Voluit experimenteren met artistieke expressie. Onder de vlag UrbanRecCity krijgen jonge Antwerpse artiesten de kans om in de muziekstudio van Jeugdcentra De Branderij en Luchtbal eigen songs op te nemen. Via een online platform en videoclips bouwen ze een eigen portfolio uit.",
       "title": "Studio UrbanRecCity",
       "link": "https://jesantwerpen.be/events/urbanreccity/"
     },
     {
-      "image": "assets/images/Groei-door-latent-talent/Groei-door-latent-talent-Mr-Clean.png",
+      "duration": "5",
+      "image": "assets/images/Groei-door-latent-talent/Groei-door-latent-talent-Mr-Clean.webp",
       "location": "Brussel",
       "text": "Om de stad een stukje mooier te maken, maakten Brusselse jongeren ‘Le monde de Mr. Clean’, een zelfontwikkeld sensibiliserend videospel. In deze platform game redt Mr. Clean de wereld van rondslingerend afval, terwijl interactieve tekstballonnen de spelers informeren.",
       "title": "Le monde de Mr. Clean",
       "link": "https://jes.be/projecten/le-monde-de-mr-clean/"
     },
     {
-      "image": "assets/images/Groei-door-latent-talent/Groei-door-laten-talent-Nieuwe-instructeurs.png",
+      "duration": "5",
+      "image": "assets/images/Groei-door-latent-talent/Groei-door-laten-talent-Nieuwe-instructeurs.webp",
       "location": "Gent",
       "text": "Via de animatorcursussen wil JES een brede en diverse groep jongeren bereiken. In 2024 behaalden jonge (nieuwkomers) Denis, Mathis, Noor, Rehmat en Zabiullah hun attest. Nu leiden ze de animatoren van morgen op.",
       "title": "Nieuwe instructeurs",
       "link": "https://www.instagram.com/reel/C5n6LYntzml/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="
     },
-    {
-      "image": "https://unsplash.it/640/425?random=3",
-      "location": "Brussel",
-      "text": "Nozem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-      "title": "Titel, artikel,...",
-      "link": "#"
+      {
+      "duration": "5",
+      "image": "assets/images/Groei-door-latent-talent/Groei-door-laten-talent-Nieuwe-instructeurs.webp",
+      "location": "Gent",
+      "text": "Via de animatorcursussen wil JES een brede en diverse groep jongeren bereiken. In 2024 behaalden jonge (nieuwkomers) Denis, Mathis, Noor, Rehmat en Zabiullah hun attest. Nu leiden ze de animatoren van morgen op.",
+      "title": "Nieuwe instructeurs",
+      "link": "https://www.instagram.com/reel/C5n6LYntzml/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="
     }
   ]
 }

@@ -19,9 +19,14 @@ export async function initStemGevenZonderStempelSlider() {
       },
       breakpoints: {
         0: { slidesPerView: 1, spaceBetween: 20 },
-        640: { slidesPerView: 2, spaceBetween: 20 },
+        768: { slidesPerView: 2, spaceBetween: 20 },
         1280: { slidesPerView: 2, spaceBetween: 30 },
       },
+      lazy: {
+        loadPrevNext: true,
+        loadOnTransitionStart: true,
+      },
+      watchSlidesProgress: true,
     });
   } catch (error) {
     console.error("Error loading stem-geven-zonder-stempel slider:", error);
@@ -45,17 +50,18 @@ export async function initStemGevenZonderStempelSlider() {
     slides.forEach(slide => {
       sliderHTML += `
         <div class="swiper-slide">
-          <div class="bg-white mb-4 border-3 border-black">
+          <div class="bg-white mb-4 max-lg:mx-8 border-3 border-black">
             <div class="relative overflow-hidden">
-              <img src="${slide.image}" alt="Card Image" class="w-full" />
-              <div class="absolute bottom-2 right-2 flex items-center px-4 py-0.5 font-bold">
+              <img src="${slide.image}" alt="Card Image" class="w-full swiper-lazy" />
+              <div class="absolute bottom-2 right-2 flex items-center px-4 py-0.5 font-bold text-white">
                 <img src="assets/images/pinpoint.svg" alt="Locatie" class="mr-2">${slide.location}
               </div>
             </div>
-            <div class="px-4 pb-4">
-              <p class="pt-4 pb-8">${slide.text}</p>
-              <h2 id="${slide.title}" class="mb-2 font-bold text-lg">${slide.title}</h2>
-              <a href="${slide.link}" class="top-8 right-0 relative bg-white px-2 py-0.5 border-3 border-black font-semibold text-lg">
+            <div class="swiper-lazy-preloader"></div>
+            <div class="px-4">
+              <p class="pt-4 pb-4">${slide.text}</p>
+              <h2 id="${slide.title}" class="mb-2 font-bold text-xl">${slide.title}</h2>
+              <a href="${slide.link}" class="top-3 right-0 relative bg-white px-4 py-1 border-3 border-black font-semibold text-md">
                 Lees Meer
               </a>
             </div>
