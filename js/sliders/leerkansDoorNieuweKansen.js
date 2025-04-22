@@ -87,7 +87,7 @@ export async function initLeerkansDoorNieuweKansenSlider() {
       </div>
 
     <div class="relative xl:hidden">
-      <div class="absolute -top-55 -translate-y-1/2 w-full flex justify-between items-center z-10 px-4">
+      <div class="absolute -top-90 -translate-y-1/2 w-full flex justify-between items-center z-10 px-4">
         <button class="cursor-pointer leerkans-door-nieuwe-kansen-swiper-prev -ml-8">
           <img src="assets/images/Arrow - left.svg" alt="Vorige" />
         </button>

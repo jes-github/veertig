@@ -78,7 +78,7 @@ export async function initWelzijnDoorSpeelterreinSlider() {
                                 <div class="xl:block flex justify-center">
                                     <div class="aspect-h-1 aspect-w-1">
                                         <div class="swiper-lazy-preloader"></div>
-                                        <img data="${slide.image}" alt="${slide.title}"
+                                        <img src="${slide.image}" alt="${slide.title}"
                                          class="swiper-lazy rounded-full max-md:w-100 max-md:h-100 w-80 h-80" />
                                     </div>
                                 </div>
