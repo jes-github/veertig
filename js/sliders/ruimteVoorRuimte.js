@@ -34,7 +34,7 @@ export async function initRuimteVoorRuimteSlider() {
 
   function generateRuimteVoorRuimteSlider(slides) {
     let sliderHTML = `
-      <h2 id="Ruimte voor Ruimte" ruimteVoorRuimte class="mb-4 font-bold text-xl xl:text-4xl break-words leading-xl xl:leading-4xl">
+      <h2 id="Ruimte voor Ruimte" ruimteVoorRuimte class="font-bold text-xl xl:text-4xl break-words leading-xl xl:leading-4xl">
         Ruimte voor Ruimte
       </h2>
       <div class="flex items-start py-8 pr-16">
@@ -62,7 +62,7 @@ export async function initRuimteVoorRuimteSlider() {
               <p class="pt-4 pb-4">${slide.text}</p>
               <h2 id="${slide.title}" class="mb-2 font-bold text-xl">${slide.title}</h2>
               <a href="${slide.link}" class="top-3 right-0 relative bg-white px-4 py-1 border-3 border-black font-semibold text-md">
-                Lees Meer
+                Lees meer
               </a>
             </div>
           </div>

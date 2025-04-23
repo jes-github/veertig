@@ -92,7 +92,7 @@ export async function initOnthardenDoorOntmoetenSlider() {
                                     </div>
                                     <h2 id="${slide.title}" class="mb-2 font-bold text-lg">${slide.title}</h2>
                                     <p class="mb-4 font-semibold">${slide.text}</p>
-                                    <a href="${slide.link}" class="font-bold underline">Lees Meer &#8594;</a>
+                                    <a href="${slide.link}" class="font-bold underline">Lees meer &#8594;</a>
                                 </div>
                             </div>
                         </div>`;
