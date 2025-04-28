@@ -98,19 +98,20 @@
   </nav>
 
   <!-- Mobile & Tablet Menu -->
-  <div id="mobile-menu" class="hidden z-20 fixed inset-0 flex flex-col bg-light-red h-2/3">
+
+  <div id="mobile-menu"
+    class="z-20 fixed inset-0 flex flex-col bg-light-red h-full translate-y-full duration-300 ease-out">
 
     <!-- Top bar with Logo and Close button -->
-    <div class="flex justify-between items-center bg-snow mb-6 p-8 w-full">
+    <div class="flex justify-between items-center bg-snow mb-6 p-8 w-full shrink-0">
       <!-- Logo -->
       <div class="font-bold text-xl"><img src="assets/images/JES_logo_zonderbaseline_rood.svg" alt="JES"></div>
       <!-- Close button -->
       <button id="menu-close" class="text-2xl">✕</button>
     </div>
 
-    <!-- Search bar -->
     <!-- Menu items -->
-    <div class="space-y-4 bg-light-red w-full">
+    <div class="flex-1 space-y-4 bg-light-red w-full overflow-y-auto">
       <a href="#hoopkracht" class="block relative font-semibold text-snow text-center">Hoopkracht</a>
       <a href="#nieuws" class="block relative font-semibold text-snow text-center">Nieuws</a>
       <!-- Verhalen dropdown -->
@@ -165,11 +166,15 @@
       </div>
 
       <!-- Mobile Video + Button Wrapper -->
-      <div class="xl:hidden relative order-3">
-        <iframe width="560" height="315" class="bottom-0 left-5 object-cover overflow-hidden"
-          src="https://www.youtube.com/embed/tvTvUWx2ZXQ?controls=0&autoplay=1&mute=1&loop=1&playlist=tvTvUWx2ZXQ"
-          frameborder="0" allow="autoplay; encrypted-media; picture-in-picture" allowfullscreen></iframe>
-        <!-- Button over video, onderaan gecentreerd -->
+      <div class="xl:hidden relative order-3 w-full">
+        <div class="relative pt-[56.25%] w-full overflow-hidden"> <!-- Aspect ratio wrapper -->
+          <iframe class="top-0 left-0 absolute w-full h-full object-cover"
+            src="https://www.youtube.com/embed/tvTvUWx2ZXQ?controls=0&autoplay=1&mute=1&loop=1&playlist=tvTvUWx2ZXQ"
+            frameborder="0" allow="autoplay; encrypted-media; picture-in-picture" allowfullscreen>
+          </iframe>
+        </div>
+
+        <!-- Button over video -->
         <a href="https://www.jes.be" target="_blank"
           class="-bottom-4 left-25 z-10 absolute bg-white hover:bg-light-red px-4 py-1 border-3 border-light-red font-semibold text-light-red hover:text-white transition -translate-x-1/2 duration-200 transform">
           Ontdek alle verhalen.
@@ -195,6 +200,8 @@
       </iframe>
     </div>
 
+
+
   </header>
 
   <main>
@@ -210,7 +217,7 @@
             Waarom hoopkracht?
           </h2>
           <!-- Three-column Layout -->
-          <div class="items-start grid grid-cols-[auto_1fr_auto] xl:pt-16">
+          <div class="items-start grid grid-cols-[auto_1fr_auto] xl:pt-8">
             <div class="flex justify-center xl:justify-start mt-3">
               <!-- Swoosh afbeelding zonder rechter border -->
               <img src="assets/images/swoosh.svg" alt="Swoosh" class="xl:pb-8 max-w-full h-auto">
@@ -238,7 +245,7 @@
               <img src="assets/images/label.svg" alt="Icon" class="max-w-3/4 h-auto">
             </div>
             <div
-              class="xl:hidden top-[87%] left-1/2 absolute bg-light-pink px-12 py-4 border-3 border-black -translate-x-1/2 transform">
+              class="hidden xl:hidden sm:block sm:-bottom-22 left-1/2 absolute bg-light-pink px-12 py-4 border-3 border-black -translate-x-1/2 transform">
               <img src="assets/images/label.svg" alt="Icon" class="max-w-3/4 h-auto">
             </div>
           </div>
@@ -270,7 +277,7 @@
         </div>
         <!-- Foto + Knop -->
         <div class="relative flex flex-col items-center xl:items-end">
-          <div class="w-100 aspect-h-1 aspect-w-1 xl:translate-x-30">
+          <div class="w-90 aspect-h-1 aspect-w-1 xl:translate-x-30">
             <img src="assets/images/40-jaar-JES-Event.webp" alt="Image" class="rounded-full object-cover" />
           </div>
           <!-- Knop voor mobile (onder de foto) -->
@@ -286,7 +293,7 @@
 
     <!-- Nieuws Section -->
     <section class="relative">
-      <div class="flex xl:flex-row flex-col border-b-3 border-black">
+      <div class="hidden sm:flex xl:flex-row flex-col border-b-3 border-black">
         <!-- Left Image -->
         <div class="w-full xl:w-5/12 xl:h-[38rem]">
           <img src="assets/images/Nieuws/Nieuws-afbeelding-1.webp" alt="JES nieuws afbeelding"
@@ -299,9 +306,10 @@
         </div>
       </div>
       <!-- Nieuws Square -->
-      <div class="absolute inset-0 flex justify-start xl:justify-center items-center p-6">
+      <div class="sm:absolute inset-0 flex justify-start xl:justify-center items-center p-6">
         <!-- Square Box -->
-        <div class="flex flex-col justify-center bg-light-red p-6 border-4 border-white w-140 h-140 aspect-square">
+        <div
+          class="flex flex-col justify-center bg-light-red p-6 border-4 border-white w-full sm:w-140 sm:h-140 sm:aspect-square">
           <h2 id="nieuws" class="mb-2 font-bold text-white text-xl">Nieuws</h2>
           <p class="mb-4 text-white text-base">Stedelijk leiderschap</p>
           <p class="mb-4 text-white text-sm">23.04.25</p>

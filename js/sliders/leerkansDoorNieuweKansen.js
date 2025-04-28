@@ -34,10 +34,10 @@ export async function initLeerkansDoorNieuweKansenSlider() {
 
   function generateLeerkansDoorNieuweKansenSlider(slides) {
     let sliderHTML = `
-      <h2 id="Leerkans door nieuwe kansen" class="mb-4 font-bold text-xl xl:text-4xl break-words leading-xl xl:leading-4xl">
+      <h2 id="Leerkans door nieuwe kansen" class="font-bold text-xl xl:text-4xl break-words leading-xl xl:leading-4xl">
         Leerkans door open kans
       </h2>
-      <div class="flex items-start py-8 pr-16">
+      <div class="flex items-start pr-16">
         <img src="assets/images/swoosh.svg" alt="Swoosh" class="mt-4 mr-4 xl:py-8 w-16 h-auto" />
         <p class="xl:pt-8 xl:pr-16 xl:pb-16 font-semibold text-base xl:text-lg">
           Als jongere je weg mogen zoeken. Dat vinden we bij JES één van de mooiste cadeaus die je hen kan geven. Een cadeau dat uiteindelijk niet alleen onze jongeren zelf uitpakken, maar ook de buurt en de stad. Daar zijn onze workshops en opleidingen, trajecten naar duurzaam werk, geattesteerde cursussen, … sprekende voorbeelden van.
