@@ -14,7 +14,7 @@
 <body class="bg-snow pt-40">
 
   <!-- Navigation -->
-  <nav
+  <nav id="navbar"
     class="top-0 left-0 z-20 fixed flex justify-between items-center bg-snow px-8 xl:px-36 py-8 border-b-3 border-black w-full font-semibold">
     <!-- Logo en menu (links) -->
     <div class="flex items-center space-x-24">
@@ -100,14 +100,14 @@
   <!-- Mobile & Tablet Menu -->
 
   <div id="mobile-menu"
-    class="z-20 fixed inset-0 flex flex-col bg-light-red h-full translate-y-full duration-300 ease-out">
+    class="z-20 fixed inset-0 flex flex-col bg-light-red h-full -translate-y-full duration-300 ease-out">
 
     <!-- Top bar with Logo and Close button -->
-    <div class="flex justify-between items-center bg-snow mb-6 p-8 w-full shrink-0">
+    <div id="mobile-top-bar" class="flex justify-between items-center bg-snow mb-6 p-8 w-full shrink-0">
       <!-- Logo -->
       <div class="font-bold text-xl"><img src="assets/images/JES_logo_zonderbaseline_rood.svg" alt="JES"></div>
       <!-- Close button -->
-      <button id="menu-close" class="text-2xl">✕</button>
+      <button id="menu-close" class="text-2xl"><img src="assets/images/close.svg" alt="Sluiten"></button>
     </div>
 
     <!-- Menu items -->

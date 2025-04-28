@@ -61,9 +61,9 @@ export async function initWerkzaamheidsgraagSlider() {
             <div class="px-4">
               <p class="pt-4 pb-4">${slide.text}</p>
               <h2 id="${slide.title}" class="mb-2 font-bold text-xl">${slide.title}</h2>
-              <a href="${slide.link}" class="top-3 right-0 relative bg-white px-4 py-1 border-3 border-black font-semibold text-md">
+              ${slide.link ? `<a href="${slide.link}" target="_blank" class="top-3 right-0 relative bg-white px-4 py-1 border-3 border-black font-semibold text-md">
                 Lees meer
-              </a>
+              </a>` : ''}
             </div>
           </div>
         </div>
