@@ -16,3 +16,13 @@ menuClose.addEventListener("click", function () {
 	mobileMenu.classList.add('-translate-y-full');
 	navbar.classList.remove("hidden")
 });
+
+// Close menu on link click (mobile)
+document.querySelectorAll('#mobile-menu a').forEach(link => {
+	link.addEventListener('click', () => {
+		mobileMenu.classList.remove('translate-y-0');
+		mobileMenu.classList.add('-translate-y-full');
+		navbar.classList.remove('hidden');
+	});
+});
+

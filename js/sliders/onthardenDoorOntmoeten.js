@@ -77,13 +77,13 @@ export async function initOnthardenDoorOntmoetenSlider() {
                             <div class="card">
                                 <div class="xl:block flex justify-center">
                                     <div class="aspect-h-1 aspect-w-1">
-                                        <img src="${slide.image}" alt="${slide.title}" 
-                                         class="swiper-lazy rounded-full max-md:w-100 max-md:h-100 w-80 h-80" />
+                                        <img src="${slide.image}" alt="${slide.title}"
+                                            class="swiper-lazy rounded-full w-80 h-80 max-w-full max-h-full object-cover"/>
                                     </div>
                                 </div>
                                 <div class="swiper-lazy-preloader"></div>
                                 <div class="px-4 pb-4">
-                                    <div class="max-md:top-90 top-70 right-[20%] absolute flex justify-center items-center bg-white my-auto px-4 py-0.5 border-3 border-light-red font-bold">
+                                    <div class="top-70 right-[20%] absolute flex justify-center items-center bg-white my-auto px-4 py-0.5 border-3 border-light-red font-bold">
                                         <img src="assets/images/pinpoint.svg" alt="Locatie" class="mr-2">${slide.location}
                                     </div>
                                     <div class="flex items-center my-auto text-sm">
