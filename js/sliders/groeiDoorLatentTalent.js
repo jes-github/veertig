@@ -84,7 +84,7 @@ export async function initGroeiDoorLatentTalentSlider() {
                                     </div>
                                 </div>
                                 <div class="px-4 pb-4">
-                                    <div class="top-70 right-[20%] absolute flex justify-center items-center bg-white my-auto px-4 py-0.5 border-3 border-light-red font-bold">
+                                    <div class="top-70 right-0 absolute flex justify-center items-center bg-white my-auto px-4 py-0.5 border-3 border-light-red font-bold">
                                         <img src="assets/images/pinpoint.svg" alt="Locatie" class="mr-2">${slide.location}
                                     </div>
                                     <div class="flex items-center my-auto text-sm">
