@@ -1,5 +1,5 @@
 import { initGroeiDoorLatentTalentSlider } from "./sliders/groeiDoorLatentTalent.js";
-import { initLeerkansDoorNieuweKansenSlider } from "./sliders/leerkansDoorNieuweKansen.js";
+import { initLeerkansDoorNieuweKansSlider } from "./sliders/leerkansDoorNieuweKans.js";
 import { initOnthardenDoorOntmoetenSlider } from "./sliders/onthardenDoorOntmoeten.js";
 import { initRuimteVoorRuimteSlider } from "./sliders/ruimteVoorRuimte.js";
 import { initStemGevenZonderStempelSlider } from "./sliders/stemGevenZonderStempel.js";
@@ -11,7 +11,7 @@ document.addEventListener("DOMContentLoaded", function () {
 		{ className: "welzijn-door-speelterrein-swiper" },
 		{ className: "ruimte-voor-ruimte-swiper" },
 		{ className: "werkzaamheidsgraag-swiper" },
-		{ className: "leerkans-door-nieuwe-kansen-swiper" },
+		{ className: "leerkans-door-nieuwe-kans-swiper" },
 		{ className: "stem-geven-zonder-stempel-swiper" },
 		{ className: "groei-door-latent-talent-swiper" },
 		{ className: "ontharden-door-ontmoeten-swiper" }
@@ -50,7 +50,7 @@ document.addEventListener("DOMContentLoaded", function () {
 	initRuimteVoorRuimteSlider();
 	initWerkzaamheidsgraagSlider();
 	initGroeiDoorLatentTalentSlider()
-	initLeerkansDoorNieuweKansenSlider()
+	initLeerkansDoorNieuweKansSlider()
 	initStemGevenZonderStempelSlider()
 	initOnthardenDoorOntmoetenSlider()
 });

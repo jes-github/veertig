@@ -1,21 +1,21 @@
-export async function initLeerkansDoorNieuweKansenSlider() {
-  const container = document.getElementById("verhaal-leerkans-door-nieuwe-kansen");
+export async function initLeerkansDoorNieuweKansSlider() {
+  const container = document.getElementById("verhaal-leerkans-door-nieuwe-kans");
   if (!container) return;
 
   try {
-    const response = await fetch("src/leerkans-door-nieuwe-kansen.json");
+    const response = await fetch("src/leerkans-door-nieuwe-kans.json");
     const data = await response.json();
-    generateLeerkansDoorNieuweKansenSlider(data.slides);
+    generateLeerkansDoorNieuweKansSlider(data.slides);
 
-    new Swiper(".leerkans-door-nieuwe-kansen-swiper", {
+    new Swiper(".leerkans-door-nieuwe-kans-swiper", {
       loop: true,
       pagination: {
-        el: ".leerkans-door-nieuwe-kansen-pagination",
+        el: ".leerkans-door-nieuwe-kans-pagination",
         clickable: true,
       },
       navigation: {
-        nextEl: ".leerkans-door-nieuwe-kansen-swiper-next",
-        prevEl: ".leerkans-door-nieuwe-kansen-swiper-prev",
+        nextEl: ".leerkans-door-nieuwe-kans-swiper-next",
+        prevEl: ".leerkans-door-nieuwe-kans-swiper-prev",
       },
       breakpoints: {
         0: { slidesPerView: 1, spaceBetween: 20 },
@@ -29,12 +29,12 @@ export async function initLeerkansDoorNieuweKansenSlider() {
       watchSlidesProgress: true,
     });
   } catch (error) {
-    console.error("Error loading leerkans-door-nieuwe-kansen slider:", error);
+    console.error("Error loading leerkans-door-nieuwe-kans slider:", error);
   }
 
-  function generateLeerkansDoorNieuweKansenSlider(slides) {
+  function generateLeerkansDoorNieuweKansSlider(slides) {
     let sliderHTML = `
-      <h2 id="Leerkans door nieuwe kansen" class="font-bold text-xl xl:text-4xl break-words leading-xl xl:leading-4xl">
+      <h2 id="Leerkans door nieuwe kans" class="font-bold text-xl xl:text-4xl break-words leading-xl xl:leading-4xl">
         Leerkans door open kans
       </h2>
       <div class="flex items-start pr-16">
@@ -43,7 +43,7 @@ export async function initLeerkansDoorNieuweKansenSlider() {
           Als jongere je weg mogen zoeken. Dat vinden we bij JES één van de mooiste cadeaus die je hen kan geven. Een cadeau dat uiteindelijk niet alleen onze jongeren zelf uitpakken, maar ook de buurt en de stad. Daar zijn onze workshops en opleidingen, trajecten naar duurzaam werk, geattesteerde cursussen, … sprekende voorbeelden van.
         </p>
       </div>
-      <div class="swiper leerkans-door-nieuwe-kansen-swiper">
+      <div class="swiper leerkans-door-nieuwe-kans-swiper">
         <div class="swiper-wrapper">
     `;
 
@@ -73,14 +73,13 @@ export async function initLeerkansDoorNieuweKansenSlider() {
     sliderHTML += `
         </div>
       </div>
-
             <div class="hidden xl:flex flex-col items-center">
-        <div class="flex justify-center xl:my-16 w-full leerkans-door-nieuwe-kansen-pagination"></div>
+        <div class="flex justify-center xl:my-16 w-full leerkans-door-nieuwe-kans-pagination"></div>
         <div class="flex justify-center items-center space-x-4">
-          <button class="leerkans-door-nieuwe-kansen-swiper-prev">
+          <button class="leerkans-door-nieuwe-kans-swiper-prev">
             <img src="assets/images/Arrow - left.svg" alt="Vorige">
           </button>
-          <button class="leerkans-door-nieuwe-kansen-swiper-next">
+          <button class="leerkans-door-nieuwe-kans-swiper-next">
             <img src="assets/images/Arrow - right.svg" alt="Volgende">
           </button>
         </div>
@@ -88,10 +87,10 @@ export async function initLeerkansDoorNieuweKansenSlider() {
 
     <div class="relative xl:hidden">
       <div class="absolute -top-90 -translate-y-1/2 w-full flex justify-between items-center z-10 px-4">
-        <button class="cursor-pointer leerkans-door-nieuwe-kansen-swiper-prev -ml-8">
+        <button class="cursor-pointer leerkans-door-nieuwe-kans-swiper-prev -ml-8">
           <img src="assets/images/Arrow - left.svg" alt="Vorige" />
         </button>
-        <button class="cursor-pointer leerkans-door-nieuwe-kansen-swiper-next -mr-8">
+        <button class="cursor-pointer leerkans-door-nieuwe-kans-swiper-next -mr-8">
           <img src="assets/images/Arrow - right.svg" alt="Volgende" />
         </button>
       </div>
