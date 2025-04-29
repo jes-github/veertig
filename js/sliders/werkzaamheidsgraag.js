@@ -34,12 +34,12 @@ export async function initWerkzaamheidsgraagSlider() {
 
   function generateWerkzaamheidsGraagSlider(slides) {
     let sliderHTML = `
-      <h2 id="Werkzaamheidsgraag" werkzaamheidsgraag class="font-bold text-xl xl:text-4xl break-words leading-xl xl:leading-4xl">
+      <h2 id="Werkzaamheidsgraag" werkzaamheidsgraag class="mb-8 font-bold text-xl xl:text-4xl break-words leading-xl xl:leading-4xl">
         Werkzaamheids&shy;graag
       </h2>
       <div class="flex items-start pr-16">
         <img src="assets/images/swoosh.svg" alt="Swoosh" class="mt-4 mr-4 xl:py-8 w-16 h-auto" />
-        <p class="xl:pt-8 xl:pr-16 xl:pb-16 font-semibold text-base xl:text-lg">
+        <p class="mb-8 xl:pt-8 xl:pr-16 xl:pb-16 font-semibold text-base xl:text-lg">
           Duurzaam werk vertrekt vanuit passie. JES gelooft hard in een traject waarbij de interesse van jongeren centraal staat in de zoektocht naar een job. En dat loont.
         </p>
       </div>

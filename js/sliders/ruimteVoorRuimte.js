@@ -34,12 +34,12 @@ export async function initRuimteVoorRuimteSlider() {
 
   function generateRuimteVoorRuimteSlider(slides) {
     let sliderHTML = `
-      <h2 id="Ruimte voor Ruimte" ruimteVoorRuimte class="font-bold text-xl xl:text-4xl break-words leading-xl xl:leading-xl">
+      <h2 id="Ruimte voor Ruimte" class="mb-8 font-bold text-xl xl:text-4xl break-words leading-xl xl:leading-xl">
         Ruimte voor Ruimte
       </h2>
       <div class="flex items-start pr-16">
         <img src="assets/images/swoosh.svg" alt="Swoosh" class="mt-4 mr-4 xl:py-8 w-16 h-auto" />
-        <p class="xl:pt-8 xl:pr-16 xl:pb-16 font-semibold text-base xl:text-lg">
+        <p class="mb-8 xl:pt-8 xl:pr-16 xl:pb-16 font-semibold text-base xl:text-lg">
           Mentale ruimte om gewoon jezelf te mogen zijn, een fysiek plekje waar je terecht kan. Ruimte om jezelf te ontplooien. Recht op publieke ruimte. Ademruimte
         </p>
       </div>

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html class="scroll-smooth" lang="nl">
+<html class="break-normal scroll-smooth" lang="nl">
 
 <head>
   <meta charset="UTF-8" />
@@ -149,10 +149,10 @@
     <div class="z-10 relative flex flex-col items-start gap-4 xl:gap-6 w-full xl:w-1/3">
       <!-- Logo -->
       <img src="assets/images/hoopkracht.svg" alt="Hoopkracht"
-        class="z-10 order-1 xl:mb-6 w-[80%] xl:w-[110%] xl:max-w-none max-w-xs" />
+        class="z-10 order-1 mb-8 w-[80%] xl:w-[110%] xl:max-w-none max-w-xs md:max-w-lg" />
 
       <!-- Subtitle -->
-      <div class="order-2 pr-6 xl:pr-32 font-semibold text-black text-base">
+      <div class="order-2 pr-6 xl:pr-32 pb-8 font-semibold text-black text-base xl:text-base md:text-lg">
         <p>
           <i>Hoopkracht</i>, daar gaan we resoluut voor.
           Omdat jongeren in de stad recht hebben op uitzicht. Op hoop. Want stadsjongeren zitten vol jeugdige ideeën en
@@ -192,19 +192,16 @@
       </a>
     </div>
     <!-- Video (Large Screens Only) -->
-    <div class="hidden xl:block top-0 right-0 absolute w-2/3 h-full">
-      <iframe width="1120" height="630" class="object-cover"
+    <div class="hidden xl:block right-0 bottom-0 z-0 absolute w-2/3 aspect-[16/9]">
+      <iframe class="w-full h-full object-cover"
         src="https://www.youtube.com/embed/tvTvUWx2ZXQ?controls=0&autoplay=1&mute=1&loop=1&playlist=tvTvUWx2ZXQ"
         frameborder="0" allow="autoplay; encrypted-media; picture-in-picture" allowfullscreen>
       </iframe>
     </div>
 
-
-
   </header>
 
   <main>
-
     <!-- Hoopkracht en Event wrapper -->
     <div class="flex xl:flex-row flex-col overflow-hidden">
 
@@ -212,11 +209,12 @@
       <section id="hoopkracht"
         class="relative bg-soft-pink px-8 xl:py-16 pt-8 pb-32 xl:pl-36 border-b-3 border-black w-full xl:w-7/12">
         <div class="container">
-          <h2 id="Waarom hoopkracht" class="font-extrabold text-black text-xl xl:text-4xl leading-xl xl:leading-4xl">
+          <h2 id="Waarom hoopkracht"
+            class="pb-8 font-extrabold text-black text-xl xl:text-4xl leading-xl xl:leading-4xl">
             Waarom hoopkracht?
           </h2>
           <!-- Three-column Layout -->
-          <div class="items-start grid grid-cols-[auto_1fr_auto] xl:pt-8">
+          <div class="items-start grid grid-cols-[0.25fr_2fr_auto] xl:pt-8">
             <div class="flex justify-center xl:justify-start mt-3">
               <!-- Swoosh afbeelding zonder rechter border -->
               <img src="assets/images/swoosh.svg" alt="Swoosh" class="xl:pb-8 max-w-full h-auto">
@@ -256,11 +254,12 @@
         class="flex xl:flex-row flex-col items-center xl:items-start bg-light-pink px-8 xl:py-16 pb-16 xl:pl-16 border-b-3 border-black xl:border-l-3 w-full xl:w-5/12">
         <!-- Tekst + Knop -->
         <div class="relative flex flex-col flex-1 items-center xl:items-start w-full max-w-md">
-          <h2 class="pt-32 xl:pt-0 w-full text-xl xl:text-4xl text-left leading-xl xl:leading-4xl">Event</h2>
-          <h3 id="JES feest" class="w-full text-base text-left">JES feest</h3>
-          <!-- <p class="mb-4 w-full text-sm text-left">Locatie Brussel, 26 Nov 2025</p> -->
-          <p class="mb-4 w-full text-sm text-left">Antwerpen, Brussel, Gent</p>
-          <p class="mb-6 w-full font-semibold text-base text-left">
+          <h2 class="pt-32 xl:pt-0 pb-8 w-full text-xl xl:text-4xl text-left leading-xl xl:leading-4xl">Events</h2>
+          <h3 id="JES feest" class="mb-4 w-full text-base text-left">JES feest</h3>
+          <p class="mb-4 w-full text-sm text-left">27.09 Gent</p>
+          <p class="mb-4 w-full text-sm text-left">15.10 Brussel</p>
+          <p class="w-full text-sm text-left">06.11 Antwerpen</p>
+          <p class="py-8 w-full font-semibold text-base text-left">
             40 jaar impact op de stad, mét jongeren. Dat vieren we. En met reden. Omdat we bij JES goesting hebben.
             Goesting om het
             vandaag van morgen nu al een duwtje te geven. Don’t miss out: een creatief samenspel van verhalen,
@@ -440,7 +439,7 @@
           <!-- <span class="ml-2">&rarr;</span> -->
         </h2>
         <p class="my-8 pt-2 font-semibold text-sm"><span class="py-4 border-t-1 border-light-pink">
-            26.10.2025,
+            15.10.2025,
             Brussel</span></p>
       </div>
     </section>
@@ -457,7 +456,7 @@
           <li><a href="#hoopkracht" class="hover:underline">Hoopkracht</a></li>
           <li><a href="#nieuws" class="hover:underline">Nieuws</a></li>
           <li><a href="#verhaal-welzijn-door-speelterrein" class="hover:underline">Verhalen</a></li>
-          <li><a href="#event" class="hover:underline">Slotevent</a></li>
+          <li><a href="#event" class="hover:underline">Events</a></li>
           <li><a href="https://jes.be/wij-zijn-jes/" target="_blank" class="hover:underline">JES VZW</a></li>
           <li><a href="https://jes.be/contact/" target="_blank" class="hover:underline">Contact</a></li>
         </ul>

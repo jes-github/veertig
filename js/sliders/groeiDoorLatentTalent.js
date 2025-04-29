@@ -40,7 +40,7 @@ export async function initGroeiDoorLatentTalentSlider() {
                 <h2 id="Groei door latent talent" class="font-bold text-xl xl:text-4xl leading-xl xl:leading-4xl">Groei door latent talent</h2>
                 <div class="flex items-start py-8 pr-16">
                     <img src="assets/images/swoosh.svg" alt="Swoosh" class="mt-4 mr-4 w-16 h-auto" />
-                    <p class="font-semibold xl:text-lg">
+                    <p class="font-semibold text-base xl:text-lg">
                         Onze stadjongeren zitten tjokvol ideeën, drive en talent. Die willen we ook tot uiting laten komen. Daarom vinden we het bij JES belangrijk om jongeren zoveel mogelijk te prikkelen. Benieuwd welk talent er via cursussen, studioworkshops, experiment, …  komt bovendrijven?
                     </p>
                 </div>

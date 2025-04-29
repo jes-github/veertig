@@ -40,7 +40,7 @@ export async function initWelzijnDoorSpeelterreinSlider() {
                 <h2 id="Welzijn door speelterrein" class="font-bold text-xl xl:text-4xl leading-xl xl:leading-4xl">Welzijn door speelterrein</h2>
                 <div class="flex items-start py-8 pr-16">
                     <img src="assets/images/swoosh.svg" alt="Swoosh" class="mt-4 mr-4 w-16 h-auto" />
-                    <p class="font-semibold xl:text-lg">
+                    <p class="font-semibold text-base xl:text-lg">
                         Jongeren hebben nood aan speelterrein. Deze verhalen tonen aan hoe onze stadsjongeren via speelruimte ontdekken, mekaar ontmoeten, leren, experimenteren en vooral gewoon spelen. Want gewoon jong zijn, daar gaat het als jongere toch om?
                     </p>
                 </div>
@@ -90,8 +90,8 @@ export async function initWelzijnDoorSpeelterreinSlider() {
                                         <img src="assets/images/time indication.svg" alt="Leestijd">
                                         <p> &nbsp ${slide.duration}</p>
                                     </div>
-                                    <h2 id="${slide.title}" class="mb-2 font-bold text-lg">${slide.title}</h2>
-                                    <p class="mb-4 font-semibold">${slide.text}</p>
+                                    <h2 id="${slide.title}" class="font-bold text-lg">${slide.title}</h2>
+                                    <p class="mb-4 mt-2 font-semibold">${slide.text}</p>
                                     ${slide.link ? `<a href="${slide.link}" target="_blank" class="font-bold underline">Lees meer &#8594;</a>` : ''}
                                 </div>
                             </div>

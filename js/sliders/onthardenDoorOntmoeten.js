@@ -40,7 +40,7 @@ export async function initOnthardenDoorOntmoetenSlider() {
                 <h2 id="Ontharden door ontmoeten" class="font-bold text-xl xl:text-4xl leading-xl xl:leading-4xl">Ontharden door ontmoeten</h2>
                 <div class="flex items-start py-8 pr-16">
                     <img src="assets/images/swoosh.svg" alt="Swoosh" class="mt-4 mr-4 w-16 h-auto" />
-                    <p class="font-semibold xl:text-lg">
+                    <p class="font-semibold text-base xl:text-lg">
                         Bruggen bouwen. Tussen jongeren en de buurt, tussen jongeren en werkgevers, tussen jongeren en politie, tussen jongeren en het beleid, tussen jongeren onderling, … als ontmoetingsplek gelooft JES dat je sterke steden samen bouwt. Hoe krijgen we dat voor mekaar?
                     </p>
                 </div>

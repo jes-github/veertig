@@ -34,12 +34,12 @@ export async function initStemGevenZonderStempelSlider() {
 
   function generateStemGevenZonderStempelSlider(slides) {
     let sliderHTML = `
-      <h2 id="Stem geven zonder stempel" class="font-bold text-xl xl:text-4xl break-words leading-xl xl:leading-4xl">
+      <h2 id="Stem geven zonder stempel" class="mb-8 font-bold text-xl xl:text-4xl break-words leading-xl xl:leading-4xl">
         Stem geven zonder stempel
       </h2>
       <div class="flex items-start pr-16">
         <img src="assets/images/swoosh.svg" alt="Swoosh" class="mt-4 mr-4 xl:py-8 w-16 h-auto" />
-        <p class="xl:pt-8 xl:pr-16 xl:pb-16 font-semibold text-base xl:text-lg">
+        <p class="mb-8 xl:pt-8 xl:pr-16 xl:pb-16 font-semibold text-base xl:text-lg">
           Jongeren kennen de noden en dynamieken in hun buurt natuurlijk heel goed. Ze liggen echt wakker van er leeft en beweegt in hun wijk. Wie de stad richting wil geven, kan dan ook niet om de jongeren heen die er opgroeien. Sommige jongens en meisjes delen als woordvoerder graag wat er volgens hen beter kan. JES versterkt hun stem: binnen de eigen organisatie, in de stad én in de maatchappij.
         </p>
       </div>
