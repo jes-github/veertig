@@ -77,12 +77,12 @@ export async function initGroeiDoorLatentTalentSlider() {
                         <div class="swiper-slide">
                             <div class="card">
                                 <div class="xl:block flex justify-center">
-                                    <div class="aspect-h-1 aspect-w-1">
+                                    <div class="w-80 aspect-square"">
+                                        <div class="swiper-lazy-preloader"></div>
                                         <img src="${slide.image}" alt="${slide.title}"
-                                            class="swiper-lazy rounded-full w-80 h-80 max-w-full max-h-full object-cover"/>
+                                            class="swiper-lazy rounded-full w-full h-full object-cover"/>
                                     </div>
                                 </div>
-                                <div class="swiper-lazy-preloader"></div>
                                 <div class="px-4 pb-4">
                                     <div class="top-70 right-[20%] absolute flex justify-center items-center bg-white my-auto px-4 py-0.5 border-3 border-light-red font-bold">
                                         <img src="assets/images/pinpoint.svg" alt="Locatie" class="mr-2">${slide.location}
@@ -91,8 +91,8 @@ export async function initGroeiDoorLatentTalentSlider() {
                                         <img src="assets/images/time indication.svg" alt="Leestijd">
                                         <p> &nbsp ${slide.duration}</p>
                                     </div>
-                                    <h2 id="${slide.title}" class="mb-2 font-bold text-lg">${slide.title}</h2>
-                                    <p class="mb-4 font-semibold">${slide.text}</p>
+                                    <h2 id="${slide.title}" class="font-bold text-lg">${slide.title}</h2>
+                                    <p class="mb-4 mt-2 font-semibold">${slide.text}</p>
                                     ${slide.link ? `<a href="${slide.link}" target="_blank" class="font-bold underline">Lees meer &#8594;</a>` : ''}
                                 </div>
                             </div>
