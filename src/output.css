@@ -609,6 +609,9 @@
   .gap-4 {
     gap: calc(var(--spacing) * 4);
   }
+  .gap-8 {
+    gap: calc(var(--spacing) * 8);
+  }
   .space-y-2 {
     :where(& > :not(:last-child)) {
       --tw-space-y-reverse: 0;
@@ -1150,6 +1153,26 @@
       line-height: var(--tw-leading, var(--text-lg--line-height));
     }
   }
+  .xl\:order-1 {
+    @media (width >= 80rem) {
+      order: 1;
+    }
+  }
+  .xl\:order-2 {
+    @media (width >= 80rem) {
+      order: 2;
+    }
+  }
+  .xl\:order-3 {
+    @media (width >= 80rem) {
+      order: 3;
+    }
+  }
+  .xl\:col-span-2 {
+    @media (width >= 80rem) {
+      grid-column: span 2 / span 2;
+    }
+  }
   .xl\:\[float\:left\] {
     @media (width >= 80rem) {
       float: left;
@@ -1263,6 +1286,12 @@
   .xl\:flex-1 {
     @media (width >= 80rem) {
       flex: 1;
+    }
+  }
+  .xl\:translate-x-10 {
+    @media (width >= 80rem) {
+      --tw-translate-x: calc(var(--spacing) * 10);
+      translate: var(--tw-translate-x) var(--tw-translate-y);
     }
   }
   .xl\:translate-x-30 {
