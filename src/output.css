@@ -271,6 +271,12 @@
   .right-10 {
     right: calc(var(--spacing) * 10);
   }
+  .right-16 {
+    right: calc(var(--spacing) * 16);
+  }
+  .right-32 {
+    right: calc(var(--spacing) * 32);
+  }
   .-bottom-4 {
     bottom: calc(var(--spacing) * -4);
   }
@@ -291,6 +297,9 @@
   }
   .left-1\/2 {
     left: calc(1/2 * 100%);
+  }
+  .left-16 {
+    left: calc(var(--spacing) * 16);
   }
   .left-35 {
     left: calc(var(--spacing) * 35);
@@ -593,6 +602,9 @@
   .justify-start {
     justify-content: flex-start;
   }
+  .gap-2 {
+    gap: calc(var(--spacing) * 2);
+  }
   .gap-4 {
     gap: calc(var(--spacing) * 4);
   }
@@ -761,6 +773,9 @@
   }
   .px-4 {
     padding-inline: calc(var(--spacing) * 4);
+  }
+  .px-6 {
+    padding-inline: calc(var(--spacing) * 6);
   }
   .px-8 {
     padding-inline: calc(var(--spacing) * 8);
@@ -1054,6 +1069,27 @@
       }
     }
   }
+  .hover\:bg-white {
+    &:hover {
+      @media (hover: hover) {
+        background-color: var(--color-white);
+      }
+    }
+  }
+  .hover\:text-light-red {
+    &:hover {
+      @media (hover: hover) {
+        color: var(--color-light-red);
+      }
+    }
+  }
+  .hover\:text-red-600 {
+    &:hover {
+      @media (hover: hover) {
+        color: var(--color-red-600);
+      }
+    }
+  }
   .hover\:text-snow {
     &:hover {
       @media (hover: hover) {
@@ -1144,6 +1180,12 @@
   .md\:max-w-lg {
     @media (width >= 48rem) {
       max-width: var(--container-lg);
+    }
+  }
+  .md\:text-base {
+    @media (width >= 48rem) {
+      font-size: var(--text-base);
+      line-height: var(--tw-leading, var(--text-base--line-height));
     }
   }
   .md\:text-lg {
@@ -1241,6 +1283,11 @@
   .xl\:flex-row {
     @media (width >= 80rem) {
       flex-direction: row;
+    }
+  }
+  .xl\:items-center {
+    @media (width >= 80rem) {
+      align-items: center;
     }
   }
   .xl\:items-end {

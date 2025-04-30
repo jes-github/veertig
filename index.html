@@ -9,7 +9,35 @@
   <link href="src/output.css" rel="stylesheet" />
   <link href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" rel="stylesheet" />
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-BWRFFMTZ59"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', 'G-BWRFFMTZ59');
+  </script>
 </head>
+
+<div id="cookie-banner"
+  class="right-0 bottom-0 left-0 z-50 fixed flex xl:flex-row flex-col justify-between items-start xl:items-center gap-4 bg-snow shadow-lg px-6 py-4 border-t-3 border-black text-black"
+  style="display: none;">
+  <p class="font-semibold text-sm md:text-base">
+    We gebruiken cookies voor analytische doeleinden. Lees ons <a href="https://jes.be/disclaimer/"
+      class="text-light-red hover:text-red-600 underline transition">privacybeleid</a>.
+  </p>
+  <div class="flex gap-2">
+    <button onclick="handleCookieConsent(true)"
+      class="bg-light-red hover:bg-white px-4 py-2 border-3 border-light-red font-semibold text-white hover:text-light-red text-sm transition">
+      Accepteren
+    </button>
+    <button onclick="handleCookieConsent(false)"
+      class="bg-white hover:bg-light-red px-4 py-2 border-3 border-light-red font-semibold text-light-red hover:text-white text-sm transition">
+      Weigeren
+    </button>
+  </div>
+</div>
+
 
 <body class="bg-snow pt-40">
 
@@ -541,5 +569,8 @@
 
   <!-- JavaScript to collapse menu -->
   <script src="js/collapse.js"></script>
+
+  <!-- JavaScript CookieBanner -->
+  <script src="js/cookieBanner.js"></script>
 
 </html>
