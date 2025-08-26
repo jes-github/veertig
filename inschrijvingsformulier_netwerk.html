@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html class="break-normal scroll-smooth" lang="nl">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Veertig Jaar Jes</title>
+  <link href="https://fonts.googleapis.com/css2?family=Rethink+Sans:wght@400;600;800&display=swap" rel="stylesheet" />
+  <link href="src/output.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" rel="stylesheet" />
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-BWRFFMTZ59"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', 'G-BWRFFMTZ59');
+  </script>
+</head>
+
+<div id="cookie-banner"
+  class="right-0 bottom-0 left-0 z-50 fixed flex xl:flex-row flex-col justify-between items-start xl:items-center gap-4 bg-snow shadow-lg px-6 py-4 border-t-3 border-black text-black"
+  style="display: none;">
+  <p class="font-semibold text-sm md:text-base">
+    We gebruiken cookies voor analytische doeleinden. Lees ons <a href="https://jes.be/disclaimer/"
+      class="text-light-red hover:text-red-600 underline transition">privacybeleid</a>.
+  </p>
+  <div class="flex gap-4 xl:mr-32">
+    <button onclick="handleCookieConsent(true)"
+      class="bg-light-red hover:bg-white px-4 py-2 border-3 border-light-red font-semibold text-white hover:text-light-red text-sm transition">
+      Accepteren
+    </button>
+    <button onclick="handleCookieConsent(false)"
+      class="bg-white hover:bg-light-red px-4 py-2 border-3 border-light-red font-semibold text-light-red hover:text-white text-sm transition">
+      Weigeren
+    </button>
+  </div>
+</div>
+
+
+<body class="bg-snow pt-20">
+
+  <!-- Navigation -->
+  <nav id="navbar"
+    class="top-0 left-0 z-20 fixed flex justify-between items-center bg-snow px-8 xl:px-36 py-8 border-b-3 border-black w-full font-semibold">
+    <!-- Logo en menu (links) -->
+    <div class="flex items-center space-x-24">
+      <a href="#"><img src="assets/images/JES_logo_zonderbaseline_rood.svg" class="max-w-sm xl:max-w-sm"
+          alt="JES" /></a>
+      <div class="hidden xl:flex space-x-12">
+        <a href="#hoopkracht"
+          class="after:block after:top-4 after:left-0 after:absolute relative after:bg-black after:w-0 hover:after:w-full after:h-[2px] after:transition-all after:-translate-y-1 after:duration-200">
+          Hoopkracht </a>
+        <a href="#nieuws"
+          class="after:block after:top-4 after:left-0 after:absolute relative after:bg-black after:w-0 hover:after:w-full after:h-[2px] after:transition-all after:-translate-y-1 after:duration-200">Nieuws</a>
+        <!-- Verhalen Dropdown -->
+        <div class="relative" id="verhalen-dropdown">
+          <button
+            class="after:block after:top-4 after:left-0 after:absolute relative after:bg-black focus:outline-none after:w-0 hover:after:w-auto after:h-[2px] after:transition-all after:-translate-y-1 after:duration-200"
+            onmouseenter="openDropdown()">
+            Verhalen
+          </button>
+          <div id="dropdown-menu" class="hidden left-0 absolute bg-light-red shadow-lg mt-2 p-2 w-64 text-white">
+            <a href="#verhaal-welzijn-door-speelterrein"
+              class="after:block inline-block after:top-1/2 after:left-1/2 after:absolute relative after:bg-snow mx-4 my-2 after:w-0 hover:after:w-full after:h-[2px] text-center after:transition-all after:-translate-x-1/2 after:duration-200">
+              Welzijn door speelterrein
+            </a>
+            <a href="#verhaal-ontharden-door-ontmoeten"
+              class="after:block inline-block after:top-1/2 after:left-1/2 after:absolute relative after:bg-snow mx-4 my-2 after:w-0 hover:after:w-full after:h-[2px] text-center after:transition-all after:-translate-x-1/2 after:duration-200">
+              Ontharden door ontmoeten
+            </a>
+            <a href="#verhaal-groei-door-latent-talent"
+              class="after:block inline-block after:top-1/2 after:left-1/2 after:absolute relative after:bg-snow mx-4 my-2 after:w-0 hover:after:w-full after:h-[2px] text-center after:transition-all after:-translate-x-1/2 after:duration-200">
+              Groei door latent talent
+            </a>
+            <a href="#verhaal-ruimte-voor-ruimte"
+              class="after:block inline-block after:top-1/2 after:left-1/2 after:absolute relative after:bg-snow mx-4 my-2 after:w-0 hover:after:w-full after:h-[2px] text-center after:transition-all after:-translate-x-1/2 after:duration-200">
+              Ruimte voor ruimte
+            </a>
+            <a href="#verhaal-leerkans-door-nieuwe-kans"
+              class="after:block inline-block after:top-1/2 after:left-1/2 after:absolute relative after:bg-snow mx-4 my-2 after:w-0 hover:after:w-full after:h-[2px] text-center after:transition-all after:-translate-x-1/2 after:duration-200">
+              Leerkans door open kans
+            </a>
+            <a href="#verhaal-stem-geven-zonder-stempel"
+              class="after:block inline-block after:top-1/2 after:left-1/2 after:absolute relative after:bg-snow mx-4 my-2 after:w-0 hover:after:w-full after:h-[2px] text-center after:transition-all after:-translate-x-1/2 after:duration-200">
+              Stem geven zonder stempel
+            </a>
+            <a href="#verhaal-werkzaamheidsgraag"
+              class="after:block inline-block after:top-1/2 after:left-1/2 after:absolute relative after:bg-snow mx-4 my-2 after:w-0 hover:after:w-full after:h-[2px] text-center after:transition-all after:-translate-x-1/2 after:duration-200">
+              Werkzaamheidsgraag
+            </a>
+          </div>
+        </div>
+        <a href="#event"
+          class="after:block after:top-4 after:left-0 after:absolute relative after:bg-black after:w-0 hover:after:w-full after:h-[2px] after:transition-all after:-translate-y-1 after:duration-200">Event</a>
+      </div>
+    </div>
+    <!-- Rechts: Zoekicoon + Extra links -->
+    <div class="hidden top-2 relative xl:flex space-x-12">
+      <!-- Search Input -->
+      <div class="relative w-64">
+        <input type="text" id="search" placeholder="Zoeken"
+          class="invisible -top-2 relative opacity-0 p-2 border-2 border-black focus:outline-none w-full transition-all duration-300">
+        <!-- Dropdown List -->
+        <ul id="results" class="hidden absolute bg-white shadow-lg mt-1 border border-gray-300 rounded-lg w-full">
+        </ul>
+      </div>
+      <button>
+        <img src="assets/images/zoeken - icoontje.svg" id="searchBtn" class="-top-2 relative w-8 h-8 cursor-pointer"
+          alt="Zoeken">
+        <!-- Zoekicoon -->
+      </button>
+      <a href="https://jes.be/wij-zijn-jes/" target="_blank"
+        class="after:block after:top-4 after:left-0 after:absolute relative after:bg-black after:w-0 hover:after:w-full after:h-[2px] after:transition-all after:-translate-y-1 after:duration-200">
+        Over JES vzw
+      </a>
+      <a href="https://jes.be/contact/" target="_blank"
+        class="after:block after:top-4 after:left-0 after:absolute relative after:bg-black after:w-0 hover:after:w-full after:h-[2px] after:transition-all after:-translate-y-1 after:duration-200">Contact</a>
+    </div>
+    <!-- Hamburger Menu (Mobiel & Tablet) -->
+    <button id="menu-toggle" class="xl:hidden after:block after:top-4 after:left-0 after:absolute relative">
+      <img src="assets/images/hamburger - icoon.svg" alt="hamburger menu" />
+      <!-- Hamburger Icon -->
+    </button>
+  </nav>
+
+  <!-- Mobile & Tablet Menu -->
+  <div id="mobile-menu"
+    class="z-20 fixed inset-0 flex flex-col bg-light-red h-full transition-transform -translate-y-full duration-300 ease-out transform">
+
+    <!-- Top bar with Logo and Close button -->
+    <div id="mobile-top-bar" class="flex justify-between items-center bg-snow mb-6 p-8 w-full shrink-0">
+      <!-- Logo -->
+      <div class="font-bold text-xl"><img src="assets/images/JES_logo_zonderbaseline_rood.svg" alt="JES"></div>
+      <!-- Close button -->
+      <button id="menu-close" class="text-2xl"><img src="assets/images/close.svg" alt="Sluiten"></button>
+    </div>
+
+    <!-- Menu items -->
+    <div class="flex-1 space-y-4 bg-light-red w-full overflow-y-auto">
+      <a href="#hoopkracht" class="block relative font-semibold text-snow text-center">Hoopkracht</a>
+      <a href="#nieuws" class="block relative font-semibold text-snow text-center">Nieuws</a>
+      <!-- Verhalen dropdown -->
+      <div class="space-y-2">
+        <p class="font-semibold text-snow text-center">Verhalen</p>
+        <a href="#verhaal-welzijn-door-speelterrein" class="block relative font-semibold text-center">Welzijn
+          door
+          speelterrein</a>
+        <a href="#verhaal-ontharden-door-ontmoeten" class="block relative font-semibold text-center">Ontharden
+          door
+          ontmoeten</a>
+        <a href="#verhaal-groei-door-latent-talent" class="block relative font-semibold text-center">Groei
+          door latent
+          talent</a>
+        <a href="#verhaal-ruimte-voor-ruimte" class="block relative font-semibold text-center">Ruimte
+          voor ruimte</a>
+        <a href="#verhaal-leerkans-door-nieuwe-kans" class="block relative font-semibold text-center">Leerkans
+          door open
+          kans</a>
+        <a href="#verhaal-stem-geven-zonder-stempel" class="block relative font-semibold text-center">Stem
+          geven zonder
+          stempel</a>
+        <a href="#verhaal-werkzaamheidsgraag" class="block relative font-semibold text-center">Werkzaamheidsgraag</a>
+      </div>
+      <a href="#event" class="block relative font-semibold text-snow text-center">Event</a>
+      <a href="#" class="block relative text-snow text-center">Over
+        JES vzw</a>
+      <a href="https://jes.be/contact/" class="block relative font-semibold text-snow text-center">Contact</a>
+    </div>
+  </div>
+
+  <main>
+    <!-- Jes viert feest -->
+    <section class="relative">
+      <div class="hidden sm:flex xl:flex-row flex-col border-b-3 border-black">
+        <!-- Left Image -->
+        <div class="w-full xl:w-5/12">
+          <img src="assets/images/Inschrijvingsformlier_afbeelding1.webp" alt="Inschrijvingsformlier_afbeelding1"
+            class="w-full h-full object-cover" />
+        </div>
+        <!-- Right Image -->
+        <div class="w-full xl:w-7/12">
+          <img src="assets/images/Inschrijvingsformlier_afbeelding2.webp" alt="Inschrijvingsformlier_afbeelding2"
+            class="w-full h-full object-cover" />
+        </div>
+      </div>
+      <!-- Nieuws Square -->
+      <div class="sm:absolute inset-0 flex justify-start xl:justify-center items-center p-6">
+        <!-- Square Box -->
+        <div
+          class="flex flex-col justify-center bg-light-red p-6 border-4 border-white w-full sm:w-140 sm:h-140 sm:aspect-square">
+          <h2 id="nieuws" class="mb-2 font-bold text-white text-xl">JES viert feest</h2>
+          <p class="mb-4 text-white text-base">Beursschouwburg</p>
+          <p class="mb-4 text-white text-base">15 oktober 2025</p>
+          <p class="mb-4 text-white text-sm">40 jaar JES</p>
+          <p class="mb-4 text-white text-base">40 jaar impact op de stad, mét jongeren. Dat vieren we. En met reden.
+            Omdat we bij JES goesting hebben. Goesting om het vandaag van morgen nu al een duwtje te geven. Don't miss
+            out: een creatief samenspel van verhalen, initiatief en de blik vooruit met, door en voor jongeren wachten
+            op jou. En een stevig feestje, natuurlijk.</p>
+          <!-- <p class="mb-4 text-white text-base">subtext</p>
+          <a href="jes.be" class="flex items-center pb-8 font-semibold text-white underline">
+            Lees meer &#8594;
+          </a> -->
+          <a class="bg-light-red hover:bg-red-600 px-4 py-2 border-3 border-white w-fit font-semibold text-white hover:text-snow text-base transition duration-200"
+            href="#inschrijvingsformulier">
+            Ik schrijf me in
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Inschrijvingsformulier -->
+    <section id="inschrijvingsformulier" class="bg-snow px-8 py-16 border-b-3 border-black">
+      <div class="mx-auto xl:px-4 container">
+        <div class="flex xl:flex-row flex-col gap-12">
+
+          <!-- Linker deel: formulier -->
+          <div class="xl:pl-16 w-full xl:w-1/2">
+            <h2 class="mb-6 font-bold text-xl xl:text-4xl leading-xl xl:leading-4xl">Schrijf me in</h2>
+            <p class="mb-8 font-semibold text-base xl:text-lg">Feestje op 15 oktober? Dan ben ik van de partij.</p>
+
+            <form id="myform" name="myform" method="post"
+              action="https://werklinks.jes.be/40_jaar_JES/inschrijving_invoer.php" class="space-y-6">
+              <!-- Twee kolommen -->
+              <div class="gap-6 grid grid-cols-1 xl:grid-cols-2">
+
+                <!-- Links: Voornaam + Naam -->
+                <div class="flex flex-col space-y-4">
+                  <input type="text" name="voornaam" placeholder="Voornaam *" required
+                    class="px-4 py-1 border-4 border-black focus:outline-none w-full font-bold placeholder-black" />
+                  <input type="text" name="naam" placeholder="Naam *" required
+                    class="px-4 py-1 border-4 border-black focus:outline-none w-full font-bold placeholder-black" />
+                </div>
+
+                <!-- Rechts: Organisatie + E-mail -->
+                <div class="flex flex-col space-y-4">
+                  <input type="text" name="organisatie" placeholder="Organisatie"
+                    class="px-4 py-1 border-4 border-black focus:outline-none w-full font-bold placeholder-black" />
+                  <input type="email" name="mailadres" placeholder="E-mail *" required
+                    class="px-4 py-1 border-4 border-black focus:outline-none w-full font-bold placeholder-black" />
+                </div>
+              </div>
+
+              <!-- Checkboxes -->
+              <div class="space-y-2">
+                <label class="flex items-center space-x-2 text-sm">
+                  <input type="checkbox" name="deel_1" value="ja" class="border-4 border-black" />
+                  <span>Ik ben aanwezig op het netwerkmoment (18u30 - 20u)</span>
+                </label>
+                <label class="flex items-center space-x-2 text-sm">
+                  <input type="checkbox" name="deel_2" value="ja" class="border-4 border-black" />
+                  <span>Ik ben aanwezig op het feest (vanaf 20u)</span>
+                </label>
+              </div>
+
+
+              <!-- Opmerking -->
+              <textarea name="opmerking" placeholder="Opmerking"
+                class="px-4 py-1 border-4 border-black focus:outline-none w-full min-h-[6rem] font-bold resize-y placeholder-black"></textarea>
+
+              <p class="font-semibold text-sm">*verplicht in te vullen</p>
+
+              <!-- Knoppen -->
+              <div class="flex items-center gap-4">
+                <!-- Verzenden knop -->
+                <button type="submit"
+                  class="hover:bg-light-red px-4 py-1 border-4 border-light-red font-bold text-light-red hover:text-white text-base transition">
+                  Verzenden
+                </button>
+
+                <!-- Ronde knop met pijl -->
+                <button type="submit" class="flex justify-center items-center w-16 h-16">
+                  <img src="assets/images/Arrow - right.svg" alt="Verzenden" />
+                </button>
+              </div>
+            </form>
+          </div>
+
+          <!-- Rechter deel: programma -->
+          <div class="xl:pl-16 w-full xl:w-1/2">
+            <h2 class="mb-6 font-bold text-xl xl:text-4xl leading-xl xl:leading-4xl">Programma</h2>
+            <p class="mb-12 font-semibold text-sm">15 oktober @ Beursschouwburg Brussel</p>
+
+            <div class="space-y-4">
+              <!-- item -->
+              <div class="gap-4 grid grid-cols-[80px_1fr]">
+                <div class="font-bold text-lg">16u30</div>
+                <div>
+                  <div class="font-bold text-lg">Deuren open</div>
+                  <div class="text-sm">JES, JES, JES!</div>
+                </div>
+              </div>
+
+              <div class="gap-4 grid grid-cols-[80px_1fr]">
+                <div class="font-bold text-lg">17u30</div>
+                <div>
+                  <div class="font-bold text-lg">Welkom</div>
+                  <div class="text-sm">Speech & debat</div>
+                </div>
+              </div>
+
+              <div class="gap-4 grid grid-cols-[80px_1fr]">
+                <div class="font-bold text-lg">18u30</div>
+                <div>
+                  <div class="font-bold text-lg">Expo en netwerkmoment</div>
+                  <div class="pb-2 border-b-4 border-black text-sm">Hapje en drankje</div>
+                </div>
+              </div>
+
+              <div class="gap-4 grid grid-cols-[80px_1fr] pt-12">
+                <div class="font-bold text-lg">20u00</div>
+                <div>
+                  <div class="font-bold text-lg">Feestjeuh</div>
+                  <div class="text-sm">Deuren feest open</div>
+                </div>
+              </div>
+
+              <div class="gap-4 grid grid-cols-[80px_1fr]">
+                <div class="font-bold text-lg">20u30</div>
+                <div>
+                  <div class="font-bold text-lg">Performances</div>
+                </div>
+              </div>
+
+              <div class="gap-4 grid grid-cols-[80px_1fr]">
+                <div class="font-bold text-lg">22u00</div>
+                <div>
+                  <div class="font-bold text-lg">DJ-sets</div>
+                </div>
+              </div>
+
+              <div class="gap-4 grid grid-cols-[80px_1fr]">
+                <div class="font-bold text-lg">00u00</div>
+                <div>
+                  <div class="font-bold text-lg">Huiswaarts</div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!--Vier mee met Gent -->
+    <section class="bg-light-red mb-6 py-12 w-full">
+      <div class="text-white text-center">
+        <h2 id="Ontdek alle verhalen op het slotfeest"
+          class="flex justify-center items-center my-16 ml-4 font-bold text-white text-xl xl:xl:text-4xl leading-xl xl:leading-4xl">
+          Vier ook mee met onze Gentse jongeren →
+          <!-- <span class="ml-2">&rarr;</span> -->
+        </h2>
+        <p class="my-8 pt-2 font-semibold text-sm"><span class="py-4">
+            27.09.25, De Expeditie, Gent
+            Brussel</span></p>
+      </div>
+    </section>
+
+    <!--Vier mee met Antwerpen -->
+    <section class="bg-light-red py-12 w-full">
+      <div class="text-white text-center">
+        <h2 id="Ontdek alle verhalen op het slotfeest"
+          class="flex justify-center items-center my-16 ml-4 font-bold text-white text-xl xl:xl:text-4xl leading-xl xl:leading-4xl">
+          Vier ook mee met onze Antwerpse jongeren &#8594;
+          <!-- <span class="ml-2">&rarr;</span> -->
+        </h2>
+        <p class="my-8 pt-2 font-semibold text-sm"><span class="py-4">
+            06.11.25, De Roma, Antwerpen
+            Brussel</span></p>
+      </div>
+    </section>
+
+    <!-- Blijf op de hoogte Section -->
+    <section class="px-8 py-16 border-b-3 border-black">
+      <div class="mx-auto xl:px-4 container">
+        <div class="flex xl:flex-row flex-col">
+          <!-- Left half (signup form) -->
+          <div class="mb-8 xl:mb-0 xl:pl-16 w-full xl:w-1/2">
+            <h2 id="blijf op de hoogte" class="mb-8 font-bold text-xl xl:text-4xl leading-xl xl:leading-4xl">Blijf op de
+              hoogte</h2>
+            <p class="font-semibold text-base xl:text-lg">
+              Meer van dat.
+            </p>
+            <div class="flex items-center">
+              <p class="font-bold text-lg">
+                <a href="https://jes.be/inschrijven-nieuwsbrief/">Schrijf me in op de nieuwsbrief.</a>
+              </p>
+              <a class="px-4 py-2 rounded text-white" target="_blank" href="https://jes.be/inschrijven-nieuwsbrief/">
+                <img src="assets/images/Arrow - right.svg" alt="Schrijf je in op onze nieuwsbrief" />
+              </a>
+            </div>
+          </div>
+          <div class="xl:pl-16 w-full xl:w-1/2">
+            <p class="mb-4 font-semibold text-lg">
+              Hoop ligt in het antwoord dat stedelijk jeugdwerk biedt op maatschappelijke problemen. Elk kind
+              moet ongeacht zijn of
+              haar thuissituatie of afkomst vooral kind kunnen zijn.
+            </p>
+            <img src="assets/images/swoosh.svg" alt="Swoosh">
+            <p class="font-semibold text-lg">
+              Fahed, 24 jaar, mede-oprichter Ttropico vzw
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-snow px-8 xl:px-36 py-16">
+    <!-- Grid Container -->
+    <div class="flex flex-wrap">
+      <!-- Column 1: Links -->
+      <div class="xl:pt-18 xl:pl-32 w-1/2 xl:w-1/3">
+        <ul class="space-y-2 font-bold text-sm uppercase">
+          <li><a href="#hoopkracht" class="hover:underline">Hoopkracht</a></li>
+          <li><a href="#nieuws" class="hover:underline">Nieuws</a></li>
+          <li><a href="#verhaal-welzijn-door-speelterrein" class="hover:underline">Verhalen</a></li>
+          <li><a href="#event" class="hover:underline">Events</a></li>
+          <li><a href="https://jes.be/wij-zijn-jes/" target="_blank" class="hover:underline">JES VZW</a></li>
+          <li><a href="https://jes.be/contact/" target="_blank" class="hover:underline">Contact</a></li>
+        </ul>
+      </div>
+
+      <!-- Column 2: Title & Subtext -->
+      <div class="xl:pr-16 w-1/2 xl:w-1/3">
+        <h3 id="40 jaar JES. 40 jaar hoopkracht." class="mb-4 font-bold text-lg">40 jaar JES. 40 jaar hoopkracht.</h3>
+        <p class="mb-4 text-sm">
+          <i>Hoopkracht</i>, daar gaan we resoluut voor.
+          Omdat jongeren in de stad recht hebben op uitzicht. Op hoop. Want stadsjongeren zitten vol jeugdige ideeën en
+          energie.
+          Laten we - samen <i>met</i> hen – de stad van morgen vandaag al vorm te geven..
+        </p>
+        <p class="mb-4 text-sm">
+          © 2025 <a href="https://jes.be/disclaimer/" target="_blank" class="ml-4 font-semibold underline">Privacy</a>
+          <a href="https://jes.be/disclaimer/" target="_blank" class="ml-4 font-semibold underline">Cookie</a>
+        </p>
+      </div>
+
+      <!-- Column 3: Meer JES-nieuws -->
+      <div class="w-full xl:w-1/3">
+        <h3 id="Meer JES-nieuws" class="mb-4 font-bold text-lg">Meer JES-nieuws</h3>
+        <a href="https://jes.be/inschrijven-nieuwsbrief/" target="_blank"
+          class="bg-light-red xl:mb-4 px-3 py-1 text-white text-base">
+          Volg alle verhalen op de voet
+        </a>
+        <p class="my-8 text-sm">
+          JES is een jeugdorganisatie voor alle kinderen en jongeren in Antwerpen, Brussel en Gent. We ondersteunen hen
+          op vlak van vrije tijd, onderwijs, werk, opleiding en welzijn.
+        </p>
+        <p class="mb-2 text-sm">
+          Werkhuizenstraat 3
+          1080 Sint-Jans-Molenbeek
+        </p>
+        <p class="text-sm">Tel. 02/411 68 83</p>
+      </div>
+    </div>
+
+    <!-- Logo -->
+    <div class="flex justify-end mt-8 xl:mr-24">
+      <img src="assets/images/JES_logo_zonderbaseline_rood.svg" alt="JES">
+    </div>
+
+    <!-- Back to Top Button -->
+    <a href="#" class="right-8 bottom-8 z-50 fixed">
+      <img src="assets/images/Arrow - up.svg" alt="Terug omhoog" class="w-16 h-16">
+    </a>
+  </footer>
+
+  <!-- JavaScript for menu -->
+  <script src="js/menu.js"></script>
+
+  <!-- JavaScript for dropdown menu -->
+  <script src="js/dropdownMenu.js"></script>
+
+  <!-- JavaScript for sliders -->
+  <script type="module" src="js/sliders.js"></script>
+
+  <!-- JavaScript to search through titles -->
+  <script src="js/searchTitles.js"></script>
+
+  <!-- JavaScript to collapse menu -->
+  <script src="js/collapse.js"></script>
+
+  <!-- JavaScript CookieBanner -->
+  <script src="js/cookieBanner.js"></script>
+
+</html>
