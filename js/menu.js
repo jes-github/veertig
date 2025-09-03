@@ -1,28 +1,37 @@
 document.addEventListener('DOMContentLoaded', function () {
-	const menuToggle = document.getElementById("menu-toggle");
-	const mobileMenu = document.getElementById("mobile-menu");
-	const menuClose = document.getElementById("menu-close");
-	const navbar = document.getElementById("navbar");
+	var menuToggle = document.getElementById("menu-toggle");
+	var mobileMenu = document.getElementById("mobile-menu");
+	var menuClose = document.getElementById("menu-close");
+	var navbar = document.getElementById("navbar");
 
-	menuToggle.addEventListener("click", function () {
-		mobileMenu.classList.remove("-translate-y-full");
-		mobileMenu.classList.add("translate-y-0");
-		navbar.classList.add("hidden");
-	});
+	// Zorg dat het menu standaard verborgen is
+	if (mobileMenu) mobileMenu.style.display = "none";
 
-	menuClose.addEventListener("click", function () {
-		mobileMenu.classList.remove("translate-y-0");
-		mobileMenu.classList.add("-translate-y-full");
-		navbar.classList.remove("hidden");
-	});
+	if (menuToggle) {
+		menuToggle.onclick = function () {
+			if (mobileMenu.style.display === "none") {
+				mobileMenu.style.display = "flex"; // toon menu
+				if (navbar) navbar.style.display = "none";
+			} else {
+				mobileMenu.style.display = "none"; // verberg menu
+				if (navbar) navbar.style.display = "flex";
+			}
+		};
+	}
 
-	document.querySelectorAll('#mobile-menu a').forEach(link => {
-		link.addEventListener('click', () => {
-			mobileMenu.classList.remove('translate-y-0');
-			mobileMenu.classList.add('-translate-y-full');
-			navbar.classList.remove('hidden');
-		});
-	});
+	if (menuClose) {
+		menuClose.onclick = function () {
+			mobileMenu.style.display = "none";
+			if (navbar) navbar.style.display = "flex";
+		};
+	}
+
+	// links sluiten het menu
+	var links = mobileMenu.getElementsByTagName("a");
+	for (var i = 0; i < links.length; i++) {
+		links[i].onclick = function () {
+			mobileMenu.style.display = "none";
+			if (navbar) navbar.style.display = "flex";
+		};
+	}
 });
-
-
