@@ -127,7 +127,8 @@
 
   <!-- Mobile & Tablet Menu -->
   <div id="mobile-menu"
-    class="z-20 fixed inset-0 flex flex-col bg-light-red h-full transition-transform -translate-y-full duration-300 ease-out transform">
+    class="z-20 fixed inset-0 flex flex-col bg-light-red h-full transition-transform -translate-y-full duration-300 ease-out transform"
+    style="display: none;"> <!-- fallback for old browsers -->
 
     <!-- Top bar with Logo and Close button -->
     <div id="mobile-top-bar" class="flex justify-between items-center bg-snow mb-6 p-8 w-full shrink-0">
@@ -141,34 +142,30 @@
     <div class="flex-1 space-y-4 bg-light-red w-full overflow-y-auto">
       <a href="#hoopkracht" class="block relative font-semibold text-snow text-center">Hoopkracht</a>
       <a href="#nieuws" class="block relative font-semibold text-snow text-center">Nieuws</a>
+
       <!-- Verhalen dropdown -->
       <div class="space-y-2">
         <p class="font-semibold text-snow text-center">Verhalen</p>
-        <a href="#verhaal-welzijn-door-speelterrein" class="block relative font-semibold text-center">Welzijn
-          door
+        <a href="#verhaal-welzijn-door-speelterrein" class="block relative font-semibold text-center">Welzijn door
           speelterrein</a>
-        <a href="#verhaal-ontharden-door-ontmoeten" class="block relative font-semibold text-center">Ontharden
-          door
+        <a href="#verhaal-ontharden-door-ontmoeten" class="block relative font-semibold text-center">Ontharden door
           ontmoeten</a>
-        <a href="#verhaal-groei-door-latent-talent" class="block relative font-semibold text-center">Groei
-          door latent
+        <a href="#verhaal-groei-door-latent-talent" class="block relative font-semibold text-center">Groei door latent
           talent</a>
-        <a href="#verhaal-ruimte-voor-ruimte" class="block relative font-semibold text-center">Ruimte
-          voor ruimte</a>
-        <a href="#verhaal-leerkans-door-nieuwe-kans" class="block relative font-semibold text-center">Leerkans
-          door open
+        <a href="#verhaal-ruimte-voor-ruimte" class="block relative font-semibold text-center">Ruimte voor ruimte</a>
+        <a href="#verhaal-leerkans-door-nieuwe-kans" class="block relative font-semibold text-center">Leerkans door open
           kans</a>
-        <a href="#verhaal-stem-geven-zonder-stempel" class="block relative font-semibold text-center">Stem
-          geven zonder
+        <a href="#verhaal-stem-geven-zonder-stempel" class="block relative font-semibold text-center">Stem geven zonder
           stempel</a>
         <a href="#verhaal-werkzaamheidsgraag" class="block relative font-semibold text-center">Werkzaamheidsgraag</a>
       </div>
+
       <a href="#event" class="block relative font-semibold text-snow text-center">Event</a>
-      <a href="#" class="block relative text-snow text-center">Over
-        JES vzw</a>
+      <a href="#" class="block relative text-snow text-center">Over JES vzw</a>
       <a href="https://jes.be/contact/" class="block relative font-semibold text-snow text-center">Contact</a>
     </div>
   </div>
+
 
   <!-- Header-->
   <header

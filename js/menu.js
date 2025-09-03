@@ -4,34 +4,31 @@ document.addEventListener('DOMContentLoaded', function () {
 	var menuClose = document.getElementById("menu-close");
 	var navbar = document.getElementById("navbar");
 
-	// Zorg dat het menu standaard verborgen is
-	if (mobileMenu) mobileMenu.style.display = "none";
-
-	if (menuToggle) {
-		menuToggle.onclick = function () {
-			if (mobileMenu.style.display === "none") {
-				mobileMenu.style.display = "flex"; // toon menu
-				if (navbar) navbar.style.display = "none";
-			} else {
-				mobileMenu.style.display = "none"; // verberg menu
-				if (navbar) navbar.style.display = "flex";
-			}
-		};
+	function openMenu() {
+		// Modern browsers: Tailwind transform classes
+		if (mobileMenu.classList) {
+			mobileMenu.classList.remove("-translate-y-full");
+			mobileMenu.classList.add("translate-y-0");
+		}
+		// Fallback for old browsers
+		mobileMenu.style.display = 'flex';
+		if (navbar) { navbar.style.display = 'none'; }
 	}
 
-	if (menuClose) {
-		menuClose.onclick = function () {
-			mobileMenu.style.display = "none";
-			if (navbar) navbar.style.display = "flex";
-		};
+	function closeMenu() {
+		if (mobileMenu.classList) {
+			mobileMenu.classList.remove("translate-y-0");
+			mobileMenu.classList.add("-translate-y-full");
+		}
+		mobileMenu.style.display = 'none';
+		if (navbar) { navbar.style.display = 'flex'; }
 	}
 
-	// links sluiten het menu
-	var links = mobileMenu.getElementsByTagName("a");
+	if (menuToggle) menuToggle.onclick = openMenu;
+	if (menuClose) menuClose.onclick = closeMenu;
+
+	var links = mobileMenu.getElementsByTagName('a');
 	for (var i = 0; i < links.length; i++) {
-		links[i].onclick = function () {
-			mobileMenu.style.display = "none";
-			if (navbar) navbar.style.display = "flex";
-		};
+		links[i].onclick = closeMenu;
 	}
 });
